@@ -10,18 +10,18 @@
                 "sections": [
                     {
                         "title": {
-                            "text": "Unblock your team boost your time to production",
+                            "text": "Your goals, our roadmap.",
                             "color": "text-dark",
                             "styles": null,
                             "$$type": "TitleBlock"
                         },
-                        "subtitle": "Subtitle goes here",
-                        "text": "A Netlify website is a git repo that you own. Every code commit is instantly reflected in the visual editor and since every visual edit is a git commit, git workflows and collaboration just work.\n",
+                        "subtitle": "Consulting that moves at the speed of your market",
+                        "text": "At Aurrus Consulting, we help businesses thrive through tailored expertise in Business Process Management (BPM), Digital Marketing, Website Development, and Strategic Consulting. We’re committed to delivering solutions that drive measurable results and long-term success..\n",
                         "actions": [
                             {
                                 "label": "Get started",
                                 "altText": "",
-                                "url": "/",
+                                "url": "#services",
                                 "showIcon": false,
                                 "icon": "arrowRight",
                                 "iconPosition": "right",
@@ -29,17 +29,6 @@
                                 "elementId": "",
                                 "$$type": "Button"
                             },
-                            {
-                                "label": "See Tutorials",
-                                "altText": "",
-                                "url": "/",
-                                "showIcon": true,
-                                "icon": "arrowRight",
-                                "iconPosition": "right",
-                                "style": "primary",
-                                "elementId": "",
-                                "$$type": "Link"
-                            }
                         ],
                         "media": {
                             "url": "/images/main-hero.svg",
