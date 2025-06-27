@@ -10,11 +10,11 @@ sections:
     subtitle: Smarter workflows. Stronger results.
     text: >
       At Aurrus Consulting, we bridge bold ideas with intelligent execution.
-    Our digital-first strategies drive scale, speed, and sustainability.
+      Our digital-first strategies drive scale, speed, and sustainability.
     actions:
       - label: Get started
         altText: ''
-        url: #services
+        url: '#services'
         showIcon: false
         icon: arrowRight
         iconPosition: right
