@@ -4,40 +4,30 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Unblock your team boost your time to production
+      text: 
       color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Smarter workflows. Stronger results.
     text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
+      At Aurrus Consulting, we bridge bold ideas with intelligent execution.
+    Our digital-first strategies drive scale, speed, and sustainability.
     actions:
       - label: Get started
         altText: ''
-        url: /
+        url: #services
         showIcon: false
         icon: arrowRight
         iconPosition: right
         style: secondary
         elementId: ''
         type: Button
-      - label: See Tutorials
-        altText: ''
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Link
     media:
       url: /images/main-hero.svg
-      altText: Unblock your team boost your time to production preview
+      altText: Scaling Tomorrow’s Vision.
       elementId: ''
       type: ImageBlock
     badge:
-      label: This is a badge
+      label: Bold thinking. Seamless execution.
       color: text-primary
       type: Badge
     elementId: ''
@@ -62,12 +52,10 @@ sections:
     subtitle: Subtitle goes here
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
+        title: Strategic Clarity
+        subtitle: Focused direction.
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Our consulting framework brings clarity to complex business challenges. We align leadership, operations, and data into a cohesive roadmap, ensuring every decision moves you closer to long-term growth. Through tailored diagnostics and structured planning, we help eliminate noise and unlock precise, confident execution.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -90,12 +78,10 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
+      - title: Scalable Impact
+        subtitle: Built to grow.
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          We design strategies that grow with your business. Whether you're early-stage or enterprise-ready, our models are built to flex, scale, and sustain impact across verticals. From market entry to process optimization, we focus on durable results that empower your team to lead without friction.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -115,12 +101,12 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
+      - title: Measurable Value
+        subtitle: Results that show.
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Our success is measured by yours. We focus on high-leverage initiatives that directly influence performance metrics—from revenue acceleration to operational efficiency. Every recommendation is backed by data, rigor, and accountability, ensuring our solutions generate tangible ROI—not just theoretical insight.
+
+
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -235,12 +221,11 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is a subtitle
+    subtitle: Scale with intelligence. Execute with precision.
     text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+      At Aurrus, we combine deep industry insight with agile digital execution to unlock exponential growth. 
+Whether you're optimizing current operations or expanding into new markets, our strategies are engineered to accelerate results. 
+From aligning teams to automating inefficiencies, we help future-ready businesses move faster—with clarity, confidence, and control.
     media:
       title: Title of the video
       url: /images/placeholder-video.mp4
