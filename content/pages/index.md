@@ -213,8 +213,8 @@ sections:
           - pl-7
           - pb-7
           - pr-7
-    type: DividerSection
-  - title:
+  - type: GenericSection
+    title:
       text: Grow your business 10x faster
       color: text-dark
       styles:
@@ -224,8 +224,8 @@ sections:
     subtitle: Scale with intelligence. Execute with precision.
     text: |-
       At Aurrus, we combine deep industry insight with agile digital execution to unlock exponential growth. 
-Whether you're optimizing current operations or expanding into new markets, our strategies are engineered to accelerate results. 
-From aligning teams to automating inefficiencies, we help future-ready businesses move faster—with clarity, confidence, and control.
+      Whether you're optimizing current operations or expanding into new markets, our strategies are engineered to accelerate results. 
+      From aligning teams to automating inefficiencies, we help future-ready businesses move faster—with clarity, confidence, and control.
     media:
       title: Title of the video
       url: /images/placeholder-video.mp4
@@ -242,6 +242,25 @@ From aligning teams to automating inefficiencies, we help future-ready businesse
           borderStyle: solid
           borderWidth: 1
           borderRadius: large
+      type: VideoBlock
+      autoplay: true
+      loop: true
+      muted: true
+    badge:
+      label: Key Benefits
+      color: text-primary
+      styles:
+        self:
+          textAlign: center
+      type: Badge
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        flexDirection: col
+        justifyContent: center
+      subtitle:
+        textAlign: center
+
       type: VideoBlock
       autoplay: true
       loop: true
