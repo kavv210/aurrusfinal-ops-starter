@@ -53,12 +53,11 @@ sections:
     subtitle: 
     items:
       - type: FeaturedItem
-        title: Business Strategy Consulting
+        title: Outsourcing & Transformation
         subtitle: Transform with Clarity
         text: >-
-          We provide strategic guidance to help organizations navigate change and optimize performance.
-          From business model innovation to operational restructuring and market strategy, our consultants work as partners,
-          delivering clear, data-driven solutions.
+           We, at Aurrus, offer expert guidance on outsourcing, offshoring, and operational transformation across BPO, KPO and ITeS sectors;
+           helping businesses streamline processes and enhance efficiency.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -84,9 +83,8 @@ sections:
       - title: Organizational Development 
         subtitle: Strengthen Internal Structure
         text: >-
-          Our approach focusus on enhancing the health and adaptability of your organization. We
-          assist in designing operating models, refining governance frameworks and aligning
-          leadership with business goals to create a resilient, agile and performancr-driven culture.
+          Aurrus guides organizations through business-model shifts, outsourcing decisions, and performance strategies;
+          delivering practical, data-backed recommendations that drive real impact.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -109,10 +107,8 @@ sections:
       - title: Program and Project Advisory
         subtitle: Deliver with Precision
         text: >-
-            We support client organizations in planning and executing high-impact programs with
-            clarity and control. From aligning stakeholder expectations to managing timelines, budgets
-            risks, our hands-on advisory ensures your business initiatives are delivered successfully.
-        image:
+            From recruitment to operations, Aurrus manages complex projects with clarity, control, and measurable results;
+            aligning stakeholders, timelines, and budgets for seamless execution.
           url: /images/icon3.svg
           altText: Featured icon three
           elementId: ''
@@ -190,25 +186,6 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -269,22 +246,22 @@ sections:
     type: GenericSection
   - type: GenericSection
     title:
-      text: Generic section with a video
+      text: Collaborative with Design
       color: text-dark
       styles:
         self:
           textAlign: left
       type: TitleBlock
-    subtitle: Section with a video subtitle
+    subtitle: Collaboration that delivers.
     text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    Progress happens when people work together.
+    Aurrus brings teams and stakeholders into alignment through clear communication,
+    shared accountability and unified execution. Our collaborative approach drives faster results, stronger relationships,
+    and outcomes that consistently exceed expectations
     actions: []
     media:
       title: Title of the video
-      url: /images/placeholder-video.mp4
+      url: /images/placeholder-video1.mp4
       autoplay: true
       loop: true
       muted: true
@@ -311,13 +288,13 @@ sections:
       subtitle:
         textAlign: left
   - title:
-      text: Social Media Management
+      text: Talent Acquisition & Training
       color: text-dark
       type: TitleBlock
-    subtitle: Increase your reach
+    subtitle: Build High-Performance Teams.
     text: >
-      A service that helps businesses to manage their social media accounts and
-      posts.
+     From sourcing top-tier talent across BPO, telecom, insurance, and support functions to delivering hands-on onboarding, leadership, and certification training;
+     Aurrus builds high-performance teams that are equipped to lead, grow, and excel from day one.
     actions:
       - label: Get started
         url: /
@@ -325,19 +302,12 @@ sections:
         iconPosition: right
         style: secondary
         type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
     media:
       url: /images/hero2.svg
       altText: Fun feature preview
       type: ImageBlock
     badge:
-      label: This is a badge
+      label: 	People-Centric Solutions
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
@@ -346,13 +316,13 @@ sections:
         alignItems: center
     type: GenericSection
   - title:
-      text: Business Consulting
+      text: Outsourcing & Transformation
       color: text-dark
       type: TitleBlock
-    subtitle: Be in good company
+    subtitle: Optimize and Scale.
     text: >
-      A service that provides advice and guidance to startups and small
-      businesses.
+      We specialize in strategic consulting for outsourcing, offshoring, and end-to-end process transformation across BPO, KPO, and ITeS verticals;
+      helping businesses reduce operational friction, scale efficiently, and unlock new levels of performance.
     actions:
       - label: Get started
         url: /
@@ -360,19 +330,12 @@ sections:
         iconPosition: right
         style: secondary
         type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
     media:
       url: /images/hero3.svg
       altText: Dope design preview
       type: ImageBlock
     badge:
-      label: This is a badge
+      label: BPO/KPO Expertise
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
@@ -580,19 +543,19 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: List of features here
+      text: Why Aurrus?
       color: text-primary
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Featured items section subtitle
+    subtitle: Why should you choose 'US'?
     items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Collaborative by Nature
+        tagline: Trusted by teams that scale.
+        subtitle: Aligned Execution. Lasting Partnerships.
         text: |
-          Follow the tutorial to build your first Netlify Create site.
+          We integrate with your people, processes, and priorities; ensuring smoother delivery and stronger internal synergy.
         image:
           url: /images/abstract-feature1.svg
           altText: Placeholder Image
@@ -611,11 +574,11 @@ sections:
             borderRadius: x-large
             flexDirection: col
         type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Execution without Friction
+        tagline: Structured & Streamlined
+        subtitle: From Planning to Precision
         text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
+          We manage projects end-to-end with clear timelines, resource alignment, and minimal disruption.
         image:
           url: /images/abstract-feature2.svg
           altText: Placeholder image
@@ -634,11 +597,11 @@ sections:
             borderRadius: x-large
             flexDirection: col
         type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Experience that Matters
+        tagline: Led by Experts
+        subtitle: Decades in this field.
         text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
+          Our leadership comes from IT, ITeS, and BPO/KPO sectors — bringing hands-on expertise, not just theory.
         image:
           url: /images/abstract-feature1.svg
           altText: Placeholder image
@@ -731,7 +694,7 @@ sections:
     type: GenericSection
 seo:
   metaTitle: Aurrus-Home
-  metaDescription: This demo site is built with Netlify Create.
+  metaDescription: Aurrus Consulting Main Site.
   socialImage: /images/main-hero.jpg
   type: Seo
 type: PageLayout
