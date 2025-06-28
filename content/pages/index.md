@@ -9,9 +9,9 @@ sections:
       type: TitleBlock
     subtitle: Where strategy meets speed.
     text: >
-      At Aurrus Constulting, we bridge bold ideas with intelligent execution.
-      Our digital-first strategies drive scale, speed and sustainability.
-      We combine deep industry insight with tech-led execution to drive scalable outcomes.
+       At Aurrus Constulting, we bridge bold ideas with intelligent execution.
+         Our digital-first strategies drive scale, speed and sustainability.
+       We combine deep industry insight with tech-led execution to drive scalable outcomes.
     actions:
       - label: Get started
         altText: ''
@@ -671,15 +671,15 @@ sections:
         textAlign: center
     type: FeaturedItemsSection
   - title:
-      text: Generic Section With A Form
+      text: Let's Build Something Better Together.
       color: text-dark
       type: TitleBlock
-    subtitle: Section with a form subtitle
+    subtitle: Start your consultation today!
     text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+      Ready to streamline your operations, improve performance, or
+      rethink your strategy? Fill out the form right beside and
+      our consulting team will get back to you within 24 hours. 
+      We're here to help you move forward; faster, smarter and stronger.
     media:
       fields:
         - name: name
@@ -730,7 +730,7 @@ sections:
     colors: bg-light-fg-dark
     type: GenericSection
 seo:
-  metaTitle: Home - Demo site
+  metaTitle: Aurrus-Home
   metaDescription: This demo site is built with Netlify Create.
   socialImage: /images/main-hero.jpg
   type: Seo
