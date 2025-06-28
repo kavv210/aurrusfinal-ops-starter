@@ -233,6 +233,7 @@ sections:
       autoplay: true
       loop: true
       muted: true
+    type:GenericSection
     badge:
       label: Our Company Overview
       color: text-primary
@@ -243,7 +244,6 @@ sections:
       subtitle:
         textAlign: center
     colors: bg-light-fg-dark
-    type: GenericSection
   - type: GenericSection
     title:
       text: Collaborative with Design
