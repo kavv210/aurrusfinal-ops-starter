@@ -7,7 +7,7 @@ sections:
       text: Accelerate Growth With Aurrus.
       color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Where strategy meets speed.
     text: >
       At Aurrus Constulting, we bridge bold ideas with intelligent execution.
       Our digital-first strategies drive scale, speed and sustainability.
@@ -24,7 +24,7 @@ sections:
         type: Button
     media:
       url: /images/main-hero.svg
-      altText: Unblock your team boost your time to production preview
+      altText: Aurrus Consulting 1
       elementId: ''
       type: ImageBlock
     badge:
@@ -50,15 +50,15 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Subtitle goes hereWe provide strategic guidance to help organizations navigate change, optimize performance, and unlock new growth. From business model innovation to operational restructuring and market strategy, our consultants work as partners—delivering clear, data-driven solutions grounded in real-world results.
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
+        title: Business Strategy Consulting
+        subtitle: Transform with Clarity
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          We provide strategic guidance to help organizations navigate change and optimize performance.
+          From business model innovation to operational restructuring and market strategy, our consultants work as partners,
+          delivering clear, data-driven solutions.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -81,12 +81,12 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
+      - title: Organizational Development 
+        subtitle: Strengthen Internal Structure
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Our approach focusus on enhancing the health and adaptability of your organization. We
+          assist in designing operating models, refining governance frameworks and aligning
+          leadership with business goals to create a resilient, agile and performancr-driven culture.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -106,12 +106,12 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
+      - title: Program and Project Advisory
+        subtitle: Deliver with Precision
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          We support client organizations in planning and executing high-impact programs with
+          clarity and control. From aligning stakeholder expectations to managing timelines, budgets
+          risks, our hands-on advisory ensures your business initiatives are delivered successfully.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -140,7 +140,7 @@ sections:
         elementId: ''
         type: Button
     badge:
-      label: This is a badge
+      label: Why Aurrus?
       color: text-primary
       styles:
         self:
@@ -220,20 +220,20 @@ sections:
           - pr-7
     type: DividerSection
   - title:
-      text: Grow your business 10x faster
+      text: Built for Impact.
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is a subtitle
+    subtitle: 
     text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+      At Aurrus Consulting, we focus on what truly moves the needle; clarity in strategy,
+      efficiency in execution, and confidence in every decision. Our partnership model
+      ensures that clients experience not just short-term gains, but long term operational
+      strength and market resilience.
     media:
-      title: Title of the video
+      title: Aurrus Video 1
       url: /images/placeholder-video.mp4
       controls: false
       aspectRatio: '16:9'
