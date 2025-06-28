@@ -233,7 +233,7 @@ sections:
       autoplay: true
       loop: true
       muted: true
-    type:GenericSection
+    type: GenericSection
     badge:
       label: Our Company Overview
       color: text-primary
