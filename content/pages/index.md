@@ -50,7 +50,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: 
+    subtitle: ""
     items:
       - type: FeaturedItem
         title: Outsourcing & Transformation
@@ -153,7 +153,7 @@ sections:
           - pl-16
           - pr-16
         justifyContent: center
-      subtitle:
+      subtitle: ""
         textAlign: center
   - subtitle: Award winning enterprises trust us
     images:
@@ -183,7 +183,7 @@ sections:
     styles:
       self:
         justifyContent: center
-      subtitle:
+      subtitle: ""
         textAlign: center
     type: ImageGallerySection
   - title: Divider
@@ -203,7 +203,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: 
+    subtitle: ""
     text: |-
       At Aurrus Consulting, we focus on what truly moves the needle; clarity in strategy,
       efficiency in execution, and confidence in every decision. Our partnership model
@@ -241,7 +241,7 @@ sections:
       self:
         flexDirection: col
         justifyContent: center
-      subtitle:
+      subtitle: ""
         textAlign: center
     type: GenericSection
   - type: GenericSection
@@ -254,10 +254,11 @@ sections:
       type: TitleBlock
     subtitle: Collaboration that delivers.
     text: |-
-    Progress happens when people work together.
-    Aurrus brings teams and stakeholders into alignment through clear communication,
-    shared accountability and unified execution. Our collaborative approach drives faster results, stronger relationships,
-    and outcomes that consistently exceed expectations
+      Progress happens when people work together.
+      Aurrus brings teams and stakeholders into alignment through clear communication,
+      shared accountability and unified execution. Our collaborative approach
+      drives faster results, stronger relationships,
+      and outcomes that consistently exceed expectations
     actions: []
     media:
       title: Title of the video
@@ -285,7 +286,7 @@ sections:
       self:
         flexDirection: row
         justifyContent: center
-      subtitle:
+      subtitle: ""
         textAlign: left
   - title:
       text: Talent Acquisition & Training
@@ -540,7 +541,7 @@ sections:
     styles:
       self:
         justifyContent: center
-      subtitle:
+      subtitle: ""
         textAlign: center
   - title:
       text: Why Aurrus?
@@ -630,7 +631,7 @@ sections:
           - pb-16
           - pr-8
         justifyContent: center
-      subtitle:
+      subtitle: ""
         textAlign: center
     type: FeaturedItemsSection
   - title:
