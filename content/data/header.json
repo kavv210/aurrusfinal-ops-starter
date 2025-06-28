@@ -43,7 +43,7 @@
       "links": [
         {
           "label": "Business Consulting",
-          "url": "/",
+          "url": "/services#business-consulting",
           "icon": "arrowRight",
           "iconPosition": "right",
           "style": "secondary",
@@ -56,7 +56,7 @@
         },
         {
           "label": "IT Staffing & Solutions",
-          "url": "/",
+          "url": "/services#it-staffing",
           "icon": "arrowRight",
           "iconPosition": "right",
           "style": "secondary",
@@ -69,7 +69,7 @@
         },
         {
           "label": "Talent Acquisition",
-          "url": "/",
+          "url": "/services#talent-acquisition",
           "icon": "arrowRight",
           "iconPosition": "right",
           "style": "secondary",
