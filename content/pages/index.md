@@ -44,13 +44,13 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Key Benefits
+      text: Why Aurrus?
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Subtitle goes hereWe provide strategic guidance to help organizations navigate change, optimize performance, and unlock new growth. From business model innovation to operational restructuring and market strategy, our consultants work as partners—delivering clear, data-driven solutions grounded in real-world results.
+    subtitle: 
     items:
       - type: FeaturedItem
         title: Business Strategy Consulting
@@ -109,9 +109,9 @@ sections:
       - title: Program and Project Advisory
         subtitle: Deliver with Precision
         text: >-
-          We support client organizations in planning and executing high-impact programs with
-          clarity and control. From aligning stakeholder expectations to managing timelines, budgets
-          risks, our hands-on advisory ensures your business initiatives are delivered successfully.
+            We support client organizations in planning and executing high-impact programs with
+            clarity and control. From aligning stakeholder expectations to managing timelines, budgets
+            risks, our hands-on advisory ensures your business initiatives are delivered successfully.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -140,7 +140,7 @@ sections:
         elementId: ''
         type: Button
     badge:
-      label: Why Aurrus?
+      label: Client-Centered Outcomes.
       color: text-primary
       styles:
         self:
