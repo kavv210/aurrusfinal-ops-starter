@@ -9,9 +9,9 @@ sections:
       type: TitleBlock
     subtitle: Where strategy meets speed.
     text: >
-       At Aurrus Constulting, we bridge bold ideas with intelligent execution.
-         Our digital-first strategies drive scale, speed and sustainability.
-       We combine deep industry insight with tech-led execution to drive scalable outcomes.
+      At Aurrus Consulting, we connect bold ambition with precise execution.
+      Our digital-first strategies scale faster, perform smarter, and deliver measurable outcomes.
+      With deep BPO, KPO, and ITeS expertise, we help organizations streamline operations, align teams, and lead with confidence.
     actions:
       - label: Get started
         altText: ''
@@ -567,19 +567,19 @@ sections:
       subtitle:
         textAlign: center
   - title:
-      text: List of features here
+      text: The Aurrus Difference
       color: text-primary
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Featured items section subtitle
+    subtitle: Why should businesses choose Aurr"US"?
     items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Collaborative by Nature
+        tagline: Trusted by teams that scale.
+        subtitle: Aligned Execution. Lasting Partnerships.
         text: |
-          Follow the tutorial to build your first Netlify Create site.
+          We integrate with your people, processes, and priorities; ensuring smoother delivery and stronger internal synergy.
         image:
           url: /images/abstract-feature1.svg
           altText: Placeholder Image
@@ -598,11 +598,11 @@ sections:
             borderRadius: x-large
             flexDirection: col
         type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Execution without Friction
+        tagline:  Structured & Streamlined.
+        subtitle:  From Planning to Precision
         text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
+          We manage projects end-to-end with clear timelines, resource alignment, and minimal disruption.
         image:
           url: /images/abstract-feature2.svg
           altText: Placeholder image
@@ -621,13 +621,13 @@ sections:
             borderRadius: x-large
             flexDirection: col
         type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Experience that Matters
+        tagline: Led by Experts.
+        subtitle: Decades in this field
         text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
+          Our leadership comes from IT, ITeS, and BPO/KPO sectors — bringing hands-on expertise, not just theory.
         image:
-          url: /images/abstract-feature1.svg
+          url: /images/abstract-feature3.svg
           altText: Placeholder image
           styles:
             self:
