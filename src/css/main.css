@@ -123,12 +123,21 @@
         }
     }
 
-    /* Buttons */
+    h1:hover,
+    h2:hover,
+    h3:hover,
+    h4:hover,
+    h5:hover,
+    h6:hover,
+    .sb-component-link:hover,
+    .sb-component-button-secondary:hover {
+        @apply text-primary transition duration-200 ease-in-out;
+    }
+
     .sb-component-button {
         @apply inline-flex justify-center items-center text-center border transition duration-200 ease-in hover:-translate-y-1;
     }
 
-    /* Links */
     .sb-component-link {
         @apply inline-flex justify-center items-center text-center transition duration-200 ease-linear;
     }
@@ -136,10 +145,9 @@
         @apply text-primary hover:underline;
     }
     .sb-component-link-secondary {
-        @apply text-current hover:text-primary;
+        @apply text-current hover:text-primary transition duration-200;
     }
 
-    /* Form controls */
     option {
         color: initial;
     }
@@ -147,7 +155,6 @@
         content: '\2713';
     }
 
-    /* Image gallery */
     .sb-image-strip-track {
         min-width: 160rem;
     }
@@ -155,7 +162,6 @@
         min-width: 80rem;
     }
 
-    /* Carousel */
     .sb-carousel-dot {
         @apply w-4 h-4 cursor-pointer;
     }
@@ -174,7 +180,6 @@
         @apply opacity-100;
     }
 
-    /* Color palettes */
     .bg-light-fg-dark,
     .sb-card.bg-light-fg-dark {
         @apply text-dark bg-light;
@@ -280,7 +285,6 @@
             @apply bg-light;
         }
     }
-    /* Only for cards */
     .bg-neutralAlt-fg-dark {
         @apply text-dark bg-neutralAlt;
         .sb-component-button-primary {
@@ -290,11 +294,16 @@
             @apply border-dark text-dark;
         }
     }
+
+    .bg-gradient-brand {
+        background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
+        color: white;
+    }
 }
 
 @layer utilities {
     .underline-line-through {
-        text-decoration-line: underline line-through
+        text-decoration-line: underline line-through;
     }
     .sb-animate-slide-left {
         animation-name: slideLeft;
@@ -302,26 +311,40 @@
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
-    @keyframes slideLeft {
-        from {
-            transform: translate3d(0,0,0)
-        }
-        to {
-            transform: translate3d(-50%,0,0)
-        }
-    }
     .sb-animate-slide-right {
         animation-name: slideRight;
         animation-duration: var(--sb-slide-speed, 80s);
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
-    @keyframes slideRight {
+    @keyframes slideLeft {
         from {
-            transform: translate3d(-50%,0,0)
+            transform: translate3d(0, 0, 0);
         }
         to {
-            transform: translate3d(0,0,0)
+            transform: translate3d(-50%, 0, 0);
         }
+    }
+    @keyframes slideRight {
+        from {
+            transform: translate3d(-50%, 0, 0);
+        }
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
     }
 }
