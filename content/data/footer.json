@@ -4,13 +4,13 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "A description of your brand",
+    "text": "Where Strategy Meets Execution",
     "primaryLinks": {
-        "title": "Product",
+        "title": "Features",
         "links": [
             {
-                "label": "Features",
-                "altText": "Features page",
+                "label": "Home",
+                "altText": "Home page",
                 "url": "/",
                 "icon": "arrowRight",
                 "iconPosition": "right",
@@ -61,20 +61,14 @@
     },
     "socialLinks": [
         {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
-            "type": "Social"
-        },
-        {
-            "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
-            "icon": "twitter",
+            "altText": "Facebook Link",
+            "url": "https://www.facebook.com/people/Aurrus-Consulting/100039073226880/",
+            "icon": "facebook",
             "type": "Social"
         },
         {
             "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
+            "url": "https://www.linkedin.com/company/aurrus-consulting,
             "icon": "linkedin",
             "type": "Social"
         },
@@ -103,7 +97,7 @@
             "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
+    "copyrightText": "Powered by [Aurrus](https://www.aurrusconsulting.com/)\n",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }
