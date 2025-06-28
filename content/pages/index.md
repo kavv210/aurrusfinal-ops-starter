@@ -4,17 +4,18 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: 
+      text: Accelerate Growth With Aurrus.
       color: text-dark
       type: TitleBlock
-    subtitle: Smarter workflows. Stronger results.
+    subtitle: Subtitle goes here
     text: >
-      At Aurrus Consulting, we bridge bold ideas with intelligent execution.
-      Our digital-first strategies drive scale, speed, and sustainability.
+      At Aurrus Constulting, we bridge bold ideas with intelligent execution.
+      Our digital-first strategies drive scale, speed and sustainability.
+      We combine deep industry insight with tech-led execution to drive scalable outcomes.
     actions:
       - label: Get started
         altText: ''
-        url: '#services'
+        url: /
         showIcon: false
         icon: arrowRight
         iconPosition: right
@@ -23,11 +24,11 @@ sections:
         type: Button
     media:
       url: /images/main-hero.svg
-      altText: Scaling Tomorrow’s Vision.
+      altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
     badge:
-      label: Bold thinking. Seamless execution.
+      label: Smarter workflows. Stronger results.
       color: text-primary
       type: Badge
     elementId: ''
@@ -52,10 +53,12 @@ sections:
     subtitle: Subtitle goes here
     items:
       - type: FeaturedItem
-        title: Strategic Clarity
-        subtitle: Focused direction.
+        title: 500k
+        subtitle: Numbers Done
         text: >-
-          Our consulting framework brings clarity to complex business challenges. We align leadership, operations, and data into a cohesive roadmap, ensuring every decision moves you closer to long-term growth. Through tailored diagnostics and structured planning, we help eliminate noise and unlock precise, confident execution.
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+          explicabo.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -78,10 +81,12 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: Scalable Impact
-        subtitle: Built to grow.
+      - title: 20x
+        subtitle: The Job Stuff
         text: >-
-          We design strategies that grow with your business. Whether you're early-stage or enterprise-ready, our models are built to flex, scale, and sustain impact across verticals. From market entry to process optimization, we focus on durable results that empower your team to lead without friction.
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+          explicabo.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -101,12 +106,12 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: Measurable Value
-        subtitle: Results that show.
+      - title: 200%
+        subtitle: Faster
         text: >-
-          Our success is measured by yours. We focus on high-leverage initiatives that directly influence performance metrics—from revenue acceleration to operational efficiency. Every recommendation is backed by data, rigor, and accountability, ensuring our solutions generate tangible ROI—not just theoretical insight.
-
-
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+          explicabo.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -213,19 +218,20 @@ sections:
           - pl-7
           - pb-7
           - pr-7
-  - type: GenericSection
-    title:
+    type: DividerSection
+  - title:
       text: Grow your business 10x faster
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Scale with intelligence. Execute with precision.
+    subtitle: This is a subtitle
     text: |-
-      At Aurrus, we combine deep industry insight with agile digital execution to unlock exponential growth. 
-      Whether you're optimizing current operations or expanding into new markets, our strategies are engineered to accelerate results. 
-      From aligning teams to automating inefficiencies, we help future-ready businesses move faster—with clarity, confidence, and control.
+      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
+      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
+      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
+      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
     media:
       title: Title of the video
       url: /images/placeholder-video.mp4
@@ -242,25 +248,6 @@ sections:
           borderStyle: solid
           borderWidth: 1
           borderRadius: large
-      type: VideoBlock
-      autoplay: true
-      loop: true
-      muted: true
-    badge:
-      label: Key Benefits
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-
       type: VideoBlock
       autoplay: true
       loop: true
