@@ -108,9 +108,8 @@ sections:
       - title: Program and Project Advisory
         subtitle: Deliver with Precision
         text: >-
-            From recruitment drives to operational rollouts, Aurrus manages complex projects with
-            clarity and control. From aligning stakeholder expectations to managing timelines, budgets
-            risks, our hands-on advisory ensures your business initiatives are delivered successfully.
+            From recruitment to operations, Aurrus manages complex projects with clarity, control, and measurable results;
+            aligning stakeholders, timelines, and budgets for seamless execution.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -189,25 +188,6 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -229,7 +209,7 @@ sections:
     text: |-
       Founded in 2009, Aurrus Consulting is a globally operating consulting and outsourcing firm.
       We deliver integrated business support with a focus on people, process, and performance;
-      built to help organizations thrive in dynamic markets.
+                  built to help organizations thrive in dynamic markets.
     media:
       title: Aurrus Video 1
       url: /images/placeholder-video.mp4
@@ -267,13 +247,13 @@ sections:
     type: GenericSection
   - type: GenericSection
     title:
-      text: Collaborative with Design.
+      text: Collaborative with Design
       color: text-dark
       styles:
         self:
           textAlign: left
       type: TitleBlock
-    subtitle: Collaboration that delivers
+    subtitle: Collaboration that delivers.
     text: |-
       Progress happens when people work together. Aurrus brings teams and
       stakeholders into alignment through clear communication, shared accountability
