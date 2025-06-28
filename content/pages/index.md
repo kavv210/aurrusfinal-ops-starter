@@ -236,17 +236,13 @@ sections:
     badge:
       label: Our Company Overview
       color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    colors: bg-light-fg-dark
     styles:
       self:
         flexDirection: col
         justifyContent: center
       subtitle:
         textAlign: center
+    colors: bg-light-fg-dark
     type: GenericSection
   - type: GenericSection
     title:
