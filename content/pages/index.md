@@ -234,17 +234,6 @@ sections:
       loop: true
       muted: true
   - type: GenericSection
-    badge:
-      label: Our Company Overview
-      color: text-primary
-    styles:
-      self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    colors: bg-light-fg-dark
-  - type: GenericSection
     title:
       text: Collaborative with Design
       color: text-dark
