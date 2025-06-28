@@ -203,16 +203,16 @@ sections:
       color: text-dark
       styles:
         self:
-          textAlign: justify
+          textAlign: center
       type: TitleBlock
     subtitle: 
     text: |-
       Founded in 2009, Aurrus Consulting is a globally operating consulting and outsourcing firm.
       We deliver integrated business support with a focus on people, process, and performance;
-      built to help organizations thrive in dynamic markets.
-    attrs:
-      data-aos: fade-up
-      data-aos-duration: 600
+                  built to help organizations thrive in dynamic markets.
+    styles:
+      self:
+        textAlign: justify
     media:
       title: Aurrus Video 1
       url: /images/placeholder-video.mp4
@@ -234,7 +234,7 @@ sections:
       loop: true
       muted: true
     badge:
-      label: Key Benefits
+      label: Our Company Overview
       color: text-primary
       styles:
         self:
