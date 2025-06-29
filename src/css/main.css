@@ -293,6 +293,9 @@
         .sb-component-button-secondary {
             @apply border-dark text-dark;
         }
+        html {
+  scroll-behavior: smooth;
+}
     }
 
     .bg-gradient-brand {
