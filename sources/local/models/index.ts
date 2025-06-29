@@ -67,7 +67,6 @@ export const allModels = {
     Person,
     PostFeedLayout,
     PostFeedSection,
-    PostLayout,
     PricingPlan,
     PricingSection,
     RecentPostsSection,
