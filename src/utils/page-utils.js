@@ -1,8 +1,8 @@
 function cssClassesFromUrlPath(urlPath) {
     const parts = urlPath
-        .replace(/^\/|\/$/g, '')
+        .replace(/^\/|\/$/g, '') // remove leading/trailing slashes
         .split('/')
-        .filter(Boolean);
+        .filter(Boolean); // remove empty strings
 
     let css = 'page';
     return parts.map((part) => {
@@ -12,23 +12,17 @@ function cssClassesFromUrlPath(urlPath) {
 }
 
 function getPageUrl(page) {
-    if (!page || !page.slug) {
-        return null;
-    }
+    if (!page || !page.slug) return null;
 
-    if (['PostLayout'].includes(page?.__metadata.modelName)) {
-        return `/blog${page.slug.startsWith('/') ? page.slug : `/${page.slug}`}`;
-    }
-
+    // ✅ Always return the slug as-is, no /blog prefix
     return page.slug.startsWith('/') ? page.slug : `/${page.slug}`;
 }
 
 function setEnvironmentVariables() {
-  return {
-    ...(process?.env?.URL && { URL: process.env.URL }),
-  }
+    return {
+        ...(process?.env?.URL && { URL: process.env.URL }),
+    };
 }
-
 
 module.exports = {
     cssClassesFromUrlPath,
