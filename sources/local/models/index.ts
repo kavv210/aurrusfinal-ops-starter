@@ -14,6 +14,7 @@ import { Footer } from './Footer';
 import { FormBlock } from './FormBlock';
 import { GenericSection } from './GenericSection';
 import { Header } from './Header';
+import { HeroSection } from './HeroSection'; // ✅ NEW IMPORT
 import { ImageBlock } from './ImageBlock';
 import { ImageGallerySection } from './ImageGallerySection';
 import { Link } from './Link';
@@ -59,6 +60,7 @@ export const allModels = {
     FormBlock,
     GenericSection,
     Header,
+    HeroSection, // ✅ NEW EXPORT
     ImageBlock,
     ImageGallerySection,
     Link,
