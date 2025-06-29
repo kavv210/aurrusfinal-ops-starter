@@ -1,6 +1,6 @@
 ---
 title: Services
-slug: /services
+slug: services
 type: PageLayout
 styles:
   title:
