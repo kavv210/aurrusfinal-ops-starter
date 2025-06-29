@@ -20,65 +20,65 @@ topSections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-28, pb-16, pl-4, pr-4]
+        padding:
+          - pt-28
+          - pb-16
+          - pl-4
+          - pr-4
+    elementId: top
 
   - type: FeaturesSection
     elementId: business-consulting
     title: Business Consulting
     subtitle: Strategic guidance to optimize and grow your operations.
     text: >
-      At Aurrus, we help businesses unlock new levels of efficiency and strategic alignment. 
-      From business transformation to operational optimization, our consulting frameworks are 
-      tailored to your specific needs. We collaborate closely with internal teams to identify gaps, 
-      implement agile practices, and drive measurable results. Our services cover HR, finance, 
-      risk management, and cross-functional workflows, ensuring scalable, long-term impact.
+      We provide expert advisory across finance, HR, and transformation initiatives.
+      Our approach combines industry best practices with actionable strategy that aligns with your goals.
     image: /images/consult-vector.svg
     imagePosition: right
     colors: bg-neutralAlt-fg-dark
     styles:
       self:
-        padding: [pt-20, pb-20]
-        textAlign: left
-      animation:
-        dataAos: fade-up
+        padding:
+          - pt-24
+          - pb-24
+        animation:
+          - fade-up
 
   - type: FeaturesSection
     elementId: it-staffing
     title: IT Staffing & Solutions
     subtitle: Scalable tech teams, on-demand.
     text: >
-      We provide on-demand access to vetted software engineers, full-stack developers, UI/UX experts, 
-      and IT consultants. Whether you're scaling a startup or transforming enterprise infrastructure, 
-      Aurrus ensures you get the right talent—fast. We help reduce hiring cycles, support 
-      cloud-native projects, and bring in talent skilled in modern frameworks and DevOps practices.
+      Whether you need frontend, backend, full-stack developers, or cloud experts — we deliver trusted talent fast.
+      Flexible, vetted, and ready to build.
     image: /images/it-vector.svg
     imagePosition: left
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-20, pb-20]
-        textAlign: left
-      animation:
-        dataAos: fade-up
+        padding:
+          - pt-24
+          - pb-24
+        animation:
+          - fade-right
 
   - type: FeaturesSection
     elementId: talent-acquisition
     title: Talent Acquisition
     subtitle: Hiring with precision and insight.
     text: >
-      Aurrus delivers end-to-end talent acquisition strategies, powered by data and deep industry insight. 
-      From employer branding to final onboarding, we optimize the entire hiring funnel. Our approach balances 
-      speed with precision, ensuring cultural fit and long-term retention. Whether you're hiring for niche 
-      roles or building an entire department, we act as your extended recruiting partner.
+      From executive searches to bulk hiring — our recruitment experts tailor solutions to your scale.
+      End-to-end hiring support that drives real business impact.
     image: /images/talent-vector.svg
     imagePosition: right
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-20, pb-20]
-        textAlign: left
-      animation:
-        dataAos: fade-up
-
+        padding:
+          - pt-24
+          - pb-24
+        animation:
+          - fade-left
 bottomSections: []
 ---
