@@ -18,12 +18,9 @@ export const HeroSection: Model = {
       label: 'Subtitle'
     },
     {
-      type: 'style',
-      name: 'styles',
-      label: 'Styles',
-      styles: {
-        self: ['padding', 'textAlign']
-      }
+      type: 'string',
+      name: 'colors',
+      label: 'Colors'
     },
     {
       type: 'string',
