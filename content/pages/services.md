@@ -10,7 +10,7 @@ seo:
   metaDescription: >
     Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
   socialImage: /images/img-placeholder.svg
-topSections:
+sections:
   - type: HeroSection
     title:
       text: Our Services
