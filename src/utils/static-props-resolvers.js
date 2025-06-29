@@ -1,92 +1,63 @@
 import {
-    getRootPagePath,
-    resolveReferences,
-    getAllPostsSorted,
-    getAllNonFeaturedPostsSorted,
-    getAllCategoryPostsSorted,
-    getPagedItemsForPage,
-    isPublished,
-    mapDeepAsync
+  getRootPagePath,
+  resolveReferences,
+  mapDeepAsync
 } from './data-utils';
 
+/**
+ * Resolves all static props for a given page path.
+ * Tailored for a non-blog site with service sections.
+ */
+
 export function resolveStaticProps(urlPath, data) {
-    // get root path of paged path: /blog/page/2 => /blog
-    const rootUrlPath = getRootPagePath(urlPath);
-    const { __metadata, ...rest } = data.pages.find((page) => page.__metadata.urlPath === rootUrlPath);
-    const props = {
-        page: {
-            __metadata: {
-                ...__metadata,
-                // override urlPath in metadata with paged path: /blog => /blog/page/2
-                urlPath
-            },
-            ...rest
-        },
-        ...data.props
-    };
-    return mapDeepAsync(
-        props,
-        async (value, keyPath, stack) => {
-            const objectType = value?.__metadata?.modelName;
-            if (objectType && StaticPropsResolvers[objectType]) {
-                const resolver = StaticPropsResolvers[objectType];
-                return resolver(value, data, { keyPath, stack });
-            }
-            return value;
-        },
-        { postOrder: true }
-    );
+  // 1. Extract root page path, e.g., "/services/page/2" → "/services"
+  const rootUrlPath = getRootPagePath(urlPath);
+
+  // 2. Get the matching page data
+  const { __metadata, ...rest } = data.pages.find(
+    (page) => page.__metadata.urlPath === rootUrlPath
+  );
+
+  // 3. Build props with updated urlPath
+  const props = {
+    page: {
+      __metadata: {
+        ...__metadata,
+        urlPath
+      },
+      ...rest
+    },
+    ...data.props
+  };
+
+  // 4. Resolve dynamic references inside content
+  return mapDeepAsync(
+    props,
+    async (value, keyPath, stack) => {
+      const objectType = value?.__metadata?.modelName;
+      if (objectType && StaticPropsResolvers[objectType]) {
+        return StaticPropsResolvers[objectType](value, data, { keyPath, stack });
+      }
+      return value;
+    },
+    { postOrder: true }
+  );
 }
 
+// ───────────────────────────────────────────────
+// Page Section Resolvers for non-blog layout
+// ───────────────────────────────────────────────
+
 const StaticPropsResolvers = {
-    PostLayout: (props, data, debugContext) => {
-        return resolveReferences(props, ['author', 'category'], data.objects, debugContext);
-    },
-    PostFeedLayout: (props, data) => {
-        const numOfPostsPerPage = props.numOfPostsPerPage ?? 10;
-        let allPosts = getAllNonFeaturedPostsSorted(data.objects);
-        if (!process.env.stackbitPreview) {
-            allPosts = allPosts.filter(isPublished);
-        }
-        const paginationData = getPagedItemsForPage(props, allPosts, numOfPostsPerPage);
-        const items = resolveReferences(paginationData.items, ['author', 'category'], data.objects);
-        return {
-            ...props,
-            ...paginationData,
-            items
-        };
-    },
-    PostFeedCategoryLayout: (props, data) => {
-        const categoryId = props.__metadata?.id;
-        const numOfPostsPerPage = props.numOfPostsPerPage ?? 10;
-        let allCategoryPosts = getAllCategoryPostsSorted(data.objects, categoryId);
-        if (!process.env.stackbitPreview) {
-            allCategoryPosts = allCategoryPosts.filter(isPublished);
-        }
-        const paginationData = getPagedItemsForPage(props, allCategoryPosts, numOfPostsPerPage);
-        const items = resolveReferences(paginationData.items, ['author', 'category'], data.objects);
-        return {
-            ...props,
-            ...paginationData,
-            items
-        };
-    },
-    RecentPostsSection: (props, data) => {
-        let allPosts = getAllPostsSorted(data.objects);
-        if (!process.env.stackbitPreview) {
-            allPosts = allPosts.filter(isPublished);
-        }
-        allPosts = allPosts.slice(0, props.recentCount || 6);
-        const recentPosts = resolveReferences(allPosts, ['author', 'category'], data.objects);
-        return {
-            ...props,
-            posts: recentPosts
-        };
-    },
-    FeaturedPostsSection: (props, data, debugContext) => {
-        return resolveReferences(props, ['posts.author', 'posts.category'], data.objects, debugContext);
-    },
-    FeaturedPeopleSection: (props, data, debugContext) => {
-        return resolveReferences(props, ['people'], data.objects, debugContext);
-    }
+  // Resolve authors/categories for old direct blog post links (optional)
+  PostLayout: (props, data, debugContext) =>
+    resolveReferences(props, ['author', 'category'], data.objects, debugContext),
+
+  // Resolve featured posts data, if reused in hero or legacy sections
+  FeaturedPostsSection: (props, data, debugContext) =>
+    resolveReferences(props, ['posts.author', 'posts.category'], data.objects, debugContext),
+
+  // Resolve featured people (e.g., testimonials or team)
+  FeaturedPeopleSection: (props, data, debugContext) =>
+    resolveReferences(props, ['people'], data.objects, debugContext)
 };
