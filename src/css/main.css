@@ -347,4 +347,8 @@
         animation: fadeInUp 0.8s ease-out forwards;
         opacity: 0;
     }
+html {
+  scroll-behavior: smooth;
+}
+
 }
