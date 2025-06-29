@@ -88,55 +88,39 @@ const TAILWIND_MAP = {
         'flex-end': 'justify-end',
         center: 'justify-center'
     },
-    margin: function (value) {
-        // for tailwind margins - ['twt0:16', 'twb0:16'], the value will be array ['mt-0', 'mb-4']
+    margin(value: any) {
         if (Array.isArray(value)) {
             return value.join(' ');
         }
-        // for regular margins - ['x0:8', 'y0:16'], the value will be object: { left: 4, top: 10 }
         if (typeof value === 'object' && value !== null) {
-            const classNames = [];
+            const classNames: string[] = [];
             Object.entries(value).forEach(([styleProp, styleValue]) => {
                 const twValue = styleValue === 1 ? 'px' : String(Number(styleValue) / 4);
-                if (styleProp === 'top') {
-                    classNames.push(`mt-${twValue}`);
-                } else if (styleProp === 'bottom') {
-                    classNames.push(`mb-${twValue}`);
-                } else if (styleProp === 'left') {
-                    classNames.push(`ml-${twValue}`);
-                } else if (styleProp === 'right') {
-                    classNames.push(`mr-${twValue}`);
-                }
+                if (styleProp === 'top') classNames.push(`mt-${twValue}`);
+                else if (styleProp === 'bottom') classNames.push(`mb-${twValue}`);
+                else if (styleProp === 'left') classNames.push(`ml-${twValue}`);
+                else if (styleProp === 'right') classNames.push(`mr-${twValue}`);
             });
             return classNames.join(' ');
         }
-        // this object can not be converted into classes and needs to be handled differently
         console.warn('cannot convert "margin" style field value to class name');
         return '';
     },
-    padding: function (value) {
-        // for tailwind paddings - ['twt0:16', 'twb0:16'], the value will be array ['pt-0', 'pb-4']
+    padding(value: any) {
         if (Array.isArray(value)) {
             return value.join(' ');
         }
-        // for regular paddings - ['x0:8', 'y0:16'], the value will be object: { left: 4, top: 10 }
         if (typeof value === 'object' && value !== null) {
-            const classNames = [];
+            const classNames: string[] = [];
             Object.entries(value).forEach(([styleProp, styleValue]) => {
                 const twValue = styleValue === 1 ? 'px' : String(Number(styleValue) / 4);
-                if (styleProp === 'top') {
-                    classNames.push(`pt-${twValue}`);
-                } else if (styleProp === 'bottom') {
-                    classNames.push(`pb-${twValue}`);
-                } else if (styleProp === 'left') {
-                    classNames.push(`pl-${twValue}`);
-                } else if (styleProp === 'right') {
-                    classNames.push(`pr-${twValue}`);
-                }
+                if (styleProp === 'top') classNames.push(`pt-${twValue}`);
+                else if (styleProp === 'bottom') classNames.push(`pb-${twValue}`);
+                else if (styleProp === 'left') classNames.push(`pl-${twValue}`);
+                else if (styleProp === 'right') classNames.push(`pr-${twValue}`);
             });
             return classNames.join(' ');
         }
-        // this object can not be converted into classes and needs to be handled differently
         console.warn('cannot convert "padding" style field value to class name');
         return '';
     },
@@ -153,20 +137,21 @@ const TAILWIND_MAP = {
     }
 };
 
-export function mapStylesToClassNames(styles: Record<string, any>) {
+export function mapStylesToClassNames(styles: Record<string, any>): string {
     return Object.entries(styles)
         .map(([prop, value]) => {
             if (prop in TAILWIND_MAP) {
-                if (typeof TAILWIND_MAP[prop] === 'function') {
-                    return TAILWIND_MAP[prop](value);
-                } else if (value in TAILWIND_MAP[prop]) {
-                    return TAILWIND_MAP[prop][value];
+                const mapper = TAILWIND_MAP[prop as keyof typeof TAILWIND_MAP] as any;
+                if (typeof mapper === 'function') {
+                    return mapper(value);
                 }
-            } else {
-                // if prop or value don't exist in the map, use the value as is,
-                // useful for direct color values.
-                return value;
+                if (value in mapper) {
+                    return mapper[value];
+                }
             }
+            // Prop/value not mapped; return raw value (useful for direct Tailwind color classes, etc.)
+            return value;
         })
+        .filter(Boolean)
         .join(' ');
 }
