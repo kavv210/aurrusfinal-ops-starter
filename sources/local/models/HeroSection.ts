@@ -1,5 +1,5 @@
 import { Model } from '@stackbit/types';
-import { mapStylesToClassNames as mapStyles } from '@/utils/map-styles-to-class-names';
+import { mapStylesToClassNames as mapStyles } from '../../../src/utils/map-styles-to-class-names';
 
 export const HeroSection: Model = {
   type: 'object',
