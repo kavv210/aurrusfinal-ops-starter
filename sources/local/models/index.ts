@@ -22,7 +22,6 @@ import { PagedPostsSection } from './PagedPostsSection';
 import { Person } from './Person';
 import { PostFeedLayout } from './PostFeedLayout';
 import { PostFeedSection } from './PostFeedSection';
-import { PostLayout } from './PostLayout';
 import { PricingPlan } from './PricingPlan';
 import { PricingSection } from './PricingSection';
 import { RecentPostsSection } from './RecentPostsSection';
