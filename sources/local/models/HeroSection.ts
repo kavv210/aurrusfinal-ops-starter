@@ -21,7 +21,9 @@ export const HeroSection: Model = {
       type: 'style',
       name: 'styles',
       label: 'Styles',
-      styles: ['padding', 'textAlign']
+      styles: {
+        self: ['padding', 'textAlign']
+      }
     },
     {
       type: 'string',
