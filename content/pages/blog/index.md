@@ -25,26 +25,30 @@ topSections:
           - pb-16
           - pl-4
           - pr-4
-  - type: FeatureSection
+
+  - type: FeaturesSection
     title: Business Consulting
     subtitle: Strategic guidance to optimize and grow your operations.
     text: We provide expert advisory across finance, HR, and transformation initiatives.
     image: /images/consult-vector.svg
     imagePosition: right
     colors: bg-neutralAlt-fg-dark
-  - type: FeatureSection
+
+  - type: FeaturesSection
     title: IT Staffing & Solutions
     subtitle: Scalable tech teams, on-demand.
     text: Get high-quality developers, engineers, and consultants to meet your digital needs.
     image: /images/it-vector.svg
     imagePosition: left
     colors: bg-light-fg-dark
-  - type: FeatureSection
+
+  - type: FeaturesSection
     title: Talent Acquisition
     subtitle: Hiring with precision and insight.
     text: Full-cycle recruitment support for startups and enterprises alike.
     image: /images/talent-vector.svg
     imagePosition: right
     colors: bg-neutral-fg-dark
+
 bottomSections: []
 ---
