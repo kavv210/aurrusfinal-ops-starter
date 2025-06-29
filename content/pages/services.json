@@ -1,0 +1,33 @@
+{
+  "type": "PageLayout",
+  "title": "Our Services",
+  "seo": {
+    "title": "Services – Aurrus Consulting",
+    "description": "Explore how Aurrus helps businesses grow through technology, scaling, and strategy."
+  },
+  "sections": [
+    {
+      "type": "Hero",
+      "title": "Trusted by teams that scale.",
+      "text": "We integrate with your people, processes, and priorities; ensuring smoother delivery and stronger internal synergy."
+    },
+    {
+      "type": "FeatureList",
+      "title": "Execution without Friction",
+      "items": [
+        {
+          "title": "Collaborative by Nature",
+          "text": "Aligned execution. Lasting partnerships."
+        },
+        {
+          "title": "Structured & Streamlined",
+          "text": "From planning to execution, we provide end-to-end support."
+        },
+        {
+          "title": "Scalable Solutions",
+          "text": "Built to evolve with your organization’s growing needs."
+        }
+      ]
+    }
+  ]
+}
