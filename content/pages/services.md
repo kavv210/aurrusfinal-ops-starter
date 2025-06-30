@@ -6,9 +6,9 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Services - Aurrus
+  metaTitle: Services - Aurrus
   metaDescription: >
-    Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
+    Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
   socialImage: /images/img-placeholder.svg
 
 sections:
@@ -16,32 +16,42 @@ sections:
   - type: HeroSection
     elementId: services-hero
     title:
-      text: SERVICES
+      text: OUR SERVICES
       type: TitleBlock
-      color: text-[#BF360C]
+      color: text-white
     subtitle: Your partner in scalable business and technology solutions.
-    colors: bg-gradient-to-br-from-[#FFECB3]-via-[#FFD180]-to-[#FFAB40]
+    colors: bg-gradient-to-br-from-[#FF6F00]-via-[#FFA726]-to-[#FFE0B2]
     styles:
       self:
         padding:
-          - pt-24
-          - pb-20
+          - pt-28
+          - pb-24
           - pl-4
           - pr-4
         animation:
           - fade-up
-        boxShadow: large             # gives a soft drop‑shadow around the block
+        boxShadow: xl
         textAlign: center
+        borderRadius: xl
       title:
         fontWeight: 900
-        fontSize: 5xl
+        fontSize: 7xl
         textTransform: uppercase
         letterSpacing: widest
+        animation:
+          - fade-down
+        hover:
+          transform: scale-105
+          transition: transform 0.3s ease-in-out
+          textShadow: '0 4px 20px rgba(0, 0, 0, 0.2)'
       subtitle:
         fontSize: xl
         fontWeight: 500
         margin:
-          - mt-2
+          - mt-4
+        color: text-gray-100
+        animation:
+          - fade-up
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
