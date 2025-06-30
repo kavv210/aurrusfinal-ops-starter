@@ -11,12 +11,13 @@ export default function MyApp({ Component, pageProps }) {
       easing: 'ease-in-out',
     });
 
-    // Optional: refresh on route change (for dynamic content)
     const handleRouteChange = () => {
       AOS.refresh();
     };
 
-    // Clean up on unmount
+    // ✅ Fix: Add event listener so AOS refreshes on route change
+    window.addEventListener('hashchange', handleRouteChange);
+
     return () => {
       window.removeEventListener('hashchange', handleRouteChange);
     };
