@@ -18,19 +18,19 @@ sections:
     title:
       text: OUR SERVICES
       type: TitleBlock
+      className: >
+        [data-aos="fade-down"] [data-aos-duration="700"]
+        text-4xl sm:text-5xl font-extrabold tracking-widest uppercase
+        text-white transition-transform duration-300 ease-in-out
+        hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
         className: >
-          bg-gradient-to-br from-[#FF6F00] via-[#FFA726] to-[#516FF5]
+          bg-gradient-to-br from-[#FFA726] via-[#FFA726] to-[#71AFF5]
           pt-28 pb-24 px-4 text-center shadow-xl rounded-xl
           flex flex-col items-center justify-center
           animate-fade-down
-      title:
-        className: >
-          text-4xl sm:text-5xl font-extrabold tracking-widest uppercase
-          text-white transition-transform duration-300 ease-in-out
-          hover:scale-105
       subtitle:
         className: >
           mt-4 text-xl text-orange-100 max-w-2xl
