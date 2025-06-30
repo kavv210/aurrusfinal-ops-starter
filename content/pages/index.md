@@ -252,9 +252,9 @@ sections:
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300 hover:scale-105
-     styles:
-       self:
-         animation: [fade-down]
+      styles:
+        self:
+          animation: [fade-down]
     subtitle: Optimise and scale.
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals,
