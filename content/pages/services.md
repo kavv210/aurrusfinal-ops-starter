@@ -12,34 +12,33 @@ seo:
   socialImage: /images/img-placeholder.svg
 
 sections:
-# ───────────────── HEADER SECTION ─────────────────
-- type: HeroSection
-  elementId: services-hero
-  title:
-    text: SERVICES
-    type: TitleBlock
-    color: text-white
-  subtitle: Trusted business and technology solutions designed to scale your success.
-  colors: bg-gradient-to-r-from-[#FFA726]-via-[#FB8C00]-to-[#F57C00]
-  styles:
-    self:
-      padding:
-        - pt-20
-        - pb-10
-        - pl-4
-        - pr-4
-      textAlign: center
-      justifyContent: center
+  # ───────────────── HEADER SECTION ─────────────────
+  - type: HeroSection
+    elementId: services-hero
     title:
-      fontWeight: 900
-      fontSize: xl
-      textTransform: uppercase
-      letterSpacing: wider
-    subtitle:
-      fontWeight: 500
-      fontSize: lg
-      textColor: text-white
-
+      text: SERVICES
+      type: TitleBlock
+      color: text-white
+    subtitle: Trusted business and technology solutions designed to scale your success.
+    colors: bg-gradient-to-r-from-[#FFA726]-via-[#FB8C00]-to-[#F57C00]
+    styles:
+      self:
+        padding:
+          - pt-20
+          - pb-10
+          - pl-4
+          - pr-4
+        textAlign: center
+        justifyContent: center
+      title:
+        fontWeight: 900
+        fontSize: xl
+        textTransform: uppercase
+        letterSpacing: wider
+      subtitle:
+        fontWeight: 500
+        fontSize: lg
+        textColor: text-white
 
   # ──────────────── BUSINESS CONSULTING ───────────
   - type: FeaturesSection
