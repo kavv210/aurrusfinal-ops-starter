@@ -21,20 +21,9 @@
                 },
                 "primaryLinks": [
                     {
-                        "label": "Pricing",
+                        "label": "Home",
                         "altText": null,
-                        "url": "/pricing",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "secondary",
-                        "elementId": null,
-                        "$$type": "Link"
-                    },
-                    {
-                        "label": "Blog",
-                        "altText": "Blog",
-                        "url": "/blog",
+                        "url": "/",
                         "showIcon": null,
                         "icon": "arrowRight",
                         "iconPosition": "right",
@@ -54,11 +43,11 @@
                         "$$type": "Link"
                     },
                     {
-                        "label": "Dropdown",
-                        "altText": "Dropdown",
+                        "label": "Services",
+                        "altText": "Services",
                         "links": [
                             {
-                                "label": "Dropdown item",
+                                "label": "Business Consulting",
                                 "altText": null,
                                 "url": "/",
                                 "showIcon": null,
@@ -69,7 +58,7 @@
                                 "$$type": "Link"
                             },
                             {
-                                "label": "Dropdown item",
+                                "label": "IT Staffing",
                                 "altText": null,
                                 "url": "/",
                                 "showIcon": null,
@@ -80,7 +69,7 @@
                                 "$$type": "Link"
                             },
                             {
-                                "label": "Dropdown item",
+                                "label": "Talent Acquisition",
                                 "altText": null,
                                 "url": "/",
                                 "showIcon": null,
@@ -93,30 +82,6 @@
                         ],
                         "labelStyle": "secondary",
                         "$$type": "SubNav"
-                    }
-                ],
-                "secondaryLinks": [
-                    {
-                        "label": "Sign up",
-                        "altText": "Sign up",
-                        "url": "/",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "secondary",
-                        "elementId": null,
-                        "$$type": "Button"
-                    },
-                    {
-                        "label": "Log in",
-                        "altText": null,
-                        "url": "/",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "primary",
-                        "elementId": null,
-                        "$$type": "Button"
                     }
                 ],
                 "variant": "logo-left-primary-nav-centered",
