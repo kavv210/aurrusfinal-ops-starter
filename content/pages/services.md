@@ -12,24 +12,24 @@ seo:
   socialImage: /images/img-placeholder.svg
 
 sections:
-  # ───────────────── HEADER BADGE ─────────────────
-  - type: GenericSection
-    colors: bg-transparent
-    styles:
-      self:
-        padding:
-          - pt-12
-          - pb-4
-    elements:
-      - type: TitleBlock
-        text: SERVICES
-        color: text-orange-700
-        styles:
-          self:
-            textAlign: center
-            fontWeight: 700
-            fontSize: sm
-            letterSpacing: widest
+# ───────────────── HEADER BADGE ─────────────────
+- type: GenericSection
+  elementId: services-header
+  title:
+    text: SERVICES
+    type: TitleBlock
+    color: text-orange-700
+  colors: bg-transparent
+  styles:
+    self:
+      padding:
+        - pt-12
+        - pb-4
+      textAlign: center
+    title:
+      fontWeight: 700
+      fontSize: lg
+      letterSpacing: widest
 
   # ──────────────── BUSINESS CONSULTING ───────────
   - type: FeaturesSection
