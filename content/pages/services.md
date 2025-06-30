@@ -18,9 +18,9 @@ sections:
     title:
       text: OUR SERVICES
       type: TitleBlock
-      color: text-white
+      color: text-[#BF360C] # deep orange for visibility
     subtitle: Your partner in scalable business and technology solutions.
-    colors: bg-gradient-to-br-from-[#FF6F00]-via-[#FFA726]-to-[#FFE0B2]
+    colors: bg-gradient-to-br-from-[#FFE0B2]-via-[#FFCC80]-to-[#FFB74D] # slightly darker gradient
     styles:
       self:
         padding:
@@ -29,29 +29,25 @@ sections:
           - pl-4
           - pr-4
         animation:
-          - fade-up
+          - fade-down
         boxShadow: xl
         textAlign: center
         borderRadius: xl
+        transition: all 0.4s ease-in-out
       title:
         fontWeight: 900
         fontSize: 7xl
         textTransform: uppercase
         letterSpacing: widest
-        animation:
-          - fade-down
         hover:
           transform: scale-105
           transition: transform 0.3s ease-in-out
-          textShadow: '0 4px 20px rgba(0, 0, 0, 0.2)'
       subtitle:
         fontSize: xl
         fontWeight: 500
         margin:
           - mt-4
-        color: text-gray-100
-        animation:
-          - fade-up
+        color: text-[#4E342E] # readable brown-grey tone
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
