@@ -25,42 +25,51 @@ export default function FeaturesSection(props) {
         colors,
         paddingClass,
         'overflow-hidden',
-        'transition-all duration-500',
+        'transition-all duration-500'
       )}
       data-aos={animation}
     >
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-4">
+        {/* LEFT IMAGE */}
         {image && imagePosition === 'left' && (
           <div className="lg:w-1/2 w-full">
-            <ImageBlock {...image} className="rounded-lg shadow-lg" />
+            <ImageBlock
+              url={image.url}
+              altText={image.altText || 'Feature image'}
+              className="rounded-lg shadow-lg"
+            />
           </div>
         )}
 
-        <div
-          className="lg:w-1/2 w-full text-center lg:text-left transition-transform duration-300 hover:scale-[1.02]"
-        >
+        {/* TEXT BLOCK */}
+        <div className="lg:w-1/2 w-full text-center lg:text-left transition-transform duration-300 hover:scale-[1.02] group">
           {title && (
-            <h2 className="h3 mb-4 group">
+            <h2 className="h3 mb-4">
               <span className="transition-colors duration-300 group-hover:text-orange-500">
                 {title}
               </span>
             </h2>
           )}
           {subtitle && (
-            <p className="text-xl mb-4 text-orange-600">
+            <p className="text-xl mb-4 text-orange-600 transition-colors duration-300 group-hover:text-orange-700">
               {subtitle}
             </p>
           )}
           {text && (
-            <p className="text-base text-gray-700">
+            <p className="text-base text-gray-700 transition-opacity duration-300 group-hover:opacity-90">
               {text}
             </p>
           )}
         </div>
 
+        {/* RIGHT IMAGE */}
         {image && imagePosition === 'right' && (
           <div className="lg:w-1/2 w-full">
-            <ImageBlock {...image} className="rounded-lg shadow-lg" />
+            <ImageBlock
+              url={image.url}
+              altText={image.altText || 'Feature image'}
+              className="rounded-lg shadow-lg"
+            />
           </div>
         )}
       </div>
