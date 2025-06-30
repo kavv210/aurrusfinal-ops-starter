@@ -12,36 +12,35 @@ seo:
   socialImage: /images/img-placeholder.svg
 
 sections:
-  # ─────────────── CUSTOM HEADER BLOCK ───────────────
-  - type: GenericSection
+  # ─────────────── HEADER SECTION ───────────────
+  - type: HeroSection
+    elementId: services-hero
+    title:
+      text: SERVICES
+      type: TitleBlock
+      color: text-white
+    subtitle: Trusted business and technology solutions designed to scale your success.
     colors: bg-gradient-to-r-from-[#FFA726]-via-[#FB8C00]-to-[#F57C00]
     styles:
       self:
         padding:
-          - pt-20
-          - pb-16
-    elements:
-      - type: TitleBlock
-        text: SERVICES
-        color: text-white
-        styles:
-          self:
-            textAlign: center
-            fontWeight: 900
-            fontSize: 4xl
-            textTransform: uppercase
-            letterSpacing: widest
+          - pt-24
+          - pb-20
+          - pl-4
+          - pr-4
+      title:
+        textAlign: center
+        fontWeight: 900
+        fontSize: 5xl
+        textTransform: uppercase
+        letterSpacing: widest
+      subtitle:
+        textAlign: center
+        fontSize: xl
+        fontWeight: 500
+        textColor: text-white
 
-      - type: TextBlock
-        text: Trusted business and technology solutions designed to scale your success.
-        styles:
-          self:
-            textAlign: center
-            fontSize: lg
-            fontWeight: 500
-            color: text-white
-
-  # ──────────────── BUSINESS CONSULTING ───────────
+  # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
     elementId: business-consulting
     title: Business Consulting
@@ -57,8 +56,8 @@ sections:
     styles:
       self:
         padding:
-          - pt-24
-          - pb-24
+          - pt-20
+          - pb-20
         animation:
           - fade-up
       title:
@@ -66,7 +65,6 @@ sections:
       subtitle:
         textAlign: center
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
     colors: bg-[#FFB74D]
     styles:
@@ -76,7 +74,7 @@ sections:
           - pt-2
           - pb-2
 
-  # ───────────────── IT STAFFING ───────────────────
+  # ──────── IT STAFFING ────────
   - type: FeaturesSection
     elementId: it-staffing
     title: IT Staffing & Solutions
@@ -92,8 +90,8 @@ sections:
     styles:
       self:
         padding:
-          - pt-24
-          - pb-24
+          - pt-20
+          - pb-20
         animation:
           - fade-right
       title:
@@ -101,7 +99,6 @@ sections:
       subtitle:
         textAlign: center
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
     colors: bg-[#FF7043]
     styles:
@@ -111,7 +108,7 @@ sections:
           - pt-2
           - pb-2
 
-  # ─────────────── TALENT ACQUISITION ─────────────
+  # ──────── TALENT ACQUISITION ────────
   - type: FeaturesSection
     elementId: talent-acquisition
     title: Talent Acquisition
@@ -127,8 +124,8 @@ sections:
     styles:
       self:
         padding:
-          - pt-24
-          - pb-24
+          - pt-20
+          - pb-20
         animation:
           - fade-left
       title:
