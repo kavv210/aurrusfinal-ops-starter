@@ -27,10 +27,10 @@ sections:
     styles:
       self:
         className: >
-          bg-gradient-to-br from-[#FFA726] via-[#71AFF5] to-[#0762EB]
+          [data-aos="fade-down"] [data-aos-duration="700"]
+          bg-gradient-to-br from-[#FFA726] via-[#36896D] to-[#0085CA]
           pt-20 pb-16 px-4 text-center shadow-xl rounded-xl
           flex flex-col items-center justify-center
-          animate-fade-down
       subtitle:
         className: >
           mt-4 text-xl text-orange-100 max-w-2xl
