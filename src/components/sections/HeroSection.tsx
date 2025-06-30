@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
+import { mapStylesToClassNames as mapStyles } from '@/utils/map-styles-to-class-names';
 import { TitleBlock } from '../blocks/TitleBlock';
 
 export default function HeroSection(props) {
