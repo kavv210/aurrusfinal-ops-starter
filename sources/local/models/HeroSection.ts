@@ -1,76 +1,52 @@
 import React from 'react';
 import classNames from 'classnames';
 import { mapStylesToClassNames as mapStyles } from '@/utils/map-styles-to-class-names';
-import ImageBlock from '@/components/blocks/ImageBlock';
 
-export default function FeaturesSection(props) {
+export default function HeroSection(props) {
   const {
-    elementId,
     title,
     subtitle,
-    text,
-    image,
-    imagePosition = 'left',
-    colors = '',
+    colors = 'bg-light-fg-dark',
     styles = {},
+    elementId
   } = props;
 
-  const animation = styles?.self?.animation?.[0] || '';
-  const paddingClass = styles?.self?.padding ? mapStyles({ padding: styles.self.padding }) : '';
+  // padding & animation helpers
+  const paddingClass =
+    styles?.self?.padding ? mapStyles({ padding: styles.self.padding }) : '';
+  const animation = styles?.self?.animation?.[0] || 'fade-up';
+
+  // title may come as plain string or { text: '' }
+  const titleText =
+    typeof title === 'object' && title?.text ? title.text : title || '';
 
   return (
     <section
       id={elementId}
       className={classNames(
+        'sb-hero-section',
         colors,
-        paddingClass,
-        'overflow-hidden',
-        'transition-all duration-500'
+        'flex flex-col justify-center items-center text-center min-h-[60vh]',
+        'transition-transform duration-300 hover:scale-[1.02] group',
+        paddingClass
       )}
       data-aos={animation}
     >
-      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-4">
-        {/* LEFT IMAGE */}
-        {image && imagePosition === 'left' && (
-          <div className="lg:w-1/2 w-full">
-            <ImageBlock
-              url={image.url}
-              altText={image.altText || 'Feature image'}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
+      <div className="max-w-4xl w-full px-4">
+        {titleText && (
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+            <span className="inline-block border-b-4 border-transparent group-hover:border-orange-500 transition-all duration-300">
+              <span className="bg-gradient-to-r from-orange-400 to-red-600 text-transparent bg-clip-text">
+                {titleText}
+              </span>
+            </span>
+          </h1>
         )}
 
-        {/* TEXT BLOCK */}
-        <div className="lg:w-1/2 w-full text-center lg:text-left transition-transform duration-300 hover:scale-[1.02] group">
-          {title && (
-            <h2 className="h3 mb-4">
-              <span className="transition-colors duration-300 group-hover:text-orange-500">
-                {title}
-              </span>
-            </h2>
-          )}
-          {subtitle && (
-            <p className="text-xl mb-4 text-orange-600 transition-colors duration-300 group-hover:text-orange-700">
-              {subtitle}
-            </p>
-          )}
-          {text && (
-            <p className="text-base text-gray-700 transition-opacity duration-300 group-hover:opacity-90">
-              {text}
-            </p>
-          )}
-        </div>
-
-        {/* RIGHT IMAGE */}
-        {image && imagePosition === 'right' && (
-          <div className="lg:w-1/2 w-full">
-            <ImageBlock
-              url={image.url}
-              altText={image.altText || 'Feature image'}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
+        {subtitle && (
+          <p className="text-xl md:text-2xl mb-2 text-orange-600 transition-colors duration-300 group-hover:text-orange-700">
+            {subtitle}
+          </p>
         )}
       </div>
     </section>
