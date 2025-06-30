@@ -12,7 +12,7 @@ export default function FeaturesSection(props) {
     image,
     imagePosition = 'left',
     colors = '',
-    styles = {},
+    styles = {}
   } = props;
 
   const animation = styles?.self?.animation?.[0] || '';
@@ -24,15 +24,14 @@ export default function FeaturesSection(props) {
       className={classNames(
         colors,
         paddingClass,
-        'overflow-hidden',
-        'transition-all duration-500'
+        'overflow-hidden transition-all duration-500'
       )}
       data-aos={animation}
     >
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-4">
         {/* LEFT IMAGE */}
         {image && imagePosition === 'left' && (
-          <div className="lg:w-1/2 w-full">
+          <div className="w-4/5 lg:w-2/5 mx-auto lg:mx-0">
             <ImageBlock
               url={image.url}
               altText={image.altText || 'Feature image'}
@@ -42,9 +41,9 @@ export default function FeaturesSection(props) {
         )}
 
         {/* TEXT BLOCK */}
-        <div className="lg:w-1/2 w-full text-center lg:text-left transition-transform duration-300 hover:scale-[1.02] group">
+        <div className="lg:w-3/5 w-full text-center lg:text-left transition-transform duration-300 hover:scale-[1.02] group">
           {title && (
-            <h2 className="h3 mb-4">
+            <h2 className="text-3xl font-extrabold mb-4">
               <span className="transition-colors duration-300 group-hover:text-orange-500">
                 {title}
               </span>
@@ -64,7 +63,7 @@ export default function FeaturesSection(props) {
 
         {/* RIGHT IMAGE */}
         {image && imagePosition === 'right' && (
-          <div className="lg:w-1/2 w-full">
+          <div className="w-4/5 lg:w-2/5 mx-auto lg:mx-0">
             <ImageBlock
               url={image.url}
               altText={image.altText || 'Feature image'}
