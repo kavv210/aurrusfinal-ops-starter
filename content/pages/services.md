@@ -82,5 +82,3 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
-    bottomSections: []
----
