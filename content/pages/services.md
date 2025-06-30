@@ -18,6 +18,10 @@ sections:
     title:
       text: OUR SERVICES
       type: TitleBlock
+      className: >
+        text-[2.5rem] sm:text-[3rem] font-extrabold tracking-widest uppercase
+        text-[#BF360C] transition-all duration-300 ease-in-out
+        hover:text-[#FF5722] hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
@@ -30,16 +34,6 @@ sections:
         textAlign: center
         boxShadow: xl
         borderRadius: xl
-      title:
-        fontWeight: 900
-        fontSize: 6xl
-        textTransform: uppercase
-        letterSpacing: widest
-        color: text-[#BF360C]
-        hover:
-          color: text-[#FF5722]
-          transform: scale-105
-          transition: all 0.3s ease-in-out
       subtitle:
         fontSize: xl
         fontWeight: 500
@@ -144,10 +138,3 @@ sections:
 
 bottomSections: []
 ---
-✅ Now this version:
-- Won’t break your build
-- Has hover effect + color shift + zoom on title
-- Has a soft orange-to-beige gradient
-- Can be safely deployed to Netlify
-
-Let me know once it's live or if you want to try a **blue-gradient** version too!
