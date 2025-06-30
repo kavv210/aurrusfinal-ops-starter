@@ -11,6 +11,9 @@ sections:
         text-4xl sm:text-5xl font-extrabold tracking-tight
         text-dark transition-transform duration-300
         hover:scale-105
+      styles:
+        self:
+          animation: [fade-down]
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution.
@@ -47,6 +50,10 @@ sections:
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300
         hover:scale-105
+      styles:
+        self:
+          textAlign: center
+          animation: [fade-down]
     items:
       - type: FeaturedItem
         title: Business Strategy Consulting
@@ -147,6 +154,9 @@ sections:
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300 hover:scale-105
+        styles:
+          self:
+            animation: [fade-down]
     text: |-
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy,
       efficiency in execution, and confidence in every decision. Our partnership model
@@ -180,6 +190,9 @@ sections:
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300 hover:scale-105
+      styles:
+        self:
+          animation: [fade-down]
     subtitle: Collaboration that delivers.
     text: |-
       Progress happens when people work together. Aurrus aligns teams through clear communication,
@@ -209,6 +222,9 @@ sections:
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300 hover:scale-105
+      styles:
+        self:
+          animation: [fade-down]
     subtitle: Build high‑performance teams.
     text: >
       From sourcing top‑tier talent to hands‑on onboarding and leadership training, Aurrus
@@ -236,6 +252,9 @@ sections:
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300 hover:scale-105
+     styles:
+       self:
+         animation: [fade-down]
     subtitle: Optimise and scale.
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals,
@@ -270,6 +289,10 @@ sections:
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
         text-primary transition-transform duration-300 hover:scale-105
+      styles:
+        self:
+          textAlign: center
+          animation: [fade-down]
     subtitle: Why should businesses choose Aurrus?
     items:
       - title: Collaborative by Nature
