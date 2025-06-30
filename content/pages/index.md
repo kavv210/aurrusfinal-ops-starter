@@ -7,6 +7,11 @@ sections:
       text: Accelerate Growth With Aurrus.
       color: text-dark
       type: TitleBlock
+      styles:
+        self:
+          transition: 'transform 0.3s ease'
+          _hover:
+            transform: scale(1.05)
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution.
@@ -45,12 +50,15 @@ sections:
   - type: FeaturedItemsSection
     title:
       text: Why Aurrus?
-      color: text-dark
+      color: text-dark-blue
       styles:
         self:
           textAlign: center
+          transition: 'transform 0.3s ease'
+          _hover:
+            transform: scale(1.05)
       type: TitleBlock
-    subtitle: 
+    subtitle: ''
     items:
       - type: FeaturedItem
         title: Business Strategy Consulting
@@ -84,9 +92,9 @@ sections:
       - title: Organizational Development 
         subtitle: Strengthen Internal Structure
         text: >-
-          Our approach focusus on enhancing the health and adaptability of your organization. We
+          Our approach focuses on enhancing the health and adaptability of your organization. We
           assist in designing operating models, refining governance frameworks and aligning
-          leadership with business goals to create a resilient, agile and performancr-driven culture.
+          leadership with business goals to create a resilient, agile and performance-driven culture.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -111,7 +119,7 @@ sections:
         text: >-
             We support client organizations in planning and executing high-impact programs with
             clarity and control. From aligning stakeholder expectations to managing timelines, budgets
-            risks, our hands-on advisory ensures your business initiatives are delivered successfully.
+            and risks, our hands-on advisory ensures your business initiatives are delivered successfully.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -148,7 +156,7 @@ sections:
       type: Badge
     elementId: ''
     variant: three-col-grid
-    colors: bg-neutral-fg-dark
+    colors: bg-neutral-fg-lightblue
     styles:
       self:
         padding:
@@ -190,26 +198,8 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
-  - title: Divider
+  - title:
+      text: Divider
     colors: bg-light-fg-dark
     styles:
       self:
@@ -226,7 +216,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: 
+    subtitle: ''
     text: |-
       At Aurrus Consulting, we focus on what truly moves the needle; clarity in strategy,
       efficiency in execution, and confidence in every decision. Our partnership model
@@ -274,6 +264,9 @@ sections:
       styles:
         self:
           textAlign: left
+          transition: 'transform 0.3s ease'
+          _hover:
+            transform: scale(1.05)
       type: TitleBlock
     subtitle: Collaboration that delivers.
     text: |-
@@ -313,6 +306,11 @@ sections:
       text: Talent Acquisition & Training
       color: text-dark
       type: TitleBlock
+      styles:
+        self:
+          transition: 'transform 0.3s ease'
+          _hover:
+            transform: scale(1.05)
     subtitle: Build High-Performance Teams.
     text: >
       From sourcing top-tier talent across BPO, telecom, insurance, and support functions to delivering hands-on
@@ -342,6 +340,11 @@ sections:
       text: Outsourcing & Transformation
       color: text-dark
       type: TitleBlock
+      styles:
+        self:
+          transition: 'transform 0.3s ease'
+          _hover:
+            transform: scale(1.05)
     subtitle: Optimize and Scale.
     text: >
       We specialize in strategic consulting for outsourcing, offshoring, and end-to-end process transformation
@@ -378,200 +381,15 @@ sections:
           - pb-7
           - pr-7
     type: DividerSection
-  - type: CarouselSection
-    title: null
-    subtitle: What our customers say about us
-    items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to accomplish a particular purpose."
-        tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: John Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just make a product aesthetically pleasing, it makes it a pleasure to use."
-        tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."
-        tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using Netlify Create.”
-        tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/img-placeholder-dark.png
-          altText: Jane Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-dark-fg-light
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-    elementId: null
-    variant: next-prev-nav
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-      subtitle:
-        textAlign: center
   - title:
       text: The Aurrus Difference
       color: text-primary
       styles:
         self:
           textAlign: center
+          transition: 'transform 0.3s ease'
+          _hover:
+            transform: scale(1.05)
       type: TitleBlock
     subtitle: Why should businesses choose Aurr"US"?
     items:
@@ -645,7 +463,7 @@ sections:
             flexDirection: col
         type: FeaturedItem
     variant: three-col-grid
-    colors: bg-neutral-fg-dark
+    colors: bg-neutral-fg-lightblue
     styles:
       self:
         padding:
@@ -716,10 +534,15 @@ sections:
       type: Badge
     colors: bg-light-fg-dark
     type: GenericSection
+
 seo:
   metaTitle: Aurrus-Home
   metaDescription: Aurrus Consulting Main Site.
   socialImage: /images/main-hero.jpg
   type: Seo
+
 type: PageLayout
----
+
+# Custom colors (make sure your CSS supports these classes!)
+# text-dark-blue: a softer dark blue color (e.g. #254B7B)
+# bg-neutral-fg-lightblue: a light blue neutral background (e.g. #E9F0FA)
