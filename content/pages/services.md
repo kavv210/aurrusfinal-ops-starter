@@ -40,7 +40,9 @@ sections:
     text: >
       We provide expert advisory across finance, HR, and transformation initiatives.
       Our approach combines industry best practices with actionable strategy that aligns with your goals.
-    image: /images/consult-vector.svg
+    image:
+      url: /images/consult-vector.svg
+      altText: Business consulting vector
     imagePosition: right
     colors: bg-[#FFE0B2]-fg-dark
     styles:
@@ -62,7 +64,9 @@ sections:
     text: >
       Whether you need frontend, backend, full-stack developers, or cloud experts — we deliver trusted talent fast.
       Flexible, vetted, and ready to build.
-    image: /images/it-vector.svg
+    image:
+      url: /images/it-vector.svg
+      altText: IT staffing and solutions vector
     imagePosition: left
     colors: bg-[#FFF3E0]-fg-dark
     styles:
@@ -84,7 +88,9 @@ sections:
     text: >
       From executive searches to bulk hiring — our recruitment experts tailor solutions to your scale.
       End-to-end hiring support that drives real business impact.
-    image: /images/talent-vector.svg
+    image:
+      url: /images/talent-vector.svg
+      altText: Talent acquisition vector
     imagePosition: right
     colors: bg-[#FFCCBC]-fg-dark
     styles:
