@@ -6,9 +6,9 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Services - Aurrus
+  metaTitle: Services - Aurrus
   metaDescription: >
-    Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
+    Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
   socialImage: /images/img-placeholder.svg
 
 sections:
@@ -18,9 +18,9 @@ sections:
     title:
       text: SERVICES
       type: TitleBlock
-      color: text-[#BF360C]
-    subtitle: Your partner in scalable business and technology solutions.
-    colors: bg-gradient-to-br-from-[#FFECB3]-via-[#FFD180]-to-[#FFAB40]
+      color: text-white
+    subtitle: Trusted business and technology solutions designed to scale your success.
+    colors: bg-gradient-to-r-from-[#FFE0B2]-via-[#FFCC80]-to-[#FFB74D]
     styles:
       self:
         padding:
@@ -30,18 +30,18 @@ sections:
           - pr-4
         animation:
           - fade-up
-        boxShadow: large             # gives a soft drop‑shadow around the block
-        textAlign: center
       title:
+        textAlign: center
         fontWeight: 900
         fontSize: 5xl
         textTransform: uppercase
         letterSpacing: widest
+        textShadow: shadow-xl
       subtitle:
+        textAlign: center
         fontSize: xl
         fontWeight: 500
-        margin:
-          - mt-2
+        textColor: text-white
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
@@ -65,10 +65,10 @@ sections:
           - fade-up
       title:
         textAlign: center
+        fontWeight: 800
       subtitle:
         textAlign: center
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
     colors: bg-[#FFB74D]
     styles:
@@ -84,7 +84,7 @@ sections:
     title: IT Staffing & Solutions
     subtitle: Scalable tech teams, on-demand.
     text: >
-      Whether you need frontend, backend, full‑stack developers, or cloud experts — we deliver trusted talent fast.
+      Whether you need frontend, backend, full-stack developers, or cloud experts — we deliver trusted talent fast.
       Flexible, vetted, and ready to build.
     image:
       url: /images/it-vector.svg
@@ -97,13 +97,13 @@ sections:
           - pt-20
           - pb-20
         animation:
-          - fade-right
+          - fade-up
       title:
         textAlign: center
+        fontWeight: 800
       subtitle:
         textAlign: center
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
     colors: bg-[#FF7043]
     styles:
@@ -120,7 +120,7 @@ sections:
     subtitle: Hiring with precision and insight.
     text: >
       From executive searches to bulk hiring — our recruitment experts tailor solutions to your scale.
-      End‑to‑end hiring support that drives real business impact.
+      End-to-end hiring support that drives real business impact.
     image:
       url: /images/talent-vector.svg
       altText: Talent acquisition vector
@@ -132,9 +132,10 @@ sections:
           - pt-20
           - pb-20
         animation:
-          - fade-left
+          - fade-up
       title:
         textAlign: center
+        fontWeight: 800
       subtitle:
         textAlign: center
 
