@@ -1,38 +1,4 @@
----
-title: Services
-slug: services
-type: PageLayout
-styles:
-  title:
-    textAlign: center
-seo:
-  metaTitle: Services - Aurrus
-  metaDescription: >
-    Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
-  socialImage: /images/img-placeholder.svg
 sections:
-  - type: HeroSection
-    title:
-      text: Our Services
-      type: TitleBlock
-      color: text-dark
-    subtitle: Trusted business and technology solutions designed to scale your success.
-    colors: bg-[#FFF3E0]-fg-[#BF360C]
-    styles:
-      self:
-        padding:
-          - pt-28
-          - pb-16
-          - pl-4
-          - pr-4
-        animation:
-          - fade-up
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-    elementId: top
-
   - type: FeaturesSection
     elementId: business-consulting
     title: Business Consulting
@@ -40,9 +6,7 @@ sections:
     text: >
       We provide expert advisory across finance, HR, and transformation initiatives.
       Our approach combines industry best practices with actionable strategy that aligns with your goals.
-    image:
-      url: /images/consult-vector.svg
-      altText: Business consulting vector
+    image: /images/consult-vector.svg
     imagePosition: right
     colors: bg-[#FFE0B2]-fg-dark
     styles:
@@ -57,6 +21,15 @@ sections:
       subtitle:
         textAlign: center
 
+  - type: GenericSection
+    colors: bg-gradient-to-r-from-[#FFAB40]-via-[#FF7043]-to-[#3D4DFF]
+    styles:
+      self:
+        height: sm
+        margin:
+          - mt-12
+          - mb-12
+
   - type: FeaturesSection
     elementId: it-staffing
     title: IT Staffing & Solutions
@@ -64,9 +37,7 @@ sections:
     text: >
       Whether you need frontend, backend, full-stack developers, or cloud experts — we deliver trusted talent fast.
       Flexible, vetted, and ready to build.
-    image:
-      url: /images/it-vector.svg
-      altText: IT staffing and solutions vector
+    image: /images/it-vector.svg
     imagePosition: left
     colors: bg-[#FFF3E0]-fg-dark
     styles:
@@ -81,6 +52,15 @@ sections:
       subtitle:
         textAlign: center
 
+  - type: GenericSection
+    colors: bg-gradient-to-r-from-[#FFAB40]-via-[#FF7043]-to-[#3D4DFF]
+    styles:
+      self:
+        height: sm
+        margin:
+          - mt-12
+          - mb-12
+
   - type: FeaturesSection
     elementId: talent-acquisition
     title: Talent Acquisition
@@ -88,9 +68,7 @@ sections:
     text: >
       From executive searches to bulk hiring — our recruitment experts tailor solutions to your scale.
       End-to-end hiring support that drives real business impact.
-    image:
-      url: /images/talent-vector.svg
-      altText: Talent acquisition vector
+    image: /images/talent-vector.svg
     imagePosition: right
     colors: bg-[#FFCCBC]-fg-dark
     styles:
@@ -104,5 +82,5 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
-bottomSections: []
+    bottomSections: []
 ---
