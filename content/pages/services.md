@@ -18,36 +18,22 @@ sections:
     title:
       text: OUR SERVICES
       type: TitleBlock
-      color: text-[#BF360C] # deep orange for visibility
     subtitle: Your partner in scalable business and technology solutions.
-    colors: bg-gradient-to-br-from-[#FFE0B2]-via-[#FFCC80]-to-[#FFB74D] # slightly darker gradient
     styles:
       self:
-        padding:
-          - pt-28
-          - pb-24
-          - pl-4
-          - pr-4
-        animation:
-          - fade-down
-        boxShadow: xl
-        textAlign: center
-        borderRadius: xl
-        transition: all 0.4s ease-in-out
+        className: >
+          bg-gradient-to-br from-[#FF6F00] via-[#FFA726] to-[#FFE0B2]
+          pt-28 pb-24 px-4 text-center shadow-xl rounded-xl
+          flex flex-col items-center justify-center
+          animate-fade-down
       title:
-        fontWeight: 900
-        fontSize: 7xl
-        textTransform: uppercase
-        letterSpacing: widest
-        hover:
-          transform: scale-105
-          transition: transform 0.3s ease-in-out
+        className: >
+          text-6xl sm:text-7xl font-extrabold tracking-widest uppercase
+          text-white transition-transform duration-300 ease-in-out
+          hover:scale-105
       subtitle:
-        fontSize: xl
-        fontWeight: 500
-        margin:
-          - mt-4
-        color: text-[#4E342E] # readable brown-grey tone
+        className: >
+          mt-4 text-xl text-orange-100 max-w-2xl
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
@@ -88,7 +74,7 @@ sections:
   - type: FeaturesSection
     elementId: it-staffing
     title: IT Staffing & Solutions
-    subtitle: Scalable tech teams, on-demand.
+    subtitle: Scalable tech teams, on‑demand.
     text: >
       Whether you need frontend, backend, full‑stack developers, or cloud experts — we deliver trusted talent fast.
       Flexible, vetted, and ready to build.
