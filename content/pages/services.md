@@ -28,7 +28,7 @@ sections:
       self:
         className: >
           [data-aos="fade-down"] [data-aos-duration="700"]
-          bg-gradient-to-br from-[#FFA726] via-[#36896D] to-[#0085CA]
+          bg-gradient-to-br from-[#FFA600] via-[#ADCBFF] to-[1566A1]
           pt-20 pb-16 px-4 text-center shadow-xl rounded-xl
           flex flex-col items-center justify-center
       subtitle:
