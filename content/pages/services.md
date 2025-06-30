@@ -12,6 +12,26 @@ seo:
   socialImage: /images/img-placeholder.svg
 
 sections:
+  # ───────────────── HEADER BADGE ─────────────────
+  - type: GenericSection
+    colors: bg-transparent
+    styles:
+      self:
+        padding:
+          - pt-12
+          - pb-4
+    elements:
+      - type: TitleBlock
+        text: SERVICES
+        color: text-orange-700
+        styles:
+          self:
+            textAlign: center
+            fontWeight: 700
+            fontSize: sm
+            letterSpacing: widest
+
+  # ──────────────── BUSINESS CONSULTING ───────────
   - type: FeaturesSection
     elementId: business-consulting
     title: Business Consulting
@@ -19,7 +39,9 @@ sections:
     text: >
       We provide expert advisory across finance, HR, and transformation initiatives.
       Our approach combines industry best practices with actionable strategy that aligns with your goals.
-    image: /images/consult-vector.svg
+    image:
+      url: /images/consult-vector.svg
+      altText: Business consulting vector
     imagePosition: right
     colors: bg-[#FFE0B2]-fg-dark
     styles:
@@ -34,15 +56,17 @@ sections:
       subtitle:
         textAlign: center
 
+  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
     colors: bg-[#FFB74D]
     styles:
       self:
-        height: sm
+        height: xs
         padding:
-          - pt-4
-          - pb-4
+          - pt-2
+          - pb-2
 
+  # ───────────────── IT STAFFING ───────────────────
   - type: FeaturesSection
     elementId: it-staffing
     title: IT Staffing & Solutions
@@ -50,7 +74,9 @@ sections:
     text: >
       Whether you need frontend, backend, full-stack developers, or cloud experts — we deliver trusted talent fast.
       Flexible, vetted, and ready to build.
-    image: /images/it-vector.svg
+    image:
+      url: /images/it-vector.svg
+      altText: IT staffing illustration
     imagePosition: left
     colors: bg-[#FFF3E0]-fg-dark
     styles:
@@ -65,15 +91,17 @@ sections:
       subtitle:
         textAlign: center
 
+  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
     colors: bg-[#FF7043]
     styles:
       self:
-        height: sm
+        height: xs
         padding:
-          - pt-4
-          - pb-4
+          - pt-2
+          - pb-2
 
+  # ─────────────── TALENT ACQUISITION ─────────────
   - type: FeaturesSection
     elementId: talent-acquisition
     title: Talent Acquisition
@@ -81,7 +109,9 @@ sections:
     text: >
       From executive searches to bulk hiring — our recruitment experts tailor solutions to your scale.
       End-to-end hiring support that drives real business impact.
-    image: /images/talent-vector.svg
+    image:
+      url: /images/talent-vector.svg
+      altText: Talent acquisition vector
     imagePosition: right
     colors: bg-[#FFCCBC]-fg-dark
     styles:
