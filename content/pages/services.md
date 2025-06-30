@@ -22,13 +22,13 @@ sections:
     styles:
       self:
         className: >
-          bg-gradient-to-br from-[#FF6F00] via-[#FFA726] to-[#FFE0B2]
+          bg-gradient-to-br from-[#FF6F00] via-[#FFA726] to-[#516FF5]
           pt-28 pb-24 px-4 text-center shadow-xl rounded-xl
           flex flex-col items-center justify-center
           animate-fade-down
       title:
         className: >
-          text-6xl sm:text-7xl font-extrabold tracking-widest uppercase
+          text-4xl sm:text-5xl font-extrabold tracking-widest uppercase
           text-white transition-transform duration-300 ease-in-out
           hover:scale-105
       subtitle:
