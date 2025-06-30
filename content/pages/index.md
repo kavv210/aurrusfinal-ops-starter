@@ -2,12 +2,14 @@
 title: Home
 slug: /
 type: PageLayout
+
 seo:
-  metaTitle: Aurrus - Home
+  metaTitle: Aurrus – Home
   metaDescription: Aurrus Consulting Main Site.
   socialImage: /images/main-hero.jpg
 
 sections:
+  # ───────────── HERO ─────────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -37,7 +39,7 @@ sections:
       altText: Aurrus Consulting Hero
       type: ImageBlock
     badge:
-      label: Smarter workflows. Stronger results.
+      label: Smarter workflows. Stronger results.
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
@@ -47,15 +49,16 @@ sections:
         flexDirection: row
         padding: [pt-16, pl-16, pb-16, pr-16]
 
+  # ─────────── WHY AURRUS ───────────
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
     title:
-      text: Why Aurrus?
+      text: Why Aurrus?
       type: TitleBlock
       className: >
-        text-3xl sm:text-4xl font-bold tracking-tight text-dark
-        transition-transform duration-300 hover:scale-105
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300 hover:scale-105
       styles:
         self:
           animation: [fade-down]
@@ -66,8 +69,8 @@ sections:
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: >
-          We provide strategic guidance to help organizations navigate change and optimise performance.
-          From business model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
+          We provide strategic guidance to help organisations navigate change and optimise performance.
+          From business‑model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
         image:
           url: /images/icon1.svg
           altText: Strategy icon
@@ -102,7 +105,7 @@ sections:
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
-        title: Program & Project Advisory
+        title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
           From aligning stakeholder expectations to managing timelines and budgets, our hands‑on advisory ensures every initiative lands successfully.
@@ -116,6 +119,7 @@ sections:
             padding: [p-8]
             borderRadius: x-large
             flexDirection: row
+            textAlign: left
 
     actions:
       - label: Get started
@@ -134,40 +138,33 @@ sections:
       self:
         padding: [pt-16, pb-16, pl-16, pr-16]
 
+  # ─────── TRUSTED BY ───────
   - type: ImageGallerySection
     __metadata:
       modelName: ImageGallerySection
-    subtitle: Award‑winning enterprises trust us
+    title:
+      text: Trusted by Award‑Winning Enterprises
+      type: TitleBlock
+      className: >
+        text-xl sm:text-2xl font-semibold text-center
     images:
-      - url: /images/empathy-logo.svg
-        altText: Empathy logo
-        type: ImageBlock
-      - url: /images/wellster-logo.svg
-        altText: Wellster logo
-        type: ImageBlock
-      - url: /images/vise-logo.svg
-        altText: Vise logo
-        type: ImageBlock
-      - url: /images/telus-logo.svg
-        altText: Telus logo
-        type: ImageBlock
-      - url: /images/contenful-logo.svg
-        altText: Contentful
-        type: ImageBlock
-      - url: /images/sanity-logo.svg
-        altText: Sanity logo
-        type: ImageBlock
-      - url: /images/rangle-logo.svg
-        altText: Rangle logo
-        type: ImageBlock
+      - { url: /images/empathy-logo.svg,    altText: Empathy logo,     type: ImageBlock }
+      - { url: /images/wellster-logo.svg,   altText: Wellster logo,    type: ImageBlock }
+      - { url: /images/vise-logo.svg,       altText: Vise logo,        type: ImageBlock }
+      - { url: /images/telus-logo.svg,      altText: Telus logo,       type: ImageBlock }
+      - { url: /images/contenful-logo.svg,  altText: Contentful,       type: ImageBlock }
+      - { url: /images/sanity-logo.svg,     altText: Sanity logo,      type: ImageBlock }
+      - { url: /images/rangle-logo.svg,     altText: Rangle logo,      type: ImageBlock }
     motion: move-to-left
     colors: bg-light-fg-dark
     styles:
       self:
         justifyContent: center
-      subtitle:
+        padding: [pt-12, pb-12]
+      title:
         textAlign: center
 
+  # ───────── DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -177,6 +174,7 @@ sections:
       self:
         padding: [p-7]
 
+  # ─────── BUILT FOR IMPACT ───────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -190,9 +188,9 @@ sections:
         self:
           animation: [fade-down]
     text: >
-      At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy,
-      efficiency in execution, and confidence in every decision. Our partnership model
-      yields not just short‑term gains, but long‑term operational strength and market resilience.
+      We focus on what truly moves the needle: clarity in strategy, efficiency in execution,
+      and confidence in every decision. Our partnership model yields not just short‑term gains,
+      but long‑term operational strength and market resilience.
     media:
       url: /images/placeholder-video.mp4
       altText: Aurrus video
@@ -216,6 +214,7 @@ sections:
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
 
+  # ─────── COLLABORATIVE WITH DESIGN ───────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -251,11 +250,12 @@ sections:
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
 
+  # ─────── TALENT ACQUISITION ───────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
     title:
-      text: Talent Acquisition & Training
+      text: Talent Acquisition & Training
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
@@ -282,11 +282,12 @@ sections:
         flexDirection: row
         padding: [pt-16, pb-16, pl-8, pr-8]
 
+  # ─────── OUTSOURCING & TRANSFORMATION ───────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
     title:
-      text: Outsourcing & Transformation
+      text: Outsourcing & Transformation
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
@@ -313,11 +314,12 @@ sections:
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
 
+  # ─────── THE AURRUS DIFFERENCE ───────
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
     title:
-      text: The Aurrus Difference
+      text: The Aurrus Difference
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
@@ -329,12 +331,14 @@ sections:
     subtitle: Why should businesses choose Aurrus?
     items:
       - type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
         title: Collaborative by Nature
-        subtitle: Aligned Execution. Lasting Partnerships.
+        subtitle: Aligned Execution. Lasting Partnerships.
         text: We integrate with your people and processes, ensuring smoother delivery and stronger synergy.
         image:
           url: /images/abstract-feature1.svg
-          altText: Colab icon
+          altText: Collaboration icon
           type: ImageBlock
         colors: bg-light-fg-dark
         styles:
@@ -343,7 +347,9 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
       - type: FeaturedItem
-        title: Execution without Friction
+        __metadata:
+          modelName: FeaturedItem
+        title: Execution without Friction
         subtitle: From Planning to Precision
         text: We manage projects end‑to‑end with clear timelines, resource alignment, and minimal disruption.
         image:
@@ -357,6 +363,8 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
       - type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
         title: Experience that Matters
         subtitle: Decades‑deep expertise
         text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on experience, not just theory.
@@ -376,11 +384,12 @@ sections:
       self:
         padding: [pt-16, pb-16, pl-8, pr-8]
 
+  # ─────── CONTACT ───────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
     title:
-      text: Let's Build Something Better Together.
+      text: Let's Build Something Better Together.
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
@@ -390,14 +399,14 @@ sections:
           animation: [fade-down]
     subtitle: Start your consultation today!
     text: >
-      Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
+      Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
     media:
       type: FormBlock
       elementId: contact-form
       fields:
-        - { name: name, placeholder: Your name, isRequired: true, width: full, type: TextFormControl }
-        - { name: email, placeholder: Your email, isRequired: true, width: full, type: EmailFormControl }
-        - { name: message, placeholder: Your message, width: full, type: TextareaFormControl }
+        - { name: name,    placeholder: Your name,  isRequired: true, width: full, type: TextFormControl }
+        - { name: email,   placeholder: Your email, isRequired: true, width: full, type: EmailFormControl }
+        - { name: message, placeholder: Your message,               width: full, type: TextareaFormControl }
       submitButton:
         type: SubmitButtonFormControl
         label: Submit
@@ -405,7 +414,7 @@ sections:
         iconPosition: right
         style: primary
     badge:
-      label: Contact Us
+      label: Contact Us
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
@@ -414,3 +423,4 @@ sections:
         flexDirection: col
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
+---
