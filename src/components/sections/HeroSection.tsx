@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { mapStylesToClassNames as mapStyles } from '@/utils/map-styles-to-class-names';
-import { TitleBlock } from '../blocks/TitleBlock';
+import TitleBlock from '../blocks/TitleBlock';
 
 export default function HeroSection(props) {
   const { title, subtitle, colors = 'bg-light-fg-dark', styles = {}, elementId } = props;
