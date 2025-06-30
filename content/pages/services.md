@@ -1,4 +1,3 @@
----
 title: Services
 slug: services
 type: PageLayout
@@ -19,21 +18,19 @@ sections:
       text: OUR SERVICES
       type: TitleBlock
       className: >
-        [data-aos="fade-down"] [data-aos-duration="700"]
-        text-4xl sm:text-5xl font-extrabold tracking-widest uppercase
-        text-white transition-transform duration-300 ease-in-out
-        hover:scale-105
+        text-[2.8rem] sm:text-[3.5rem] font-extrabold tracking-widest uppercase
+        text-[#BF360C] transition-all duration-300 ease-in-out
+        hover:text-[#FF5722] hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
         className: >
-          [data-aos="fade-down"] [data-aos-duration="700"]
-          bg-gradient-to-br from-[#FFA726] via-[#FF8C38] to-[#00358E]
+          bg-gradient-to-br from-[#FFE0B2] via-[#FFD180] to-[#FFE0C3]
           pt-20 pb-16 px-4 text-center shadow-xl rounded-xl
           flex flex-col items-center justify-center
       subtitle:
         className: >
-          mt-4 text-xl text-orange-100 max-w-2xl
+          mt-4 text-xl text-[#5D4037] max-w-2xl font-medium
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
