@@ -2,6 +2,7 @@
 title: Home
 slug: /
 sections:
+  # ───────── Hero ─────────
   - type: GenericSection
     title:
       text: Accelerate Growth With Aurrus.
@@ -13,38 +14,31 @@ sections:
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution.
-      Our digital-first strategies scale faster, perform smarter, and deliver measurable outcomes.
+      Our digital‑first strategies scale faster, perform smarter, and deliver measurable outcomes.
       With deep BPO, KPO, and ITeS expertise, we help organizations streamline operations, align teams, and lead with confidence.
     actions:
       - label: Get started
-        altText: ''
         url: /
-        showIcon: false
         icon: arrowRight
         iconPosition: right
         style: secondary
-        elementId: ''
         type: Button
     media:
       url: /images/main-hero.svg
-      altText: Aurrus Consulting 1
-      elementId: ''
+      altText: Aurrus Consulting Hero
       type: ImageBlock
     badge:
       label: Smarter workflows. Stronger results.
       color: text-primary
       type: Badge
-    elementId: ''
     colors: bg-light-fg-dark
     styles:
       self:
         alignItems: center
         flexDirection: row
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
+        padding: [pt-16, pl-16, pb-16, pr-16]
+
+  # ─────── “Why Aurrus?” cards ───────
   - type: FeaturedItemsSection
     title:
       text: Why Aurrus?
@@ -53,138 +47,83 @@ sections:
         text-3xl sm:text-4xl font-bold tracking-tight
         text-dark transition-transform duration-300
         hover:scale-105
-    subtitle: 
     items:
       - type: FeaturedItem
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: >-
-          We provide strategic guidance to help organizations navigate change and optimize performance.
-          From business model innovation to operational restructuring and market strategy, our consultants work as partners,
-          delivering clear, data-driven solutions.
-        actions: []
-        elementId: null
+          We provide strategic guidance to help organizations navigate change and optimise performance.
+          From business model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
+        image:
+          url: /images/icon1.svg
+          altText: Strategy icon
+          type: ImageBlock
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
+            padding: [p-8]
             borderRadius: x-large
             flexDirection: row
-            justifyContent: center
             textAlign: left
-        image:
-          type: ImageBlock
-          altText: Lightning bolt symbol on red background
-          elementId: ''
-          url: /images/icon1.svg
-          styles:
-            self:
-              borderRadius: x-large
-      - title: Organizational Development 
+      - type: FeaturedItem
+        title: Organisational Development
         subtitle: Strengthen Internal Structure
         text: >-
-          Our approach focusus on enhancing the health and adaptability of your organization. We
-          assist in designing operating models, refining governance frameworks and aligning
-          leadership with business goals to create a resilient, agile and performancr-driven culture.
+          We enhance the health and adaptability of your organisation—designing operating models, refining governance, and aligning leadership with business goals.
         image:
           url: /images/icon2.svg
-          altText: Featured icon two
-          elementId: ''
+          altText: OD icon
           type: ImageBlock
-        actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
+            padding: [p-8]
             borderRadius: x-large
             flexDirection: row
             textAlign: left
-            justifyContent: center
-        type: FeaturedItem
-      - title: Program and Project Advisory
+      - type: FeaturedItem
+        title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >-
-            We support client organizations in planning and executing high-impact programs with
-            clarity and control. From aligning stakeholder expectations to managing timelines, budgets
-            risks, our hands-on advisory ensures your business initiatives are delivered successfully.
+          From aligning stakeholder expectations to managing timelines and budgets, our hands‑on advisory ensures every initiative lands successfully.
         image:
           url: /images/icon3.svg
-          altText: Featured icon three
-          elementId: ''
+          altText: Advisory icon
           type: ImageBlock
-        actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
+            padding: [p-8]
             borderRadius: x-large
             flexDirection: row
-        type: FeaturedItem
     actions:
       - label: Get started
-        altText: ''
         url: /
-        showIcon: false
         icon: arrowRight
         iconPosition: right
         style: primary
-        elementId: ''
         type: Button
     badge:
-      label: Client-Centered Outcomes.
+      label: Client‑Centred Outcomes
       color: text-primary
-      styles:
-        self:
-          textAlign: center
       type: Badge
-    elementId: ''
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding:
-          - pb-16
-          - pt-16
-          - pl-16
-          - pr-16
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - subtitle: Award winning enterprises trust us
+        padding: [pt-16, pb-16, pl-16, pr-16]
+
+  # ─────── Trusted logos ───────
+  - type: ImageGallerySection
+    subtitle: Award‑winning enterprises trust us
     images:
-      - url: /images/empathy-logo.svg
-        altText: Empathy logo
-        type: ImageBlock
-      - url: /images/wellster-logo.svg
-        altText: Wellster logo
-        type: ImageBlock
-      - url: /images/vise-logo.svg
-        altText: Vise logo
-        type: ImageBlock
-      - url: /images/telus-logo.svg
-        altText: Telus logo
-        type: ImageBlock
-      - url: /images/contenful-logo.svg
-        altText: Contentful logo
-        type: ImageBlock
-      - url: /images/sanity-logo.svg
-        altText: Sanity logo
-        type: ImageBlock
-      - url: /images/rangle-logo.svg
-        altText: Rangle logo
-        type: ImageBlock
+      - { url: /images/empathy-logo.svg, altText: Empathy logo,  type: ImageBlock }
+      - { url: /images/wellster-logo.svg, altText: Wellster logo, type: ImageBlock }
+      - { url: /images/vise-logo.svg,     altText: Vise logo,     type: ImageBlock }
+      - { url: /images/telus-logo.svg,    altText: Telus logo,    type: ImageBlock }
+      - { url: /images/contenful-logo.svg,altText: Contentful,    type: ImageBlock }
+      - { url: /images/sanity-logo.svg,   altText: Sanity logo,   type: ImageBlock }
+      - { url: /images/rangle-logo.svg,   altText: Rangle logo,   type: ImageBlock }
     motion: move-to-left
     colors: bg-light-fg-dark
     styles:
@@ -192,180 +131,118 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
+
+  # ───────── Divider ─────────
+  - type: DividerSection
+    title: Divider
     colors: bg-light-fg-dark
     styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
-  - title:
+      self: { padding: [p-7] }
+
+  # ───────── Built for Impact ─────────
+  - type: GenericSection
+    title:
       text: Built for Impact.
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
-    subtitle: 
+        text-dark transition-transform duration-300 hover:scale-105
     text: |-
-      At Aurrus Consulting, we focus on what truly moves the needle; clarity in strategy,
+      At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy,
       efficiency in execution, and confidence in every decision. Our partnership model
-      ensures that clients experience not just short-term gains, but long term operational
-      strength and market resilience.
+      yields not just short‑term gains, but long‑term operational strength and market resilience.
     media:
-      title: Aurrus Video 1
       url: /images/placeholder-video.mp4
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
+      altText: Aurrus video
       type: VideoBlock
       autoplay: true
       loop: true
       muted: true
+      controls: false
+      aspectRatio: '16:9'
+      styles: { self: { borderRadius: large } }
     badge:
       label: Key Benefits
       color: text-primary
-      styles:
-        self:
-          textAlign: center
       type: Badge
     colors: bg-light-fg-dark
     styles:
       self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: GenericSection
+        flexDirection: row
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
+
+  # ───────── Collaborative with Design ─────────
   - type: GenericSection
     title:
       text: Collaborative with Design
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
+        text-dark transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: |-
-      Progress happens when people work together. Aurrus brings teams and stakeholders into alignment
-      through clear communication, shared accountability and unified execution. Our collaborative approach
-      drives faster results, stronger relationships, and outcomes that consistently exceed expectations.
-    actions: []
+      Progress happens when people work together. Aurrus aligns teams through clear communication,
+      shared accountability, and unified execution—driving faster results and stronger relationships.
     media:
-      title: Collaboration Video1
       url: /images/placeholder-video1.mp4
+      altText: Collaboration video
+      type: VideoBlock
       autoplay: true
       loop: true
       muted: true
       controls: false
       aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-    elementId: null
+      styles: { self: { borderRadius: large } }
     colors: bg-light-fg-dark
     styles:
       self:
         flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
-  - title:
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
+
+  # ───────── Talent Acquisition ─────────
+  - type: GenericSection
+    title:
       text: Talent Acquisition & Training
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
-    subtitle: Build High-Performance Teams.
+        text-dark transition-transform duration-300 hover:scale-105
+    subtitle: Build high‑performance teams.
     text: >
-      From sourcing top-tier talent across BPO, telecom, insurance, and support functions to delivering hands-on
-      onboarding, leadership, and certification training — Aurrus builds high-performance teams that are equipped
-      to lead, grow, and excel from day one.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
+      From sourcing top‑tier talent to hands‑on onboarding and leadership training, Aurrus
+      builds teams equipped to excel from day one.
     media:
       url: /images/hero2.svg
-      altText: Fun feature preview
+      altText: Talent illustration
       type: ImageBlock
     badge:
-      label: People-Centric Solutions
+      label: People‑Centric Solutions
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
     styles:
       self:
         alignItems: center
-    type: GenericSection
-  - title:
+        flexDirection: row
+        padding: [pt-16, pb-16, pl-8, pr-8]
+
+  # ───────── Outsourcing & Transformation ─────────
+  - type: GenericSection
+    title:
       text: Outsourcing & Transformation
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
-    subtitle: Optimize and Scale.
+        text-dark transition-transform duration-300 hover:scale-105
+    subtitle: Optimise and scale.
     text: >
-      We specialize in strategic consulting for outsourcing, offshoring, and end-to-end process transformation
-      across BPO, KPO, and ITeS verticals helping businesses reduce operational friction, scale efficiently,
-      and unlock new levels of performance.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
+      We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals,
+      reducing friction and unlocking new performance levels.
     media:
       url: /images/hero3.svg
-      altText: Dope design preview
+      altText: Transformation illustration
       type: ImageBlock
     badge:
       label: BPO/KPO Expertise
@@ -374,364 +251,94 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        alignItems: center
         flexDirection: row-reverse
-    type: GenericSection
-  - title: Divider
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
+
+  # ───────── Divider ─────────
+  - type: DividerSection
+    title: Divider
     colors: bg-light-fg-dark
     styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
-  - type: CarouselSection
-    title: null
-    subtitle: What our customers say about us
-    items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to accomplish a particular purpose."
-        tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: John Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just make a product aesthetically pleasing, it makes it a pleasure to use."
-        tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."
-        tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using Netlify Create.”
-        tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/img-placeholder-dark.png
-          altText: Jane Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-dark-fg-light
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-    elementId: null
-    variant: next-prev-nav
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - title:
+      self: { padding: [p-7] }
+
+  # ───────── The Aurrus Difference ─────────
+  - type: FeaturedItemsSection
+    title:
       text: The Aurrus Difference
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
-        text-primary transition-transform duration-300
-        hover:scale-105
-    subtitle: Why should businesses choose Aurr"US"?
+        text-primary transition-transform duration-300 hover:scale-105
+    subtitle: Why should businesses choose Aurrus?
     items:
       - title: Collaborative by Nature
-        tagline: Trusted by teams that scale.
         subtitle: Aligned Execution. Lasting Partnerships.
-        text: |
-          We integrate with your people, processes, and priorities; ensuring smoother delivery and stronger internal synergy.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder Image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
+        text: We integrate with your people and processes, ensuring smoother delivery and stronger synergy.
+        image: { url: /images/abstract-feature1.svg, altText: Colab icon, type: ImageBlock }
         colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
+        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: col md:row } }
         type: FeaturedItem
       - title: Execution without Friction
-        tagline:  Structured & Streamlined.
-        subtitle:  From Planning to Precision
-        text: |
-          We manage projects end-to-end with clear timelines, resource alignment, and minimal disruption.
-        image:
-          url: /images/abstract-feature2.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
+        subtitle: From Planning to Precision
+        text: We manage projects end‑to‑end with clear timelines, resource alignment, and minimal disruption.
+        image: { url: /images/abstract-feature2.svg, altText: Execution icon, type: ImageBlock }
         colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
+        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: col md:row } }
         type: FeaturedItem
       - title: Experience that Matters
-        tagline: Led by Experts.
-        subtitle: Decades in this field
-        text: |
-          Our leadership comes from IT, ITeS, and BPO/KPO sectors — bringing hands-on expertise, not just theory.
-        image:
-          url: /images/abstract-feature3.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
+        subtitle: Decades‑deep expertise
+        text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on experience, not just theory.
+        image: { url: /images/abstract-feature3.svg, altText: Experience icon, type: ImageBlock }
         colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
+        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: col md:row } }
         type: FeaturedItem
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding:
-          - pt-16
-          - pl-8
-          - pb-16
-          - pr-8
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: FeaturedItemsSection
-  - title:
+        padding: [pt-16, pb-16, pl-8, pr-8]
+
+  # ───────── CTA Contact Section ─────────
+  - type: GenericSection
+    title:
       text: Let's Build Something Better Together.
       type: TitleBlock
       className: >
         text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
+        text-dark transition-transform duration-300 hover:scale-105
     subtitle: Start your consultation today!
-    text: |-
-      Ready to streamline your operations, improve performance, or
-      rethink your strategy? Fill out the form right beside and
-      our consulting team will get back to you within 24 hours. 
-      We're here to help you move forward; faster, smarter and stronger.
+    text: |
+      Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
     media:
-      fields:
-        - name: name
-          label: Name
-          hideLabel: true
-          placeholder: Your name
-          isRequired: true
-          width: full
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Your email
-          isRequired: true
-          width: full
-          type: EmailFormControl
-        - name: message
-          label: Message
-          hideLabel: true
-          placeholder: Your message
-          width: full
-          type: TextareaFormControl
-      elementId: contact-form
-      styles:
-        self:
-          padding:
-            - pt-6
-            - pb-6
-            - pl-6
-            - pr-6
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
       type: FormBlock
+      elementId: contact-form
+      fields:
+        - { name: name,    placeholder: Your name,    isRequired: true, width: full, type: TextFormControl }
+        - { name: email,   placeholder: Your email,   isRequired: true, width: full, type: EmailFormControl }
+        - { name: message, placeholder: Your message, width: full,       type: TextareaFormControl }
       submitButton:
         type: SubmitButtonFormControl
         label: Submit
-        showIcon: false
         icon: arrowRight
         iconPosition: right
         style: primary
-        elementId: null
     badge:
       label: Contact Us
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
-    type: GenericSection
+    styles:
+      self:
+        flexDirection: col
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
+
 seo:
   metaTitle: Aurrus-Home
   metaDescription: Aurrus Consulting Main Site.
   socialImage: /images/main-hero.jpg
   type: Seo
+
 type: PageLayout
 ---
