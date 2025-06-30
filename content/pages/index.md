@@ -3,13 +3,13 @@ title: Home
 slug: /
 sections:
   - type: GenericSection
-   title:
-     text: Accelerate Growth With Aurrus.
-     type: TitleBlock
-     className: >
-       text-4xl sm:text-5xl font-extrabold tracking-tight
-       text-dark transition-transform duration-300
-       hover:scale-105
+    title:
+      text: Accelerate Growth With Aurrus.
+      type: TitleBlock
+      className: >
+        text-4xl sm:text-5xl font-extrabold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution.
@@ -48,11 +48,11 @@ sections:
   - type: FeaturedItemsSection
     title:
       text: Why Aurrus?
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: 
     items:
       - type: FeaturedItem
@@ -193,6 +193,25 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
+  - posts:
+      - content/pages/blog/case-study-1.md
+      - content/pages/blog/case-study-2.md
+      - content/pages/blog/case-study-3.md
+    showThumbnail: true
+    showDate: true
+    showAuthor: true
+    variant: three-col-grid
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
+        justifyContent: center
+    type: FeaturedPostsSection
+    hoverEffect: move-up
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -205,11 +224,11 @@ sections:
     type: DividerSection
   - title:
       text: Built for Impact.
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: 
     text: |-
       At Aurrus Consulting, we focus on what truly moves the needle; clarity in strategy,
@@ -254,11 +273,11 @@ sections:
   - type: GenericSection
     title:
       text: Collaborative with Design
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: Collaboration that delivers.
     text: |-
       Progress happens when people work together. Aurrus brings teams and stakeholders into alignment
@@ -295,8 +314,11 @@ sections:
         textAlign: left
   - title:
       text: Talent Acquisition & Training
-      color: text-dark
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: Build High-Performance Teams.
     text: >
       From sourcing top-tier talent across BPO, telecom, insurance, and support functions to delivering hands-on
@@ -324,8 +346,11 @@ sections:
     type: GenericSection
   - title:
       text: Outsourcing & Transformation
-      color: text-dark
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: Optimize and Scale.
     text: >
       We specialize in strategic consulting for outsourcing, offshoring, and end-to-end process transformation
@@ -552,11 +577,11 @@ sections:
         textAlign: center
   - title:
       text: The Aurrus Difference
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-primary transition-transform duration-300
+        hover:scale-105
     subtitle: Why should businesses choose Aurr"US"?
     items:
       - title: Collaborative by Nature
@@ -643,8 +668,11 @@ sections:
     type: FeaturedItemsSection
   - title:
       text: Let's Build Something Better Together.
-      color: text-dark
       type: TitleBlock
+      className: >
+        text-3xl sm:text-4xl font-bold tracking-tight
+        text-dark transition-transform duration-300
+        hover:scale-105
     subtitle: Start your consultation today!
     text: |-
       Ready to streamline your operations, improve performance, or
