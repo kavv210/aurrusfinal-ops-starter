@@ -20,8 +20,8 @@ sections:
       type: TitleBlock
       className: >
         text-[2.5rem] sm:text-[3rem] font-extrabold tracking-widest uppercase
-        text-[#BF360C] transition-all duration-300 ease-in-out
-        hover:text-[#FF5722] hover:scale-105
+        text-[#1E88E5] transition-all duration-300 ease-in-out
+        hover:text-[#FFA500] hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
