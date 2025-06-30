@@ -27,8 +27,8 @@ sections:
     styles:
       self:
         className: >
-          bg-gradient-to-br from-[#FFA726] via-[#FFA726] to-[#71AFF5]
-          pt-28 pb-24 px-4 text-center shadow-xl rounded-xl
+          bg-gradient-to-br from-[#FFA726] via-[#71AFF5] to-[#0762EB]
+          pt-20 pb-16 px-4 text-center shadow-xl rounded-xl
           flex flex-col items-center justify-center
           animate-fade-down
       subtitle:
