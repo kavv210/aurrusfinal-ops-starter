@@ -3,10 +3,13 @@ title: Home
 slug: /
 sections:
   - type: GenericSection
-    title:
-      text: Accelerate Growth With Aurrus.
-      color: text-dark
-      type: TitleBlock
+   title:
+     text: Accelerate Growth With Aurrus.
+     type: TitleBlock
+     className: >
+       text-4xl sm:text-5xl font-extrabold tracking-tight
+       text-dark transition-transform duration-300
+       hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution.
@@ -190,25 +193,6 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
   - title: Divider
     colors: bg-light-fg-dark
     styles:
