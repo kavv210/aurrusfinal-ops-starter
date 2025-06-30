@@ -1,3 +1,16 @@
+---
+title: Services
+slug: services
+type: PageLayout
+styles:
+  title:
+    textAlign: center
+seo:
+  metaTitle: Services - Aurrus
+  metaDescription: >
+    Explore our core service offerings: Business Consulting, IT Staffing, and Talent Acquisition.
+  socialImage: /images/img-placeholder.svg
+
 sections:
   - type: FeaturesSection
     elementId: business-consulting
@@ -21,14 +34,14 @@ sections:
       subtitle:
         textAlign: center
 
-  - type: GenericSection
-    colors: bg-gradient-to-r-from-[#FFAB40]-via-[#FF7043]-to-[#3D4DFF]
+  - type: DividerSection
+    colors: bg-[#FFB74D]
     styles:
       self:
         height: sm
-        margin:
-          - mt-12
-          - mb-12
+        padding:
+          - pt-4
+          - pb-4
 
   - type: FeaturesSection
     elementId: it-staffing
@@ -52,14 +65,14 @@ sections:
       subtitle:
         textAlign: center
 
-  - type: GenericSection
-    colors: bg-gradient-to-r-from-[#FFAB40]-via-[#FF7043]-to-[#3D4DFF]
+  - type: DividerSection
+    colors: bg-[#FF7043]
     styles:
       self:
         height: sm
-        margin:
-          - mt-12
-          - mb-12
+        padding:
+          - pt-4
+          - pb-4
 
   - type: FeaturesSection
     elementId: talent-acquisition
@@ -82,3 +95,6 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
+
+bottomSections: []
+---
