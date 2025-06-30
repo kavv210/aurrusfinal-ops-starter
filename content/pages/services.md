@@ -17,7 +17,7 @@ sections:
       type: TitleBlock
       color: text-dark
     subtitle: Trusted business and technology solutions designed to scale your success.
-    colors: bg-light-fg-dark
+    colors: bg-[#FFF3E0]-fg-[#BF360C]
     styles:
       self:
         padding:
@@ -25,6 +25,12 @@ sections:
           - pb-16
           - pl-4
           - pr-4
+        animation:
+          - fade-up
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
     elementId: top
 
   - type: FeaturesSection
@@ -36,7 +42,7 @@ sections:
       Our approach combines industry best practices with actionable strategy that aligns with your goals.
     image: /images/consult-vector.svg
     imagePosition: right
-    colors: bg-neutralAlt-fg-dark
+    colors: bg-[#FFE0B2]-fg-dark
     styles:
       self:
         padding:
@@ -44,6 +50,10 @@ sections:
           - pb-24
         animation:
           - fade-up
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
 
   - type: FeaturesSection
     elementId: it-staffing
@@ -54,7 +64,7 @@ sections:
       Flexible, vetted, and ready to build.
     image: /images/it-vector.svg
     imagePosition: left
-    colors: bg-light-fg-dark
+    colors: bg-[#FFF3E0]-fg-dark
     styles:
       self:
         padding:
@@ -62,6 +72,10 @@ sections:
           - pb-24
         animation:
           - fade-right
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
 
   - type: FeaturesSection
     elementId: talent-acquisition
@@ -72,7 +86,7 @@ sections:
       End-to-end hiring support that drives real business impact.
     image: /images/talent-vector.svg
     imagePosition: right
-    colors: bg-neutral-fg-dark
+    colors: bg-[#FFCCBC]-fg-dark
     styles:
       self:
         padding:
@@ -80,5 +94,9 @@ sections:
           - pb-24
         animation:
           - fade-left
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
 bottomSections: []
 ---
