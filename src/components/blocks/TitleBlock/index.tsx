@@ -1,4 +1,5 @@
 import * as React from 'react';
+import type { JSX } from 'react';
 import classNames from 'classnames';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 
