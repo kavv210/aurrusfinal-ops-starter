@@ -1,42 +1,45 @@
 const plugin = require('tailwindcss/plugin');
 const themeStyle = require('./content/data/style.json');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    // React components (app & pages routers)
     './src/**/*.{js,ts,jsx,tsx}',
-    './content/**/*',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
+
+    // Markdown / YAML / JSON content that injects Tailwind classes
+    './content/**/*.{md,mdx,yml,json}',
+    './index.md',
+
+    // Sourcebit‑generated cache (Stackbit)
     './.sourcebit-nextjs-cache.json'
   ],
+
   safelist: [
-    // Utility classes always needed
+    // Text colours that CMS sometimes injects
     'text-neutral',
     'text-light',
+
+    // Margin / padding utilities referenced in YAML
     {
-      pattern: /(m|p)(t|b|l|r)-(0|px|1|1.5|2|2.5|3|3.5|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96)/
+      pattern:
+        /(m|p)(t|b|l|r)-(0|px|1|1\.5|2|2\.5|3|3\.5|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96)/
     },
 
-    // Gradient background and custom hover effects
+    // Gradient and motion utilities occasionally injected by editors
     'bg-gradient-to-br',
     'from-[#FFE0B2]',
     'via-[#FFD180]',
     'to-[#FFE0C3]',
-
-    // Title and hover effects
     'text-[#1E88E5]',
     'hover:text-[#FFA500]',
-    'hover:scale-105',
     'transition-all',
     'duration-300',
-    'ease-in-out',
-
-    // AOS data attributes and animations
-    'data-aos',
-    'data-aos-duration',
-    'fade-up',
-    'fade-down',
-    'fade-left',
-    'fade-right'
+    'ease-in-out'
   ],
+
   theme: {
     extend: {
       boxShadow: {
@@ -79,8 +82,10 @@ module.exports = {
       }
     }
   },
+
   plugins: [
     plugin(function ({ addBase, addComponents, theme }) {
+      /* ---------------- Base typography ---------------- */
       addBase({
         body: {
           fontFamily: theme(`fontFamily.${themeStyle.fontBody}`)
@@ -131,6 +136,8 @@ module.exports = {
           textTransform: themeStyle.h6.case
         }
       });
+
+      /* ---------------- Stackbit component tokens ---------------- */
       addComponents({
         '.sb-component-button-primary': {
           borderRadius: theme(`borderRadius.${themeStyle.buttonPrimary.borderRadius}`),
