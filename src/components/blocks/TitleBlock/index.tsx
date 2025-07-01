@@ -1,38 +1,31 @@
 import * as React from 'react';
-import type { JSX } from 'react';
 import classNames from 'classnames';
+
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 
 export default function TitleBlock(props) {
     const {
-        className,
-        text,
+        className, // this is picked from props.title.className
+        text = '',
         color = 'text-dark',
         styles = {},
-        level = 2,
-        enableAnnotations
+        level = 2 // optional: allow setting h1/h2/etc
     } = props;
 
-    const fieldPath = props['data-sb-field-path'];
     const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
-
-    if (!text) return null;
+    const fieldPath = props['data-sb-field-path'];
 
     return (
         <HeadingTag
             className={classNames(
-                'sb-component',
-                'sb-component-block',
-                'sb-component-title',
+                'sb-component sb-component-block sb-component-title',
                 color,
-                className,
-                styles?.self ? mapStyles(styles?.self) : undefined
+                mapStyles(styles?.self),
+                className
             )}
-            {...(enableAnnotations && { 'data-sb-field-path': fieldPath })}
+            data-sb-field-path={fieldPath}
         >
-            <span {...(enableAnnotations && { 'data-sb-field-path': '.text' })}>
-                {text}
-            </span>
+            <span {...(fieldPath && { 'data-sb-field-path': '.text' })}>{text}</span>
         </HeadingTag>
     );
 }
