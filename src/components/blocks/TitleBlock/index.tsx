@@ -12,7 +12,7 @@ export default function TitleBlock(props) {
         level = 2 // optional: allow setting h1/h2/etc
     } = props;
 
-    const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
+    const HeadingTag = `h${level}` as any;
     const fieldPath = props['data-sb-field-path'];
 
     return (
