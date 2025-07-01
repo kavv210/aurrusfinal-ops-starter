@@ -3,8 +3,16 @@ title: Home
 slug: /
 __metadata:
   modelName: PageLayout
+type: PageLayout
+seo:
+  metaTitle: Aurrus-Home
+  metaDescription: Aurrus Consulting Main Site.
+  socialImage: /images/main-hero.jpg
+  type: Seo
 sections:
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
@@ -42,14 +50,18 @@ sections:
           - pb-16
           - pr-16
       title:
-        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
+        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
   - type: FeaturedItemsSection
+    __metadata:
+      modelName: FeaturedItemsSection
     title:
       text: Why Aurrus?
       type: TitleBlock
     items:
       - type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: We provide strategic guidance to help organizations navigate change and
@@ -68,7 +80,10 @@ sections:
             borderRadius: x-large
             flexDirection: row
             textAlign: left
+
       - type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
         title: Organisational Development
         subtitle: Strengthen Internal Structure
         text: We enhance the health and adaptability of your organisation—designing
@@ -86,7 +101,10 @@ sections:
             borderRadius: x-large
             flexDirection: row
             textAlign: left
+
       - type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
         title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: From aligning stakeholder expectations to managing timelines and budgets,
@@ -102,6 +120,7 @@ sections:
               - p-8
             borderRadius: x-large
             flexDirection: row
+
     actions:
       - label: Get started
         url: /
@@ -124,9 +143,11 @@ sections:
           - pl-16
           - pr-16
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
   - type: ImageGallerySection
+    __metadata:
+      modelName: ImageGallerySection
     subtitle: Award‑winning enterprises trust us
     images:
       - url: /images/empathy-logo.svg
@@ -157,14 +178,20 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+
   - type: DividerSection
+    __metadata:
+      modelName: DividerSection
     title: Divider
     colors: bg-light-fg-dark
     styles:
       self:
         padding:
           - p-7
+
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     title:
       text: Built for Impact.
       type: TitleBlock
@@ -203,9 +230,11 @@ sections:
           - pl-8
           - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     title:
       text: Collaborative with Design
       type: TitleBlock
@@ -239,9 +268,11 @@ sections:
           - pl-8
           - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
@@ -269,9 +300,11 @@ sections:
           - pl-8
           - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
@@ -299,16 +332,21 @@ sections:
           - pl-8
           - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
   - type: DividerSection
+    __metadata:
+      modelName: DividerSection
     title: Divider
     colors: bg-light-fg-dark
     styles:
       self:
         padding:
           - p-7
+
   - type: FeaturedItemsSection
+    __metadata:
+      modelName: FeaturedItemsSection
     title:
       text: The Aurrus Difference
       type: TitleBlock
@@ -330,6 +368,9 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
         type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
+
       - title: Execution without Friction
         subtitle: From Planning to Precision
         text: We manage projects end‑to‑end with clear timelines, resource alignment,
@@ -346,6 +387,9 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
         type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
+
       - title: Experience that Matters
         subtitle: Decades‑deep expertise
         text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on
@@ -362,6 +406,9 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
         type: FeaturedItem
+        __metadata:
+          modelName: FeaturedItem
+
     variant: three-col-grid
     motion: fade-up
     colors: bg-neutral-fg-dark
@@ -373,9 +420,11 @@ sections:
           - pl-8
           - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary
-          transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
+
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     title:
       text: Let's Build Something Better Together.
       type: TitleBlock
@@ -423,13 +472,4 @@ sections:
           - pl-8
           - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
-          transition-transform duration-300 hover:scale-105
-seo:
-  metaTitle: Aurrus-Home
-  metaDescription: Aurrus Consulting Main Site.
-  socialImage: /images/main-hero.jpg
-  type: Seo
-
-type: PageLayout
----
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
