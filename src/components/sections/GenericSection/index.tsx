@@ -27,7 +27,6 @@ export default function GenericSection(props) {
 
     const flexDirection = styles?.self?.flexDirection ?? 'row';
     const alignItems = styles?.self?.alignItems ?? 'flex-start';
-
     const hasTextContent = !!(badge?.url || title?.text || subtitle || text || actions.length > 0);
     const hasMedia = !!(media && (media?.url || (media?.fields ?? []).length > 0));
     const hasXDirection = flexDirection === 'row' || flexDirection === 'row-reverse';
@@ -53,7 +52,7 @@ export default function GenericSection(props) {
                 )}
                 {...(motion && { 'data-aos': motion })}
             >
-                {/* LEFT/TOP TEXT CONTENT */}
+                {/* LEFT/TOP: TEXT CONTENT */}
                 {hasTextContent && (
                     <div
                         className={classNames('w-full', 'max-w-sectionBody', {
@@ -124,7 +123,7 @@ export default function GenericSection(props) {
                     </div>
                 )}
 
-                {/* RIGHT/BOTTOM MEDIA */}
+                {/* RIGHT/BOTTOM: MEDIA */}
                 {hasMedia && (
                     <div
                         className={classNames(
@@ -152,7 +151,7 @@ function Media({ media, hasAnnotations }: { media: any; hasAnnotations: boolean 
     }
     const MediaComponent = getComponent(modelName);
     if (!MediaComponent) {
-        throw new Error(`no component matching the hero section media model name: ${modelName}`);
+        throw new Error(`no component matching the generic section media model name: ${modelName}`);
     }
     return <MediaComponent {...media} {...(hasAnnotations && { 'data-sb-field-path': '.media' })} />;
 }
