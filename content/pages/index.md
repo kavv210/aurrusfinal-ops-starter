@@ -426,7 +426,6 @@ seo:
   metaDescription: Aurrus Consulting Main Site.
   socialImage: /images/main-hero.jpg
   type: Seo
-type: PageLayout
 
+type: PageLayout
 ---
-null
