@@ -1,16 +1,8 @@
----
-title: Home
-slug: /
 sections:
-  # ───────── Hero ─────────
   - type: GenericSection
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: >
-        text-4xl sm:text-5xl font-extrabold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution.
@@ -37,16 +29,14 @@ sections:
         alignItems: center
         flexDirection: row
         padding: [pt-16, pl-16, pb-16, pr-16]
+      title:
+        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-up
 
-  # ─────── “Why Aurrus?” cards ───────
   - type: FeaturedItemsSection
     title:
       text: Why Aurrus?
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300
-        hover:scale-105
     items:
       - type: FeaturedItem
         title: Business Strategy Consulting
@@ -112,8 +102,10 @@ sections:
     styles:
       self:
         padding: [pt-16, pb-16, pl-16, pr-16]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-up
 
-  # ─────── Trusted logos ───────
   - type: ImageGallerySection
     subtitle: Award‑winning enterprises trust us
     images:
@@ -132,21 +124,16 @@ sections:
       subtitle:
         textAlign: center
 
-  # ───────── Divider ─────────
   - type: DividerSection
     title: Divider
     colors: bg-light-fg-dark
     styles:
       self: { padding: [p-7] }
 
-  # ───────── Built for Impact ─────────
   - type: GenericSection
     title:
       text: Built for Impact.
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300 hover:scale-105
     text: |-
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy,
       efficiency in execution, and confidence in every decision. Our partnership model
@@ -171,15 +158,14 @@ sections:
         flexDirection: row
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-right
 
-  # ───────── Collaborative with Design ─────────
   - type: GenericSection
     title:
       text: Collaborative with Design
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: |-
       Progress happens when people work together. Aurrus aligns teams through clear communication,
@@ -200,15 +186,14 @@ sections:
         flexDirection: row
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-left
 
-  # ───────── Talent Acquisition ─────────
   - type: GenericSection
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300 hover:scale-105
     subtitle: Build high‑performance teams.
     text: >
       From sourcing top‑tier talent to hands‑on onboarding and leadership training, Aurrus
@@ -227,15 +212,14 @@ sections:
         alignItems: center
         flexDirection: row
         padding: [pt-16, pb-16, pl-8, pr-8]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-up
 
-  # ───────── Outsourcing & Transformation ─────────
   - type: GenericSection
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300 hover:scale-105
     subtitle: Optimise and scale.
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals,
@@ -254,22 +238,20 @@ sections:
         flexDirection: row-reverse
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-left
 
-  # ───────── Divider ─────────
   - type: DividerSection
     title: Divider
     colors: bg-light-fg-dark
     styles:
       self: { padding: [p-7] }
 
-  # ───────── The Aurrus Difference ─────────
   - type: FeaturedItemsSection
     title:
       text: The Aurrus Difference
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-primary transition-transform duration-300 hover:scale-105
     subtitle: Why should businesses choose Aurrus?
     items:
       - title: Collaborative by Nature
@@ -298,15 +280,14 @@ sections:
     styles:
       self:
         padding: [pt-16, pb-16, pl-8, pr-8]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
+        dataAos: fade-up
 
-  # ───────── CTA Contact Section ─────────
   - type: GenericSection
     title:
       text: Let's Build Something Better Together.
       type: TitleBlock
-      className: >
-        text-3xl sm:text-4xl font-bold tracking-tight
-        text-dark transition-transform duration-300 hover:scale-105
     subtitle: Start your consultation today!
     text: |
       Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
@@ -333,6 +314,9 @@ sections:
         flexDirection: col
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        dataAos: fade-down
 
 seo:
   metaTitle: Aurrus-Home
