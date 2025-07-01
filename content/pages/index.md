@@ -1,4 +1,8 @@
 ---
+title: Home
+slug: /
+__metadata:
+  modelName: PageLayout
 sections:
   - type: GenericSection
     title:
