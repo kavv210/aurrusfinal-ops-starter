@@ -154,6 +154,8 @@ sections:
       Our partnership model yields not just short‑term gains, but long‑term
       operational strength and market resilience.
     media:
+      __metadata:
+        modelName: VideoBlock
       url: /images/placeholder-video.mp4
       altText: Aurrus video
       type: VideoBlock
@@ -186,6 +188,8 @@ sections:
       url: /images/placeholder-video1.mp4
       altText: Collaboration video
       type: VideoBlock
+      __metadata:
+        modelName: VideoBlock
       autoplay: true
       loop: true
       muted: true
