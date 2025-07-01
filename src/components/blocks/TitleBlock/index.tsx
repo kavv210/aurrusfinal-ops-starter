@@ -20,7 +20,7 @@ export default function TitleBlock(props) {
             className={classNames(
                 'sb-component sb-component-block sb-component-title',
                 color,
-                mapStyles(styles?.self),
+                mapStyles(styles?.self ?? {}),
                 className
             )}
             data-sb-field-path={fieldPath}
