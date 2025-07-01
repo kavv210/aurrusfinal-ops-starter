@@ -13,7 +13,7 @@ export default function TitleBlock(props) {
     } = props;
 
     const fieldPath = props['data-sb-field-path'];
-    const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
+    const HeadingTag = `h${level}` as keyof React.ReactHTML;
 
     if (!text) return null;
 
