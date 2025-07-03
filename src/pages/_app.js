@@ -9,10 +9,11 @@ export default function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
-      once: true,
+      duration: 800,
+      once: false,            // Animates every scroll
+      easing: 'ease-out-cubic',
+      mirror: true,           // Re-animates when scrolling back
       offset: 120,
-      easing: 'ease-in-out',
     });
 
     const handleRouteChange = () => AOS.refresh();
