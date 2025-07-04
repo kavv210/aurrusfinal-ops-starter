@@ -1,57 +1,33 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+// components/Preloader.js
+import { motion } from 'framer-motion';
 
-const loadingSteps = [
-  'Initializing Aurrus…',
-  'Loading components…',
-  'Launching interface…'
-];
+/*
+ * Put your intro video at /public/intro.mp4  (or change the src below)
+ * If you don’t want video, just remove the <video> tag — the text still shows.
+ */
 
 export default function Preloader({ finish }) {
-  const [stepIndex, setStepIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStepIndex((prev) => {
-        if (prev === loadingSteps.length - 1) return prev;
-        return prev + 1;
-      });
-    }, 1000);
-
-    const timeout = setTimeout(() => {
-      clearInterval(interval);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
-    };
-  }, []);
-
   return (
     <motion.div
-      className="fixed inset-0 z-[9999] flex items-center justify-center text-white overflow-hidden"
+      className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-[#0a2540]"
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ delay: 3.5, duration: 0.8 }}
+      transition={{ delay: 2.6, duration: 0.8, ease: 'easeInOut' }}
       onAnimationComplete={finish}
     >
-      {/* ✨ MOVING GRADIENT BACKGROUND */}
-      <div className="absolute inset-0 animate-gradient bg-gradient-to-br from-blue-900 via-indigo-700 to-purple-900 opacity-90 blur-sm"></div>
+      {/* ▶️ Background video (loop, muted, covers entire screen) */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/intro.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
 
-      {/* TYPEWRITER LOADING STEPS */}
-      <div className="z-10 font-mono text-xl md:text-2xl px-4 text-center">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={stepIndex}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.6 }}
-          >
-            {loadingSteps[stepIndex]}
-          </motion.div>
-        </AnimatePresence>
+      {/* ✨ Classy headline */}
+      <div className="relative z-10 text-white text-2xl md:text-3xl font-semibold font-serif tracking-wide px-4 text-center">
+        Initializing&nbsp;Aurrus…
       </div>
     </motion.div>
   );
