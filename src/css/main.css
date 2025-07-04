@@ -19,11 +19,11 @@
   }
 
   /* custom text‑highlight */
-  ::selection{background:#fb923c;color:#0a2540;}
+  ::selection{background:#0a2540;color:#f97316;}
 }
 
 /* ───────── COMPONENTS ───────── */
-@layer components{
+@layer components {
   /* Containers */
   .container{ @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8; }
 
@@ -40,7 +40,7 @@
     content:"";
     position:absolute; inset:0;
     z-index:-1;
-    padding:2px;                       /* border thickness */
+    padding:2px;
     border-radius:inherit;
     background:linear-gradient(135deg,#f97316 0%,#fb923c 50%,#ffb347 100%);
     -webkit-mask:
@@ -74,13 +74,28 @@
   .sb-component-link-primary{ @apply text-primary hover:underline; }
   .sb-component-link-secondary{ @apply text-current hover:text-primary; }
 
-  /* Typography helpers */
-  a{ @apply underline transition duration-200 ease-in; }
-  a:hover{ @apply text-primary; }
-  strong,b{ @apply font-bold; }
-  em{ @apply italic; }
+  /* Dropdown fix */
+  select, option {
+    @apply bg-white text-dark;
+  }
 
-  /* Misc small comps unchanged */
+  /* Image hover zoom effect */
+  .image-hover-zoom {
+    @apply transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-105 hover:shadow-lg rounded-lg;
+  }
+
+  /* Grid columns fade animation */
+  .fade-col {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-col.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Carousel & misc */
   .sb-checkbox:checked + .sb-label:before{content:'\2713';}
   .sb-carousel-dot{ @apply w-4 h-4 cursor-pointer; }
   .sb-carousel-tab-title{ @apply cursor-pointer opacity-40 max-w-xs;
@@ -88,12 +103,11 @@
     overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:1; -webkit-box-orient:vertical; }
   .sb-carousel-tab-title-active{ @apply opacity-100; }
 
-  /* Brand gradient helper */
   .bg-gradient-brand{ background:linear-gradient(to right,#ffffff,#0a2540,#f97316); color:white; }
 }
 
 /* ───────── UTILITIES ───────── */
-@layer utilities{
+@layer utilities {
   /* Orange scrollbar */
   ::-webkit-scrollbar{width:10px;}
   ::-webkit-scrollbar-thumb{background:#f97316;border-radius:9999px;}
@@ -107,7 +121,7 @@
   .underline-line-through{text-decoration-line:underline line-through;}
 }
 
-/* ───────── SCROLL‑TO‑TOP BUTTON (CSS only) ───────── */
+/* ───────── SCROLL‑TO‑TOP BUTTON ───────── */
 #scrollToTopBtn{
   @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
   background:linear-gradient(135deg,#f97316 0%,#fb923c 100%);
