@@ -10,8 +10,7 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false,          // re-trigger animations on scroll
-      mirror: true,         // animate out on scroll-up
+      once: true,          // re-trigger animations on scroll   
       easing: 'ease-out-cubic',
       offset: 120
     });
