@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
     AOS.init({
       duration: 800,
       offset: 80,
-      easing: 'ease-in',
+      easing: 'ease-in-out',
       once: false,
       mirror: true,
       anchorPlacement: 'top-bottom'
