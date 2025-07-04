@@ -1,16 +1,15 @@
 // pages/_app.js
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Lenis from '@studio-freight/lenis';
 import { AnimatePresence, motion } from 'framer-motion';
 import '../css/main.css';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  /* ───────── AOS (section fade / zoom) ───────── */
+  // ───── AOS: Animations on Scroll ─────
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -20,22 +19,21 @@ export default function MyApp({ Component, pageProps }) {
       mirror: true,
       anchorPlacement: 'top-bottom'
     });
-
     const refresh = () => AOS.refreshHard();
     router.events.on('routeChangeComplete', refresh);
     return () => router.events.off('routeChangeComplete', refresh);
   }, [router.events]);
 
-  /* ───────── LENIS (smooth scroll) ───────── */
+  // ───── Lenis: Smooth Scrolling ─────
   useEffect(() => {
     (async () => {
       const { default: Lenis } = await import('@studio-freight/lenis');
       const lenis = new Lenis({
-        duration: 1.8,                       // slower → smoother
-        easing: t => 1 - Math.pow(1 - t, 3), // ease‑out cubic
+        duration: 1.5,
+        easing: t => 1 - Math.pow(1 - t, 3),
         smoothWheel: true,
         smoothTouch: false,
-        lerp: 0.075
+        lerp: 0.09
       });
 
       function raf(time) {
@@ -46,46 +44,11 @@ export default function MyApp({ Component, pageProps }) {
 
       document.documentElement.classList.add('lenis');
       document.body.classList.add('lenis');
-      console.log('Lenis ready 🚀 (ease‑out cubic)');
+      console.log('Lenis ready 🚀');
     })();
   }, []);
 
-  /* ───────── Fade‑in Observer for .fade-col ───────── */
-  useEffect(() => {
-    const elems = document.querySelectorAll('.fade-col');
-    const obs = new IntersectionObserver(
-      entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) e.target.classList.add('appear');
-        });
-      },
-      { threshold: 0.15 }
-    );
-    elems.forEach(el => obs.observe(el));
-    return () => elems.forEach(el => obs.unobserve(el));
-  }, []);
-
-  /* ───────── Scroll‑to‑Top Button ───────── */
-  const ScrollBtn = () => {
-    const [show, setShow] = useState(false);
-    useEffect(() => {
-      const onScroll = () => setShow(window.scrollY > 300);
-      window.addEventListener('scroll', onScroll);
-      return () => window.removeEventListener('scroll', onScroll);
-    }, []);
-    return (
-      <button
-        id="scrollToTopBtn"
-        style={{ display: show ? 'flex' : 'none' }}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        aria-label="Scroll to top"
-      >
-        ↑
-      </button>
-    );
-  };
-
-  /* ───────── Page Transition Variants ───────── */
+  // ───── Page Transition ─────
   const pageTransition = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -103,7 +66,6 @@ export default function MyApp({ Component, pageProps }) {
         transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
         <Component {...pageProps} />
-        <ScrollBtn />
       </motion.div>
     </AnimatePresence>
   );
