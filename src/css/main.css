@@ -293,9 +293,6 @@
         .sb-component-button-secondary {
             @apply border-dark text-dark;
         }
-        html {
-  scroll-behavior: smooth;
-}
     }
 
     .bg-gradient-brand {
@@ -350,8 +347,8 @@
         animation: fadeInUp 0.8s ease-out forwards;
         opacity: 0;
     }
-html {
+    html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
-
 }
