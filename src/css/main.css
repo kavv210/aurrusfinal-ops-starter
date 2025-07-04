@@ -12,7 +12,8 @@
     overflow-x: hidden;
   }
   body {
-    @apply text-base text-dark bg-white;
+    @apply text-base text-dark;
+    background: linear-gradient(to bottom, #ffffff, #f0f6ff, #fff8f0); /* light blue to peach */
     overflow-x: hidden;
   }
 
@@ -25,6 +26,7 @@
     @apply break-words font-semibold transition-transform duration-300 ease-in-out;
     line-height: 1.2;
   }
+
   h1:hover,
   h2:hover,
   h3:hover,
@@ -57,9 +59,10 @@
   }
 
   .divider-home {
-    @apply border-t border-neutral my-8;
-    border-width: 3px !important;
+    @apply border-t border-orange-400 my-10;
+    border-width: 4px !important;
   }
+
   .divider-services {
     @apply border-t border-neutral my-8;
     border-width: 1px !important;
@@ -67,8 +70,7 @@
 
   .sb-card {
     position: relative;
-    @apply p-4 rounded-xl shadow-md;
-    background-color: inherit;
+    @apply p-4 rounded-xl bg-white shadow-md;
     transition: transform 0.4s ease, box-shadow 0.3s ease;
   }
 
@@ -146,25 +148,19 @@
     box-shadow: 0 4px 10px rgba(249, 115, 22, 0.15);
   }
 
-  /* ───── FOOTER STYLE ───── */
   footer {
-    @apply bg-[#0a2540] text-white rounded-2xl p-10 mt-20 relative z-10 text-center;
-    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.5);
+    @apply bg-[#0a2540] text-white rounded-2xl p-8 mt-16 relative z-10;
+    box-shadow: 0 8px 24px rgba(10, 37, 64, 0.5);
     opacity: 0;
-    animation: fadeInFooter 0.8s forwards 0.3s;
+    animation: fadeInFooter 0.8s forwards 0.2s;
   }
 
   footer .container {
-    @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-4;
-  }
-
-  footer .container > div {
-    @apply p-4 rounded-xl text-white border border-white/10 shadow-md;
-    background-color: transparent;
+    @apply text-center rounded-xl overflow-hidden;
   }
 
   footer p {
-    @apply text-sm text-white;
+    @apply text-sm;
   }
 }
 
@@ -198,6 +194,16 @@
     opacity: 0;
   }
 
+  .fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -206,6 +212,28 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
@@ -229,14 +257,6 @@
     background-color: white;
   }
 
-  footer .grid > div,
-  footer .columns > div,
-  footer .sb-card {
-    background-color: transparent !important;
-    border-color: rgba(255, 255, 255, 0.1);
-    color: white;
-  }
-
   .grid > div:hover,
   .columns > div:hover,
   .sb-card:hover {
@@ -251,20 +271,7 @@
   background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
 }
-
 #scrollToTopBtn:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-}
-
-/* ───── FOOTER FADE-IN ANIMATION ───── */
-@keyframes fadeInFooter {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
