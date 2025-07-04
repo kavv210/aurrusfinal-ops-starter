@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply text-base;
+    @apply text-base bg-white text-dark;
     overflow-x: hidden;
   }
 
@@ -31,6 +31,14 @@
 }
 
 @layer components {
+  .container {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .sb-divider {
+    @apply border-t border-neutral my-8;
+  }
+
   .sb-component-button,
   .sb-component-link {
     @apply inline-flex justify-center items-center text-center transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
@@ -87,11 +95,6 @@
     content: '\2713';
   }
 
-  .bg-gradient-brand {
-    background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
-    color: white;
-  }
-
   .sb-image-strip-track {
     min-width: 160rem;
     overflow-x: auto;
@@ -99,6 +102,15 @@
 
   .sb-image-strip-content {
     min-width: 80rem;
+  }
+
+  .sb-card {
+    @apply p-4 border border-neutral rounded-xl shadow-sm bg-white;
+  }
+
+  .bg-gradient-brand {
+    background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
+    color: white;
   }
 }
 
