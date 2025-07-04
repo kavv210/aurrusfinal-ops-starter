@@ -5,309 +5,330 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        scroll-behavior: smooth;
-    }
-    body {
-        @apply text-base;
-    }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    @apply text-base;
+    overflow-x: hidden;
+  }
 
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    h6 {
-        @apply break-words font-semibold; /* mid-bold */
-        line-height: 1.2;
-    }
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  h6 {
+    @apply break-words font-semibold;
+    line-height: 1.2;
+    transition: transform 0.3s ease;
+  }
+
+  h1:hover,
+  h2:hover,
+  h3:hover,
+  h4:hover,
+  h5:hover,
+  h6:hover {
+    transform: scale(1.025);
+  }
 }
 
 @layer components {
-    .sb-markdown {
-        @apply leading-relaxed;
-        a {
-            @apply underline transition duration-200 ease-in;
-        }
-        a:hover {
-            @apply text-primary;
-        }
-        b,
-        strong {
-            @apply font-bold;
-        }
-        em {
-            @apply italic;
-        }
-        * + * {
-            margin-top: 1.5em;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin-top: 3.5rem;
-            &:first-child {
-                margin-top: 0;
-            }
-        }
-        h1+h2,
-        h2+h3,
-        h3+h4,
-        h4+h5,
-        h5+h6 {
-            margin-top: 1.5rem;
-        }
-        ol {
-            @apply list-decimal;
-            padding-left: 1.25em;
-        }
-        ul {
-            @apply list-disc;
-            padding-left: 1.25em;
-        }
-        li > ul,
-        li > ol {
-            margin: 0;
-        }
-        li + li {
-            margin-top: 0.5rem;
-        }
-        blockquote {
-            @apply border-l-4 border-current;
-            font-size: 1.25em;
-            line-height: 1.4;
-            padding-left: 1.25em;
-            &:not(:first-child) {
-                margin-top: 2.5rem;
-            }
-            &:not(:last-child) {
-                margin-bottom: 2.5rem;
-            }
-        }
-        pre {
-            @apply border border-current overflow-x-auto leading-normal;
-            padding: 1.25em;
-        }
-        hr {
-            @apply bg-current border-0 h-px;
-            &:not(:first-child) {
-                margin-top: 2.5rem;
-            }
-            &:not(:last-child) {
-                margin-bottom: 2.5rem;
-            }
-        }
-        figcaption {
-            @apply leading-normal;
-            font-size: 0.875em;
-            margin: 0.5rem 0 0;
-        }
-        table {
-            @apply border border-current border-collapse text-left w-full;
-        }
-        caption {
-            @apply text-left;
-            font-size: 0.875em;
-            margin: 0 0 0.5rem;
-        }
-        th,
-        td {
-            @apply border-r border-b border-current;
-            padding: 0.5em;
-        }
-        th {
-            font-weight: bold;
-        }
+  .sb-markdown {
+    @apply leading-relaxed;
+    a {
+      @apply underline transition duration-200 ease-in;
+    }
+    a:hover {
+      @apply text-primary;
+    }
+    b,
+    strong {
+      @apply font-bold;
+    }
+    em {
+      @apply italic;
+    }
+    * + * {
+      margin-top: 1.5em;
     }
 
-    h1:hover,
-    h2:hover,
-    h3:hover,
-    h4:hover,
-    h5:hover,
-    h6:hover,
-    .sb-component-link:hover,
-    .sb-component-button-secondary:hover {
-        @apply text-primary transition duration-200 ease-in-out;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 3.5rem;
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
-    .sb-component-button {
-        @apply inline-flex justify-center items-center text-center border transition duration-200 ease-in hover:-translate-y-1;
+    h1 + h2,
+    h2 + h3,
+    h3 + h4,
+    h4 + h5,
+    h5 + h6 {
+      margin-top: 1.5rem;
     }
 
-    .sb-component-link {
-        @apply inline-flex justify-center items-center text-center transition duration-200 ease-linear;
+    ol {
+      @apply list-decimal;
+      padding-left: 1.25em;
     }
-    .sb-component-link-primary {
-        @apply text-primary hover:underline;
-    }
-    .sb-component-link-secondary {
-        @apply text-current hover:text-primary transition duration-200;
-    }
-
-    option {
-        color: initial;
+    ul {
+      @apply list-disc;
+      padding-left: 1.25em;
     }
 
-    .sb-checkbox:checked + .sb-label:before {
-        content: '\2713';
+    li > ul,
+    li > ol {
+      margin: 0;
     }
 
-    .sb-carousel-dot {
-        @apply w-4 h-4 cursor-pointer;
+    li + li {
+      margin-top: 0.5rem;
     }
 
-    .sb-carousel-tab-title {
-        @apply cursor-pointer opacity-40 max-w-xs;
-        display: -webkit-box;
-        line-height: 1.5;
-        max-height: 1.5em;
-        overflow-y: hidden;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-    }
-    .sb-carousel-tab-title-active {
-        @apply opacity-100;
-    }
-
-    .bg-light-fg-dark,
-    .sb-card.bg-light-fg-dark {
-        @apply text-dark bg-light;
-        .sb-input,
-        .sb-select,
-        .sb-textarea {
-            @apply placeholder-dark/50;
-        }
-        .sb-component-button-primary {
-            @apply bg-primary border-primary text-light;
-        }
-        .sb-component-button-secondary {
-            @apply border-dark text-dark;
-        }
-        .sb-divider,
-        .sb-footer-bottom {
-            @apply border-neutral;
-        }
+    blockquote {
+      @apply border-l-4 border-current;
+      font-size: 1.25em;
+      line-height: 1.4;
+      padding-left: 1.25em;
+      &:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
     }
 
-    .bg-neutral-fg-dark,
-    .sb-card.bg-neutral-fg-dark {
-        @apply text-dark bg-neutral;
-        .sb-component-button-primary {
-            @apply bg-primary border-primary text-light;
-        }
-        .sb-component-button-secondary {
-            @apply border-dark text-dark;
-        }
-        .sb-divider,
-        .sb-footer-bottom {
-            @apply border-neutralAlt;
-        }
+    pre {
+      @apply border border-current overflow-x-auto leading-normal;
+      padding: 1.25em;
     }
 
-    .bg-dark-fg-light,
-    .sb-card.bg-dark-fg-light {
-        @apply text-light bg-dark;
-        .sb-component-button-primary {
-            @apply bg-primary border-primary text-light;
-        }
-        .sb-component-button-secondary {
-            @apply border-light text-light;
-        }
-        .sb-divider,
-        .sb-footer-bottom {
-            @apply border-light/20;
-        }
+    hr {
+      @apply bg-current border-0 h-px;
+      &:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
     }
 
-    .bg-neutralAlt-fg-dark {
-        @apply text-dark bg-neutralAlt;
-        .sb-component-button-primary {
-            @apply bg-primary border-primary text-light;
-        }
-        .sb-component-button-secondary {
-            @apply border-dark text-dark;
-        }
+    figcaption {
+      @apply leading-normal;
+      font-size: 0.875em;
+      margin: 0.5rem 0 0;
     }
 
-    .bg-gradient-brand {
-        background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
-        color: white;
+    table {
+      @apply border border-current border-collapse text-left w-full;
     }
+
+    caption {
+      @apply text-left;
+      font-size: 0.875em;
+      margin: 0 0 0.5rem;
+    }
+
+    th,
+    td {
+      @apply border-r border-b border-current;
+      padding: 0.5em;
+    }
+
+    th {
+      font-weight: bold;
+    }
+  }
+
+  .sb-component-button {
+    @apply inline-flex justify-center items-center text-center border transition duration-300 ease-in-out hover:scale-105;
+  }
+
+  .sb-component-link {
+    @apply inline-flex justify-center items-center text-center transition duration-300 ease-in-out hover:scale-105;
+  }
+
+  .sb-component-link-primary {
+    @apply text-primary hover:underline;
+  }
+
+  .sb-component-link-secondary {
+    @apply text-current hover:text-primary transition duration-200;
+  }
+
+  option {
+    color: initial;
+  }
+
+  .sb-checkbox:checked + .sb-label:before {
+    content: '\2713';
+  }
+
+  .sb-carousel-dot {
+    @apply w-4 h-4 cursor-pointer;
+  }
+
+  .sb-carousel-tab-title {
+    @apply cursor-pointer opacity-40 max-w-xs;
+    display: -webkit-box;
+    line-height: 1.5;
+    max-height: 1.5em;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .sb-carousel-tab-title-active {
+    @apply opacity-100;
+  }
+
+  .bg-light-fg-dark,
+  .sb-card.bg-light-fg-dark {
+    @apply text-dark bg-light;
+    .sb-input,
+    .sb-select,
+    .sb-textarea {
+      @apply placeholder-dark/50;
+    }
+    .sb-component-button-primary {
+      @apply bg-primary border-primary text-light;
+    }
+    .sb-component-button-secondary {
+      @apply border-dark text-dark;
+    }
+    .sb-divider,
+    .sb-footer-bottom {
+      @apply border-neutral;
+    }
+  }
+
+  .bg-neutral-fg-dark,
+  .sb-card.bg-neutral-fg-dark {
+    @apply text-dark bg-neutral;
+    .sb-component-button-primary {
+      @apply bg-primary border-primary text-light;
+    }
+    .sb-component-button-secondary {
+      @apply border-dark text-dark;
+    }
+    .sb-divider,
+    .sb-footer-bottom {
+      @apply border-neutralAlt;
+    }
+  }
+
+  .bg-dark-fg-light,
+  .sb-card.bg-dark-fg-light {
+    @apply text-light bg-dark;
+    .sb-component-button-primary {
+      @apply bg-primary border-primary text-light;
+    }
+    .sb-component-button-secondary {
+      @apply border-light text-light;
+    }
+    .sb-divider,
+    .sb-footer-bottom {
+      @apply border-light/20;
+    }
+  }
+
+  .bg-neutralAlt-fg-dark {
+    @apply text-dark bg-neutralAlt;
+    .sb-component-button-primary {
+      @apply bg-primary border-primary text-light;
+    }
+    .sb-component-button-secondary {
+      @apply border-dark text-dark;
+    }
+  }
+
+  .bg-gradient-brand {
+    background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
+    color: white;
+  }
 }
 
 @layer utilities {
-    .underline-line-through {
-        text-decoration-line: underline line-through;
-    }
-    .sb-animate-slide-left {
-        animation-name: slideLeft;
-        animation-duration: var(--sb-slide-speed, 80s);
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    .sb-animate-slide-right {
-        animation-name: slideRight;
-        animation-duration: var(--sb-slide-speed, 80s);
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    @keyframes slideLeft {
-        from {
-            transform: translate3d(0, 0, 0);
-        }
-        to {
-            transform: translate3d(-50%, 0, 0);
-        }
-    }
-    @keyframes slideRight {
-        from {
-            transform: translate3d(-50%, 0, 0);
-        }
-        to {
-            transform: translate3d(0, 0, 0);
-        }
-    }
+  .underline-line-through {
+    text-decoration-line: underline line-through;
+  }
 
-    @keyframes fadeInUp {
-        0% {
-            opacity: 0;
-            transform: translateY(40px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+  .sb-animate-slide-left {
+    animation-name: slideLeft;
+    animation-duration: var(--sb-slide-speed, 80s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 
-    .fade-in-up {
-        animation: fadeInUp 0.8s ease-out forwards;
-        opacity: 0;
-    }
+  .sb-animate-slide-right {
+    animation-name: slideRight;
+    animation-duration: var(--sb-slide-speed, 80s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 
-    /* ───── ORANGE CUSTOM SCROLLBAR ───── */
-    ::-webkit-scrollbar {
-        width: 10px;
+  @keyframes slideLeft {
+    from {
+      transform: translate3d(0, 0, 0);
     }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
 
-    ::-webkit-scrollbar-thumb {
-        background: #f97316;
-        border-radius: 9999px;
+  @keyframes slideRight {
+    from {
+      transform: translate3d(-50%, 0, 0);
     }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: #fb923c;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
     }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-    ::-webkit-scrollbar-track {
-        background: transparent;
-    }
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* ───── ORANGE CUSTOM SCROLLBAR ───── */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fb923c;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
