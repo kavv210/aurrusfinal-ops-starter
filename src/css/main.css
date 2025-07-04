@@ -6,128 +6,207 @@
 
 /* ───────── BASE ───────── */
 @layer base {
-  html { scroll-behavior:smooth; overflow-y:scroll; overflow-x:hidden; }
-  body { @apply text-base text-dark bg-white; overflow-x:hidden; }
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-  h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+  body {
+    @apply text-base text-dark bg-white;
+    overflow-x: hidden;
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     @apply break-words font-semibold transition-transform duration-300 ease-in-out;
-    line-height:1.2;
-  }
-  h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover{
-    @apply text-primary;
-    transform:scale(1.03);
+    line-height: 1.2;
   }
 
-  /* custom text‑highlight */
-  ::selection{background:#0a2540;color:#f97316;}
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    @apply text-primary;
+    transform: scale(1.03);
+  }
+
+  /* Highlight selection */
+  ::selection {
+    background: #0a2540;
+    color: #f97316;
+  }
 }
 
 /* ───────── COMPONENTS ───────── */
 @layer components {
-  /* Containers */
-  .container{ @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8; }
+  /* Container */
+  .container {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
 
   /* Dividers */
-  .divider-home{ @apply border-t border-neutral my-8; border-width:2px!important; }      /* bolder line */
-  .divider-services{ @apply border-t border-neutral my-8; border-width:1px!important; }  /* slimmer */
+  .divider-home {
+    @apply border-t border-neutral my-8;
+    border-width: 2px !important;
+  }
+  .divider-services {
+    @apply border-t border-neutral my-8;
+    border-width: 1px !important;
+  }
 
-  /* Cards with gradient border */
-  .sb-card{
-    position:relative;
+  /* Card with gradient border */
+  .sb-card {
+    position: relative;
     @apply p-4 rounded-xl bg-white shadow-md;
   }
-  .sb-card::before{
-    content:"";
-    position:absolute; inset:0;
-    z-index:-1;
-    padding:2px;
-    border-radius:inherit;
-    background:linear-gradient(135deg,#f97316 0%,#fb923c 50%,#ffb347 100%);
+  .sb-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #ffb347 100%);
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
-    -webkit-mask-composite:xor;
-            mask-composite:exclude;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 
   /* Buttons */
-  .sb-component-button{
+  .sb-component-button {
     @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out transform hover:scale-105;
   }
-  .sb-component-button-primary{
-    background:linear-gradient(135deg,#f97316 0%,#fb923c 50%,#ffb347 100%);
+  .sb-component-button-primary {
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #ffb347 100%);
     @apply text-white border-none;
   }
-  .sb-component-button-primary:hover{
-    background:linear-gradient(135deg,#fb923c 0%,#f97316 100%);
+  .sb-component-button-primary:hover {
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
   }
-  .sb-component-button-secondary{
+  .sb-component-button-secondary {
     @apply bg-transparent text-primary border border-primary;
   }
-  .sb-component-button-secondary:hover{
-    background:linear-gradient(135deg,#f97316 0%,#fb923c 100%);
+  .sb-component-button-secondary:hover {
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
     @apply text-white border-transparent;
   }
 
-  /* Links */
-  .sb-component-link{ @apply inline-flex items-center font-medium transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary; }
-  .sb-component-link-primary{ @apply text-primary hover:underline; }
-  .sb-component-link-secondary{ @apply text-current hover:text-primary; }
-
-  /* Dropdown fix */
-  select, option {
-    @apply bg-white text-dark;
+  /* Link styles */
+  .sb-component-link {
+    @apply inline-flex items-center font-medium transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
+  }
+  .sb-component-link-primary {
+    @apply text-primary hover:underline;
+  }
+  .sb-component-link-secondary {
+    @apply text-current hover:text-primary;
   }
 
-  /* Image hover zoom effect */
-  .image-hover-zoom {
-    @apply transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-105 hover:shadow-lg rounded-lg;
+  /* Text styles */
+  a {
+    @apply underline transition duration-200 ease-in;
+  }
+  a:hover {
+    @apply text-primary;
+  }
+  strong, b {
+    @apply font-bold;
+  }
+  em {
+    @apply italic;
   }
 
-  /* Grid columns fade animation */
+  /* Checkbox, carousel, small UI */
+  .sb-checkbox:checked + .sb-label:before {
+    content: '\2713';
+  }
+  .sb-carousel-dot {
+    @apply w-4 h-4 cursor-pointer;
+  }
+  .sb-carousel-tab-title {
+    @apply cursor-pointer opacity-40 max-w-xs;
+    display: -webkit-box;
+    line-height: 1.5;
+    max-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .sb-carousel-tab-title-active {
+    @apply opacity-100;
+  }
+
+  /* Gradient header */
+  .bg-gradient-brand {
+    background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
+    color: white;
+  }
+
+  /* Dropdown / Select styles */
+  select, .sb-select {
+    @apply bg-white text-dark border border-neutral rounded-md px-4 py-2 shadow-sm transition duration-200;
+  }
+  select:hover, .sb-select:hover {
+    @apply border-primary;
+  }
+}
+
+/* ───────── UTILITIES ───────── */
+@layer utilities {
+  /* Orange scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fb923c;
+  }
+
+  /* Smooth scroll override */
+  html.lenis {
+    height: auto;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+  }
+  body.lenis {
+    overflow-x: hidden;
+  }
+
+  /* Underline + strikethrough */
+  .underline-line-through {
+    text-decoration-line: underline line-through;
+  }
+
+  /* Fade up animation */
   .fade-col {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
   .fade-col.appear {
     opacity: 1;
     transform: translateY(0);
   }
 
-  /* Carousel & misc */
-  .sb-checkbox:checked + .sb-label:before{content:'\2713';}
-  .sb-carousel-dot{ @apply w-4 h-4 cursor-pointer; }
-  .sb-carousel-tab-title{ @apply cursor-pointer opacity-40 max-w-xs;
-    display:-webkit-box; line-height:1.5; max-height:1.5em;
-    overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:1; -webkit-box-orient:vertical; }
-  .sb-carousel-tab-title-active{ @apply opacity-100; }
-
-  .bg-gradient-brand{ background:linear-gradient(to right,#ffffff,#0a2540,#f97316); color:white; }
+  /* Image hover effect */
+  .img-hover-zoom {
+    @apply transition-transform duration-500 ease-in-out transform;
+  }
+  .img-hover-zoom:hover {
+    transform: scale(1.05);
+  }
 }
 
-/* ───────── UTILITIES ───────── */
-@layer utilities {
-  /* Orange scrollbar */
-  ::-webkit-scrollbar{width:10px;}
-  ::-webkit-scrollbar-thumb{background:#f97316;border-radius:9999px;}
-  ::-webkit-scrollbar-thumb:hover{background:#fb923c;}
-
-  /* Lenis override */
-  html.lenis{height:auto; overflow-y:scroll!important; overflow-x:hidden;}
-  body.lenis{overflow-x:hidden;}
-
-  /* Strike + underline together */
-  .underline-line-through{text-decoration-line:underline line-through;}
-}
-
-/* ───────── SCROLL‑TO‑TOP BUTTON ───────── */
-#scrollToTopBtn{
+/* ───────── Scroll to Top Button ───────── */
+#scrollToTopBtn {
   @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
-  background:linear-gradient(135deg,#f97316 0%,#fb923c 100%);
-  box-shadow:0 4px 12px rgb(0 0 0 / 0.2);
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
 }
-#scrollToTopBtn:hover{
-  transform:scale(1.1);
-  background:linear-gradient(135deg,#fb923c 0%,#f97316 100%);
+#scrollToTopBtn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
 }
