@@ -1,73 +1,76 @@
-import { useEffect, useState } from 'react';
+// pages/_app.js
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Lenis from '@studio-freight/lenis';
 import { AnimatePresence, motion } from 'framer-motion';
 import '../css/main.css';
-import Preloader from '../components/Preloader'; // assuming your preloader is here
+
+/* ── Preloader component ── */
+import Preloader from '../components/Preloader'; // ensure this file exists
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [showPreloader, setShowPreloader] = useState(true);
 
-  /* ───────── AOS (section fade/scroll) ───────── */
+  /* ───── AOS: Scroll Animations ───── */
   useEffect(() => {
     AOS.init({
       duration: 800,
-      offset: 60,
+      offset: 80,
       easing: 'ease-in-out',
-      once: true,         // ✅ Show fade only once
-      mirror: false,      // ✅ Fix reverse/flickering issue
-      anchorPlacement: 'top-bottom',
+      once: false,
+      mirror: true,
+      anchorPlacement: 'top-bottom'
     });
 
-    const refresh = () => AOS.refresh();
+    const refresh = () => AOS.refreshHard();
     router.events.on('routeChangeComplete', refresh);
     return () => router.events.off('routeChangeComplete', refresh);
   }, [router.events]);
 
-  /* ───────── LENIS (smooth scroll) ───────── */
+  /* ───── LENIS: Smooth Scroll ───── */
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.6,
-      easing: (t) => 1 - Math.pow(1 - t, 3),
-      smoothWheel: true,
-      smoothTouch: false,
-      lerp: 0.1,
-    });
+    (async () => {
+      const { default: Lenis } = await import('@studio-freight/lenis');
 
-    function raf(time) {
-      lenis.raf(time);
+      const lenis = new Lenis({
+        duration: 1.6,
+        easing: t => 1 - Math.pow(1 - t, 3), // ease‑out cubic
+        smooth: true,
+        smoothWheel: true,
+        smoothTouch: true
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
       requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
 
-    document.documentElement.classList.add('lenis');
-    document.body.classList.add('lenis');
-    return () => {
-      document.documentElement.classList.remove('lenis');
-      document.body.classList.remove('lenis');
-    };
+      document.documentElement.classList.add('lenis');
+      document.body.classList.add('lenis');
+      console.log('✅ Lenis ready (ease‑out cubic)');
+    })();
   }, []);
 
-  /* ───────── Page Transition Variants ───────── */
+  /* ───── Preloader timeout ───── */
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPreloader(false), 2600); // 2.6 s
+    return () => clearTimeout(timer);
+  }, []);
+
+  /* ───── Framer Motion Page Transitions ───── */
   const pageTransition = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 }
+    exit:   { opacity: 0, y: -20 }
   };
-
-  /* ───────── Preloader Timeout ───────── */
-  useEffect(() => {
-    const timer = setTimeout(() => setShowPreloader(false), 2500); // adjust timing here
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
       {showPreloader ? (
-        <Preloader />
+        <Preloader finish={() => setShowPreloader(false)} />
       ) : (
         <AnimatePresence mode="wait">
           <motion.div
