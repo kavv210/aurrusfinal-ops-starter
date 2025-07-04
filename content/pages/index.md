@@ -167,7 +167,7 @@ sections:
       styles:
         self:
           borderRadius: large
-          className: fade-in-right
+          className: fade-right
     badge: { label: Key Benefits, color: text-primary, type: Badge }
     colors: bg-light-fg-dark
     styles:
@@ -201,7 +201,7 @@ sections:
       styles:
         self:
           borderRadius: large
-          className: fade-in-left
+          className: fade-left
     colors: bg-light-fg-dark
     styles:
       self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
