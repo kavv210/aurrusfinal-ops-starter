@@ -1,97 +1,87 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lenis from '@studio-freight/lenis';
 import { AnimatePresence, motion } from 'framer-motion';
-import Preloader from '../components/Preloader';
 import '../css/main.css';
+import Preloader from '../components/Preloader'; // assuming your preloader is here
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const [loading, setLoading] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(true);
 
-  /* ── AOS ── */
+  /* ───────── AOS (section fade/scroll) ───────── */
   useEffect(() => {
-    AOS.init({ duration: 800, offset: 80, easing: 'ease-in-out', mirror: true });
-    const refresh = () => AOS.refreshHard();
+    AOS.init({
+      duration: 800,
+      offset: 60,
+      easing: 'ease-in-out',
+      once: true,         // ✅ Show fade only once
+      mirror: false,      // ✅ Fix reverse/flickering issue
+      anchorPlacement: 'top-bottom',
+    });
+
+    const refresh = () => AOS.refresh();
     router.events.on('routeChangeComplete', refresh);
     return () => router.events.off('routeChangeComplete', refresh);
   }, [router.events]);
 
-  /* ── LENIS ── */
+  /* ───────── LENIS (smooth scroll) ───────── */
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.8,
-      easing: t => 1 - Math.pow(1 - t, 3),
+      duration: 1.6,
+      easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
       smoothTouch: false,
-      lerp: 0.075
+      lerp: 0.1,
     });
-    const raf = t => {
-      lenis.raf(t);
+
+    function raf(time) {
+      lenis.raf(time);
       requestAnimationFrame(raf);
-    };
+    }
     requestAnimationFrame(raf);
+
     document.documentElement.classList.add('lenis');
     document.body.classList.add('lenis');
-  }, []);
-
-  /* ── Scroll‑to‑Top ── */
-  useEffect(() => {
-    const btn = document.getElementById('scrollToTopBtn');
-    if (!btn) return;
-    const toggle = () => (btn.style.display = window.scrollY > 300 ? 'flex' : 'none');
-    const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-    window.addEventListener('scroll', toggle);
-    btn.addEventListener('click', scrollTop);
     return () => {
-      window.removeEventListener('scroll', toggle);
-      btn.removeEventListener('click', scrollTop);
+      document.documentElement.classList.remove('lenis');
+      document.body.classList.remove('lenis');
     };
   }, []);
 
-  /* Fake loading for preloader */
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 3000);
-    return () => clearTimeout(t);
-  }, []);
-
-  /* ── Paper‑lift page transition ── */
-  const pageVariants = {
-    initial: { opacity: 0, scale: 0.95, y: 20, boxShadow: '0 0 0 rgba(0,0,0,0)' },
-    animate: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      boxShadow: '0 12px 30px rgba(255,193,7,0.15)'
-    },
-    exit: { opacity: 0, scale: 0.95, y: -20 }
+  /* ───────── Page Transition Variants ───────── */
+  const pageTransition = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 }
   };
+
+  /* ───────── Preloader Timeout ───────── */
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPreloader(false), 2500); // adjust timing here
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      {loading && <Preloader finish={() => setLoading(false)} />}
-
-      {!loading && (
+      {showPreloader ? (
+        <Preloader />
+      ) : (
         <AnimatePresence mode="wait">
           <motion.div
             key={router.asPath}
-            variants={pageVariants}
+            variants={pageTransition}
             initial="initial"
             animate="animate"
             exit="exit"
-            transition={{ duration: 0.6, ease: 'easeInOut' }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
             <Component {...pageProps} />
           </motion.div>
         </AnimatePresence>
       )}
-
-      {/* Scroll‑to‑Top button */}
-      <button id="scrollToTopBtn" aria-label="Scroll to top">
-        ↑
-      </button>
     </>
   );
 }
