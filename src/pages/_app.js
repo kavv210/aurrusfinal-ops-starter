@@ -1,4 +1,3 @@
-// pages/_app.js
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
@@ -10,11 +9,10 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // AOS Setup
     AOS.init({
       duration: 800,
       offset: 80,
-      easing: 'ease-in',
+      easing: 'ease-in-out',
       once: false,
       mirror: true,
       anchorPlacement: 'top-bottom',
@@ -28,11 +26,14 @@ export default function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   useEffect(() => {
-    // Lenis Smooth Scroll Setup
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true
+      duration: 1.6, // slower and smoother
+      easing: (t) => 1 - Math.pow(1 - t, 4), // ease-out quart
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      smoothTouch: false,
+      touchMultiplier: 2,
     });
 
     function raf(time) {
