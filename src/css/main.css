@@ -33,15 +33,14 @@
   h6:hover {
     @apply text-primary;
     transform: scale(1.03);
+    text-shadow: 0 0 6px rgba(249, 115, 22, 0.4);
   }
 
-  /* Selection highlight */
   ::selection {
     background: #0a2540;
     color: #f97316;
   }
 
-  /* Dropdown background fix */
   select,
   .sb-select,
   .sb-dropdown,
@@ -57,7 +56,6 @@
     @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Dividers */
   .divider-home {
     @apply border-t border-neutral my-8;
     border-width: 2px !important;
@@ -67,7 +65,6 @@
     border-width: 1px !important;
   }
 
-  /* Card with gradient border */
   .sb-card {
     position: relative;
     @apply p-4 rounded-xl bg-white shadow-md;
@@ -92,7 +89,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
 
-  /* Buttons */
   .sb-component-button {
     @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out transform hover:scale-105;
   }
@@ -102,6 +98,7 @@
   }
   .sb-component-button-primary:hover {
     background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
   }
   .sb-component-button-secondary {
     @apply bg-transparent text-primary border border-primary;
@@ -109,9 +106,9 @@
   .sb-component-button-secondary:hover {
     background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
     @apply text-white border-transparent;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
   }
 
-  /* Links */
   .sb-component-link {
     @apply inline-flex items-center font-medium transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
   }
@@ -122,12 +119,10 @@
     @apply text-current hover:text-primary;
   }
 
-  /* Checkbox fix */
   .sb-checkbox:checked + .sb-label:before {
     content: '\2713';
   }
 
-  /* Carousel */
   .sb-carousel-dot {
     @apply w-4 h-4 cursor-pointer;
   }
@@ -145,7 +140,6 @@
     @apply opacity-100;
   }
 
-  /* Brand bg */
   .bg-gradient-brand {
     background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
     color: white;
@@ -154,7 +148,6 @@
 
 /* ───────── UTILITIES ───────── */
 @layer utilities {
-  /* Orange scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -166,7 +159,6 @@
     background: #fb923c;
   }
 
-  /* Lenis support */
   html.lenis {
     height: auto;
     overflow-y: scroll !important;
@@ -176,7 +168,6 @@
     overflow-x: hidden;
   }
 
-  /* Fade-up animation */
   .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
@@ -192,30 +183,34 @@
     }
   }
 
-  /* Underline & line-through combo */
   .underline-line-through {
     text-decoration-line: underline line-through;
   }
 
-  /* Hover zoom for images */
   img:hover {
     transform: scale(1.05);
     transition: transform 0.4s ease-in-out;
   }
 
-  /* Grid/Column block hover zoom */
   .grid > div,
   .columns > div,
   .sb-card {
     transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
     will-change: transform;
   }
-
   .grid > div:hover,
   .columns > div:hover,
   .sb-card:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .glow-text-hover {
+    transition: all 0.3s ease-in-out;
+  }
+  .glow-text-hover:hover {
+    text-shadow: 0 0 6px rgba(249, 115, 22, 0.4),
+                 0 0 4px rgba(255, 255, 255, 0.2);
   }
 }
 
