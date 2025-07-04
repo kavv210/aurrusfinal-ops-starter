@@ -11,9 +11,9 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     /* ---------------- AOS CONFIG ---------------- */
     AOS.init({
-      duration: 1600,              // how long each fade lasts (ms)
+      duration: 800,              // how long each fade lasts (ms)
       offset: 80,                  // px before element enters viewport
-      easing: 'ease-in-out',
+      easing: 'ease-in',
       mirror: true,                // replay when scrolling back past element
       once: false,                 // allow re‑animation on every re‑entry
       anchorPlacement: 'top-bottom',// trigger when top of element hits viewport bottom
