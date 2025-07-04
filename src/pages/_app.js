@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
       delay: 50,         // minimal stagger
       offset: 120,       // triggers a bit earlier
       easing: 'ease-in-out',
-      once: false,       // allow replay when element re‑enters
+      once: true,       // allow replay when element re‑enters
       mirror: true       // replay on scroll‑up
     });
 
