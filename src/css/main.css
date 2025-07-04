@@ -67,7 +67,8 @@
 
   .sb-card {
     position: relative;
-    @apply p-4 rounded-xl bg-white shadow-md;
+    @apply p-4 rounded-xl shadow-md;
+    background-color: inherit;
     transition: transform 0.4s ease, box-shadow 0.3s ease;
   }
   .sb-card::before {
@@ -140,17 +141,25 @@
 
   /* ───── FOOTER STYLE ───── */
   footer {
-    @apply bg-[#0a2540] text-white mt-20 p-8;
-    border-radius: 1.25rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    @apply bg-[#0a2540] text-white rounded-2xl p-10 mt-20 relative z-10 text-center;
+    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.5);
+    opacity: 0;
+    animation: fadeInFooter 0.8s forwards 0.3s;
   }
 
   footer .container {
-    @apply text-center;
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4;
+  }
+
+  footer .container > div {
+    @apply rounded-xl p-4 text-white;
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   footer p {
-    @apply text-sm;
+    @apply text-sm text-white;
   }
 }
 
@@ -229,22 +238,8 @@
   transform: scale(1.1);
   background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
 }
-/* ───── FOOTER STYLE ───── */
-footer {
-  @apply bg-[#0a2540] text-white rounded-2xl p-10 mt-20 relative z-10 text-center;
-  box-shadow: 0 12px 30px rgba(10, 37, 64, 0.5);
-  opacity: 0;
-  animation: fadeInFooter 0.8s forwards 0.3s;
-}
 
-footer .container {
-  @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 rounded-xl overflow-hidden;
-}
-
-footer p {
-  @apply text-sm text-white;
-}
-
+/* ───── FOOTER ANIMATION ───── */
 @keyframes fadeInFooter {
   0% {
     opacity: 0;
