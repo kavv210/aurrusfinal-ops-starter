@@ -8,7 +8,7 @@ import '../css/main.css';
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  /* ─── AOS (fade, zoom, etc.) ───────────────────────── */
+  // AOS animations
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
       mirror: true,
       anchorPlacement: 'top-bottom',
       throttleDelay: 99,
-      debounceDelay: 50
+      debounceDelay: 50,
     });
 
     const refresh = () => AOS.refreshHard();
@@ -26,18 +26,17 @@ export default function MyApp({ Component, pageProps }) {
     return () => router.events.off('routeChangeComplete', refresh);
   }, [router.events]);
 
-  /* ─── Lenis (buttery smooth scroll) ─────────────────── */
+  // Lenis smooth scroll
   useEffect(() => {
-    // run only in the browser
     (async () => {
       const { default: Lenis } = await import('@studio-freight/lenis');
 
       const lenis = new Lenis({
-        duration: 1.4,          // higher = slower / smoother
-        easing: t => 1 - Math.pow(1 - t, 4), // easeOutQuart
-        smoothWheel: true,      // desktop wheel
-        smoothTouch: false,     // leave touch scroll native
-        wheelMultiplier: 1,     // feel free to tweak
+        duration: 1.2,
+        easing: t => 1 - Math.pow(1 - t, 3),
+        smoothWheel: true,
+        smoothTouch: false,
+        wheelMultiplier: 1,
         touchMultiplier: 2
       });
 
@@ -45,9 +44,10 @@ export default function MyApp({ Component, pageProps }) {
         lenis.raf(time);
         requestAnimationFrame(raf);
       }
-      requestAnimationFrame(raf);
 
-      console.log('Lenis ready 🚀');
+      requestAnimationFrame(raf);
+      document.documentElement.classList.add('lenis');
+      console.log('Lenis success');
     })();
   }, []);
 
