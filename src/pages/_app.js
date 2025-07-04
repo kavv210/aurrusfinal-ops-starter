@@ -9,18 +9,18 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Initialise once on mount
+    // Initialise AOS once, on mount
     AOS.init({
-      duration: 2000,      // each fade lasts 2 s
-      delay: 100,          // small global delay
-      offset: 160,         // start only when 160 px inside viewport
+      duration: 600,     // smoother, quicker fade (~0.6 s)
+      delay: 50,         // minimal stagger
+      offset: 120,       // triggers a bit earlier
       easing: 'ease-in-out',
-      once: true,          // animate once per element
-      mirror: true         // replay when scrolling back up
+      once: false,       // allow replay when element re‑enters
+      mirror: true       // replay on scroll‑up
     });
 
-    // Refresh on route change
-    const handleRouteChange = () => AOS.refresh();
+    // Refresh animations on each route change
+    const handleRouteChange = () => AOS.refreshHard();
     router.events.on('routeChangeComplete', handleRouteChange);
 
     return () => {
