@@ -11,6 +11,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
   }
+
   body {
     @apply text-base text-dark bg-white;
     overflow-x: hidden;
@@ -26,27 +27,40 @@
     line-height: 1.2;
   }
 
-  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  h1:hover,
+  h2:hover,
+  h3:hover,
+  h4:hover,
+  h5:hover,
+  h6:hover {
     @apply text-primary;
     transform: scale(1.03);
-    text-shadow: 0 0 8px rgba(249, 115, 22, 0.5);
+    text-shadow: 0 0 10px rgba(255, 189, 89, 0.6);
   }
 
-  /* Selection highlight */
   ::selection {
     background: #0a2540;
     color: #f97316;
   }
 
   /* Dropdown fix */
-  select, option, .sb-select, .sb-dropdown {
+  select,
+  option,
+  .sb-select,
+  .sb-dropdown select {
     background-color: #ffffff !important;
     color: #0a2540 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    appearance: none !important;
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.1);
+    transition: all 0.3s ease;
   }
 
-  /* Footer fix */
-  footer {
-    @apply bg-[#0a2540] text-white mt-12 px-6 py-10;
+  select:hover,
+  .sb-dropdown:hover {
+    box-shadow: 0 0 15px rgba(255, 200, 0, 0.25);
   }
 }
 
@@ -56,18 +70,16 @@
     @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Dividers */
   .divider-home {
     @apply border-t border-neutral my-8;
-    border-width: 3px !important; /* Bold */
+    border-width: 3px !important;
   }
 
   .divider-services {
     @apply border-t border-neutral my-8;
-    border-width: 1px !important; /* Thinner */
+    border-width: 1px !important;
   }
 
-  /* Gradient card */
   .sb-card {
     position: relative;
     @apply p-4 rounded-xl bg-white shadow-md;
@@ -91,13 +103,12 @@
 
   .sb-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 24px rgba(255, 215, 100, 0.2);
   }
 
-  /* Buttons */
   .sb-component-button {
     @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out transform hover:scale-105;
-    box-shadow: 0 4px 10px rgba(255, 153, 0, 0.2);
+    box-shadow: 0 0 8px rgba(255, 194, 40, 0.15);
   }
 
   .sb-component-button-primary {
@@ -107,7 +118,7 @@
 
   .sb-component-button-primary:hover {
     background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-    box-shadow: 0 0 12px rgba(249, 115, 22, 0.4);
+    box-shadow: 0 0 18px rgba(255, 189, 89, 0.4);
   }
 
   .sb-component-button-secondary {
@@ -117,16 +128,11 @@
   .sb-component-button-secondary:hover {
     background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
     @apply text-white border-transparent;
-    box-shadow: 0 0 12px rgba(255, 115, 22, 0.3);
+    box-shadow: 0 0 12px rgba(255, 165, 0, 0.3);
   }
 
-  /* Links */
   .sb-component-link {
     @apply inline-flex items-center font-medium transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
-  }
-
-  .sb-component-link:hover {
-    text-shadow: 0 0 8px rgba(255, 153, 0, 0.4);
   }
 
   .sb-component-link-primary {
@@ -135,6 +141,10 @@
 
   .sb-component-link-secondary {
     @apply text-current hover:text-primary;
+  }
+
+  .sb-checkbox:checked + .sb-label:before {
+    content: '\2713';
   }
 
   .sb-carousel-dot {
@@ -164,33 +174,34 @@
 
 /* ───────── UTILITIES ───────── */
 @layer utilities {
-  /* Orange scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
   }
+
   ::-webkit-scrollbar-thumb {
     background: #f97316;
     border-radius: 9999px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background: #fb923c;
   }
 
-  /* Lenis scroll */
   html.lenis {
     height: auto;
     overflow-y: scroll !important;
     overflow-x: hidden;
   }
+
   body.lenis {
     overflow-x: hidden;
   }
 
-  /* Fade-in-up */
   .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
   }
+
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -202,13 +213,16 @@
     }
   }
 
-  /* Zoom on image */
+  .underline-line-through {
+    text-decoration-line: underline line-through;
+  }
+
   img:hover {
     transform: scale(1.05);
     transition: transform 0.4s ease-in-out;
+    box-shadow: 0 0 18px rgba(255, 180, 60, 0.3);
   }
 
-  /* Zoom on grid elements */
   .grid > div,
   .columns > div,
   .sb-card {
@@ -220,16 +234,11 @@
   .columns > div:hover,
   .sb-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Underline + strike */
-  .underline-line-through {
-    text-decoration-line: underline line-through;
+    box-shadow: 0 10px 24px rgba(255, 215, 100, 0.25);
   }
 }
 
-/* ───────── Scroll‑To‑Top ───────── */
+/* ───────── Scroll‑To‑Top Button ───────── */
 #scrollToTopBtn {
   @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
   background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
@@ -239,4 +248,5 @@
 #scrollToTopBtn:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  box-shadow: 0 0 14px rgba(255, 194, 40, 0.5);
 }
