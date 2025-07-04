@@ -229,13 +229,19 @@
   transform: scale(1.1);
   background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
 }
-/* ───────── FOOTER STYLE FIX ───────── */
+/* ───── FOOTER STYLE ───── */
 footer {
   @apply bg-[#0a2540] text-white rounded-2xl p-8 mt-16 relative z-10;
   box-shadow: 0 8px 24px rgba(10, 37, 64, 0.5);
+  opacity: 0;
+  animation: fadeInFooter 0.8s forwards 0.2s;
 }
 
-/* Ensures the internal container also fits the rounded shape */
 footer .container {
-  @apply rounded-xl overflow-hidden;
+  @apply text-center rounded-xl overflow-hidden;
 }
+
+footer p {
+  @apply text-sm;
+}
+
