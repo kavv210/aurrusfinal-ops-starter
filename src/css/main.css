@@ -33,7 +33,7 @@
   h6:hover {
     @apply text-primary;
     transform: scale(1.03);
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    text-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
   }
 
   ::selection {
@@ -91,7 +91,7 @@
 
   .sb-component-button {
     @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out transform hover:scale-105;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
   }
   .sb-component-button-primary {
     background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #ffb347 100%);
@@ -110,7 +110,7 @@
 
   .sb-component-link {
     @apply inline-flex items-center font-medium transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
-    text-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+    text-shadow: 0 0 6px rgba(255, 165, 0, 0.4);
   }
 
   .sb-component-link-primary {
@@ -136,6 +136,21 @@
     margin-bottom: 2rem;
     background: #fff8f0;
     box-shadow: 0 4px 10px rgba(249, 115, 22, 0.15);
+  }
+
+  /* ───── FOOTER STYLE ───── */
+  footer {
+    @apply bg-[#0a2540] text-white mt-20 p-8;
+    border-radius: 1.25rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  footer .container {
+    @apply text-center;
+  }
+
+  footer p {
+    @apply text-sm;
   }
 }
 
