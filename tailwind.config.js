@@ -13,27 +13,44 @@ module.exports = {
   ],
 
   safelist: [
-    'text-neutral',
-    'text-light',
-    'transition-transform',
-    'duration-300',
-    'ease-in-out',
-    'hover:scale-105',
-    'hover:text-[#FFA500]',
-    'data-aos',
-    'aos-init',
-    'aos-animate',
-    'opacity-0',
-    'translate-y-4',
+    // AOS + scroll reveal
+    'data-aos', 'aos-init', 'aos-animate',
+    'opacity-0', 'translate-y-4',
+
+    // Transitions
+    'transition-transform', 'duration-300', 'ease-in-out',
+    'hover:scale-105', 'hover:text-[#FFA500]',
+    'transition-all', 'hover:opacity-90', 'hover:brightness-110',
+    'hover:z-10', 'group-hover:scale-105',
+
+    // Layout/utilities
+    'object-cover', 'rounded-xl', 'shadow-md',
+    'overflow-x-hidden', 'overflow-y-scroll',
+
+    // Scrollbar
+    'scroll-smooth', 'overflow-y-scroll',
+
+    // Dropdowns + background
+    'bg-white', 'bg-opacity-100', 'bg-dark', 'bg-neutral',
+    'backdrop-blur',
+
+    // Card components + buttons
+    'sb-card', 'bg-gradient-brand',
+    'sb-component-button', 'sb-component-button-primary', 'sb-component-button-secondary',
+    'sb-component-link', 'sb-component-link-primary', 'sb-component-link-secondary',
+    'divider-home', 'divider-services',
+
+    // Text helpers
+    'text-neutral', 'text-light', 'text-primary',
+    'text-[#1E88E5]', 'text-[#FFA500]',
+
+    // Gradient helpers
+    'bg-gradient-to-br', 'from-[#FFE0B2]', 'via-[#FFD180]', 'to-[#FFE0C3]',
+
+    // Padding/margin patterns (for markdown or CMS content)
     {
-      pattern:
-        /(m|p)(t|b|l|r)-(0|px|1|1\.5|2|2\.5|3|3\.5|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96)/
-    },
-    'bg-gradient-to-br',
-    'from-[#FFE0B2]',
-    'via-[#FFD180]',
-    'to-[#FFE0C3]',
-    'text-[#1E88E5]'
+      pattern: /(m|p)(t|b|l|r)?-(0|px|1|1\.5|2|2\.5|3|3\.5|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96)/
+    }
   ],
 
   theme: {
@@ -42,7 +59,7 @@ module.exports = {
         normal: '400',
         medium: '500',
         bold: '700',
-        extrabold: '800' // Ensures <h1>-<h2> can be bold
+        extrabold: '800'
       },
       boxShadow: {
         header: '0px 2px 8px rgba(27, 32, 50, .08)'
@@ -95,7 +112,7 @@ module.exports = {
         }
       };
 
-      /* ---------------- Typography ---------------- */
+      /* ───────── Typography ───────── */
       addBase({
         body: {
           fontFamily: fallback(`fontFamily.${themeStyle.fontBody}`, ['Inter', 'sans-serif'])
@@ -147,7 +164,7 @@ module.exports = {
         }
       });
 
-      /* ---------------- Stackbit Components ---------------- */
+      /* ───────── Stackbit Components ───────── */
       addComponents({
         '.sb-component-button-primary': {
           borderRadius: fallback(`borderRadius.${themeStyle.buttonPrimary.borderRadius}`, '0.375rem'),
