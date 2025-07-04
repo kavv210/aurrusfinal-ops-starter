@@ -19,7 +19,7 @@ sections:
   - type: GenericSection
     __metadata:
       modelName: GenericSection
-    motion: fade-up
+    motion: fade-down
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
@@ -164,7 +164,10 @@ sections:
       muted: true
       controls: false
       aspectRatio: 16:9
-      styles: { self: { borderRadius: large } }
+      styles:
+        self:
+          borderRadius: large
+          className: fade-in-right
     badge: { label: Key Benefits, color: text-primary, type: Badge }
     colors: bg-light-fg-dark
     styles:
@@ -195,7 +198,10 @@ sections:
       muted: true
       controls: false
       aspectRatio: 16:9
-      styles: { self: { borderRadius: large } }
+      styles:
+        self:
+          borderRadius: large
+          className: fade-in-left
     colors: bg-light-fg-dark
     styles:
       self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
@@ -205,7 +211,7 @@ sections:
   # ───────── 7) TALENT ILLUSTRATION ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
-    motion: fade-up
+    motion: fade-left
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
