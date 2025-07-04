@@ -1,31 +1,31 @@
-// pages/_app.js
+// pages/_app.js  ── drop‑in replacement
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../css/main.css';   // Tailwind output
+import '../css/main.css';          // Tailwind output
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Initialise AOS once, on mount
+    /* ---------------- AOS CONFIG ---------------- */
     AOS.init({
-      duration: 600,     // smoother, quicker fade (~0.6 s)
-      delay: 50,         // minimal stagger
-      offset: 120,       // triggers a bit earlier
+      duration: 1600,              // how long each fade lasts (ms)
+      offset: 80,                  // px before element enters viewport
       easing: 'ease-in-out',
-      once: true,       // allow replay when element re‑enters
-      mirror: true       // replay on scroll‑up
+      mirror: true,                // replay when scrolling back past element
+      once: false,                 // allow re‑animation on every re‑entry
+      anchorPlacement: 'top-bottom',// trigger when top of element hits viewport bottom
+      throttleDelay: 99,           // reduce scroll‑event spam
+      debounceDelay: 50            // reduce refresh spam
     });
 
-    // Refresh animations on each route change
-    const handleRouteChange = () => AOS.refreshHard();
-    router.events.on('routeChangeComplete', handleRouteChange);
+    /* -------- Refresh AOS after any route change -------- */
+    const refresh = () => AOS.refreshHard();
+    router.events.on('routeChangeComplete', refresh);
 
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
+    return () => router.events.off('routeChangeComplete', refresh);
   }, [router.events]);
 
   return <Component {...pageProps} />;
