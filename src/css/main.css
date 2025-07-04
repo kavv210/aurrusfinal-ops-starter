@@ -4,18 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─────────────── BASE ─────────────── */
+/* ───── BASE ───── */
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
+
   body {
     @apply text-base text-dark bg-white;
     overflow-x: hidden;
   }
 
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, h6 {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
     @apply break-words font-semibold transition-transform duration-300 ease-in-out;
     line-height: 1.2;
   }
@@ -29,9 +36,14 @@
     @apply text-primary;
     transform: scale(1.03);
   }
+
+  ::selection {
+    background-color: #fb923c;
+    color: #0a2540;
+  }
 }
 
-/* ───────────── COMPONENTS ───────────── */
+/* ───── COMPONENTS ───── */
 @layer components {
   .container {
     @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
@@ -39,13 +51,13 @@
 
   .sb-divider {
     @apply border-t border-neutral my-8;
+    border-width: 1px !important;
   }
 
   .sb-card {
     @apply p-4 border border-neutral rounded-xl bg-white shadow-sm;
   }
 
-  /* Buttons */
   .sb-component-button {
     @apply inline-flex justify-center items-center text-center px-6 py-3 rounded-full font-medium transition duration-300 ease-in-out transform hover:scale-105;
   }
@@ -116,9 +128,9 @@
   }
 }
 
-/* ───────────── UTILITIES ───────────── */
+/* ───── UTILITIES ───── */
 @layer utilities {
-  /* Fancy scrollbars */
+  /* Scrollbar (orange + visible) */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -132,25 +144,30 @@
     background: #fb923c;
   }
 
-  /* Lenis support (important) */
+  /* Lenis compatibility */
   html.lenis {
     height: auto;
-    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
   }
 
   body.lenis {
-    overflow: hidden;
+    overflow-x: hidden;
   }
-}
 
-/* ───────────── Scroll to Top Button ───────────── */
-#scrollToTopBtn {
-  @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
-  background: linear-gradient(to right, #f97316, #fb923c);
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
-}
+  .underline-line-through {
+    text-decoration-line: underline line-through;
+  }
 
-#scrollToTopBtn:hover {
-  transform: scale(1.1);
-  background: linear-gradient(to right, #fb923c, #f97316);
+  /* Scroll-to-top button */
+  #scrollToTopBtn {
+    @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
+    background: linear-gradient(to right, #f97316, #fb923c);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
+  }
+
+  #scrollToTopBtn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #fb923c, #f97316);
+  }
 }
