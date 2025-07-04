@@ -9,155 +9,31 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
+
   body {
     @apply text-base;
     overflow-x: hidden;
   }
 
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  h6 {
-    @apply break-words font-semibold;
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, h6 {
+    @apply break-words font-semibold text-current transition-transform duration-300 ease-in-out;
     line-height: 1.2;
-    transition: transform 0.3s ease;
   }
 
-  h1:hover,
-  h2:hover,
-  h3:hover,
-  h4:hover,
-  h5:hover,
-  h6:hover {
-    transform: scale(1.025);
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    @apply text-primary;
+    transform: scale(1.03);
   }
 }
 
 @layer components {
-  .sb-markdown {
-    @apply leading-relaxed;
-    a {
-      @apply underline transition duration-200 ease-in;
-    }
-    a:hover {
-      @apply text-primary;
-    }
-    b,
-    strong {
-      @apply font-bold;
-    }
-    em {
-      @apply italic;
-    }
-    * + * {
-      margin-top: 1.5em;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-top: 3.5rem;
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-
-    h1 + h2,
-    h2 + h3,
-    h3 + h4,
-    h4 + h5,
-    h5 + h6 {
-      margin-top: 1.5rem;
-    }
-
-    ol {
-      @apply list-decimal;
-      padding-left: 1.25em;
-    }
-    ul {
-      @apply list-disc;
-      padding-left: 1.25em;
-    }
-
-    li > ul,
-    li > ol {
-      margin: 0;
-    }
-
-    li + li {
-      margin-top: 0.5rem;
-    }
-
-    blockquote {
-      @apply border-l-4 border-current;
-      font-size: 1.25em;
-      line-height: 1.4;
-      padding-left: 1.25em;
-      &:not(:first-child) {
-        margin-top: 2.5rem;
-      }
-      &:not(:last-child) {
-        margin-bottom: 2.5rem;
-      }
-    }
-
-    pre {
-      @apply border border-current overflow-x-auto leading-normal;
-      padding: 1.25em;
-    }
-
-    hr {
-      @apply bg-current border-0 h-px;
-      &:not(:first-child) {
-        margin-top: 2.5rem;
-      }
-      &:not(:last-child) {
-        margin-bottom: 2.5rem;
-      }
-    }
-
-    figcaption {
-      @apply leading-normal;
-      font-size: 0.875em;
-      margin: 0.5rem 0 0;
-    }
-
-    table {
-      @apply border border-current border-collapse text-left w-full;
-    }
-
-    caption {
-      @apply text-left;
-      font-size: 0.875em;
-      margin: 0 0 0.5rem;
-    }
-
-    th,
-    td {
-      @apply border-r border-b border-current;
-      padding: 0.5em;
-    }
-
-    th {
-      font-weight: bold;
-    }
-  }
-
-  .sb-component-button {
-    @apply inline-flex justify-center items-center text-center border transition duration-300 ease-in-out hover:scale-105;
-  }
-
+  .sb-component-button,
   .sb-component-link {
-    @apply inline-flex justify-center items-center text-center transition duration-300 ease-in-out hover:scale-105;
+    @apply inline-flex justify-center items-center text-center transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
   }
 
   .sb-component-link-primary {
@@ -165,15 +41,27 @@
   }
 
   .sb-component-link-secondary {
-    @apply text-current hover:text-primary transition duration-200;
+    @apply text-current hover:text-primary;
+  }
+
+  a {
+    @apply underline transition duration-200 ease-in;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+
+  strong, b {
+    @apply font-bold;
+  }
+
+  em {
+    @apply italic;
   }
 
   option {
     color: initial;
-  }
-
-  .sb-checkbox:checked + .sb-label:before {
-    content: '\2713';
   }
 
   .sb-carousel-dot {
@@ -195,107 +83,28 @@
     @apply opacity-100;
   }
 
-  .bg-light-fg-dark,
-  .sb-card.bg-light-fg-dark {
-    @apply text-dark bg-light;
-    .sb-input,
-    .sb-select,
-    .sb-textarea {
-      @apply placeholder-dark/50;
-    }
-    .sb-component-button-primary {
-      @apply bg-primary border-primary text-light;
-    }
-    .sb-component-button-secondary {
-      @apply border-dark text-dark;
-    }
-    .sb-divider,
-    .sb-footer-bottom {
-      @apply border-neutral;
-    }
-  }
-
-  .bg-neutral-fg-dark,
-  .sb-card.bg-neutral-fg-dark {
-    @apply text-dark bg-neutral;
-    .sb-component-button-primary {
-      @apply bg-primary border-primary text-light;
-    }
-    .sb-component-button-secondary {
-      @apply border-dark text-dark;
-    }
-    .sb-divider,
-    .sb-footer-bottom {
-      @apply border-neutralAlt;
-    }
-  }
-
-  .bg-dark-fg-light,
-  .sb-card.bg-dark-fg-light {
-    @apply text-light bg-dark;
-    .sb-component-button-primary {
-      @apply bg-primary border-primary text-light;
-    }
-    .sb-component-button-secondary {
-      @apply border-light text-light;
-    }
-    .sb-divider,
-    .sb-footer-bottom {
-      @apply border-light/20;
-    }
-  }
-
-  .bg-neutralAlt-fg-dark {
-    @apply text-dark bg-neutralAlt;
-    .sb-component-button-primary {
-      @apply bg-primary border-primary text-light;
-    }
-    .sb-component-button-secondary {
-      @apply border-dark text-dark;
-    }
+  .sb-checkbox:checked + .sb-label:before {
+    content: '\2713';
   }
 
   .bg-gradient-brand {
     background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
     color: white;
   }
+
+  .sb-image-strip-track {
+    min-width: 160rem;
+    overflow-x: auto;
+  }
+
+  .sb-image-strip-content {
+    min-width: 80rem;
+  }
 }
 
 @layer utilities {
   .underline-line-through {
     text-decoration-line: underline line-through;
-  }
-
-  .sb-animate-slide-left {
-    animation-name: slideLeft;
-    animation-duration: var(--sb-slide-speed, 80s);
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-  .sb-animate-slide-right {
-    animation-name: slideRight;
-    animation-duration: var(--sb-slide-speed, 80s);
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes slideLeft {
-    from {
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      transform: translate3d(-50%, 0, 0);
-    }
-  }
-
-  @keyframes slideRight {
-    from {
-      transform: translate3d(-50%, 0, 0);
-    }
-    to {
-      transform: translate3d(0, 0, 0);
-    }
   }
 
   @keyframes fadeInUp {
@@ -314,7 +123,31 @@
     opacity: 0;
   }
 
-  /* ───── ORANGE CUSTOM SCROLLBAR ───── */
+  @keyframes slideLeft {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+  }
+
+  @keyframes slideRight {
+    from { transform: translate3d(-50%, 0, 0); }
+    to { transform: translate3d(0, 0, 0); }
+  }
+
+  .sb-animate-slide-left {
+    animation-name: slideLeft;
+    animation-duration: var(--sb-slide-speed, 80s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .sb-animate-slide-right {
+    animation-name: slideRight;
+    animation-duration: var(--sb-slide-speed, 80s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  /* 🧡 Orange Scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
   }
