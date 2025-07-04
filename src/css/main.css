@@ -71,6 +71,7 @@
     background-color: inherit;
     transition: transform 0.4s ease, box-shadow 0.3s ease;
   }
+
   .sb-card::before {
     content: '';
     position: absolute;
@@ -85,6 +86,7 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+
   .sb-card:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -94,16 +96,20 @@
     @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out transform hover:scale-105;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
   }
+
   .sb-component-button-primary {
     background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #ffb347 100%);
     @apply text-white border-none;
   }
+
   .sb-component-button-primary:hover {
     background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
   }
+
   .sb-component-button-secondary {
     @apply bg-transparent text-primary border border-primary;
   }
+
   .sb-component-button-secondary:hover {
     background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
     @apply text-white border-transparent;
@@ -117,6 +123,7 @@
   .sb-component-link-primary {
     @apply text-primary hover:underline;
   }
+
   .sb-component-link-secondary {
     @apply text-current hover:text-primary;
   }
@@ -148,14 +155,12 @@
   }
 
   footer .container {
-    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4;
+    @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-4;
   }
 
   footer .container > div {
-    @apply rounded-xl p-4 text-white;
+    @apply p-4 rounded-xl text-white border border-white/10 shadow-md;
     background-color: transparent;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   footer p {
@@ -168,10 +173,12 @@
   ::-webkit-scrollbar {
     width: 10px;
   }
+
   ::-webkit-scrollbar-thumb {
     background: #f97316;
     border-radius: 9999px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background: #fb923c;
   }
@@ -181,6 +188,7 @@
     overflow-y: scroll !important;
     overflow-x: hidden;
   }
+
   body.lenis {
     overflow-x: hidden;
   }
@@ -189,6 +197,7 @@
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;
   }
+
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -220,6 +229,14 @@
     background-color: white;
   }
 
+  footer .grid > div,
+  footer .columns > div,
+  footer .sb-card {
+    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
   .grid > div:hover,
   .columns > div:hover,
   .sb-card:hover {
@@ -234,12 +251,13 @@
   background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
 }
+
 #scrollToTopBtn:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
 }
 
-/* ───── FOOTER ANIMATION ───── */
+/* ───── FOOTER FADE-IN ANIMATION ───── */
 @keyframes fadeInFooter {
   0% {
     opacity: 0;
