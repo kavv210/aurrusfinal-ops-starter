@@ -164,10 +164,10 @@ sections:
       muted: true
       controls: false
       aspectRatio: 16:9
+      motion: fade-right
       styles:
         self:
           borderRadius: large
-          className: fade-right
     badge: { label: Key Benefits, color: text-primary, type: Badge }
     colors: bg-light-fg-dark
     styles:
@@ -198,10 +198,10 @@ sections:
       muted: true
       controls: false
       aspectRatio: 16:9
+      motion: fade-left
       styles:
         self:
           borderRadius: large
-          className: fade-left
     colors: bg-light-fg-dark
     styles:
       self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
@@ -211,7 +211,7 @@ sections:
   # ───────── 7) TALENT ILLUSTRATION ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
-    motion: fade-left
+    motion: fade-right
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
