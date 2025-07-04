@@ -1,31 +1,25 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lenis from '@studio-freight/lenis';
 import { AnimatePresence, motion } from 'framer-motion';
+import Preloader from '../components/Preloader';
 import '../css/main.css';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
 
-  // AOS
+  /* ── AOS ── */
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 80,
-      easing: 'ease-in-out',
-      once: false,
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-
+    AOS.init({ duration: 800, offset: 80, easing: 'ease-in-out', mirror: true });
     const refresh = () => AOS.refreshHard();
     router.events.on('routeChangeComplete', refresh);
     return () => router.events.off('routeChangeComplete', refresh);
   }, [router.events]);
 
-  // Lenis smooth scroll
+  /* ── LENIS ── */
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.8,
@@ -34,69 +28,67 @@ export default function MyApp({ Component, pageProps }) {
       smoothTouch: false,
       lerp: 0.075
     });
-
-    function raf(time) {
-      lenis.raf(time);
+    const raf = t => {
+      lenis.raf(t);
       requestAnimationFrame(raf);
-    }
-
+    };
     requestAnimationFrame(raf);
-
     document.documentElement.classList.add('lenis');
     document.body.classList.add('lenis');
-
-    console.log('Lenis ready 🚀');
   }, []);
 
-  // Scroll-to-top visibility logic
+  /* ── Scroll‑to‑Top ── */
   useEffect(() => {
-    const scrollBtn = document.getElementById('scrollToTopBtn');
-    if (!scrollBtn) return;
-
-    const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        scrollBtn.style.display = 'flex';
-      } else {
-        scrollBtn.style.display = 'none';
-      }
-    };
-
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    window.addEventListener('scroll', toggleVisibility);
-    scrollBtn.addEventListener('click', scrollToTop);
-
+    const btn = document.getElementById('scrollToTopBtn');
+    if (!btn) return;
+    const toggle = () => (btn.style.display = window.scrollY > 300 ? 'flex' : 'none');
+    const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.addEventListener('scroll', toggle);
+    btn.addEventListener('click', scrollTop);
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-      scrollBtn.removeEventListener('click', scrollToTop);
+      window.removeEventListener('scroll', toggle);
+      btn.removeEventListener('click', scrollTop);
     };
   }, []);
 
-  // Page transition
-  const pageTransition = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 }
+  /* Fake loading for preloader */
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(t);
+  }, []);
+
+  /* ── Paper‑lift page transition ── */
+  const pageVariants = {
+    initial: { opacity: 0, scale: 0.95, y: 20, boxShadow: '0 0 0 rgba(0,0,0,0)' },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      boxShadow: '0 12px 30px rgba(255,193,7,0.15)'
+    },
+    exit: { opacity: 0, scale: 0.95, y: -20 }
   };
 
   return (
     <>
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={router.asPath}
-          variants={pageTransition}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+      {loading && <Preloader finish={() => setLoading(false)} />}
 
-      {/* ✅ Scroll to Top Button (HTML) */}
+      {!loading && (
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={router.asPath}
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+      )}
+
+      {/* Scroll‑to‑Top button */}
       <button id="scrollToTopBtn" aria-label="Scroll to top">
         ↑
       </button>
