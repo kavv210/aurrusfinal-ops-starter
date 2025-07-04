@@ -1,5 +1,5 @@
 // pages/_app.js
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,7 +30,6 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     (async () => {
       const { default: Lenis } = await import('@studio-freight/lenis');
-
       const lenis = new Lenis({
         duration: 1.8,                       // slower → smoother
         easing: t => 1 - Math.pow(1 - t, 3), // ease‑out cubic
@@ -51,6 +50,41 @@ export default function MyApp({ Component, pageProps }) {
     })();
   }, []);
 
+  /* ───────── Fade‑in Observer for .fade-col ───────── */
+  useEffect(() => {
+    const elems = document.querySelectorAll('.fade-col');
+    const obs = new IntersectionObserver(
+      entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('appear');
+        });
+      },
+      { threshold: 0.15 }
+    );
+    elems.forEach(el => obs.observe(el));
+    return () => elems.forEach(el => obs.unobserve(el));
+  }, []);
+
+  /* ───────── Scroll‑to‑Top Button ───────── */
+  const ScrollBtn = () => {
+    const [show, setShow] = useState(false);
+    useEffect(() => {
+      const onScroll = () => setShow(window.scrollY > 300);
+      window.addEventListener('scroll', onScroll);
+      return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+    return (
+      <button
+        id="scrollToTopBtn"
+        style={{ display: show ? 'flex' : 'none' }}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
+    );
+  };
+
   /* ───────── Page Transition Variants ───────── */
   const pageTransition = {
     initial: { opacity: 0, y: 20 },
@@ -61,7 +95,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={router.asPath}          // re‑mount on route change
+        key={router.asPath}
         variants={pageTransition}
         initial="initial"
         animate="animate"
@@ -69,6 +103,7 @@ export default function MyApp({ Component, pageProps }) {
         transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
         <Component {...pageProps} />
+        <ScrollBtn />
       </motion.div>
     </AnimatePresence>
   );
