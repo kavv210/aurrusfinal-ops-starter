@@ -7,7 +7,7 @@ __metadata:
 
 # ───────────────── SEO ─────────────────
 seo:
-  metaTitle: Aurrus Consulting | BPO, KPO, IT Staffing & Hiring
+  metaTitle: Home - Aurrus
   metaDescription: Aurrus Consulting Main Site.
   socialImage: public/images/main-hero.jpg
   type: Seo
@@ -43,7 +43,7 @@ sections:
       type: ImageBlock
       styles:
         self:
-          width: w-[240px] sm:w-[280px] md:w-[320px] lg:w-[400px]
+          width: w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px]
           height: h-auto
           objectFit: object-contain
     badge:
@@ -54,8 +54,8 @@ sections:
     styles:
       self:
         alignItems: center
-        flexDirection: col-reverse lg:row
-        padding: [pt-16, pl-6, pb-16, pr-6]
+        flexDirection: row
+        padding: [pt-16, pl-16, pb-16, pr-16]
       title:
         className: >
           text-4xl sm:text-5xl font-extrabold tracking-tight
