@@ -20,14 +20,16 @@ export default function Footer(props) {
         styles = {},
         enableAnnotations
     } = props;
+
     return (
         <footer
             className={classNames(
                 'sb-component',
                 'sb-component-footer',
+                'fade-in-footer', // ✅ Animation class added
                 colors,
                 styles?.self?.margin ? mapStyles({ padding: styles?.self?.margin }) : undefined,
-                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'px-4 py-28'
+                styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : 'px-4 py-8' // ✅ Reduced vertical padding
             )}
             {...(enableAnnotations && { 'data-sb-object-id': props?.__metadata?.id })}
         >
@@ -38,7 +40,11 @@ export default function Footer(props) {
                             {(logo?.url || title) && (
                                 <Link href="/" className="flex flex-col items-start">
                                     {logo && (
-                                        <ImageBlock {...logo} className="inline-block w-auto" {...(enableAnnotations && { 'data-sb-field-path': 'logo' })} />
+                                        <ImageBlock
+                                            {...logo}
+                                            className="inline-block w-auto"
+                                            {...(enableAnnotations && { 'data-sb-field-path': 'logo' })}
+                                        />
                                     )}
                                     {title && (
                                         <div className="h4" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
