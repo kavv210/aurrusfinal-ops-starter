@@ -102,8 +102,7 @@ sections:
           We help BPOs optimise operations and drive growth by streamlining
           workflows, improving service delivery, and embedding agile
           performance models. Our consulting solutions enhance efficiency, boost
-          client satisfaction, and engage the workforce. We ensure alignment
-          across people, processes, and platforms for lasting impact.
+          client satisfaction, and engage the workforce. 
         image: { url: /images/icon3.svg, altText: Advisory icon, type: ImageBlock }
         colors: bg-neutralAlt-fg-dark
         styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: row } }
