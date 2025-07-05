@@ -7,7 +7,7 @@ __metadata:
 
 # ───────────────── SEO ─────────────────
 seo:
-  metaTitle: Aurrus‑Home
+  metaTitle: Home - Aurrus
   metaDescription: Aurrus Consulting Main Site.
   socialImage: /images/main-hero.jpg
   type: Seo
@@ -82,12 +82,13 @@ sections:
       # Card 2
       - type: FeaturedItem
         __metadata: { modelName: FeaturedItem }
-        title: Organisational Development
+        title: Leadership & Culture
         subtitle: Strengthen Internal Structure
         text: >
-          We enhance the health and adaptability of your organisation—designing
-          operating models, refining governance, and aligning leadership with
-          business goals.
+          We help organisations build resilience and drive sustainable growth by
+          reshaping structures, refining governance, and fostering high‑impact
+          leadership. Our tailored approaches ensure alignment between culture,
+          capabilities, and strategic priorities.
         image: { url: /images/icon2.svg, altText: OD icon, type: ImageBlock }
         colors: bg-neutralAlt-fg-dark
         styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: row, textAlign: left } }
@@ -207,6 +208,13 @@ sections:
       self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
+  # ───────── 4) DIVIDER ─────────
+  - type: DividerSection
+    __metadata: { modelName: DividerSection }
+    title: Divider
+    colors: bg-light-fg-dark
+    styles: { self: { padding: [p-7] } }
 
   # ───────── 7) TALENT ILLUSTRATION ─────────
   - type: GenericSection
