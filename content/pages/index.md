@@ -38,9 +38,14 @@ sections:
         style: secondary
         type: Button
     media:
-      url: public/images/main-hero-new.png
+      url: /images/main-hero-new.png
       altText: Aurrus Consulting Hero
       type: ImageBlock
+      styles:
+        self:
+          width: w-full
+          maxWidth: max-w-[800px]
+          height: auto
     badge:
       label: Smarter workflows. Stronger results.
       color: text-primary
