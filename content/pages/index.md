@@ -195,7 +195,10 @@ sections:
       self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-      subtitl
+      subtitle:
+        className:
+          text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+
   # ───────── 4) DIVIDER ─────────
   - type: DividerSection
     __metadata: { modelName: DividerSection }
