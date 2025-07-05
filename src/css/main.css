@@ -293,3 +293,10 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: #f97316 !important;
 }
+img {
+  transition: all 0.4s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
