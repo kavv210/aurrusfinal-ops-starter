@@ -43,8 +43,8 @@ sections:
       type: ImageBlock
       styles:
         self:
-          width: 80%
-          maxWidth: 500px
+          width: 70%
+          maxWidth: 460px
           height: auto
     badge:
       label: Smarter workflows. Stronger results.
