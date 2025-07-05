@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lenis from '@studio-freight/lenis';
 import MouseGradientBackground from '../components/MouseGradientBackground';
-import '../styles/main.css';
+import '../css/main.css';
 
 export default function MyApp({ Component, pageProps, router }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
