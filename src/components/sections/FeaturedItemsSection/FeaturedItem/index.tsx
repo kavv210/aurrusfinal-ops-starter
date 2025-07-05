@@ -68,9 +68,10 @@ export default function FeaturedItem(props) {
                         )}
                         {subtitle && (
                             <p
-                                className={classNames('text-lg', {
-                                    'mt-2': tagline || title
-                                })}
+                                className={classNames(
+                                    styles?.subtitle ? mapStyles(styles.subtitle) : 'text-lg',
+                                    { 'mt-2': tagline || title }
+                                )}
                                 {...(fieldPath && { 'data-sb-field-path': '.subtitle' })}
                             >
                                 {subtitle}
