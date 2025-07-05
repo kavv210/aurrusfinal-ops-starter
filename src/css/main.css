@@ -111,7 +111,7 @@ h2, h3, h4,
   }
 
   .sb-component-button {
-    @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out hover:scale-105;
+    @apply inline-flex items-center justify-center px-7 py-3 rounded-full font-medium transition-transform duration-300 ease-in-out transform hover:scale-105;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
   }
 
@@ -134,7 +134,7 @@ h2, h3, h4,
   }
 
   .sb-component-link {
-    @apply inline-flex items-center font-medium transition duration-300 ease-in-out hover:scale-105 hover:text-primary;
+    @apply inline-flex items-center font-medium transition duration-300 ease-in-out transform hover:scale-105 hover:text-primary;
     text-shadow: 0 0 6px rgba(255, 165, 0, 0.4);
   }
 
@@ -144,10 +144,6 @@ h2, h3, h4,
 
   .sb-component-link-secondary {
     @apply text-current hover:text-primary;
-  }
-
-  .sb-checkbox:checked + .sb-label:before {
-    content: '✔';
   }
 
   .bg-gradient-brand {
@@ -209,8 +205,19 @@ h2, h3, h4,
     overflow-x: hidden;
   }
 
+  /* Fade AOS fallback */
+  [data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+  }
+
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+
   .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
   }
 
   @keyframes fadeInUp {
@@ -224,43 +231,10 @@ h2, h3, h4,
     }
   }
 
-  .fade-in-down {
-    animation: fadeInDown 0.8s ease-out forwards;
-  }
-
-  @keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-40px);
-    }
-    100% {
+  @keyframes fadeInFooter {
+    to {
       opacity: 1;
-      transform: translateY(0);
     }
-  }
-
-  .fade-in-left {
-    animation: fadeInLeft 0.8s ease-out forwards;
-  }
-
-  @keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  .underline-line-through {
-    text-decoration-line: underline line-through;
-  }
-
-  img:hover {
-    transform: scale(1.05);
-    transition: transform 0.4s ease-in-out;
   }
 
   .grid > div,
@@ -279,27 +253,30 @@ h2, h3, h4,
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
 
-  @keyframes fadeInFooter {
-    to {
-      opacity: 1;
-    }
+  img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
   }
-}
 
-#scrollToTopBtn {
-  @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
-  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
-}
+  .underline-line-through {
+    text-decoration-line: underline line-through;
+  }
 
-#scrollToTopBtn:hover {
-  transform: scale(1.1);
-  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-}
+  #scrollToTopBtn {
+    @apply fixed bottom-6 right-6 z-[9999] hidden lg:flex justify-center items-center w-12 h-12 rounded-full font-bold text-white transition duration-300;
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
+  }
 
-.sb-structure-divider {
-  @apply border-t border-neutral my-12;
-  border-width: 6px !important;
+  #scrollToTopBtn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  }
+
+  .sb-structure-divider {
+    @apply border-t border-neutral my-12;
+    border-width: 6px !important;
+  }
 }
 
 section h1, section h2, section h3, section h4, section h5, section h6,
@@ -307,7 +284,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #2D65B0 !important;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
-
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
   color: #f97316 !important;
   transform: scale(1.03);
