@@ -1,3 +1,4 @@
+// pages/_app.js
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
@@ -13,12 +14,14 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      offset: 80,
+      offset: 120, // Cleaner re-entries
       easing: 'ease-in-out',
-      once: false,
+      once: false, // Required to fade back in when re-entering
       mirror: true,
       anchorPlacement: 'top-bottom'
     });
+
+    setTimeout(() => AOS.refresh(), 300); // Improve layout timing
 
     const refresh = () => AOS.refreshHard();
     router.events.on('routeChangeComplete', refresh);
@@ -50,12 +53,10 @@ export default function MyApp({ Component, pageProps }) {
 
       console.log('✅ Lenis ready (ease-out cubic)');
 
-      // Scroll-to-top logic
       window.addEventListener('scroll', () => {
         setShowScrollTop(window.scrollY > 300);
       });
 
-      // Assign to window for global access
       window.lenis = lenis;
     })();
   }, []);
