@@ -1,84 +1,62 @@
-// pages/_app.js
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { AnimatePresence, motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { AnimatePresence, motion } from 'framer-motion';
-import '../css/main.css';
+import Lenis from '@studio-freight/lenis';
+import MouseGradientBackground from '../components/MouseGradientBackground'; // ✅ make sure path is correct
+import '../styles/globals.css';
 
-export default function MyApp({ Component, pageProps }) {
-  const router = useRouter();
+export default function MyApp({ Component, pageProps, router }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // ───── AOS: Scroll Animations ─────
+  // ✅ Initialize AOS (scroll animations)
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 120, // Cleaner re-entries
-      easing: 'ease-in-out',
-      once: false, // Required to fade back in when re-entering
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-
-    setTimeout(() => AOS.refresh(), 300); // Improve layout timing
-
-    const refresh = () => AOS.refreshHard();
-    router.events.on('routeChangeComplete', refresh);
-    return () => router.events.off('routeChangeComplete', refresh);
-  }, [router.events]);
-
-  // ───── LENIS: Smooth Scroll ─────
-  useEffect(() => {
-    (async () => {
-      const { default: Lenis } = await import('@studio-freight/lenis');
-
-      const lenis = new Lenis({
-        duration: 1.6,
-        easing: t => 1 - Math.pow(1 - t, 3), // ease-out cubic
-        smooth: true,
-        smoothWheel: true,
-        smoothTouch: true
-      });
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-
-      document.documentElement.classList.add('lenis');
-      document.body.classList.add('lenis');
-
-      console.log('✅ Lenis ready (ease-out cubic)');
-
-      window.addEventListener('scroll', () => {
-        setShowScrollTop(window.scrollY > 300);
-      });
-
-      window.lenis = lenis;
-    })();
+    AOS.init({ once: true });
   }, []);
 
-  // ───── Framer Motion Page Transitions ─────
-  const pageTransition = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 }
+  // ✅ Lenis for smooth scrolling
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
+  // ✅ Scroll to top visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // ✅ Scroll to top action
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // ───── Scroll-to-Top Handler ─────
-  const scrollToTop = () => {
-    if (window.lenis) {
-      window.lenis.scrollTo(0, { duration: 1.2 });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+  // ✅ Framer Motion page transitions
+  const pageTransition = {
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -30 }
   };
 
   return (
     <>
+      {/* 🎨 Mouse-following animated gradient background */}
+      <MouseGradientBackground />
+
+      {/* 🔄 Animated page transitions */}
       <AnimatePresence mode="wait">
         <motion.div
           key={router.asPath}
@@ -92,11 +70,11 @@ export default function MyApp({ Component, pageProps }) {
         </motion.div>
       </AnimatePresence>
 
-      {/* ───── Scroll to Top Button ───── */}
+      {/* 🔼 Scroll to top button */}
       {showScrollTop && (
         <button
-          id="scrollToTopBtn"
           onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition"
           aria-label="Scroll to top"
         >
           ↑
