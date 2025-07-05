@@ -43,9 +43,9 @@ sections:
       type: ImageBlock
       styles:
         self:
-          width: 70%
-          maxWidth: 460px
-          height: auto
+          width: w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px]
+          height: h-auto
+          objectFit: object-contain
     badge:
       label: Smarter workflows. Stronger results.
       color: text-primary
