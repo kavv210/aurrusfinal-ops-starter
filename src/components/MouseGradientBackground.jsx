@@ -19,15 +19,17 @@ export default function MouseGradientBackground() {
 
   const gradient = useTransform(
     [mouseX, mouseY],
-    ([x, y]) => `radial-gradient(circle at ${x}% ${y}%, #7f5af0, #16161a)`
+    ([x, y]) =>
+      `radial-gradient(1000px circle at ${x}% ${y}%, rgba(255, 223, 186, 0.3), rgba(232, 245, 255, 0.3))`
   );
 
   return (
     <motion.div
       style={{
         background: gradient,
+        transition: 'background 0.5s ease-out',
       }}
-      className="fixed inset-0 -z-10"
+      className="fixed inset-0 -z-10 pointer-events-none backdrop-blur-md"
     />
   );
 }
