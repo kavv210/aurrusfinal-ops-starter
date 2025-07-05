@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap'); 
 
 @tailwind base;
 @tailwind components;
@@ -27,6 +28,7 @@
   h6, .h6 {
     @apply break-words font-semibold transition-transform duration-300 ease-in-out;
     line-height: 1.2;
+    color: #3b82f6; /* Light blue for all headings */
   }
 
   h1:hover,
@@ -62,12 +64,12 @@
 
   .divider-home {
     @apply border-t border-neutral my-8;
-    border-width: 4px !important;
+    border-width: 6px !important; /* Made bolder */
   }
 
   .divider-services {
     @apply border-t border-neutral my-8;
-    border-width: 1px !important;
+    border-width: 3px !important; /* Made bolder */
   }
 
   .sb-card {
@@ -131,7 +133,7 @@
   }
 
   .sb-checkbox:checked + .sb-label:before {
-    content: '\2713';
+    content: '¹3';
   }
 
   .bg-gradient-brand {
