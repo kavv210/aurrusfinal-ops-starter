@@ -29,7 +29,8 @@
     @apply break-words font-semibold transition-transform duration-300 ease-in-out;
     line-height: 1.2;
     color: #3b82f6; /* Light blue for all headings */
-  }
+  
+    color: #2D65B0;}
 
   h1:hover,
   h2:hover,
@@ -43,7 +44,7 @@
   }
 
   ::selection {
-    background: #0a2540;
+    background: #2D65B0;
     color: #f97316;
   }
 
@@ -52,7 +53,7 @@
   .sb-dropdown,
   option {
     background-color: #ffffff;
-    color: #0a2540;
+    color: #2D65B0;
   }
 }
 
@@ -137,7 +138,7 @@
   }
 
   .bg-gradient-brand {
-    background: linear-gradient(to right, #ffffff, #0a2540, #f97316);
+    background: linear-gradient(to right, #ffffff, #2D65B0, #f97316);
     color: white;
   }
 
@@ -152,14 +153,14 @@
 
   /* ───── FOOTER ───── */
   footer {
-    @apply bg-[#0a2540] text-white rounded-2xl p-8 mt-16 relative z-10;
+    @apply bg-[#2D65B0] text-white rounded-2xl p-8 mt-16 relative z-10;
     box-shadow: 0 8px 24px rgba(10, 37, 64, 0.5);
     opacity: 0;
     animation: fadeInFooter 0.8s forwards 0.2s;
   }
 
   footer .container {
-    @apply text-center rounded-xl overflow-hidden bg-[#0a2540];
+    @apply text-center rounded-xl overflow-hidden bg-[#2D65B0];
   }
 
   footer p {
@@ -285,4 +286,18 @@
 #scrollToTopBtn:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+}
+
+/* Structural Divider */
+.sb-structure-divider {
+  @apply border-t border-neutral my-12;
+  border-width: 6px !important;
+}
+
+/* Section Styling */
+section {
+  background-color: #fff4e6;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
