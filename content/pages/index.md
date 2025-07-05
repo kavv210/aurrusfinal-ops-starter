@@ -70,6 +70,9 @@ sections:
         __metadata: { modelName: FeaturedItem }
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
+        styles:
+          subtitle:
+            className: text-xl font-bold text-dark
         text: >
           We provide strategic guidance to help organizations navigate change and
           optimise performance. From business model innovation to operational
@@ -83,7 +86,10 @@ sections:
       - type: FeaturedItem
         __metadata: { modelName: FeaturedItem }
         title: Vision & Values Aligned
-        subtitle: Strengthen Internal Structure
+        subtitle: Refine Core Structure
+        styles:
+          subtitle:
+            className: text-xl font-bold text-dark
         text: >
           We help organisations build resilience and drive sustainable growth by
           reshaping structures, refining governance, and fostering high‑impact
@@ -98,6 +104,9 @@ sections:
         __metadata: { modelName: FeaturedItem }
         title: Program & Project Advisory
         subtitle: Deliver with Precision
+        styles:
+          subtitle:
+            className: text-xl font-bold text-dark
         text: >
           We help BPOs optimise operations and drive growth by streamlining
           workflows, improving service delivery, and embedding agile
@@ -208,6 +217,9 @@ sections:
       text: Talent Acquisition & Training
       type: TitleBlock
     subtitle: Build high‑performance teams.
+    styles:
+      subtitle:
+        className: text-xl font-bold text-dark
     text: >
       From sourcing top‑tier talent to hands‑on onboarding and leadership
       training, Aurrus builds teams equipped to excel from day one.
@@ -230,6 +242,9 @@ sections:
       text: Outsourcing & Transformation
       type: TitleBlock
     subtitle: Optimise and scale.
+    styles:
+      subtitle:
+        className: text-xl font-bold text-dark
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS
       verticals, reducing friction and unlocking new performance levels.
@@ -264,6 +279,9 @@ sections:
         __metadata: { modelName: FeaturedItem }
         title: Collaborative by Nature
         subtitle: Aligned Execution. Lasting Partnerships.
+        styles:
+          subtitle:
+            className: text-xl font-bold text-dark
         text: We integrate with your people and processes, ensuring smoother delivery and stronger synergy.
         image: { url: /images/abstract-feature1.svg, altText: Colab icon, type: ImageBlock }
         colors: bg-light-fg-dark
@@ -273,6 +291,9 @@ sections:
         __metadata: { modelName: FeaturedItem }
         title: Execution without Friction
         subtitle: From Planning to Precision
+        styles:
+          subtitle:
+            className: text-xl font-bold text-dark
         text: We manage projects end‑to‑end with clear timelines, resource alignment, and minimal disruption.
         image: { url: /images/abstract-feature2.svg, altText: Execution icon, type: ImageBlock }
         colors: bg-light-fg-dark
@@ -282,6 +303,9 @@ sections:
         __metadata: { modelName: FeaturedItem }
         title: Experience that Matters
         subtitle: Decades‑deep expertise
+        styles:
+          subtitle:
+            className: text-xl font-bold text-dark
         text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on experience, not just theory.
         image: { url: /images/abstract-feature3.svg, altText: Experience icon, type: ImageBlock }
         colors: bg-light-fg-dark
@@ -302,6 +326,9 @@ sections:
       text: Let's Build Something Better Together.
       type: TitleBlock
     subtitle: Start your consultation today!
+    styles:
+      subtitle:
+        className: text-xl font-bold text-dark
     text: >
       Ready to streamline your operations or rethink strategy?
       Fill out the form and our team will respond within 24 hours.
