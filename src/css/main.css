@@ -304,3 +304,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 h1, h2, h3, h4, h5, h6 {
   color: #2D65B0 !important;
 }
+
+footer:hover {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+}
