@@ -294,10 +294,8 @@
   border-width: 6px !important;
 }
 
-/* Section Styling */
-section {
-  background-color: #fff4e6;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
+
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  color: #2D65B0 !important;
 }
