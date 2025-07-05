@@ -3,20 +3,31 @@ import { AnimatePresence, motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lenis from '@studio-freight/lenis';
-import MouseGradientBackground from '../components/MouseGradientBackground'; // ✅ make sure path is correct
-import '../styles/globals.css';
+import MouseGradientBackground from '../components/MouseGradientBackground';
+import '../styles/main.css';
 
 export default function MyApp({ Component, pageProps, router }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // ✅ Initialize AOS (scroll animations)
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({
+      duration: 800,
+      offset: 80,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+      anchorPlacement: 'top-bottom'
+    });
   }, []);
 
-  // ✅ Lenis for smooth scrolling
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      duration: 1.5,
+      easing: t => 1 - Math.pow(1 - t, 3),
+      smooth: true,
+      smoothWheel: true,
+      smoothTouch: true
+    });
 
     function raf(time) {
       lenis.raf(time);
@@ -24,13 +35,9 @@ export default function MyApp({ Component, pageProps, router }) {
     }
 
     requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
+    return () => lenis.destroy();
   }, []);
 
-  // ✅ Scroll to top visibility
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
@@ -39,12 +46,10 @@ export default function MyApp({ Component, pageProps, router }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // ✅ Scroll to top action
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // ✅ Framer Motion page transitions
   const pageTransition = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
@@ -53,10 +58,7 @@ export default function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
-      {/* 🎨 Mouse-following animated gradient background */}
       <MouseGradientBackground />
-
-      {/* 🔄 Animated page transitions */}
       <AnimatePresence mode="wait">
         <motion.div
           key={router.asPath}
@@ -70,7 +72,6 @@ export default function MyApp({ Component, pageProps, router }) {
         </motion.div>
       </AnimatePresence>
 
-      {/* 🔼 Scroll to top button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
