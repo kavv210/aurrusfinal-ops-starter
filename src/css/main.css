@@ -153,7 +153,7 @@
 
   /* ───── FOOTER ───── */
   footer {
-    @apply bg-[#2D65B0] text-white rounded-2xl p-8 mt-16 relative z-10;
+    @apply bg-[#2D65B0] text-white rounded-2xl p-4 mt-16 relative z-10;
     box-shadow: 0 8px 24px rgba(10, 37, 64, 0.5);
     opacity: 0;
     animation: fadeInFooter 0.8s forwards 0.2s;
@@ -297,5 +297,10 @@
 
 
 section h1, section h2, section h3, section h4, section h5, section h6 {
+  color: #2D65B0 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
   color: #2D65B0 !important;
 }
