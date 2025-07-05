@@ -9,7 +9,7 @@ __metadata:
 seo:
   metaTitle: Home - Aurrus
   metaDescription: Aurrus Consulting Main Site.
-  socialImage: /images/main-hero.jpg
+  socialImage: public/images/main-hero.jpg
   type: Seo
 
 # ───────────────── Sections Array ─────────────────
@@ -38,7 +38,7 @@ sections:
         style: secondary
         type: Button
     media:
-      url: /images/main-hero-new.svg
+      url: public/images/main-hero-new.svg
       altText: Aurrus Consulting Hero
       type: ImageBlock
     badge:
@@ -82,7 +82,7 @@ sections:
       # Card 2
       - type: FeaturedItem
         __metadata: { modelName: FeaturedItem }
-        title: Leadership & Culture
+        title: Vision & Values Aligned
         subtitle: Strengthen Internal Structure
         text: >
           We help organisations build resilience and drive sustainable growth by
@@ -99,8 +99,11 @@ sections:
         title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
-          From aligning stakeholder expectations to managing timelines and budgets,
-          our hands‑on advisory ensures every initiative lands successfully.
+          We help BPOs optimise operations and drive growth by streamlining
+          workflows, improving service delivery, and embedding agile
+          performance models. Our consulting solutions enhance efficiency, boost
+          client satisfaction, and engage the workforce. We ensure alignment
+          across people, processes, and platforms for lasting impact.
         image: { url: /images/icon3.svg, altText: Advisory icon, type: ImageBlock }
         colors: bg-neutralAlt-fg-dark
         styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: row } }
@@ -116,24 +119,6 @@ sections:
         className: >
           text-3xl sm:text-4xl font-extrabold tracking-tight
           text-dark transition-transform duration-300 hover:scale-105
-
-  # ───────── 3) TRUSTED LOGOS MARQUEE ─────────
-  - type: ImageGallerySection
-    __metadata: { modelName: ImageGallerySection }
-    motion: move-to-left
-    subtitle: Award‑winning enterprises trust us
-    images:
-      - { url: /images/empathy-logo.svg,  altText: Empathy logo,  type: ImageBlock }
-      - { url: /images/wellster-logo.svg, altText: Wellster logo, type: ImageBlock }
-      - { url: /images/vise-logo.svg,     altText: Vise logo,     type: ImageBlock }
-      - { url: /images/telus-logo.svg,    altText: Telus logo,    type: ImageBlock }
-      - { url: /images/contenful-logo.svg,altText: Contentful,    type: ImageBlock }
-      - { url: /images/sanity-logo.svg,   altText: Sanity logo,   type: ImageBlock }
-      - { url: /images/rangle-logo.svg,   altText: Rangle logo,   type: ImageBlock }
-    colors: bg-light-fg-dark
-    styles:
-      self: { justifyContent: center }
-      subtitle: { textAlign: center }
 
   # ───────── 4) DIVIDER ─────────
   - type: DividerSection
