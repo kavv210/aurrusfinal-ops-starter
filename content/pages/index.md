@@ -38,7 +38,7 @@ sections:
         style: secondary
         type: Button
     media:
-      url: public/images/main-hero-new.svg
+      url: public/images/main-hero-new.png
       altText: Aurrus Consulting Hero
       type: ImageBlock
     badge:
