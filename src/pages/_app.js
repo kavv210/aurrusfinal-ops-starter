@@ -18,8 +18,8 @@ export default function MyApp({ Component, pageProps }) {
       duration: 800,
       offset: 80,
       easing: 'ease-in-out',
-      once: false,   // ✅ animate every time it's in/out of view
-      mirror: true,  // ✅ animate on scroll out too (fade-out)
+      once: false,
+      mirror: true,
       anchorPlacement: 'top-bottom',
     });
   }, []);
@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
     };
 
     lenis.on('scroll', () => {
-      AOS.refresh(); // ✅ refresh AOS on virtual scroll
+      AOS.refresh();
     });
 
     requestAnimationFrame(raf);
@@ -50,12 +50,12 @@ export default function MyApp({ Component, pageProps }) {
     };
   }, []);
 
-  /* ── Refresh AOS on route change (for motion transitions) ── */
+  /* ── Refresh AOS on route change ── */
   useEffect(() => {
     const handleRouteChange = () => {
       setTimeout(() => {
         AOS.refresh();
-      }, 500); // allow motion.div to enter before refreshing
+      }, 500);
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -78,9 +78,24 @@ export default function MyApp({ Component, pageProps }) {
     exit: { opacity: 0, y: -30 },
   };
 
+  /* ── Custom Cursor ── */
+  useEffect(() => {
+    const cursor = document.getElementById('cursor-dot');
+    if (!cursor) return;
+
+    const moveCursor = (e) => {
+      cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    };
+
+    window.addEventListener('mousemove', moveCursor);
+    return () => window.removeEventListener('mousemove', moveCursor);
+  }, []);
+
   return (
     <>
       <MouseGradientBackground />
+
+      <div id="cursor-dot" className="cursor-dot" />
 
       <AnimatePresence mode="wait">
         <motion.div
