@@ -1,7 +1,7 @@
 <svg width="1716" height="1109" viewBox="0 0 1716 1109" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_963_4038)">
 <mask id="mask0_963_4038" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1716" height="1109">
-<rect x="0.5" y="0.5" width="1715" height="1108" fill="#E8E8EB" stroke="#EFEFEC"/>
+<rect x="0.5" y="0.5" width="1715" height="1108" fill="##FFA500" stroke="#90D5FF"/>
 </mask>
 <g mask="url(#mask0_963_4038)">
 <rect x="-13.8295" y="-1.99919" width="33.0741" height="33.0741" stroke="#E8E8EB" stroke-width="0.34097"/>
