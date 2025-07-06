@@ -12,9 +12,9 @@ seo:
   type: Seo
 
 sections:
+  # ───────── 1) HERO ─────────
   - type: GenericSection
-    __metadata:
-      modelName: GenericSection
+    __metadata: { modelName: GenericSection }
     motion: fade-down
     title:
       text: Accelerate Growth With Aurrus.
@@ -42,10 +42,7 @@ sections:
           width: w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px]
           height: h-auto
           objectFit: object-contain
-    badge:
-      label: Smarter workflows. Stronger results.
-      color: text-primary
-      type: Badge
+    badge: { label: Smarter workflows. Stronger results., color: text-primary, type: Badge }
     colors: bg-light-fg-dark
     styles:
       self:
@@ -57,9 +54,9 @@ sections:
           text-4xl sm:text-5xl font-extrabold tracking-tight
           text-dark transition-transform duration-300 hover:scale-105
 
+  # ───────── 2) WHY AURRUS ─────────
   - type: FeaturedItemsSection
-    __metadata:
-      modelName: FeaturedItemsSection
+    __metadata: { modelName: FeaturedItemsSection }
     motion: fade-up
     title:
       text: Why Aurrus?
@@ -119,12 +116,13 @@ sections:
         className: >
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
+  # ───────── 3) DIVIDER ─────────
   - type: DividerSection
     __metadata: { modelName: DividerSection }
-    title: Divider
     colors: bg-light-fg-dark
     styles: { self: { padding: [p-7] } }
 
+  # ───────── 4) BUILT FOR IMPACT ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
     motion: fade-right
@@ -147,6 +145,7 @@ sections:
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
+  # ───────── 5) COLLABORATION ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
     motion: fade-left
@@ -168,15 +167,15 @@ sections:
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
-        className:
-          text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
+  # ───────── 6) DIVIDER ─────────
   - type: DividerSection
     __metadata: { modelName: DividerSection }
-    title: Divider
     colors: bg-light-fg-dark
     styles: { self: { padding: [p-7] } }
 
+  # ───────── 7) TALENT ACQUISITION ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
     motion: fade-right
@@ -197,8 +196,10 @@ sections:
       self: { alignItems: center, flexDirection: row, padding: [pt-16, pb-16, pl-8, pr-8] }
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-      subtitle: { className: "text-xl font-bold text-dark" }
+      subtitle:
+        className: text-xl font-bold text-dark
 
+  # ───────── 8) OUTSOURCING ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
     motion: fade-left
@@ -219,14 +220,16 @@ sections:
       self: { flexDirection: row-reverse, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-      subtitle: { className: "text-xl font-bold text-dark" }
+      subtitle:
+        className: text-xl font-bold text-dark
 
+  # ───────── 9) DIVIDER ─────────
   - type: DividerSection
     __metadata: { modelName: DividerSection }
-    title: Divider
     colors: bg-light-fg-dark
     styles: { self: { padding: [p-7] } }
 
+  # ───────── 10) AURRUS DIFFERENCE ─────────
   - type: FeaturedItemsSection
     __metadata: { modelName: FeaturedItemsSection }
     motion: fade-up
@@ -272,6 +275,7 @@ sections:
         className: >
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
+  # ───────── 11) CTA FORM ─────────
   - type: GenericSection
     __metadata: { modelName: GenericSection }
     motion: fade-down
@@ -288,11 +292,9 @@ sections:
         <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="space-y-4 max-w-xl mx-auto">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
-
-          <input type="text" name="name" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
+          <input name="name" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
           <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300">
           <textarea name="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300"></textarea>
-
           <button type="submit" class="bg-[#1E88E5] text-white px-6 py-3 rounded-xl hover:bg-[#1565C0] transition duration-300">
             Submit
           </button>
@@ -300,7 +302,10 @@ sections:
     badge: { label: Contact Us, color: text-primary, type: Badge }
     colors: bg-light-fg-dark
     styles:
-      self: { flexDirection: col, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
+      self:
+        flexDirection: col
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
