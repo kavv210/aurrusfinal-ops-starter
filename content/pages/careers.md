@@ -26,7 +26,8 @@ sections:
         alignItems: center
         flexDirection: row-reverse
         justifyContent: center
-        dataAos: fade-down
+        attrs:
+          'data-aos': fade-down
       text:
         textAlign: center
       subtitle:
@@ -65,7 +66,8 @@ sections:
       self:
         padding: [pt-16, pl-16, pb-16, pr-16]
         justifyContent: center
-        dataAos: fade-down
+        attrs:
+          'data-aos': fade-down
       subtitle:
         textAlign: center
     type: FeaturedPeopleSection
@@ -94,7 +96,8 @@ sections:
         borderRadius: x-large
         boxShadow: xl
         backgroundColor: '#fff8f0'
-        dataAos: fade-down
+        attrs:
+          'data-aos': fade-down
       text:
         textAlign: center
     text: |
@@ -145,7 +148,8 @@ sections:
             borderRadius: x-large
             flexDirection: row
             justifyContent: center
-            dataAos: fade-down
+            attrs:
+              'data-aos': fade-down
         type: FeaturedItem
       - title: Open Source Engineer
         subtitle: Marketing
@@ -159,7 +163,8 @@ sections:
             borderRadius: x-large
             flexDirection: row
             justifyContent: center
-            dataAos: fade-down
+            attrs:
+              'data-aos': fade-down
         type: FeaturedItem
       - title: Senior Software Engineer
         subtitle: Engineering
@@ -171,14 +176,15 @@ sections:
             padding: [pt-8, pl-8, pb-8, pr-8]
             borderRadius: x-large
             flexDirection: row
-            dataAos: fade-down
+            attrs:
+              'data-aos': fade-down
         type: FeaturedItem
     actions:
-      - label: Apply now
-        url: /
-        icon: arrowRight
+      - label: Visit headquarters
+        url: "#office-location"
+        icon: mapPin
         iconPosition: right
-        style: primary
+        style: secondary
         type: Button
     variant: toggle-list
     colors: bg-light-fg-dark
