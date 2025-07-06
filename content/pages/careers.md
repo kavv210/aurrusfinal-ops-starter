@@ -22,7 +22,7 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-40, pl-4, pb-40, pr-4]
+        padding: [pt-40, pl-6, pb-40, pr-6]
         alignItems: center
         flexDirection: row-reverse
         justifyContent: center
@@ -40,6 +40,8 @@ sections:
       opacity: 100
       url: /images/abstract-background.svg
 
+  - type: DividerSection
+
   - title:
       text: Meet the team
       color: text-dark
@@ -55,11 +57,13 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-16, pl-16, pb-8, pr-16]
+        padding: [pt-16, pl-16, pb-16, pr-16]
         justifyContent: center
       subtitle:
         textAlign: center
     type: FeaturedPeopleSection
+
+  - type: DividerSection
 
   - title:
       text: Our Office Location
@@ -72,17 +76,15 @@ sections:
     styles:
       self:
         padding: [pt-20, pb-20, pl-6, pr-6]
-        flexDirection: row
         alignItems: center
-        justifyContent: space-between
-        gap: 20px
+        justifyContent: center
         borderRadius: x-large
         boxShadow: xl
         backgroundColor: '#fff8f0'
       text:
-        textAlign: left
+        textAlign: center
     text: |
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: flex-start;">
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; padding: 24px;">
         <div style="flex: 1 1 300px; max-width: 400px; text-align: left;">
           <strong>Aurrus HQ</strong><br/>
           J‑42, Lajpat Nagar‑II, Central Market<br/>
@@ -99,6 +101,8 @@ sections:
         </div>
       </div>
     colors: bg-neutral-fg-dark
+
+  - type: DividerSection
 
   - title:
       text: Open positions
