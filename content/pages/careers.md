@@ -81,33 +81,27 @@ sections:
           - pl-6
           - pr-6
           - pb-20
-        flexDirection: row
+        flexDirection: column
         alignItems: center
         justifyContent: center
         borderRadius: x-large
         boxShadow: xl
-        backgroundColor: #fff8f0
+        backgroundColor: "#fff8f0"
       text:
-        textAlign: left
-    media:
-      type: ImageBlock
-      url: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0501091289057!2d77.24076807432647!3d28.568257975699936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b2808ffe1b%3A0xec1f022224013392!2sJ-42%2C%20near%20Home%20Saaz%2C%20Block%20J%2C%20Lajpat%20Nagar%20II%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1751796978098!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      altText: Aurrus headquarters map
-      styles:
-        self:
-          width: 100%
-          height: 400px
-          maxWidth: 600px
-          borderRadius: large
-          boxShadow: xl
+        textAlign: center
     text: |
       **Aurrus HQ**  
       J-42 Lajpat Nagar-2, Central Market  
-      New Delhi, Delhi, India - 110024
+      New Delhi, Delhi, India - 110024  
       📞 +91-9711150917  
       ✉️ support@aurrusconsulting.com  
-      
+
       *Open Mon–Sat, 10 AM – 6 PM*
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0501091289057!2d77.24076807432647!3d28.568257975699936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b2808ffe1b%3A0xec1f022224013392!2sJ-42%2C%20near%20Home%20Saaz%2C%20Block%20J%2C%20Lajpat%20Nagar%20II%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1751796978098!5m2!1sen!2sin"
+        width="100%" height="400"
+        style="border:0; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     colors: bg-neutral-fg-dark
 
@@ -194,7 +188,7 @@ sections:
     type: FeaturedItemsSection
 
 seo:
-  metaTitle: About Us - Aurrus Consulting
+  metaTitle: Careers - Aurrus Consulting
   metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas, and growing together.
   socialImage: /images/main-hero.jpg
   type: Seo
