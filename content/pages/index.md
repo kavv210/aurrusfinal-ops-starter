@@ -67,7 +67,7 @@ sections:
         text: >
           We provide strategic guidance to help organizations navigate change and optimise performance. From business model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
         image:
-          url: /images/icon1.svg
+          url: /images/icon1.png
           altText: Strategy icon
           type: ImageBlock
         colors: bg-neutralAlt-fg-dark
@@ -88,7 +88,7 @@ sections:
         text: >
           We help organisations build resilience and drive sustainable growth by reshaping structures, refining governance, and fostering high‑impact leadership. Our tailored approaches ensure alignment between culture, capabilities, and strategic priorities.
         image:
-          url: /images/icon2.svg
+          url: /images/icon2.png
           altText: OD icon
           type: ImageBlock
         colors: bg-neutralAlt-fg-dark
@@ -109,7 +109,7 @@ sections:
         text: >
           We help BPOs optimise operations and drive growth by streamlining workflows, improving service delivery, and embedding agile performance models. Our consulting solutions enhance efficiency, boost client satisfaction, and engage the workforce.
         image:
-          url: /images/icon3.svg
+          url: /images/icon3.png
           altText: Advisory icon
           type: ImageBlock
         colors: bg-neutralAlt-fg-dark
@@ -291,7 +291,7 @@ sections:
         subtitle: Aligned Execution. Lasting Partnerships.
         text: We integrate with your people and processes, ensuring smoother delivery and stronger synergy.
         image:
-          url: /images/abstract-feature1.svg
+          url: /images/collab.png
           altText: Colab icon
           type: ImageBlock
         colors: bg-light-fg-dark
@@ -310,7 +310,7 @@ sections:
         subtitle: From Planning to Precision
         text: We manage projects end‑to‑end with clear timelines, resource alignment, and minimal disruption.
         image:
-          url: /images/abstract-feature2.svg
+          url: /images/execution.png
           altText: Execution icon
           type: ImageBlock
         colors: bg-light-fg-dark
@@ -329,7 +329,7 @@ sections:
         subtitle: Decades‑deep expertise
         text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on experience, not just theory.
         image:
-          url: /images/abstract-feature3.svg
+          url: /images/experience.png
           altText: Experience icon
           type: ImageBlock
         colors: bg-light-fg-dark
