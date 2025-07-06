@@ -14,7 +14,8 @@ seo:
 sections:
   # ───────── 1) HERO ─────────
   - type: GenericSection
-    __metadata: { modelName: GenericSection }
+    __metadata:
+      modelName: GenericSection
     motion: fade-down
     title:
       text: Accelerate Growth With Aurrus.
@@ -42,7 +43,10 @@ sections:
           width: w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px]
           height: h-auto
           objectFit: object-contain
-    badge: { label: Smarter workflows. Stronger results., color: text-primary, type: Badge }
+    badge:
+      label: Smarter workflows. Stronger results.
+      color: text-primary
+      type: Badge
     colors: bg-light-fg-dark
     styles:
       self:
@@ -56,14 +60,16 @@ sections:
 
   # ───────── 2) WHY AURRUS ─────────
   - type: FeaturedItemsSection
-    __metadata: { modelName: FeaturedItemsSection }
+    __metadata:
+      modelName: FeaturedItemsSection
     motion: fade-up
     title:
       text: Why Aurrus?
       type: TitleBlock
     items:
       - type: FeaturedItem
-        __metadata: { modelName: FeaturedItem }
+        __metadata:
+          modelName: FeaturedItem
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: >
@@ -71,12 +77,23 @@ sections:
           optimise performance. From business model innovation to operational
           restructuring and market strategy, our consultants deliver clear,
           data‑driven solutions.
-        image: { url: /images/icon1.svg, altText: Strategy icon, type: ImageBlock }
+        image:
+          url: /images/icon1.svg
+          altText: Strategy icon
+          type: ImageBlock
         colors: bg-neutralAlt-fg-dark
-        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: row, textAlign: left }, subtitle: { className: "text-xl font-bold text-dark" } }
+        styles:
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: row
+            textAlign: left
+          subtitle:
+            className: text-xl font-bold text-dark
 
       - type: FeaturedItem
-        __metadata: { modelName: FeaturedItem }
+        __metadata:
+          modelName: FeaturedItem
         title: Vision & Values Aligned
         subtitle: Refine Core Structure
         text: >
@@ -84,12 +101,23 @@ sections:
           reshaping structures, refining governance, and fostering high‑impact
           leadership. Our tailored approaches ensure alignment between culture,
           capabilities, and strategic priorities.
-        image: { url: /images/icon2.svg, altText: OD icon, type: ImageBlock }
+        image:
+          url: /images/icon2.svg
+          altText: OD icon
+          type: ImageBlock
         colors: bg-neutralAlt-fg-dark
-        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: row, textAlign: left }, subtitle: { className: "text-xl font-bold text-dark" } }
+        styles:
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: row
+            textAlign: left
+          subtitle:
+            className: text-xl font-bold text-dark
 
       - type: FeaturedItem
-        __metadata: { modelName: FeaturedItem }
+        __metadata:
+          modelName: FeaturedItem
         title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
@@ -97,17 +125,35 @@ sections:
           workflows, improving service delivery, and embedding agile
           performance models. Our consulting solutions enhance efficiency, boost
           client satisfaction, and engage the workforce.
-        image: { url: /images/icon3.svg, altText: Advisory icon, type: ImageBlock }
+        image:
+          url: /images/icon3.svg
+          altText: Advisory icon
+          type: ImageBlock
         colors: bg-neutralAlt-fg-dark
-        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: row }, subtitle: { className: "text-xl font-bold text-dark" } }
+        styles:
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: row
+          subtitle:
+            className: text-xl font-bold text-dark
 
-    badge: { label: Client‑Centred Outcomes, color: text-primary, type: Badge }
+    badge:
+      label: Client‑Centred Outcomes
+      color: text-primary
+      type: Badge
     actions:
-      - { label: Get started, url: /, icon: arrowRight, iconPosition: right, style: primary, type: Button }
+      - label: Get started
+        url: /
+        icon: arrowRight
+        iconPosition: right
+        style: primary
+        type: Button
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
-      self: { padding: [pt-16, pb-16, pl-16, pr-16] }
+      self:
+        padding: [pt-16, pb-16, pl-16, pr-16]
       title:
         className: >
           text-3xl sm:text-4xl font-extrabold tracking-tight
@@ -118,13 +164,17 @@ sections:
 
   # ───────── 3) DIVIDER ─────────
   - type: DividerSection
-    __metadata: { modelName: DividerSection }
+    __metadata:
+      modelName: DividerSection
     colors: bg-light-fg-dark
-    styles: { self: { padding: [p-7] } }
+    styles:
+      self:
+        padding: [p-7]
 
   # ───────── 4) BUILT FOR IMPACT ─────────
   - type: GenericSection
-    __metadata: { modelName: GenericSection }
+    __metadata:
+      modelName: GenericSection
     motion: fade-right
     title:
       text: Built for Impact.
@@ -138,16 +188,23 @@ sections:
       url: /images/built-impact.png
       altText: Built for Impact image
       type: ImageBlock
-    badge: { label: Key Benefits, color: text-primary, type: Badge }
+    badge:
+      label: Key Benefits
+      color: text-primary
+      type: Badge
     colors: bg-light-fg-dark
     styles:
-      self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
+      self:
+        flexDirection: row
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
   # ───────── 5) COLLABORATION ─────────
   - type: GenericSection
-    __metadata: { modelName: GenericSection }
+    __metadata:
+      modelName: GenericSection
     motion: fade-left
     title:
       text: Collaborative with Design
@@ -163,7 +220,10 @@ sections:
       type: ImageBlock
     colors: bg-light-fg-dark
     styles:
-      self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
+      self:
+        flexDirection: row
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
@@ -171,13 +231,17 @@ sections:
 
   # ───────── 6) DIVIDER ─────────
   - type: DividerSection
-    __metadata: { modelName: DividerSection }
+    __metadata:
+      modelName: DividerSection
     colors: bg-light-fg-dark
-    styles: { self: { padding: [p-7] } }
+    styles:
+      self:
+        padding: [p-7]
 
   # ───────── 7) TALENT ACQUISITION ─────────
   - type: GenericSection
-    __metadata: { modelName: GenericSection }
+    __metadata:
+      modelName: GenericSection
     motion: fade-right
     title:
       text: Talent Acquisition & Training
@@ -190,10 +254,16 @@ sections:
       url: /images/hero2.png
       altText: Talent illustration
       type: ImageBlock
-    badge: { label: People‑Centric Solutions, color: text-primary, type: Badge }
+    badge:
+      label: People‑Centric Solutions
+      color: text-primary
+      type: Badge
     colors: bg-light-fg-dark
     styles:
-      self: { alignItems: center, flexDirection: row, padding: [pt-16, pb-16, pl-8, pr-8] }
+      self:
+        alignItems: center
+        flexDirection: row
+        padding: [pt-16, pb-16, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
@@ -201,7 +271,8 @@ sections:
 
   # ───────── 8) OUTSOURCING ─────────
   - type: GenericSection
-    __metadata: { modelName: GenericSection }
+    __metadata:
+      modelName: GenericSection
     motion: fade-left
     title:
       text: Outsourcing & Transformation
@@ -214,10 +285,16 @@ sections:
       url: /images/hero3.png
       altText: Transformation illustration
       type: ImageBlock
-    badge: { label: BPO/KPO Expertise, color: text-primary, type: Badge }
+    badge:
+      label: BPO/KPO Expertise
+      color: text-primary
+      type: Badge
     colors: bg-light-fg-dark
     styles:
-      self: { flexDirection: row-reverse, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
+      self:
+        flexDirection: row-reverse
+        alignItems: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
@@ -225,13 +302,17 @@ sections:
 
   # ───────── 9) DIVIDER ─────────
   - type: DividerSection
-    __metadata: { modelName: DividerSection }
+    __metadata:
+      modelName: DividerSection
     colors: bg-light-fg-dark
-    styles: { self: { padding: [p-7] } }
+    styles:
+      self:
+        padding: [p-7]
 
   # ───────── 10) AURRUS DIFFERENCE ─────────
   - type: FeaturedItemsSection
-    __metadata: { modelName: FeaturedItemsSection }
+    __metadata:
+      modelName: FeaturedItemsSection
     motion: fade-up
     title:
       text: The Aurrus Difference
@@ -239,45 +320,75 @@ sections:
     subtitle: Why should businesses choose Aurrus?
     items:
       - type: FeaturedItem
-        __metadata: { modelName: FeaturedItem }
+        __metadata:
+          modelName: FeaturedItem
         title: Collaborative by Nature
         subtitle: Aligned Execution. Lasting Partnerships.
         text: We integrate with your people and processes, ensuring smoother delivery and stronger synergy.
-        image: { url: /images/abstract-feature1.svg, altText: Colab icon, type: ImageBlock }
+        image:
+          url: /images/abstract-feature1.svg
+          altText: Colab icon
+          type: ImageBlock
         colors: bg-light-fg-dark
-        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: col md:row }, subtitle: { className: "text-xl font-bold text-dark" } }
+        styles:
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: col md:row
+          subtitle:
+            className: text-xl font-bold text-dark
 
       - type: FeaturedItem
-        __metadata: { modelName: FeaturedItem }
+        __metadata:
+          modelName: FeaturedItem
         title: Execution without Friction
         subtitle: From Planning to Precision
         text: We manage projects end‑to‑end with clear timelines, resource alignment, and minimal disruption.
-        image: { url: /images/abstract-feature2.svg, altText: Execution icon, type: ImageBlock }
+        image:
+          url: /images/abstract-feature2.svg
+          altText: Execution icon
+          type: ImageBlock
         colors: bg-light-fg-dark
-        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: col md:row }, subtitle: { className: "text-xl font-bold text-dark" } }
+        styles:
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: col md:row
+          subtitle:
+            className: text-xl font-bold text-dark
 
       - type: FeaturedItem
-        __metadata: { modelName: FeaturedItem }
+        __metadata:
+          modelName: FeaturedItem
         title: Experience that Matters
         subtitle: Decades‑deep expertise
         text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on experience, not just theory.
-        image: { url: /images/abstract-feature3.svg, altText: Experience icon, type: ImageBlock }
+        image:
+          url: /images/abstract-feature3.svg
+          altText: Experience icon
+          type: ImageBlock
         colors: bg-light-fg-dark
-        styles: { self: { padding: [p-8], borderRadius: x-large, flexDirection: col md:row }, subtitle: { className: "text-xl font-bold text-dark" } }
+        styles:
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: col md:row
+          subtitle:
+            className: text-xl font-bold text-dark
 
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
-      self: { padding: [pt-16, pb-16, pl-8, pr-8] }
+      self:
+        padding: [pt-16, pb-16, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
       subtitle:
         className: >
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
-  # ───────── 11) CTA FORM ─────────
+  # ───────── CTA FORM ─────────
   - type: GenericSection
-    __metadata: { modelName: GenericSection }
     motion: fade-down
     title:
       text: Let's Build Something Better Together.
@@ -285,30 +396,26 @@ sections:
     subtitle: Start your consultation today!
     text: >
       Ready to streamline your operations or rethink strategy?
-      Fill out the form and our team will respond within 24 hours.
-    media:
-      type: RawHtmlBlock
-      html: |
-        <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="space-y-4 max-w-xl mx-auto">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
-          <input name="name" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
-          <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300">
-          <textarea name="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300"></textarea>
-          <button type="submit" class="bg-[#1E88E5] text-white px-6 py-3 rounded-xl hover:bg-[#1565C0] transition duration-300">
-            Submit
-          </button>
-        </form>
-    badge: { label: Contact Us, color: text-primary, type: Badge }
+      Fill out the form and our team will respond within 24 hours.
+
+      <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="space-y-4 max-w-xl mx-auto mt-8">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
+        <input name="name" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
+        <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300">
+        <textarea name="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300"></textarea>
+        <button type="submit" class="bg-[#1E88E5] text-white px-6 py-3 rounded-xl hover:bg-[#1565C0] transition duration-300">
+          Submit
+        </button>
+      </form>
+    badge:
+      label: Contact Us
+      color: text-primary
+      type: Badge
     colors: bg-light-fg-dark
     styles:
       self:
         flexDirection: col
         alignItems: center
         padding: [pt-16, pb-16, pl-8, pr-8]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-      subtitle:
-        className: >
-          text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 ---
