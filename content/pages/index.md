@@ -58,15 +58,14 @@ sections:
           text-dark transition-transform duration-300 hover:scale-105
 
   - type: DividerSection
-  __metadata: { modelName: DividerSection }
-  colors: bg-[#B0B0B0]      # grey color, you can adjust hex
-  styles:
-    self:
-      height: xs            # very thin line
-      margin:
-        - mt-8             # margin top 8
-        - mb-8             # margin bottom 8
-
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 
   - type: FeaturedItemsSection
     __metadata:
@@ -131,14 +130,14 @@ sections:
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
   - type: DividerSection
-  __metadata: { modelName: DividerSection }
-  colors: bg-[#B0B0B0]      # grey color, you can adjust hex
-  styles:
-    self:
-      height: xs            # very thin line
-      margin:
-        - mt-8             # margin top 8
-        - mb-8             # margin bottom 8
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 
   - type: GenericSection
     __metadata: { modelName: GenericSection }
@@ -161,6 +160,16 @@ sections:
       self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
+  - type: DividerSection
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 
   - type: GenericSection
     __metadata: { modelName: GenericSection }
@@ -187,15 +196,14 @@ sections:
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
   - type: DividerSection
-  __metadata: { modelName: DividerSection }
-  colors: bg-[#B0B0B0]      # grey color, you can adjust hex
-  styles:
-    self:
-      height: xs            # very thin line
-      margin:
-        - mt-8             # margin top 8
-        - mb-8             # margin bottom 8
-
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 
   - type: GenericSection
     __metadata: { modelName: GenericSection }
@@ -218,6 +226,16 @@ sections:
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle: { className: "text-xl font-bold text-dark" }
+
+  - type: DividerSection
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 
   - type: GenericSection
     __metadata: { modelName: GenericSection }
@@ -242,14 +260,14 @@ sections:
       subtitle: { className: "text-xl font-bold text-dark" }
 
   - type: DividerSection
-  __metadata: { modelName: DividerSection }
-  colors: bg-[#B0B0B0]      # grey color, you can adjust hex
-  styles:
-    self:
-      height: xs            # very thin line
-      margin:
-        - mt-8             # margin top 8
-        - mb-8             # margin bottom 8
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 
   - type: FeaturedItemsSection
     __metadata: { modelName: FeaturedItemsSection }
@@ -296,6 +314,16 @@ sections:
         className: >
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
+  - type: DividerSection
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
+
   - type: GenericSection
     __metadata: { modelName: GenericSection }
     motion: fade-down
@@ -330,4 +358,14 @@ sections:
       subtitle:
         className: >
           text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+
+  - type: DividerSection
+    __metadata: { modelName: DividerSection }
+    colors: bg-[#B0B0B0]
+    styles:
+      self:
+        height: xs
+        margin:
+          - mt-8
+          - mb-8
 ---
