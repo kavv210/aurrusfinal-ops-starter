@@ -2,35 +2,15 @@
 title: Careers
 slug: careers
 sections:
-  - title:
-      text: A team that works closely together
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: People are the soul of our company
-    text: >
-      At **Aurrus**, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
-    actions:
-      - label: See open positions
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Button
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding: [pt-40, pl-6, pb-40, pr-6]
-        alignItems: center
-        flexDirection: row-reverse
-        justifyContent: center
-      text:
-        textAlign: center
-      subtitle:
-        textAlign: center
-    type: GenericSection
+  - type: GenericSection
+    text: |
+      <div data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-center mb-4">A team that works closely together</h2>
+        <p class="text-center mb-6">
+          At <strong>Aurrus</strong>, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
+        </p>
+        <a href="/" class="btn btn-primary mx-auto flex justify-center gap-2 items-center">See open positions <span class="icon-arrowRight"></span></a>
+      </div>
     backgroundImage:
       type: BackgroundImage
       altText: abstract team image
@@ -39,52 +19,49 @@ sections:
       backgroundRepeat: no-repeat
       opacity: 100
       url: /images/abstract-background.svg
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding: [pt-40, pl-6, pb-40, pr-6]
+        alignItems: center
+        flexDirection: row-reverse
+        justifyContent: center
 
-  - type: DividerSection
+  - type: GenericSection
+    text: '<div data-aos="fade-up" class="w-full border-t border-[#e5e5e5] my-6"></div>'
+    styles:
+      self: { padding: [pt-0, pb-0, pl-0, pr-0] }
+    colors: bg-transparent-fg-dark
 
-  - title:
+  - type: FeaturedPeopleSection
+    title:
       text: Meet the team
       color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
+      styles: { self: { textAlign: center } }
     people:
       - content/data/person1.json
       - content/data/person2.json
       - content/data/person3.json
     variant: three-col-grid
-    colors: bg-light-fg-dark
     styles:
       self:
         padding: [pt-16, pl-16, pb-16, pr-16]
         justifyContent: center
-      subtitle:
-        textAlign: center
-    type: FeaturedPeopleSection
+    colors: bg-light-fg-dark
 
-  - type: DividerSection
+  - type: GenericSection
+    text: '<div data-aos="fade-up" class="w-full border-t border-[#e5e5e5] my-6"></div>'
+    styles:
+      self: { padding: [pt-0, pb-0, pl-0, pr-0] }
+    colors: bg-transparent-fg-dark
 
-  - title:
+  - type: GenericSection
+    title:
       text: Our Office Location
       color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    type: GenericSection
-    styles:
-      self:
-        padding: [pt-20, pb-20, pl-6, pr-6]
-        alignItems: center
-        justifyContent: center
-        borderRadius: x-large
-        boxShadow: xl
-        backgroundColor: '#fff8f0'
-      text:
-        textAlign: center
+      styles: { self: { textAlign: center } }
     text: |
-      <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; padding: 24px;">
+      <div data-aos="fade-up" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; padding: 24px;">
         <div style="flex: 1 1 300px; max-width: 400px; text-align: left;">
           <strong>Aurrus HQ</strong><br/>
           J‑42, Lajpat Nagar‑II, Central Market<br/>
@@ -100,17 +77,27 @@ sections:
           </iframe>
         </div>
       </div>
+    styles:
+      self:
+        padding: [pt-20, pb-20, pl-6, pr-6]
+        alignItems: center
+        justifyContent: center
+        borderRadius: x-large
+        boxShadow: xl
+        backgroundColor: '#fff8f0'
     colors: bg-neutral-fg-dark
 
-  - type: DividerSection
+  - type: GenericSection
+    text: '<div data-aos="fade-up" class="w-full border-t border-[#e5e5e5] my-6"></div>'
+    styles:
+      self: { padding: [pt-0, pb-0, pl-0, pr-0] }
+    colors: bg-transparent-fg-dark
 
-  - title:
+  - type: FeaturedItemsSection
+    title:
       text: Open positions
       color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
+      styles: { self: { textAlign: center } }
     subtitle: Come build with us
     items:
       - title: Account Executive
@@ -165,7 +152,6 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    type: FeaturedItemsSection
 
 seo:
   metaTitle: Careers – Aurrus Consulting
