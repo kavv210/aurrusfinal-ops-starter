@@ -22,10 +22,7 @@ sections:
         text-6xl sm:text-7xl font-semibold tracking-widest uppercase
         text-[#1E88E5] transition-all duration-300 ease-in-out
         hover:text-[#FFA500] hover:scale-105
-    subtitle:
-      text: Your partner in scalable business and technology solutions.
-      className: >
-        text-2xl sm:text-3xl font-semibold text-[#5D4037]
+    subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
         background: bg-gradient-to-br from-[#FFE0B2] via-[#FFD180] to-[#FFE0C3]
@@ -37,6 +34,18 @@ sections:
         textAlign: center
         boxShadow: xl
         borderRadius: xl
+      subtitle:
+        className: text-2xl sm:text-3xl font-semibold text-[#5D4037] mt-4
+
+  # ─────────────────── SLIM DIVIDER ───────────────
+  - type: DividerSection
+    colors: bg-[#BDBDBD]
+    styles:
+      self:
+        height: xs
+        padding:
+          - pt-2
+          - pb-2
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
@@ -62,10 +71,10 @@ sections:
           - fade-up
       title:
         textAlign: center
-        className: font-semibold
+        fontWeight: font-semibold
       subtitle:
         textAlign: center
-        className: font-semibold
+        fontWeight: font-medium
 
   # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
@@ -101,10 +110,10 @@ sections:
           - fade-right
       title:
         textAlign: center
-        className: font-semibold
+        fontWeight: font-semibold
       subtitle:
         textAlign: center
-        className: font-semibold
+        fontWeight: font-medium
 
   # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
@@ -140,10 +149,18 @@ sections:
           - fade-left
       title:
         textAlign: center
-        className: font-semibold
+        fontWeight: font-semibold
       subtitle:
         textAlign: center
-        className: font-semibold
+        fontWeight: font-medium
 
-bottomSections: []
+  # ─────────────────── SLIM DIVIDER ───────────────
+  - type: DividerSection
+    colors: bg-[#BDBDBD]
+    styles:
+      self:
+        height: xs
+        padding:
+          - pt-2
+          - pb-2
 ---
