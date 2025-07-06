@@ -12,7 +12,6 @@ seo:
   type: Seo
 
 sections:
-  # ───────── 1) HERO ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -22,11 +21,7 @@ sections:
       type: TitleBlock
     subtitle: Where strategy meets speed.
     text: >
-      At Aurrus Consulting, we connect bold ambition with precise execution.
-      Our digital‑first strategies scale faster, perform smarter, and deliver
-      measurable outcomes. With deep BPO, KPO, and ITeS expertise, we help
-      organizations streamline operations, align teams, and lead with
-      confidence.
+      At Aurrus Consulting, we connect bold ambition with precise execution. Our digital‑first strategies scale faster, perform smarter, and deliver measurable outcomes. With deep BPO, KPO, and ITeS expertise, we help organizations streamline operations, align teams, and lead with confidence.
     actions:
       - label: Get started
         url: /
@@ -54,11 +49,8 @@ sections:
         flexDirection: row
         padding: [pt-16, pl-16, pb-16, pr-16]
       title:
-        className: >
-          text-4xl sm:text-5xl font-extrabold tracking-tight
-          text-dark transition-transform duration-300 hover:scale-105
+        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
-  # ───────── 2) WHY AURRUS ─────────
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -73,10 +65,7 @@ sections:
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: >
-          We provide strategic guidance to help organizations navigate change and
-          optimise performance. From business model innovation to operational
-          restructuring and market strategy, our consultants deliver clear,
-          data‑driven solutions.
+          We provide strategic guidance to help organizations navigate change and optimise performance. From business model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
         image:
           url: /images/icon1.svg
           altText: Strategy icon
@@ -97,10 +86,7 @@ sections:
         title: Vision & Values Aligned
         subtitle: Refine Core Structure
         text: >
-          We help organisations build resilience and drive sustainable growth by
-          reshaping structures, refining governance, and fostering high‑impact
-          leadership. Our tailored approaches ensure alignment between culture,
-          capabilities, and strategic priorities.
+          We help organisations build resilience and drive sustainable growth by reshaping structures, refining governance, and fostering high‑impact leadership. Our tailored approaches ensure alignment between culture, capabilities, and strategic priorities.
         image:
           url: /images/icon2.svg
           altText: OD icon
@@ -121,10 +107,7 @@ sections:
         title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
-          We help BPOs optimise operations and drive growth by streamlining
-          workflows, improving service delivery, and embedding agile
-          performance models. Our consulting solutions enhance efficiency, boost
-          client satisfaction, and engage the workforce.
+          We help BPOs optimise operations and drive growth by streamlining workflows, improving service delivery, and embedding agile performance models. Our consulting solutions enhance efficiency, boost client satisfaction, and engage the workforce.
         image:
           url: /images/icon3.svg
           altText: Advisory icon
@@ -155,14 +138,10 @@ sections:
       self:
         padding: [pt-16, pb-16, pl-16, pr-16]
       title:
-        className: >
-          text-3xl sm:text-4xl font-extrabold tracking-tight
-          text-dark transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
-        className: >
-          text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
-  # ───────── 3) DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -171,7 +150,6 @@ sections:
       self:
         padding: [p-7]
 
-  # ───────── 4) BUILT FOR IMPACT ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -179,11 +157,8 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
-    text: >-
-      At Aurrus Consulting, we focus on what truly moves the needle: clarity in
-      strategy, efficiency in execution, and confidence in every decision.
-      Our partnership model yields not just short‑term gains, but long‑term
-      operational strength and market resilience.
+    text: >
+      At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy, efficiency in execution, and confidence in every decision. Our partnership model yields not just short‑term gains, but long‑term operational strength and market resilience.
     media:
       url: /images/built-impact.png
       altText: Built for Impact image
@@ -201,7 +176,6 @@ sections:
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
-  # ───────── 5) COLLABORATION ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -210,10 +184,8 @@ sections:
       text: Collaborative with Design
       type: TitleBlock
     subtitle: Collaboration that delivers.
-    text: >-
-      Progress happens when people work together. Aurrus aligns teams through
-      clear communication, shared accountability, and unified execution—
-      driving faster results and stronger relationships.
+    text: >
+      Progress happens when people work together. Aurrus aligns teams through clear communication, shared accountability, and unified execution—driving faster results and stronger relationships.
     media:
       url: /images/collab-design.png
       altText: Collaboration image
@@ -229,7 +201,6 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
-  # ───────── 6) DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -238,7 +209,6 @@ sections:
       self:
         padding: [p-7]
 
-  # ───────── 7) TALENT ACQUISITION ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -248,8 +218,7 @@ sections:
       type: TitleBlock
     subtitle: Build high‑performance teams.
     text: >
-      From sourcing top‑tier talent to hands‑on onboarding and leadership
-      training, Aurrus builds teams equipped to excel from day one.
+      From sourcing top‑tier talent to hands‑on onboarding and leadership training, Aurrus builds teams equipped to excel from day one.
     media:
       url: /images/hero2.png
       altText: Talent illustration
@@ -269,7 +238,6 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark
 
-  # ───────── 8) OUTSOURCING ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -279,8 +247,7 @@ sections:
       type: TitleBlock
     subtitle: Optimise and scale.
     text: >
-      We guide end‑to‑end process transformation across BPO, KPO, and ITeS
-      verticals, reducing friction and unlocking new performance levels.
+      We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals, reducing friction and unlocking new performance levels.
     media:
       url: /images/hero3.png
       altText: Transformation illustration
@@ -300,7 +267,6 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark
 
-  # ───────── 9) DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -309,7 +275,6 @@ sections:
       self:
         padding: [p-7]
 
-  # ───────── 10) AURRUS DIFFERENCE ─────────
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -384,30 +349,36 @@ sections:
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
       subtitle:
-        className: >
-          text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-
-  # ───────── CTA FORM ─────────
-  - type: GenericSection
-    motion: fade-down
-    title:
-      text: Let's Build Something Better Together.
-      type: TitleBlock
-    subtitle: Start your consultation today!
-    text: >
-      Ready to streamline your operations or rethink strategy?
-      Fill out the form and our team will respond within 24 hours.
-    media:
-      type: FormSection
-      reference: form
-    badge:
-      label: Contact Us
-      color: text-primary
-      type: Badge
+        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+    
+  - type: RawHtmlBlock
+    __metadata:
+      modelName: RawHtmlBlock
     colors: bg-light-fg-dark
     styles:
       self:
-        flexDirection: col
-        alignItems: center
-        padding: [pt-16, pb-16, pl-8, pr-8]
+        padding: [pt-20, pb-20, pl-8, pr-8]
+        textAlign: center
+    html: |
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]">
+          Let's Build Something Better Together.
+        </h2>
+        <p class="mt-4 text-xl text-[#333]">
+          Start your consultation today!
+        </p>
+        <p class="mt-2 text-md text-[#555]">
+          Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
+        </p>
+        <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="mt-8 space-y-4 text-left">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
+          <input name="name" type="text" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
+          <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300">
+          <textarea name="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300"></textarea>
+          <button type="submit" class="bg-[#1E88E5] text-white px-6 py-3 rounded-xl hover:bg-[#1565C0] transition duration-300">
+            Submit
+          </button>
+        </form>
+      </div>
 ---
