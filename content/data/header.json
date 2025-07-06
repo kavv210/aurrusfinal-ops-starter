@@ -19,13 +19,15 @@
       "type": "Link",
       "styles": {
         "self": {
-          "hover": "text-orange-500"
+          "hover": "text-orange-500",
+          "padding": ["px-4", "py-2"],
+          "fontWeight": "font-medium"
         }
       }
     },
     {
-      "label": "Careers",
-      "altText": "Careers page",
+      "label": "About",
+      "altText": "About page",
       "url": "/careers",
       "icon": "arrowRight",
       "iconPosition": "right",
@@ -33,7 +35,9 @@
       "type": "Link",
       "styles": {
         "self": {
-          "hover": "text-orange-500"
+          "hover": "text-orange-500",
+          "padding": ["px-4", "py-2"],
+          "fontWeight": "font-medium"
         }
       }
     },
@@ -50,7 +54,8 @@
           "type": "Link",
           "styles": {
             "self": {
-              "hover": "text-orange-500"
+              "hover": "text-orange-500",
+              "padding": ["px-4", "py-2"]
             }
           }
         },
@@ -63,7 +68,8 @@
           "type": "Link",
           "styles": {
             "self": {
-              "hover": "text-orange-500"
+              "hover": "text-orange-500",
+              "padding": ["px-4", "py-2"]
             }
           }
         },
@@ -76,7 +82,8 @@
           "type": "Link",
           "styles": {
             "self": {
-              "hover": "text-orange-500"
+              "hover": "text-orange-500",
+              "padding": ["px-4", "py-2"]
             }
           }
         }
@@ -85,12 +92,23 @@
       "type": "SubNav",
       "styles": {
         "self": {
-          "hover": "text-orange-500"
+          "hover": "text-orange-500",
+          "padding": ["px-4", "py-2"],
+          "fontWeight": "font-medium"
         }
       }
     }
   ],
   "variant": "logo-left-primary-nav-centered",
-  "colors": "bg-light-fg-dark",
+  "colors": "bg-white text-dark",
+  "styles": {
+    "self": {
+      "padding": ["pt-4", "pb-4"],
+      "borderWidth": "border-b",
+      "borderColor": "border-gray-200",
+      "justifyContent": "center",
+      "boxShadow": "shadow-sm"
+    }
+  },
   "type": "Header"
 }
