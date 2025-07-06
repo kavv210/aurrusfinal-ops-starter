@@ -14,7 +14,7 @@ sections:
       At **Aurrus**, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
     actions:
       - label: See open positions
-        url: /
+        url: "#open-roles"
         icon: arrowRight
         iconPosition: right
         style: primary
@@ -42,7 +42,7 @@ sections:
       url: /images/abstract-background.svg
 
   - type: GenericSection
-    text: '<hr class="border border-gray-300 w-full mb-4" data-aos="fade-down" />'
+    text: '<hr class="w-full border border-gray-300 mb-8" />'
     styles:
       self:
         padding: [pt-0, pb-0, pl-0, pr-0]
@@ -71,7 +71,7 @@ sections:
     type: FeaturedPeopleSection
 
   - type: GenericSection
-    text: '<hr class="border border-gray-300 w-full mb-4" data-aos="fade-down" />'
+    text: '<hr class="w-full border border-gray-300 mb-8" />'
     styles:
       self:
         padding: [pt-0, pb-0, pl-0, pr-0]
@@ -117,7 +117,7 @@ sections:
     colors: bg-neutral-fg-dark
 
   - type: GenericSection
-    text: '<hr class="border border-gray-300 w-full mb-4" data-aos="fade-down" />'
+    text: '<hr class="w-full border border-gray-300 mb-8" />'
     styles:
       self:
         padding: [pt-0, pb-0, pl-0, pr-0]
@@ -131,6 +131,7 @@ sections:
           textAlign: center
       type: TitleBlock
     subtitle: Come build with us
+    elementId: open-roles
     items:
       - title: Account Executive
         subtitle: Sales
