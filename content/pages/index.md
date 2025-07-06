@@ -7,7 +7,7 @@ __metadata:
 
 # ───────────────── SEO ─────────────────
 seo:
-  metaTitle: Home - Aurrus
+  metaTitle: Aurrus Consulting | BPO, KPO, IT Staffing & Hiring
   metaDescription: Aurrus Consulting Main Site.
   socialImage: public/images/main-hero.jpg
   type: Seo
@@ -223,7 +223,7 @@ sections:
       From sourcing top‑tier talent to hands‑on onboarding and leadership
       training, Aurrus builds teams equipped to excel from day one.
     media:
-      url: /images/hero2.svg
+      url: /images/hero2.jpg
       altText: Talent illustration
       type: ImageBlock
     badge: { label: People‑Centric Solutions, color: text-primary, type: Badge }
@@ -246,7 +246,7 @@ sections:
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS
       verticals, reducing friction and unlocking new performance levels.
     media:
-      url: /images/hero3.svg
+      url: /images/hero3.jpg
       altText: Transformation illustration
       type: ImageBlock
     badge: { label: BPO/KPO Expertise, color: text-primary, type: Badge }
