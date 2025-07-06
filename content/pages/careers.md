@@ -1,4 +1,6 @@
 ---
+__metadata:
+  modelName: PageLayout
 title: Careers
 slug: careers
 sections:
@@ -6,9 +8,6 @@ sections:
     title:
       text: The Aurrus way; move together, grow together.
       color: text-light
-      styles:
-        self:
-          textAlign: center
     subtitle: People are the soul of our company
     text: >
       At **Aurrus**, collaboration fuels everything we do. Our culture is rooted
@@ -21,7 +20,12 @@ sections:
         iconPosition: right
         style: primary
         type: Button
-    colors: bg-transparent
+    backgroundImage:
+      type: BackgroundImage
+      url: /images/abstract-background.jpg
+      backgroundSize: cover
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
     styles:
       self:
         height: screen
@@ -30,61 +34,23 @@ sections:
         justifyContent: center
         flexDirection: column
         textAlign: center
-      text:
-        textAlign: center
-      subtitle:
-        textAlign: center
-    backgroundImage:
-      type: BackgroundImage
-      url: /images/abstract-background.jpg
-      altText: abstract team image
-      backgroundSize: cover
-      backgroundPosition: center
-      backgroundRepeat: no-repeat
-      opacity: 100
 
-  - title:
+  - type: FeaturedPeopleSection
+    title:
       text: Meet the team
       color: text-dark
-      styles:
-        self:
-          textAlign: center
-    type: TitleBlock
-  - type: FeaturedPeopleSection
     people:
       - content/data/person1.json
       - content/data/person2.json
       - content/data/person3.json
-    variant: three-col-grid
-    colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-8, pl-16, pr-16]
-        justifyContent: center
-        display: flex
-        flexWrap: wrap
-        gap: 20px
-      subtitle:
-        textAlign: center
+        padding: [pt-16, pb-16, pl-8, pr-8]
 
   - type: GenericSection
     title:
       text: Our Headquarters
       color: text-dark
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding: [pt-24, pb-24, pl-8, pr-8]
-        display: flex
-        flexDirection: row
-        justifyContent: space-between
-        alignItems: center
-        flexWrap: wrap
-        gap: 12
-        borderRadius: x-large
-        boxShadow: xl
-      text:
-        textAlign: left
     text: |
       **Aurrus HQ**  
       J‑42, Lajpat Nagar‑II, Central Market  
@@ -108,13 +74,26 @@ sections:
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
+    styles:
+      self:
+        display: flex
+        flexDirection: row
+        justifyContent: space-between
+        alignItems: center
+        flexWrap: wrap
+        padding: [pt-24, pb-24, pl-8, pr-8]
+        gap: 16
+        borderRadius: x-large
+        boxShadow: xl
+      text:
+        textAlign: left
+    colors: bg-neutral-fg-dark
 
-  - title:
+  - type: FeaturedItemsSection
+    title:
       text: Open positions
       color: text-dark
     subtitle: Come build with us
-    type: TitleBlock
-  - type: FeaturedItemsSection
     items:
       - title: Account Executive
         subtitle: Sales
@@ -154,16 +133,14 @@ sections:
         style: primary
         type: Button
     variant: toggle-list
-    colors: bg-light-fg-dark
     styles:
       self:
         padding: [pt-16, pb-40, pl-4, pr-4]
         justifyContent: center
+    colors: bg-light-fg-dark
 
 seo:
-  metaTitle: About Us – Aurrus Consulting
-  metaDescription: Learn more about Aurrus — our people, purpose, and headquarters in New Delhi.
+  metaTitle: Careers – Aurrus Consulting
+  metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas, and growing together.
   socialImage: /images/main-hero.jpg
-  type: Seo
-type: PageLayout
 ---
