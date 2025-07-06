@@ -19,27 +19,24 @@ sections:
       text: OUR SERVICES
       type: TitleBlock
       className: >
-        text-5xl sm:text-6xl font-semibold tracking-widest uppercase
+        text-6xl sm:text-7xl font-semibold tracking-widest uppercase
         text-[#1E88E5] transition-all duration-300 ease-in-out
         hover:text-[#FFA500] hover:scale-105
-    subtitle: Your partner in scalable business and technology solutions.
+    subtitle:
+      text: Your partner in scalable business and technology solutions.
+      className: >
+        text-2xl sm:text-3xl font-semibold text-[#5D4037]
     styles:
       self:
         background: bg-gradient-to-br from-[#FFE0B2] via-[#FFD180] to-[#FFE0C3]
         padding:
           - pt-20
           - pb-16
-          - pl-4
-          - pr-4
+          - pl-8
+          - pr-8
         textAlign: center
         boxShadow: xl
         borderRadius: xl
-      subtitle:
-        fontSize: xl
-        fontWeight: 500
-        color: text-[#5D4037]
-        margin:
-          - mt-4
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
@@ -65,10 +62,10 @@ sections:
           - fade-up
       title:
         textAlign: center
-        fontWeight: font-semibold
+        className: font-semibold
       subtitle:
         textAlign: center
-        fontWeight: font-medium
+        className: font-semibold
 
   # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
@@ -104,10 +101,10 @@ sections:
           - fade-right
       title:
         textAlign: center
-        fontWeight: font-semibold
+        className: font-semibold
       subtitle:
         textAlign: center
-        fontWeight: font-medium
+        className: font-semibold
 
   # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
@@ -143,10 +140,10 @@ sections:
           - fade-left
       title:
         textAlign: center
-        fontWeight: font-semibold
+        className: font-semibold
       subtitle:
         textAlign: center
-        fontWeight: font-medium
+        className: font-semibold
 
 bottomSections: []
 ---
