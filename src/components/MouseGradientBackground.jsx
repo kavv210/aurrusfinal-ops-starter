@@ -20,7 +20,7 @@ export default function MouseGradientBackground() {
   const gradient = useTransform(
     [mouseX, mouseY],
     ([x, y]) =>
-      `radial-gradient(1000px circle at ${x}% ${y}%, rgba(255, 223, 186, 0.3), rgba(232, 245, 255, 0.3))`
+      `radial-gradient(1000px circle at ${x}% ${y}%, rgba(255, 164, 58, 0.3), rgba(155, 212, 255, 0.3)`
   );
 
   return (
