@@ -37,12 +37,12 @@ sections:
     type: GenericSection
     backgroundImage:
       type: BackgroundImage
-      url: /images/team-bg-lightorange.svg
-      altText: team background
+      altText: abstract team image
       backgroundSize: cover
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
+      url: /images/team-bg-lightorange.svg
 
   - title:
       text: Meet the team
@@ -70,41 +70,30 @@ sections:
     type: FeaturedPeopleSection
 
   - title:
-      text: Aurrus Headquarters
+      text: Our Headquarters
       color: text-dark
+      styles:
+        self:
+          textAlign: center
       type: TitleBlock
-    type: GenericSection
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-20
-          - pl-6
-          - pr-6
-          - pb-20
-        alignItems: center
-        justifyContent: center
-        flexDirection: row
-        gap: 10
-        flexWrap: wrap
-      text:
-        textAlign: left
-    media:
-      type: HtmlBlock
-      html: |
-        <div style="width:100%; max-width:600px; border-radius:16px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s ease-in-out;">
+    type: HtmlBlock
+    html: |
+      <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center; align-items:center; background:#fff8f0; border-radius:2rem; padding:2rem; box-shadow:0 8px 20px rgba(0,0,0,0.05); max-width:1200px; margin:auto;">
+        <div style="flex:1; min-width:300px; max-width:600px; border-radius:1rem; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0501091289057!2d77.24076807432647!3d28.568257975699936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b2808ffe1b%3A0xec1f022224013392!2sJ-42%2C%20near%20Home%20Saaz%2C%20Block%20J%2C%20Lajpat%20Nagar%20II%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1751796978098!5m2!1sen!2sin"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    text: |
-      **Aurrus HQ**  
-      J-42 Lajpat Nagar-2, Central Market  
-      New Delhi, Delhi, India - 110024  
-      📞 +91-9711150917  
-      ✉️ support@aurrusconsulting.com  
-
-      *Open Mon–Sat, 10 AM – 6 PM*
+        <div style="flex:1; min-width:250px; max-width:500px;">
+          <h3 style="font-size:1.5rem; font-weight:bold; color:#2D65B0;">📍 Aurrus HQ</h3>
+          <p style="margin-top:0.5rem; font-size:1rem;">
+            J-42, Lajpat Nagar-II, Central Market<br>
+            New Delhi, Delhi, India - 110024<br><br>
+            📞 +91-9711150917<br>
+            ✉️ support@aurrusconsulting.com<br><br>
+            <strong>Open:</strong> Mon–Sat, 10 AM – 6 PM
+          </p>
+        </div>
+      </div>
 
   - title:
       text: Open positions
