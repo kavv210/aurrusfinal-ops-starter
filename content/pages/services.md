@@ -19,7 +19,7 @@ sections:
       text: OUR SERVICES
       type: TitleBlock
       className: >
-        text-[2.5rem] sm:text-[3rem] font-extrabold tracking-widest uppercase
+        text-5xl sm:text-6xl font-semibold tracking-widest uppercase
         text-[#1E88E5] transition-all duration-300 ease-in-out
         hover:text-[#FFA500] hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
@@ -49,6 +49,8 @@ sections:
     text: >
       We provide expert advisory across finance, HR, and transformation initiatives.
       Our approach combines industry best practices with actionable strategy that aligns with your goals.
+      At Aurrus Consulting, we help businesses untangle complex challenges and navigate critical change.
+      Our consultants bring deep sector knowledge to create lasting value through strategic direction.
     image:
       url: /images/consult-vector.svg
       altText: Business consulting vector
@@ -63,12 +65,14 @@ sections:
           - fade-up
       title:
         textAlign: center
+        fontWeight: font-semibold
       subtitle:
         textAlign: center
+        fontWeight: font-medium
 
   # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FFB74D]
+    colors: bg-[#BDBDBD]
     styles:
       self:
         height: xs
@@ -84,6 +88,8 @@ sections:
     text: >
       Whether you need frontend, backend, full‑stack developers, or cloud experts — we deliver trusted talent fast.
       Flexible, vetted, and ready to build.
+      Aurrus Consulting ensures every placement is aligned with your culture and goals.
+      Our agile staffing model is built to scale with your vision and timelines.
     image:
       url: /images/it-vector.svg
       altText: IT staffing illustration
@@ -98,12 +104,14 @@ sections:
           - fade-right
       title:
         textAlign: center
+        fontWeight: font-semibold
       subtitle:
         textAlign: center
+        fontWeight: font-medium
 
   # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FF7043]
+    colors: bg-[#BDBDBD]
     styles:
       self:
         height: xs
@@ -119,6 +127,8 @@ sections:
     text: >
       From executive searches to bulk hiring — our recruitment experts tailor solutions to your scale.
       End‑to‑end hiring support that drives real business impact.
+      At Aurrus Consulting, we believe great teams are the foundation of great companies.
+      We use smart data and human insight to identify top-tier candidates faster and better.
     image:
       url: /images/talent-vector.svg
       altText: Talent acquisition vector
@@ -133,8 +143,10 @@ sections:
           - fade-left
       title:
         textAlign: center
+        fontWeight: font-semibold
       subtitle:
         textAlign: center
+        fontWeight: font-medium
 
 bottomSections: []
 ---
