@@ -1,4 +1,3 @@
----
 title: Services
 slug: services
 type: PageLayout
@@ -19,13 +18,13 @@ sections:
       text: OUR SERVICES
       type: TitleBlock
       className: >
-        text-6xl sm:text-7xl font-semibold tracking-widest uppercase
+        text-7xl sm:text-8xl font-semibold tracking-widest uppercase
         text-[#1E88E5] transition-all duration-300 ease-in-out
         hover:text-[#FFA500] hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
-        background: bg-gradient-to-br from-[#1E88E5] via-[#42A5F5] to-[#FFA726]
+        background: bg-gradient-to-br from-[#E3F2FD] via-[#BBDEFB] to-[#FFE0B2]
         padding:
           - pt-24
           - pb-20
@@ -39,10 +38,10 @@ sections:
 
   # ─────────────── DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FFECB3]
+    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[1px]
+        height: h-[0.5px]
         padding:
           - pt-2
           - pb-2
@@ -77,10 +76,10 @@ sections:
         fontWeight: font-medium
 
   - type: DividerSection
-    colors: bg-[#FFECB3]
+    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[1px]
+        height: h-[0.5px]
         padding:
           - pt-2
           - pb-2
@@ -115,10 +114,10 @@ sections:
         fontWeight: font-medium
 
   - type: DividerSection
-    colors: bg-[#FFECB3]
+    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[1px]
+        height: h-[0.5px]
         padding:
           - pt-2
           - pb-2
@@ -153,11 +152,10 @@ sections:
         fontWeight: font-medium
 
   - type: DividerSection
-    colors: bg-[#FFECB3]
+    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[1px]
+        height: h-[0.5px]
         padding:
           - pt-2
           - pb-2
----
