@@ -129,6 +129,58 @@ sections:
     __metadata: { modelName: GenericSection }
     motion: fade-right
     title:
+      text: Built for Impact.
+      type: TitleBlock
+    text: >-
+      At Aurrus Consulting, we focus on what truly moves the needle: clarity in
+      strategy, efficiency in execution, and confidence in every decision.
+      Our partnership model yields not just short‑term gains, but long‑term
+      operational strength and market resilience.
+    media:
+      url: /images/built-impact.png
+      altText: Built for Impact image
+      type: ImageBlock
+    badge: { label: Key Benefits, color: text-primary, type: Badge }
+    colors: bg-light-fg-dark
+    styles:
+      self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+
+  - type: GenericSection
+    __metadata: { modelName: GenericSection }
+    motion: fade-left
+    title:
+      text: Collaborative with Design
+      type: TitleBlock
+    subtitle: Collaboration that delivers.
+    text: >-
+      Progress happens when people work together. Aurrus aligns teams through
+      clear communication, shared accountability, and unified execution—
+      driving faster results and stronger relationships.
+    media:
+      url: /images/collab-design.png
+      altText: Collaboration image
+      type: ImageBlock
+    colors: bg-light-fg-dark
+    styles:
+      self: { flexDirection: row, alignItems: center, padding: [pt-16, pb-16, pl-8, pr-8] }
+      title:
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+      subtitle:
+        className:
+          text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+
+  - type: DividerSection
+    __metadata: { modelName: DividerSection }
+    title: Divider
+    colors: bg-light-fg-dark
+    styles: { self: { padding: [p-7] } }
+
+  - type: GenericSection
+    __metadata: { modelName: GenericSection }
+    motion: fade-right
+    title:
       text: Talent Acquisition & Training
       type: TitleBlock
     subtitle: Build high‑performance teams.
