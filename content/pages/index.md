@@ -223,7 +223,7 @@ sections:
       From sourcing top‑tier talent to hands‑on onboarding and leadership
       training, Aurrus builds teams equipped to excel from day one.
     media:
-      url: /images/hero2.jpg
+      url: /images/hero2.png
       altText: Talent illustration
       type: ImageBlock
     badge: { label: People‑Centric Solutions, color: text-primary, type: Badge }
@@ -246,7 +246,7 @@ sections:
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS
       verticals, reducing friction and unlocking new performance levels.
     media:
-      url: /images/hero3.jpg
+      url: /images/hero3.png
       altText: Transformation illustration
       type: ImageBlock
     badge: { label: BPO/KPO Expertise, color: text-primary, type: Badge }
