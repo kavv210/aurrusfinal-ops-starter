@@ -2,13 +2,13 @@
 title: Careers
 slug: careers
 sections:
-  - title:
-      text: The Aurrus way; move together, grow together.
+  - type: GenericSection
+    title:
+      text: The Aurrus Way; move together, grow together.
       color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
     subtitle: People are the soul of our company
     text: >
       At **Aurrus**, collaboration fuels everything we do. Our culture is rooted
@@ -24,15 +24,16 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-40, pb-40, pl-6, pr-6]
+        padding: [pt-48, pb-48, pl-10, pr-10]
         alignItems: center
-        flexDirection: column
         justifyContent: center
+        flexDirection: column
+        height: screen
+        textAlign: center
       text:
         textAlign: center
       subtitle:
         textAlign: center
-    type: GenericSection
     backgroundImage:
       type: BackgroundImage
       url: /images/abstract-background.jpg
@@ -66,24 +67,25 @@ sections:
         textAlign: center
     type: FeaturedPeopleSection
 
-  - title:
+  - type: GenericSection
+    title:
       text: Our Headquarters
       color: text-dark
       styles:
         self:
-          textAlign: center
-      type: TitleBlock
-    type: GenericSection
+          textAlign: left
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-20, pb-20, pl-6, pr-6]
+        padding: [pt-24, pb-24, pl-12, pr-12]
+        display: flex
         flexDirection: row
-        alignItems: center
         justifyContent: space-between
-        gap: 20px
+        alignItems: center
+        gap: 12
         borderRadius: x-large
         boxShadow: xl
+        flexWrap: wrap
       text:
         textAlign: left
     text: |
@@ -95,11 +97,25 @@ sections:
       ✉️ support@aurrusconsulting.com  
 
       *Open Mon–Sat, 10 AM – 6 PM*
-
-      <div class="map-container" style="margin-top: 1.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-radius: 12px; overflow: hidden;">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=..."></iframe>
-      </div>
+    media:
+      type: RawHtml
+      styles:
+        self:
+          width: w-full
+          maxWidth: max-w-xl
+          margin: m-auto
+      html: |
+        <div style="width: 100%; height: 300px; max-width: 500px; margin-left: auto !important; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-radius: 12px; overflow: hidden;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.540124445257!2d77.2410074!3d28.5670131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce39d6b9ff19d%3A0x9a3ea2e81e230775!2sLajpat%20Nagar%20II%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1720254869430!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
   - title:
       text: Open positions
