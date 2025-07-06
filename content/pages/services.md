@@ -1,3 +1,4 @@
+---
 title: Services
 slug: services
 type: PageLayout
@@ -18,18 +19,14 @@ sections:
       text: OUR SERVICES
       type: TitleBlock
       className: >
-        text-7xl sm:text-8xl font-semibold tracking-widest uppercase
+        text-6xl sm:text-7xl font-semibold tracking-widest uppercase
         text-[#1E88E5] transition-all duration-300 ease-in-out
         hover:text-[#FFA500] hover:scale-105
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
-        background: bg-gradient-to-br from-[#E3F2FD] via-[#BBDEFB] to-[#FFE0B2]
-        padding:
-          - pt-24
-          - pb-20
-          - pl-8
-          - pr-8
+        background: bg-gradient-to-br from-[#BBDEFB] via-[#90CAF9] to-[#FFE0B2]
+        padding: [pt-24, pb-20, pl-8, pr-8]
         textAlign: center
         boxShadow: xl
         borderRadius: xl
@@ -38,13 +35,12 @@ sections:
 
   # ─────────────── DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[0.5px]
-        padding:
-          - pt-2
-          - pb-2
+        height: auto
+        padding: [pt-2, pb-2]
+        borderColor: border-[#FFECB3]
+        borderWidth: border-t
 
   # ──────── BUSINESS CONSULTING ────────
   - type: FeaturesSection
@@ -63,11 +59,8 @@ sections:
     colors: bg-[#FFE0B2]-fg-dark
     styles:
       self:
-        padding:
-          - pt-20
-          - pb-20
-        animation:
-          - fade-up
+        padding: [pt-20, pb-20]
+        animation: [fade-up]
       title:
         textAlign: center
         fontWeight: font-semibold
@@ -75,14 +68,14 @@ sections:
         textAlign: center
         fontWeight: font-medium
 
+  # ─────────────── DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[0.5px]
-        padding:
-          - pt-2
-          - pb-2
+        height: auto
+        padding: [pt-2, pb-2]
+        borderColor: border-[#FFD180]
+        borderWidth: border-t
 
   # ──────── IT STAFFING ────────
   - type: FeaturesSection
@@ -101,11 +94,8 @@ sections:
     colors: bg-[#FFF3E0]-fg-dark
     styles:
       self:
-        padding:
-          - pt-20
-          - pb-20
-        animation:
-          - fade-right
+        padding: [pt-20, pb-20]
+        animation: [fade-right]
       title:
         textAlign: center
         fontWeight: font-semibold
@@ -113,14 +103,14 @@ sections:
         textAlign: center
         fontWeight: font-medium
 
+  # ─────────────── DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[0.5px]
-        padding:
-          - pt-2
-          - pb-2
+        height: auto
+        padding: [pt-2, pb-2]
+        borderColor: border-[#FFD180]
+        borderWidth: border-t
 
   # ──────── TALENT ACQUISITION ────────
   - type: FeaturesSection
@@ -139,11 +129,8 @@ sections:
     colors: bg-[#FFCCBC]-fg-dark
     styles:
       self:
-        padding:
-          - pt-20
-          - pb-20
-        animation:
-          - fade-left
+        padding: [pt-20, pb-20]
+        animation: [fade-left]
       title:
         textAlign: center
         fontWeight: font-semibold
@@ -151,11 +138,12 @@ sections:
         textAlign: center
         fontWeight: font-medium
 
+  # ─────────────── DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#FFEBCD]
     styles:
       self:
-        height: h-[0.5px]
-        padding:
-          - pt-2
-          - pb-2
+        height: auto
+        padding: [pt-2, pb-2]
+        borderColor: border-[#FFD180]
+        borderWidth: border-t
+---
