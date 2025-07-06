@@ -354,6 +354,7 @@ sections:
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
+    motion: fade-down
     colors: bg-light-fg-dark
     styles:
       self:
@@ -373,6 +374,7 @@ sections:
         <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="mt-8 space-y-4 text-left">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
+          <input type="hidden" name="_next" value="https://aurrusconsulting.com/success"> 
           <input name="name" type="text" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
           <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300">
           <textarea name="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300"></textarea>
