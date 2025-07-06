@@ -12,6 +12,7 @@ seo:
   type: Seo
 
 sections:
+  # ───────── 1) HERO ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -20,7 +21,7 @@ sections:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
     subtitle: Where strategy meets speed.
-    text: >
+    text: >-
       At Aurrus Consulting, we connect bold ambition with precise execution. Our digital‑first strategies scale faster, perform smarter, and deliver measurable outcomes. With deep BPO, KPO, and ITeS expertise, we help organizations streamline operations, align teams, and lead with confidence.
     actions:
       - label: Get started
@@ -51,6 +52,7 @@ sections:
       title:
         className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
+  # ───────── 2) WHY AURRUS ─────────
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -64,7 +66,7 @@ sections:
           modelName: FeaturedItem
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
-        text: >
+        text: >-
           We provide strategic guidance to help organizations navigate change and optimise performance. From business model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
         image:
           url: /images/icon1.svg
@@ -85,7 +87,7 @@ sections:
           modelName: FeaturedItem
         title: Vision & Values Aligned
         subtitle: Refine Core Structure
-        text: >
+        text: >-
           We help organisations build resilience and drive sustainable growth by reshaping structures, refining governance, and fostering high‑impact leadership. Our tailored approaches ensure alignment between culture, capabilities, and strategic priorities.
         image:
           url: /images/icon2.svg
@@ -106,7 +108,7 @@ sections:
           modelName: FeaturedItem
         title: Program & Project Advisory
         subtitle: Deliver with Precision
-        text: >
+        text: >-
           We help BPOs optimise operations and drive growth by streamlining workflows, improving service delivery, and embedding agile performance models. Our consulting solutions enhance efficiency, boost client satisfaction, and engage the workforce.
         image:
           url: /images/icon3.svg
@@ -142,6 +144,7 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
+  # ───────── 3) DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -150,6 +153,7 @@ sections:
       self:
         padding: [p-7]
 
+  # ───────── 4) BUILT FOR IMPACT ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -157,7 +161,7 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
-    text: >
+    text: >-
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy, efficiency in execution, and confidence in every decision. Our partnership model yields not just short‑term gains, but long‑term operational strength and market resilience.
     media:
       url: /images/built-impact.png
@@ -176,6 +180,7 @@ sections:
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
+  # ───────── 5) COLLABORATION ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -184,7 +189,7 @@ sections:
       text: Collaborative with Design
       type: TitleBlock
     subtitle: Collaboration that delivers.
-    text: >
+    text: >-
       Progress happens when people work together. Aurrus aligns teams through clear communication, shared accountability, and unified execution—driving faster results and stronger relationships.
     media:
       url: /images/collab-design.png
@@ -201,6 +206,7 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
 
+  # ───────── 6) DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -209,6 +215,7 @@ sections:
       self:
         padding: [p-7]
 
+  # ───────── 7) TALENT ACQUISITION ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -217,7 +224,7 @@ sections:
       text: Talent Acquisition & Training
       type: TitleBlock
     subtitle: Build high‑performance teams.
-    text: >
+    text: >-
       From sourcing top‑tier talent to hands‑on onboarding and leadership training, Aurrus builds teams equipped to excel from day one.
     media:
       url: /images/hero2.png
@@ -238,6 +245,7 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark
 
+  # ───────── 8) OUTSOURCING ─────────
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -246,7 +254,7 @@ sections:
       text: Outsourcing & Transformation
       type: TitleBlock
     subtitle: Optimise and scale.
-    text: >
+    text: >-
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals, reducing friction and unlocking new performance levels.
     media:
       url: /images/hero3.png
@@ -267,6 +275,7 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark
 
+  # ───────── 9) DIVIDER ─────────
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -275,6 +284,7 @@ sections:
       self:
         padding: [p-7]
 
+  # ───────── 10) AURRUS DIFFERENCE ─────────
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -350,7 +360,8 @@ sections:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
       subtitle:
         className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-    
+
+  # ───────── 11) CTA FORM (RAW HTML) ─────────
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
@@ -371,16 +382,35 @@ sections:
         <p class="mt-2 text-md text-[#555]">
           Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
         </p>
-        <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="mt-8 space-y-4 text-left">
+
+        <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="mt-10 space-y-5 text-left">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
-          <input type="hidden" name="_next" value="https://aurrusconsulting.com/success"> 
-          <input name="name" type="text" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300">
-          <input type="email" name="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300">
-          <textarea name="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300"></textarea>
-          <button type="submit" class="bg-[#1E88E5] text-white px-6 py-3 rounded-xl hover:bg-[#1565C0] transition duration-300">
+          <input type="hidden" name="_next" value="https://aurrusconsulting.com/success">
+          <input type="hidden" name="_template" value="box">
+          <input type="text" name="_honey" style="display:none">
+
+          <div>
+            <label for="name" class="block mb-2 font-medium text-dark">Name</label>
+            <input name="name" type="text" id="name" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+          </div>
+
+          <div>
+            <label for="email" class="block mb-2 font-medium text-dark">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+          </div>
+
+          <div>
+            <label for="message" class="block mb-2 font-medium text-dark">Message</label>
+            <textarea name="message" id="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="bg-[#1E88E5] hover:bg-[#f97316] text-white px-6 py-3 rounded-xl transition duration-300">
             Submit
           </button>
         </form>
+
+        <p class="mt-6 text-sm text-gray-500 italic">
+          We respect your privacy. Your information is safe with us.
+        </p>
       </div>
----
