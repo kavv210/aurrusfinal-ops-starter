@@ -25,10 +25,10 @@ sections:
     subtitle: Your partner in scalable business and technology solutions.
     styles:
       self:
-        background: bg-gradient-to-br from-[#FFE0B2] via-[#FFD180] to-[#FFE0C3]
+        background: bg-gradient-to-br from-[#1E88E5] via-[#42A5F5] to-[#FFA726]
         padding:
-          - pt-20
-          - pb-16
+          - pt-24
+          - pb-20
           - pl-8
           - pr-8
         textAlign: center
@@ -37,12 +37,12 @@ sections:
       subtitle:
         className: text-2xl sm:text-3xl font-semibold text-[#5D4037] mt-4
 
-  # ─────────────────── SLIM DIVIDER ───────────────
+  # ─────────────── DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#BDBDBD]
+    colors: bg-[#FFECB3]
     styles:
       self:
-        height: xs
+        height: h-[1px]
         padding:
           - pt-2
           - pb-2
@@ -76,12 +76,11 @@ sections:
         textAlign: center
         fontWeight: font-medium
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#BDBDBD]
+    colors: bg-[#FFECB3]
     styles:
       self:
-        height: xs
+        height: h-[1px]
         padding:
           - pt-2
           - pb-2
@@ -115,12 +114,11 @@ sections:
         textAlign: center
         fontWeight: font-medium
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#BDBDBD]
+    colors: bg-[#FFECB3]
     styles:
       self:
-        height: xs
+        height: h-[1px]
         padding:
           - pt-2
           - pb-2
@@ -154,12 +152,11 @@ sections:
         textAlign: center
         fontWeight: font-medium
 
-  # ─────────────────── SLIM DIVIDER ───────────────
   - type: DividerSection
-    colors: bg-[#BDBDBD]
+    colors: bg-[#FFECB3]
     styles:
       self:
-        height: xs
+        height: h-[1px]
         padding:
           - pt-2
           - pb-2
