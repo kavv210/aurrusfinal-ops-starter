@@ -402,7 +402,7 @@ sections:
           - pr-8
         textAlign: center
     html: >
-      <div class="max-w-2xl mx-auto text-center">
+      <div id="contact-form" class="max-w-2xl mx-auto text-center">
         <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]">
           Let's Build Something Better Together.
         </h2>
