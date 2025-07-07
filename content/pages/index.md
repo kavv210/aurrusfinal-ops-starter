@@ -196,7 +196,7 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        className: mt-[1.5rem] mb-[1.5rem] pt-0 pb-0 pl-8 pr-8
+        className: "-mt-8 pt-2 pb-6 pl-8 pr-8"
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
           transition-transform duration-300 hover:scale-105
@@ -221,7 +221,7 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        className: mt-[1.5rem] mb-[1.5rem] pt-0 pb-0 pl-8 pr-8
+        className: "-mt-8 pt-2 pb-6 pl-8 pr-8"
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
           transition-transform duration-300 hover:scale-105
