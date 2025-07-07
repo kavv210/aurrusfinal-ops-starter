@@ -173,7 +173,8 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        padding: [pt-4, pb-4, pl-8, pr-8]
+        padding: [pt-2, pb-2, pl-8, pr-8]
+        margin: [mt-[-2rem], mb-[-2rem]]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
@@ -196,7 +197,8 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        padding: [pt-4, pb-4, pl-8, pr-8]
+        padding: [pt-2, pb-4, pl-8, pr-8]
+        margin: [mt-[-1.5rem]] 
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
@@ -320,8 +322,8 @@ sections:
         __metadata:
           modelName: FeaturedItem
         title: Experience that Matters
-        subtitle: Decades‑deep expertise
-        text: Our leadership hails from IT, ITeS, and BPO/KPO sectors—bringing hands‑on experience, not just theory.
+        subtitle: Decades‑deep industry expertise
+        text: Our leadership hails from IT, ITeS, and BPO/KPO sectors; bringing hands‑on experience, not just theory.
         image:
           url: /images/experience.png
           altText: Experience icon
