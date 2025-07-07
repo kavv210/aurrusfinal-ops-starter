@@ -4,13 +4,11 @@ slug: /
 type: PageLayout
 __metadata:
   modelName: PageLayout
-
 seo:
   metaTitle: Aurrus Consulting | BPO, KPO, IT Staffing & Hiring
   metaDescription: Aurrus Consulting Main Site.
   socialImage: public/images/main-hero.jpg
   type: Seo
-
 sections:
   - type: GenericSection
     __metadata:
@@ -21,7 +19,11 @@ sections:
       type: TitleBlock
     subtitle: Where strategy meets speed.
     text: >
-      At Aurrus Consulting, we connect bold ambition with precise execution. Our digital‑first strategies scale faster, perform smarter, and deliver measurable outcomes. With deep BPO, KPO, and ITeS expertise, we help organizations streamline operations, align teams, and lead with confidence.
+      At Aurrus Consulting, we connect bold ambition with precise execution. Our
+      digital‑first strategies scale faster, perform smarter, and deliver
+      measurable outcomes. With deep BPO, KPO, and ITeS expertise, we help
+      organizations streamline operations, align teams, and lead with
+      confidence.
     actions:
       - label: Get started
         url: /
@@ -47,10 +49,14 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding: [pt-16, pl-16, pb-16, pr-16]
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
       title:
-        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-
+        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark
+          transition-transform duration-300 hover:scale-105
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -65,7 +71,10 @@ sections:
         title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: >
-          We provide strategic guidance to help organizations navigate change and optimise performance. From business model innovation to operational restructuring and market strategy, our consultants deliver clear, data‑driven solutions.
+          We provide strategic guidance to help organizations navigate change and
+          optimise performance. From business model innovation to operational
+          restructuring and market strategy, our consultants deliver clear,
+          data‑driven solutions.
         image:
           url: /images/icon1.png
           altText: Strategy icon
@@ -76,20 +85,23 @@ sections:
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: row
             textAlign: left
           subtitle:
             className: text-xl font-bold text-dark
-
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
         title: Vision & Values Aligned
         subtitle: Refine Core Structure
         text: >
-          We help organisations build resilience and drive sustainable growth by reshaping structures, refining governance, and fostering high‑impact leadership. Our tailored approaches ensure alignment between culture, capabilities, and strategic priorities.
+          We help organisations build resilience and drive sustainable growth by
+          reshaping structures, refining governance, and fostering high‑impact
+          leadership. Our tailored approaches ensure alignment between culture,
+          capabilities, and strategic priorities.
         image:
           url: /images/icon2.png
           altText: OD icon
@@ -100,20 +112,23 @@ sections:
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-6]
+            padding:
+              - p-6
             borderRadius: x-large
             flexDirection: row
             textAlign: left
           subtitle:
             className: text-xl font-bold text-dark
-
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
         title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
-          We help BPOs optimise operations and drive growth by streamlining workflows, improving service delivery, and embedding agile performance models. Our consulting solutions enhance efficiency, boost client satisfaction, and engage the workforce.
+          We help BPOs optimise operations and drive growth by streamlining
+          workflows, improving service delivery, and embedding agile performance
+          models. Our consulting solutions enhance efficiency, boost client
+          satisfaction, and engage the workforce.
         image:
           url: /images/icon3.png
           altText: Advisory icon
@@ -124,12 +139,12 @@ sections:
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-6]
+            padding:
+              - p-6
             borderRadius: x-large
             flexDirection: row
           subtitle:
             className: text-xl font-bold text-dark
-
     badge:
       label: Client‑Centred Outcomes
       color: text-primary
@@ -145,12 +160,17 @@ sections:
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-16, pl-16, pr-16]
+        padding:
+          - pt-16
+          - pb-16
+          - pl-16
+          - pr-16
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
+          transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-
+        className: text-xl font-bold text-dark transition duration-300 ease-in-out
+          hover:text-[#f97316]
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -159,7 +179,10 @@ sections:
       text: Built for Impact.
       type: TitleBlock
     text: >
-      At Aurrus Consulting, we focus on what truly moves the needle: clarity in strategy, efficiency in execution, and confidence in every decision. Our partnership model yields not just short‑term gains, but long‑term operational strength and market resilience.
+      At Aurrus Consulting, we focus on what truly moves the needle: clarity in
+      strategy, efficiency in execution, and confidence in every decision. Our
+      partnership model yields not just short‑term gains, but long‑term
+      operational strength and market resilience.
     media:
       url: /images/built-impact.png
       altText: Built for Impact image
@@ -173,9 +196,10 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        className: "!mt-[-4rem] !mb-[-3rem] !pt-0 !pb-0 pl-8 pr-8"
+        className: mt-[1.5rem] mb-[1.5rem] pt-0 pb-0 pl-8 pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
+          transition-transform duration-300 hover:scale-105
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -185,7 +209,9 @@ sections:
       type: TitleBlock
     subtitle: Collaboration that delivers.
     text: >
-      Progress happens when people work together. Aurrus aligns teams through clear communication, shared accountability, and unified execution—driving faster results and stronger relationships.
+      Progress happens when people work together. Aurrus aligns teams through
+      clear communication, shared accountability, and unified execution—driving
+      faster results and stronger relationships.
     media:
       url: /images/collab-design.png
       altText: Collaboration image
@@ -195,13 +221,13 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        className: "!mt-[-3rem] !mb-[-2rem] !pt-0 !pb-0 pl-8 pr-8"
+        className: mt-[1.5rem] mb-[1.5rem] pt-0 pb-0 pl-8 pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
+          transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-
-
+        className: text-xl font-bold text-dark transition duration-300 ease-in-out
+          hover:text-[#f97316]
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -211,7 +237,8 @@ sections:
       type: TitleBlock
     subtitle: Build high‑performance teams.
     text: >
-      From sourcing top‑tier talent to hands‑on onboarding and leadership training, Aurrus builds teams equipped to excel from day one.
+      From sourcing top‑tier talent to hands‑on onboarding and leadership
+      training, Aurrus builds teams equipped to excel from day one.
     media:
       url: /images/hero2.png
       altText: Talent illustration
@@ -225,12 +252,16 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding: [pt-8, pb-8, pl-8, pr-8]
+        padding:
+          - pt-8
+          - pb-8
+          - pl-8
+          - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
+          transition-transform duration-300 hover:scale-105
       subtitle:
         className: text-xl font-bold text-dark
-
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -240,7 +271,8 @@ sections:
       type: TitleBlock
     subtitle: Optimise and scale.
     text: >
-      We guide end‑to‑end process transformation across BPO, KPO, and ITeS verticals, reducing friction and unlocking new performance levels.
+      We guide end‑to‑end process transformation across BPO, KPO, and ITeS
+      verticals, reducing friction and unlocking new performance levels.
     media:
       url: /images/hero3.png
       altText: Transformation illustration
@@ -254,20 +286,24 @@ sections:
       self:
         flexDirection: row-reverse
         alignItems: center
-        padding: [pt-8, pb-8, pl-8, pr-8]
+        padding:
+          - pt-8
+          - pb-8
+          - pl-8
+          - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
+          transition-transform duration-300 hover:scale-105
       subtitle:
         className: text-xl font-bold text-dark
-
   - type: DividerSection
     __metadata:
       modelName: DividerSection
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [p-7]
-
+        padding:
+          - p-7
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -282,7 +318,8 @@ sections:
           modelName: FeaturedItem
         title: Collaborative by Nature
         subtitle: Aligned Execution. Lasting Partnerships.
-        text: We integrate with your people and processes, ensuring smoother delivery and stronger synergy.
+        text: We integrate with your people and processes, ensuring smoother delivery
+          and stronger synergy.
         image:
           url: /images/collab.png
           altText: Colab icon
@@ -290,18 +327,19 @@ sections:
         colors: bg-light-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
             className: text-xl font-bold text-dark
-
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
         title: Execution without Friction
         subtitle: From Planning to Precision
-        text: We manage projects end‑to‑end with clear timelines, resource alignment, and minimal disruption.
+        text: We manage projects end‑to‑end with clear timelines, resource alignment,
+          and minimal disruption.
         image:
           url: /images/execution.png
           altText: Execution icon
@@ -309,18 +347,19 @@ sections:
         colors: bg-light-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
             className: text-xl font-bold text-dark
-
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
         title: Experience that Matters
         subtitle: Decades‑deep industry expertise
-        text: Our leadership hails from IT, ITeS, and BPO/KPO sectors; bringing hands‑on experience, not just theory.
+        text: Our leadership hails from IT, ITeS, and BPO/KPO sectors; bringing hands‑on
+          experience, not just theory.
         image:
           url: /images/experience.png
           altText: Experience icon
@@ -328,22 +367,27 @@ sections:
         colors: bg-light-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
             className: text-xl font-bold text-dark
-
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-16, pl-8, pr-8]
+        padding:
+          - pt-16
+          - pb-16
+          - pl-8
+          - pr-8
       title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary
+          transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-
+        className: text-xl font-bold text-dark transition duration-300 ease-in-out
+          hover:text-[#f97316]
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
@@ -351,9 +395,13 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-20, pb-20, pl-8, pr-8]
+        padding:
+          - pt-20
+          - pb-20
+          - pl-8
+          - pr-8
         textAlign: center
-    html: |
+    html: >
       <div class="max-w-2xl mx-auto text-center">
         <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]">
           Let's Build Something Better Together.
@@ -366,34 +414,64 @@ sections:
         </p>
 
         <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="mt-10 space-y-5 text-left">
+          <!-- FormSubmit helpers -->
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
           <input type="hidden" name="_next" value="https://aurrusconsulting.com/success">
           <input type="hidden" name="_template" value="box">
           <input type="text" name="_honey" style="display:none">
 
+          <!-- Name -->
           <div>
             <label for="name" class="block mb-2 font-medium text-dark">Name</label>
-            <input name="name" type="text" id="name" placeholder="Your name" required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+            <input name="name" id="name" type="text" placeholder="Your name" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
 
+          <!-- Email -->
           <div>
             <label for="email" class="block mb-2 font-medium text-dark">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your email" required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+            <input name="email" id="email" type="email" placeholder="Your email" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
 
+          <!-- Purpose dropdown -->
+          <div>
+            <label for="purpose" class="block mb-2 font-medium text-dark">Purpose</label>
+            <select name="purpose" id="purpose" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+              <option value="" disabled selected>Select a purpose</option>
+              <option value="Consultation">Consultation</option>
+              <option value="Hiring Inquiry">Hiring Inquiry</option>
+              <option value="Partnership">Partnership</option>
+              <option value="General Query">General Query</option>
+            </select>
+          </div>
+
+          <!-- Message -->
           <div>
             <label for="message" class="block mb-2 font-medium text-dark">Message</label>
-            <textarea name="message" id="message" placeholder="Your message" required rows="5" class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none"></textarea>
+            <textarea name="message" id="message" rows="5" placeholder="Your message" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none"></textarea>
           </div>
 
-          <button type="submit" class="bg-[#1E88E5] hover:bg-[#f97316] text-white px-6 py-3 rounded-xl transition duration-300">
+          <!-- Simple math CAPTCHA -->
+          <div>
+            <label for="captcha" class="block mb-2 font-medium text-dark">What is 4&nbsp;+&nbsp;3?</label>
+            <input id="captcha" name="captcha" type="text" pattern="7" placeholder="Answer" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+          </div>
+
+          <!-- Submit -->
+          <button type="submit"
+            class="bg-[#1E88E5] hover:bg-[#f97316] text-white px-6 py-3 rounded-xl transition duration-300">
             Submit
           </button>
         </form>
 
-        <p class="mt-6 text-sm text-gray-500 italic">
+        <p class="mt-8 text-sm text-gray-500 italic">
           We respect your privacy. Your information is safe with us.
         </p>
       </div>
+
 ---
