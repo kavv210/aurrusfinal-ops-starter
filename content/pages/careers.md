@@ -3,13 +3,13 @@ title: Careers
 slug: careers
 sections:
   - title:
-      text: A team that works closely together
+      text: Partners in Progress, Powered by People
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: People are the soul of our company
+    subtitle: Built on trust, driven by collaboration, focused on what matters to you.
     text: >
       At **Aurrus**, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
     actions:
@@ -106,8 +106,8 @@ sections:
           <strong>Aurrus HQ</strong><br/>
           J‑42, Lajpat Nagar‑II, Central Market<br/>
           New Delhi, Delhi – 110024<br/><br/>
-          📞 +91‑9711150917<br/>
-          ✉️ support@aurrusconsulting.com<br/><br/>
+          📞 +91‑9311066457<br/>
+          ✉️ contact.aurrus@gmail.com<br/><br/>
           <em>Open Mon–Sat, 10 AM – 6 PM</em>
         </div>
         <div style="flex: 1 1 400px; max-width: 600px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-radius: 12px; overflow: hidden;">
