@@ -71,7 +71,7 @@
       "type": "Social"
     }
   ],
-  "copyrightText": "Powered by [<u>Aurrus</u>](https://www.aurrusconsulting.com/)",
+  "copyrightText": "Powered by <a href=\"https://www.aurrusconsulting.com/\" style=\"text-decoration: underline;\">Aurrus</a>",
   "colors": "bg-dark-fg-light",
   "type": "Footer"
 }
