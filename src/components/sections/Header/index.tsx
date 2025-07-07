@@ -216,7 +216,13 @@ function MobileMenu(props) {
                 <span className="sr-only">Open Menu</span>
                 <MenuIcon className="w-6 h-6 fill-current" />
             </button>
-            <div className={classNames(colors, 'fixed', 'inset-0', styles?.self?.padding ?? 'p-4', 'overflow-y-auto', 'z-10', isMenuOpen ? 'block' : 'hidden')}>
+            <div className={classNames(
+                   colors, 
+                   'fixed inset-0 z-10 overflow-y-auto transition-opacity duration-300 ease-out',
+                   isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
+                   styles?.self?.padding ?? 'p-4'
+                 )}
+            >
                 <div className="flex flex-col min-h-full">
                     <div className="flex items-center justify-between mb-10">
                         {(title || logo?.url) && <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />}
