@@ -1,103 +1,78 @@
 {
-    "logo": {
-        "url": "/images/logo-white.svg",
-        "altText": "Logo light",
-        "type": "ImageBlock"
-    },
-    "text": "Where Strategy Meets Execution",
-    "primaryLinks": {
-        "title": "Features",
-        "links": [
-            {
-                "label": "Home",
-                "altText": "Home page",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
-        "type": "FooterLinksGroup"
-    },
-    "secondaryLinks": {
-        "title": "Company",
-        "links": [
-            {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            },
-            {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
-            }
-        ],
-        "type": "FooterLinksGroup"
-    },
-    "socialLinks": [
-        {
-            "altText": "Facebook Link",
-            "url": "https://www.facebook.com/people/Aurrus-Consulting/100039073226880/",
-            "icon": "twitter",
-            "type": "Social"
-        },
-        {
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/aurrus-consulting",
-            "icon": "linkedin",
-            "type": "Social"
-        },
-        {
-            "altText": "Email link",
-            "url": "/",
-            "icon": "mail",
-            "type": "Social"
-        }
+  "logo": {
+    "url": "/images/logo-white.png",
+    "altText": "Logo light",
+    "type": "ImageBlock"
+  },
+  "text": "Where Strategy Meets Execution",
+  "primaryLinks": {
+    "title": "Features",
+    "links": [
+      {
+        "label": "Home",
+        "altText": "Home page",
+        "url": "/",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "Services",
+        "url": "/services",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      }
     ],
-    "legalLinks": [
-        {
-            "label": "Terms",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Privacy",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        }
+    "type": "FooterLinksGroup"
+  },
+  "secondaryLinks": {
+    "title": "Company",
+    "links": [
+      {
+        "label": "About Us",
+        "altText": "careers page",
+        "url": "/careers",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      },
+      {
+        "label": "Contact Us",
+        "url": "/#contact-form",
+        "icon": "arrowRight",
+        "iconPosition": "right",
+        "style": "secondary",
+        "type": "Link"
+      }
     ],
-    "copyrightText": "Powered by [Aurrus](https://www.aurrusconsulting.com/)\n",
-    "colors": "bg-dark-fg-light",
-    "type": "Footer"
+    "type": "FooterLinksGroup"
+  },
+  "socialLinks": [
+    {
+      "altText": "Facebook Link",
+      "url": "https://www.facebook.com/people/Aurrus-Consulting/100039073226880/",
+      "icon": "twitter",
+      "type": "Social"
+    },
+    {
+      "altText": "LinkedIn link",
+      "url": "https://www.linkedin.com/company/aurrus-consulting",
+      "icon": "linkedin",
+      "type": "Social"
+    },
+    {
+      "altText": "Email link",
+      "url": "mailto:contact.aurrus@gmail.com",
+      "icon": "mail",
+      "type": "Social"
+    }
+  ],
+  "copyrightText": "Powered by [<u>Aurrus</u>](https://www.aurrusconsulting.com/)",
+  "colors": "bg-dark-fg-light",
+  "type": "Footer"
 }
+
