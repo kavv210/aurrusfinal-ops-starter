@@ -1,9 +1,9 @@
 {
-    "name": "Rhonda Piper",
+    "name": "Deeksha Gera",
     "role": "Job title",
     "image": {
-        "url": "/images/avatar1.svg",
-        "altText": "Rhonda Piper",
+        "url": "/images/avatar1.png",
+        "altText": "Deeksha Gera",
         "styles": {
             "self": {
                 "borderRadius": "medium",
