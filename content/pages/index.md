@@ -70,6 +70,9 @@ sections:
           url: /images/icon1.png
           altText: Strategy icon
           type: ImageBlock
+          styles:
+            self:
+              className: w-8 h-8
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
@@ -91,10 +94,13 @@ sections:
           url: /images/icon2.png
           altText: OD icon
           type: ImageBlock
+          styles:
+            self:
+              className: w-8 h-8
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding: [p-6]
             borderRadius: x-large
             flexDirection: row
             textAlign: left
@@ -112,10 +118,13 @@ sections:
           url: /images/icon3.png
           altText: Advisory icon
           type: ImageBlock
+          styles:
+            self:
+              className: w-8 h-8
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding: [p-6]
             borderRadius: x-large
             flexDirection: row
           subtitle:
@@ -164,7 +173,7 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        padding: [pt-8, pb-8, pl-8, pr-8]
+        padding: [pt-4, pb-4, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
@@ -187,7 +196,7 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        padding: [pt-8, pb-16, pl-8, pr-8]
+        padding: [pt-4, pb-4, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
@@ -217,7 +226,7 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding: [pt-16, pb-16, pl-8, pr-8]
+        padding: [pt-8, pb-8, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
@@ -246,7 +255,7 @@ sections:
       self:
         flexDirection: row-reverse
         alignItems: center
-        padding: [pt-16, pb-16, pl-8, pr-8]
+        padding: [pt-8, pb-8, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
