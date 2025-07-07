@@ -196,7 +196,7 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        className: "-mt-8 pt-2 pb-6 pl-8 pr-8"
+        padding: [pt-2, pb-2, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
           transition-transform duration-300 hover:scale-105
@@ -221,7 +221,7 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        className: "-mt-8 pt-2 pb-6 pl-8 pr-8"
+        padding: [pt-2, pb-2, pl-8, pr-8]
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark
           transition-transform duration-300 hover:scale-105
