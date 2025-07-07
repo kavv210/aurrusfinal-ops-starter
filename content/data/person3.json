@@ -1,10 +1,10 @@
 {
     "type": "Person",
-    "name": "Asher Schmitt",
+    "name": "Gunjan Jha",
     "role": "Co-founder & CEO",
     "image": {
         "url": "/images/avatar3.svg",
-        "altText": "Asher Schmitt",
+        "altText": "Gunjan Jha",
         "styles": {
             "self": {
                 "borderRadius": "medium",
