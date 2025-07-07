@@ -174,10 +174,9 @@ sections:
         flexDirection: row
         alignItems: center
         padding: [pt-2, pb-2, pl-8, pr-8]
-        margin: [mt-[-2rem], mb-[-2rem]]
+        className: "mt-[-2rem] mb-[-2rem]"
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -198,7 +197,7 @@ sections:
         flexDirection: row
         alignItems: center
         padding: [pt-2, pb-4, pl-8, pr-8]
-        margin: [mt-[-1.5rem]] 
+        className: "mt-[-1.5rem]" 
       title:
         className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
