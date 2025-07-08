@@ -1,37 +1,30 @@
 {
-    "type": "Person",
-    "name": "Deepakk S Geraa",
-    "role": "Co-founder & CEO",
-    "image": {
-        "url": "/images/avatar2.png",
-        "altText": "Deepakk S Geraa",
-        "styles": {
-            "self": {
-                "borderRadius": "medium",
-                "margin": [
-                    "mb-8"
-                ]
-            }
-        },
-        "type": "ImageBlock"
-    },
-    "colors": "bg-light-fg-dark",
-    "elementId": null,
+  "type": "Person",
+  "name": "Deepakk S Geraa",
+  "role": "Head : Business Engagement",
+  "image": {
+    "url": "/images/avatar2.png",
+    "altText": "Deepakk S Geraa",
     "styles": {
-        "self": {
-            "padding": [
-                "pt-6",
-                "pb-6",
-                "pl-6",
-                "pr-6"
-            ],
-            "textAlign": "center",
-            "borderColor": "border-neutral",
-            "borderStyle": "solid",
-            "borderWidth": 0,
-            "borderRadius": "none",
-            "justifyContent": "center"
-        }
+      "self": {
+        "borderRadius": "medium",
+        "margin": ["mb-8"]
+      }
     },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "type": "ImageBlock"
+  },
+  "colors": "bg-light-fg-dark",
+  "elementId": null,
+  "styles": {
+    "self": {
+      "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
+      "textAlign": "center",
+      "borderColor": "border-neutral",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "borderRadius": "none",
+      "justifyContent": "center"
+    }
+  },
+  "bio": "Deepakk has been part of the outsourcing world for the last 21 years. He has headed and managed various verticals starting from Technology, Telecom, Enterprise, Back-office, and Logistics. He has worked at leadership level with companies like Amazon, Convergys, Sitel, and ICICI.\n\nAt Aurrus, Deepakk is heading Business Engagement and Client Relations."
 }
