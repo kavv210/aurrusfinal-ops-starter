@@ -17,7 +17,7 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: text-3xl sm:text-5xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution. Our
@@ -59,7 +59,7 @@ sections:
     title:
       text: Why Aurrus?
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     items:
       - title: Business Strategy Consulting
         subtitle: Transform with Clarity
@@ -83,7 +83,7 @@ sections:
             flexDirection: row
             textAlign: left
           subtitle:
-            className: text-xl font-bold text-dark break-words
+            className: text-xl font-bold text-[#1E88E5] break-words
 
       - title: Vision & Values Aligned
         subtitle: Refine Core Structure
@@ -107,7 +107,7 @@ sections:
             flexDirection: row
             textAlign: left
           subtitle:
-            className: text-xl font-bold text-dark break-words
+            className: text-xl font-bold text-[#1E88E5] break-words
 
       - title: Program & Project Advisory
         subtitle: Deliver with Precision
@@ -130,7 +130,7 @@ sections:
             borderRadius: x-large
             flexDirection: row
           subtitle:
-            className: text-xl font-bold text-dark break-words
+            className: text-xl font-bold text-[#1E88E5] break-words
     badge:
       label: Client‑Centred Outcomes
       color: text-primary
@@ -152,7 +152,7 @@ sections:
     title:
       text: The Brands that Trust Us
       type: TitleBlock
-      color: text-dark
+      color: text-[#1E88E5]
       styles:
         self:
           padding: [pt-0, pb-20]
@@ -177,7 +177,7 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     text: >
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in
       strategy, efficiency in execution, and confidence in every decision. Our
@@ -205,7 +205,7 @@ sections:
     title:
       text: Collaborative with Design
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: >
       Progress happens when people work together. Aurrus aligns teams through
@@ -222,7 +222,7 @@ sections:
         alignItems: center
         padding: [pt-2, pb-2, pl-8, pr-8]
       subtitle:
-        className: text-xl font-bold text-dark break-words transition duration-300 ease-in-out hover:text-[#f97316]
+        className: text-xl font-bold text-[#1E88E5] break-words transition duration-300 ease-in-out hover:text-[#f97316]
 
   - type: GenericSection
     __metadata:
@@ -231,7 +231,7 @@ sections:
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     subtitle: Build high‑performance teams.
     text: >
       From sourcing top‑tier talent to hands‑on onboarding and leadership
@@ -251,7 +251,7 @@ sections:
         flexDirection: row
         padding: [pt-8, pb-8, pl-8, pr-8]
       subtitle:
-        className: text-xl font-bold text-dark break-words
+        className: text-xl font-bold text-[#1E88E5] break-words
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -259,7 +259,7 @@ sections:
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     subtitle: Optimise and scale.
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS
@@ -279,7 +279,7 @@ sections:
         alignItems: center
         padding: [pt-8, pb-8, pl-8, pr-8]
       subtitle:
-        className: text-xl font-bold text-dark break-words
+        className: text-xl font-bold text-[#1E88E5] break-words
 
   - type: DividerSection
     __metadata:
@@ -317,7 +317,7 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
-            className: text-xl font-bold text-dark break-words
+            className: text-xl font-bold text-[#1E88E5] break-words
 
       - type: FeaturedItem
         title: Non-Voice/Backing Capabilities
@@ -337,7 +337,7 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
-            className: text-xl font-bold text-dark break-words
+            className: text-xl font-bold text-[#1E88E5] break-words
 
       - type: FeaturedItem
         title: HR/Training & Development
@@ -358,7 +358,7 @@ sections:
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
-            className: text-xl font-bold text-dark break-words
+            className: text-xl font-bold text-[#1E88E5] break-words
 
     variant: three-col-grid
     colors: bg-neutral-fg-dark
@@ -366,7 +366,7 @@ sections:
       self:
         padding: [pt-16, pb-16, pl-8, pr-8]
       subtitle:
-        className: text-xl font-bold text-dark break-words transition duration-300 ease-in-out hover:text-[#f97316]
+        className: text-xl font-bold text-[#1E88E5] break-words transition duration-300 ease-in-out hover:text-[#f97316]
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
@@ -396,19 +396,19 @@ sections:
           <input type="text" name="_honey" style="display:none">
 
           <div>
-            <label for="name" class="block mb-2 font-medium text-dark">Name</label>
+            <label for="name" class="block mb-2 font-medium text-[#1E88E5]">Name</label>
             <input name="name" id="name" type="text" placeholder="Your name" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
 
           <div>
-            <label for="email" class="block mb-2 font-medium text-dark">Email</label>
+            <label for="email" class="block mb-2 font-medium text-[#1E88E5]">Email</label>
             <input name="email" id="email" type="email" placeholder="Your email" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
 
           <div>
-            <label for="purpose" class="block mb-2 font-medium text-dark">Purpose</label>
+            <label for="purpose" class="block mb-2 font-medium text-[#1E88E5]">Purpose</label>
             <select name="purpose" id="purpose" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
               <option value="" disabled selected>Select a purpose</option>
@@ -420,13 +420,13 @@ sections:
           </div>
 
           <div>
-            <label for="message" class="block mb-2 font-medium text-dark">Message</label>
+            <label for="message" class="block mb-2 font-medium text-[#1E88E5]">Message</label>
             <textarea name="message" id="message" rows="5" placeholder="Your message" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none"></textarea>
           </div>
 
           <div>
-            <label for="captcha" class="block mb-2 font-medium text-dark">What is 4 + 3? (Captcha)</label>
+            <label for="captcha" class="block mb-2 font-medium text-[#1E88E5]">What is 4 + 3? (Captcha)</label>
             <input id="captcha" name="captcha" type="text" pattern="7" placeholder="Answer" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
