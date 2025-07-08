@@ -16,8 +16,9 @@ sections:
           textAlign: center
     subtitle: Built on trust, driven by collaboration, focused on what matters to you.
     text: >
-      Started in 2011, we have a combined management experience of 40+ years.
-At **Aurrus**, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
+      Started in 2011, we have a combined experince of over 40+ years.
+      At **Aurrus**, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and 
+      bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
     actions:
       - label: See open positions
         url: "#open-roles"
