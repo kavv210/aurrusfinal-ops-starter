@@ -194,6 +194,17 @@ h2, h3, h4,
 
   ::-webkit-scrollbar-thumb:hover {
     background: #fb923c;
+  } 
+   @layer utilities {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   html.lenis {
