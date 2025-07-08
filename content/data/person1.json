@@ -1,36 +1,29 @@
 {
-    "name": "Deeksha Gera",
-    "role": "Job title",
-    "image": {
-        "url": "/images/avatar1.png",
-        "altText": "Deeksha Gera",
-        "styles": {
-            "self": {
-                "borderRadius": "medium",
-                "margin": [
-                    "mb-8"
-                ]
-            }
-        },
-        "type": "ImageBlock"
-    },
-    "colors": "bg-light-fg-dark",
+  "name": "Deeksha Gera",
+  "role": "Job title",
+  "image": {
+    "url": "/images/avatar1.png",
+    "altText": "Deeksha Gera",
     "styles": {
-        "self": {
-            "padding": [
-                "pt-6",
-                "pb-6",
-                "pl-6",
-                "pr-6"
-            ],
-            "textAlign": "center",
-            "borderColor": "border-neutral",
-            "borderStyle": "solid",
-            "borderWidth": 0,
-            "borderRadius": "none",
-            "justifyContent": "center"
-        }
+      "self": {
+        "borderRadius": "medium",
+        "margin": ["mb-8"]
+      }
     },
-    "type": "Person",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "type": "ImageBlock"
+  },
+  "colors": "bg-light-fg-dark",
+  "styles": {
+    "self": {
+      "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
+      "textAlign": "center",
+      "borderColor": "border-neutral",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "borderRadius": "none",
+      "justifyContent": "center"
+    }
+  },
+  "type": "Person",
+  "bio": "Deeksha has worked with many prominent companies in the outsourcing world and been part of International Airlines (British Airways, Delta, UA and American Airlines). She started her entrepreneur journey in the year 2011 and started Aurrus as an outsourcing, staffing and recruitment firm. She has an overall experience of more than 15 years, and also owns a D2C baby clothing brand in India."
 }
