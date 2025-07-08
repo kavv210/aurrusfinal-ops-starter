@@ -15,12 +15,10 @@ export default function HeroSection(props) {
   const titleStyles = mapStyles(styles?.title || {});
   const subtitleStyles = mapStyles(styles?.subtitle || {});
 
-  // Handle raw Tailwind classes
   const sectionExtra = styles?.self?.className || '';
   const titleExtra = styles?.title?.className || '';
   const subtitleExtra = styles?.subtitle?.className || '';
 
-  // Add AOS animation attributes
   const aosProps = {};
   if (styles?.self?.aos) aosProps['data-aos'] = styles.self.aos;
   if (styles?.self?.aosDuration)
@@ -31,19 +29,21 @@ export default function HeroSection(props) {
   return (
     <section
       id={elementId}
-      className={classNames(colors, sectionStyles, sectionExtra, 'py-16 px-4 text-center')}
+      className={classNames(colors, sectionStyles, sectionExtra, 'py-16')}
       {...aosProps}
     >
-      {title?.text && (
-        <h1 className={classNames('text-4xl font-extrabold', titleStyles, titleExtra)}>
-          {title.text}
-        </h1>
-      )}
-      {subtitle && (
-        <p className={classNames('mt-4 text-lg', subtitleStyles, subtitleExtra)}>
-          {subtitle}
-        </p>
-      )}
+      <div className="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
+        {title?.text && (
+          <h1 className={classNames('text-4xl font-extrabold', titleStyles, titleExtra)}>
+            {title.text}
+          </h1>
+        )}
+        {subtitle && (
+          <p className={classNames('mt-4 text-lg', subtitleStyles, subtitleExtra)}>
+            {subtitle}
+          </p>
+        )}
+      </div>
     </section>
   );
 }
