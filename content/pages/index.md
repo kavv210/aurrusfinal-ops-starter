@@ -313,20 +313,22 @@ sections:
       modelName: FeaturedItemsSection
     motion: fade-up
     title:
-      text: The Aurrus Difference
+      text: Our Expertise
       type: TitleBlock
     subtitle: Why should businesses choose Aurrus?
     items:
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
-        title: Collaborative by Nature
+        title: Voice Capabilities
         subtitle: Aligned Execution. Lasting Partnerships.
-        text: We integrate with your people and processes, ensuring smoother delivery
-          and stronger synergy.
+        text: >
+          In-bound Customer Services · Outbound Sales & Support
+          Technical Support Services · Order Tracking
+          Escalation Helpdesk · Ticket Management System (TMS)
         image:
-          url: /images/collab.png
-          altText: Colab icon
+          url: /images/voice.png
+          altText: voice icon
           type: ImageBlock
         colors: bg-light-fg-dark
         styles:
@@ -340,10 +342,12 @@ sections:
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
-        title: Execution without Friction
-        subtitle: From Planning to Precision
-        text: We manage projects end‑to‑end with clear timelines, resource alignment,
-          and minimal disruption.
+        title: Non-Voice/Backing Capabilities
+        subtitle: Data-driven support, delivered with precision.
+        text: >
+          Chat Support · Email Support  
+          Data Mining / Scrubbing  
+          Market Research & Analysis
         image:
           url: /images/execution.png
           altText: Execution icon
@@ -360,10 +364,13 @@ sections:
       - type: FeaturedItem
         __metadata:
           modelName: FeaturedItem
-        title: Experience that Matters
-        subtitle: Decades‑deep industry expertise
-        text: Our leadership hails from IT, ITeS, and BPO/KPO sectors; bringing hands‑on
-          experience, not just theory.
+        title: HR/Training & Development
+        subtitle: Empowering people. Elevating performance.
+        text: >
+          Recruitment and Staffing Solutions
+          Product/Process Training
+          Content Development
+          Training Delivery 
         image:
           url: /images/experience.png
           altText: Experience icon
@@ -461,7 +468,7 @@ sections:
 
           <!-- Simple math CAPTCHA -->
           <div>
-            <label for="captcha" class="block mb-2 font-medium text-dark">What is 4&nbsp;+&nbsp;3?</label>
+            <label for="captcha" class="block mb-2 font-medium text-dark">What is 4&nbsp;+&nbsp;3?(Captcha)</label>
             <input id="captcha" name="captcha" type="text" pattern="7" placeholder="Answer" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
