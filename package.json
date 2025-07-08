@@ -17,6 +17,7 @@
         "@studio-freight/lenis": "^1.0.40",
         "framer-motion": "^10.16.1",
         "front-matter": "^4.0.2",
+        "lucide-react": "^0.284.0",
         "glob": "^10.4.2",
         "markdown-to-jsx": "^7.7.3",
         "marked": "^14.1.2",
