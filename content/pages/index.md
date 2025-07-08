@@ -172,8 +172,31 @@ sections:
         className: text-xl font-bold text-dark transition duration-300 ease-in-out
           hover:text-[#f97316]
 
-  - type: CustomBlock
-    component: BrandSlider
+  - type: GenericSection
+    colors: bg-light-fg-dark
+    title:
+      text: The Brands that Trust Us
+      type: TitleBlock
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+      styles:
+        self:
+          padding: [pt-0, pb-20]
+          textAlign: center
+          justifyContent: center
+          attrs:
+            'data-aos': fade-up
+
+  - type: BrandSlider
+    colors: bg-white-fg-dark
+    styles:
+      self:
+        padding: [pb-20, pt-10, pl-4, pr-4]
+        justifyContent: center
+        alignItems: center
+        borderRadius: none
     
   - type: GenericSection
     __metadata:
