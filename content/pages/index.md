@@ -171,6 +171,10 @@ sections:
       subtitle:
         className: text-xl font-bold text-dark transition duration-300 ease-in-out
           hover:text-[#f97316]
+
+  - type: CustomBlock
+    component: BrandSlider
+    
   - type: GenericSection
     __metadata:
       modelName: GenericSection
