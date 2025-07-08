@@ -1,37 +1,30 @@
 {
-    "type": "Person",
-    "name": "Gunjan Jha",
-    "role": "Co-founder & CEO",
-    "image": {
-        "url": "/images/avatar3.png",
-        "altText": "Gunjan Jha",
-        "styles": {
-            "self": {
-                "borderRadius": "medium",
-                "margin": [
-                    "mb-8"
-                ]
-            }
-        },
-        "type": "ImageBlock"
-    },
-    "colors": "bg-light-fg-dark",
-    "elementId": null,
+  "type": "Person",
+  "name": "Gunjan Jha",
+  "role": "Head – Learning & Development",
+  "image": {
+    "url": "/images/avatar3.png",
+    "altText": "Gunjan Jha",
     "styles": {
-        "self": {
-            "padding": [
-                "pt-6",
-                "pb-6",
-                "pl-6",
-                "pr-6"
-            ],
-            "textAlign": "center",
-            "borderColor": "border-neutral",
-            "borderStyle": "solid",
-            "borderWidth": 0,
-            "borderRadius": "none",
-            "justifyContent": "center"
-        }
+      "self": {
+        "borderRadius": "medium",
+        "margin": ["mb-8"]
+      }
     },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "type": "ImageBlock"
+  },
+  "colors": "bg-light-fg-dark",
+  "elementId": null,
+  "styles": {
+    "self": {
+      "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
+      "textAlign": "center",
+      "borderColor": "border-neutral",
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "borderRadius": "none",
+      "justifyContent": "center"
+    }
+  },
+  "bio": "With 21 years of experience in consulting and training, Gunjan has led workshops for over 27,000 professionals across 60+ companies globally. At Aurrus, he heads Learning & Development, focusing on empowering teams with top-tier management practices and skills."
 }
