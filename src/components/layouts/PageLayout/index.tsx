@@ -11,7 +11,10 @@ export default function PageLayout(props) {
 
     return (
         <BaseLayout page={page} site={site}>
-            <main id="main" className="sb-layout sb-page-layout">
+            <main
+              id="main"
+              className="sb-layout sb-page-layout w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto"
+            >
                 {title && (
                     <h1 className="sr-only" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
                         {title}
