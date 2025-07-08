@@ -17,11 +17,14 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
+      className: text-3xl sm:text-5xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution. Our
       digital‑first strategies scale faster, perform smarter, and deliver
-      measurable outcomes...
+      measurable outcomes. With deep BPO, KPO, and ITeS expertise, we help
+      organizations streamline operations, align teams, and lead with
+      confidence.
     actions:
       - label: Get started
         url: /
@@ -47,13 +50,8 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-      title:
-        className: text-4xl sm:text-5xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
+        padding: [pt-16, pl-16, pb-16, pr-16]
+
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -61,49 +59,78 @@ sections:
     title:
       text: Why Aurrus?
       type: TitleBlock
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
     items:
       - title: Business Strategy Consulting
         subtitle: Transform with Clarity
         text: >
-          We provide strategic guidance to help organizations navigate change...
+          We provide strategic guidance to help organizations navigate change and
+          optimise performance. From business model innovation to operational
+          restructuring and market strategy, our consultants deliver clear,
+          data‑driven solutions.
         image:
           url: /images/icon1.png
           altText: Strategy icon
           type: ImageBlock
-          styles: { self: { className: w-8 h-8 } }
+          styles:
+            self:
+              className: w-8 h-8
         colors: bg-neutralAlt-fg-dark
         styles:
-          self: { padding: [p-8], borderRadius: x-large, flexDirection: row, textAlign: left }
-          subtitle: { className: text-xl font-bold text-dark }
+          self:
+            padding: [p-8]
+            borderRadius: x-large
+            flexDirection: row
+            textAlign: left
+          subtitle:
+            className: text-xl font-bold text-dark break-words
 
       - title: Vision & Values Aligned
         subtitle: Refine Core Structure
         text: >
-          We help organisations build resilience and drive sustainable growth...
+          We help organisations build resilience and drive sustainable growth by
+          reshaping structures, refining governance, and fostering high‑impact
+          leadership. Our tailored approaches ensure alignment between culture,
+          capabilities, and strategic priorities.
         image:
           url: /images/icon2.png
           altText: OD icon
           type: ImageBlock
-          styles: { self: { className: w-8 h-8 } }
+          styles:
+            self:
+              className: w-8 h-8
         colors: bg-neutralAlt-fg-dark
         styles:
-          self: { padding: [p-6], borderRadius: x-large, flexDirection: row, textAlign: left }
-          subtitle: { className: text-xl font-bold text-dark }
+          self:
+            padding: [p-6]
+            borderRadius: x-large
+            flexDirection: row
+            textAlign: left
+          subtitle:
+            className: text-xl font-bold text-dark break-words
 
       - title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
-          We help BPOs optimise operations and drive growth...
+          We help BPOs optimise operations and drive growth by streamlining
+          workflows, improving service delivery, and embedding agile performance
+          models. Our consulting solutions enhance efficiency, boost client
+          satisfaction, and engage the workforce.
         image:
           url: /images/icon3.png
           altText: Advisory icon
           type: ImageBlock
-          styles: { self: { className: w-8 h-8 } }
+          styles:
+            self:
+              className: w-8 h-8
         colors: bg-neutralAlt-fg-dark
         styles:
-          self: { padding: [p-6], borderRadius: x-large, flexDirection: row }
-          subtitle: { className: text-xl font-bold text-dark }
-
+          self:
+            padding: [p-6]
+            borderRadius: x-large
+            flexDirection: row
+          subtitle:
+            className: text-xl font-bold text-dark break-words
     badge:
       label: Client‑Centred Outcomes
       color: text-primary
@@ -120,11 +147,6 @@ sections:
     styles:
       self:
         padding: [pt-16, pb-16, pl-16, pr-16]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
-      subtitle:
-        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-
   - type: GenericSection
     colors: bg-light-fg-dark
     title:
@@ -146,6 +168,8 @@ sections:
         padding: [pb-20, pt-10, pl-4, pr-4]
         justifyContent: center
         alignItems: center
+        borderRadius: none
+
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -153,9 +177,12 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
     text: >
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in
-      strategy, efficiency in execution, and confidence in every decision...
+      strategy, efficiency in execution, and confidence in every decision. Our
+      partnership model yields not just short‑term gains, but long‑term
+      operational strength and market resilience.
     media:
       url: /images/built-impact.png
       altText: Built for Impact image
@@ -170,8 +197,6 @@ sections:
         flexDirection: row
         alignItems: center
         padding: [pt-2, pb-2, pl-8, pr-8]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
 
   - type: GenericSection
     __metadata:
@@ -180,10 +205,12 @@ sections:
     title:
       text: Collaborative with Design
       type: TitleBlock
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: >
       Progress happens when people work together. Aurrus aligns teams through
-      clear communication, shared accountability, and unified execution...
+      clear communication, shared accountability, and unified execution—driving
+      faster results and stronger relationships.
     media:
       url: /images/collab-design.png
       altText: Collaboration image
@@ -194,10 +221,8 @@ sections:
         flexDirection: row
         alignItems: center
         padding: [pt-2, pb-2, pl-8, pr-8]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
+        className: text-xl font-bold text-dark break-words transition duration-300 ease-in-out hover:text-[#f97316]
 
   - type: GenericSection
     __metadata:
@@ -206,6 +231,7 @@ sections:
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
     subtitle: Build high‑performance teams.
     text: >
       From sourcing top‑tier talent to hands‑on onboarding and leadership
@@ -224,11 +250,8 @@ sections:
         alignItems: center
         flexDirection: row
         padding: [pt-8, pb-8, pl-8, pr-8]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark
-
+        className: text-xl font-bold text-dark break-words
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -236,6 +259,7 @@ sections:
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark break-words transition-transform duration-300 hover:scale-105
     subtitle: Optimise and scale.
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS
@@ -254,10 +278,9 @@ sections:
         flexDirection: row-reverse
         alignItems: center
         padding: [pt-8, pb-8, pl-8, pr-8]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-dark transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark
+        className: text-xl font-bold text-dark break-words
+
   - type: DividerSection
     __metadata:
       modelName: DividerSection
@@ -273,12 +296,16 @@ sections:
     title:
       text: Our Expertise
       type: TitleBlock
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary break-words transition-transform duration-300 hover:scale-105
     subtitle: Why should businesses choose Aurrus?
     items:
-      - title: Voice Capabilities
+      - type: FeaturedItem
+        title: Voice Capabilities
         subtitle: Aligned Execution. Lasting Partnerships.
         text: >
-          In-bound Customer Services · Outbound Sales & Support · Technical Support Services...
+          In-bound Customer Services · Outbound Sales & Support
+          Technical Support Services · Order Tracking
+          Escalation Helpdesk · Ticket Management System (TMS)
         image:
           url: /images/voice.png
           altText: voice icon
@@ -289,12 +316,16 @@ sections:
             padding: [p-8]
             borderRadius: x-large
             flexDirection: col md:row
-          subtitle: { className: text-xl font-bold text-dark }
+          subtitle:
+            className: text-xl font-bold text-dark break-words
 
-      - title: Non-Voice/Backing Capabilities
+      - type: FeaturedItem
+        title: Non-Voice/Backing Capabilities
         subtitle: Data-driven support, delivered with precision.
         text: >
-          Chat Support · Email Support · Data Mining · Market Research
+          Chat Support · Email Support  
+          Data Mining / Scrubbing  
+          Market Research & Analysis
         image:
           url: /images/execution.png
           altText: Execution icon
@@ -305,12 +336,17 @@ sections:
             padding: [p-8]
             borderRadius: x-large
             flexDirection: col md:row
-          subtitle: { className: text-xl font-bold text-dark }
+          subtitle:
+            className: text-xl font-bold text-dark break-words
 
-      - title: HR/Training & Development
+      - type: FeaturedItem
+        title: HR/Training & Development
         subtitle: Empowering people. Elevating performance.
         text: >
-          Recruitment · Training · Content Development
+          Recruitment and Staffing Solutions
+          Product/Process Training
+          Content Development
+          Training Delivery
         image:
           url: /images/experience.png
           altText: Experience icon
@@ -321,18 +357,16 @@ sections:
             padding: [p-8]
             borderRadius: x-large
             flexDirection: col md:row
-          subtitle: { className: text-xl font-bold text-dark }
+          subtitle:
+            className: text-xl font-bold text-dark break-words
 
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
       self:
         padding: [pt-16, pb-16, pl-8, pr-8]
-      title:
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary transition-transform duration-300 hover:scale-105
       subtitle:
-        className: text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-[#f97316]
-
+        className: text-xl font-bold text-dark break-words transition duration-300 ease-in-out hover:text-[#f97316]
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
@@ -344,26 +378,67 @@ sections:
         textAlign: center
     html: >
       <div id="contact-form" class="max-w-2xl mx-auto text-center">
-        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]">
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5] break-words">
           Let's Build Something Better Together.
         </h2>
-        <p class="mt-4 text-xl text-[#333]">Start your consultation today!</p>
-        <p class="mt-2 text-md text-[#555]">
-          Ready to streamline operations or rethink strategy? Fill out the form and we’ll respond within 24 hours.
+        <p class="mt-4 text-xl text-[#333]">
+          Start your consultation today!
         </p>
+        <p class="mt-2 text-md text-[#555]">
+          Ready to streamline your operations or rethink strategy? Fill out the form and our team will respond within 24 hours.
+        </p>
+
         <form action="https://formsubmit.co/contact.aurrus@gmail.com" method="POST" class="mt-10 space-y-5 text-left">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="New Contact Submission from Aurrus Website">
           <input type="hidden" name="_next" value="https://aurrusconsulting.com/success">
           <input type="hidden" name="_template" value="box">
           <input type="text" name="_honey" style="display:none">
-          <div><label for="name" class="block mb-2 font-medium text-dark">Name</label><input name="name" id="name" type="text" required class="w-full p-3 rounded-xl border border-gray-300"></div>
-          <div><label for="email" class="block mb-2 font-medium text-dark">Email</label><input name="email" id="email" type="email" required class="w-full p-3 rounded-xl border border-gray-300"></div>
-          <div><label for="purpose" class="block mb-2 font-medium text-dark">Purpose</label><select name="purpose" id="purpose" required class="w-full p-3 rounded-xl border border-gray-300"><option value="" disabled selected>Select a purpose</option><option value="Consultation">Consultation</option><option value="Hiring Inquiry">Hiring Inquiry</option><option value="Partnership">Partnership</option><option value="General Query">General Query</option></select></div>
-          <div><label for="message" class="block mb-2 font-medium text-dark">Message</label><textarea name="message" id="message" rows="5" required class="w-full p-3 rounded-xl border border-gray-300"></textarea></div>
-          <div><label for="captcha" class="block mb-2 font-medium text-dark">What is 4 + 3?</label><input id="captcha" name="captcha" type="text" pattern="7" required class="w-full p-3 rounded-xl border border-gray-300"></div>
-          <button type="submit" class="bg-[#1E88E5] hover:bg-[#f97316] text-white px-6 py-3 rounded-xl">Submit</button>
+
+          <div>
+            <label for="name" class="block mb-2 font-medium text-dark">Name</label>
+            <input name="name" id="name" type="text" placeholder="Your name" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+          </div>
+
+          <div>
+            <label for="email" class="block mb-2 font-medium text-dark">Email</label>
+            <input name="email" id="email" type="email" placeholder="Your email" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+          </div>
+
+          <div>
+            <label for="purpose" class="block mb-2 font-medium text-dark">Purpose</label>
+            <select name="purpose" id="purpose" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+              <option value="" disabled selected>Select a purpose</option>
+              <option value="Consultation">Consultation</option>
+              <option value="Hiring Inquiry">Hiring Inquiry</option>
+              <option value="Partnership">Partnership</option>
+              <option value="General Query">General Query</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block mb-2 font-medium text-dark">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Your message" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none"></textarea>
+          </div>
+
+          <div>
+            <label for="captcha" class="block mb-2 font-medium text-dark">What is 4 + 3? (Captcha)</label>
+            <input id="captcha" name="captcha" type="text" pattern="7" placeholder="Answer" required
+              class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
+          </div>
+
+          <button type="submit"
+            class="bg-[#1E88E5] hover:bg-[#f97316] text-white px-6 py-3 rounded-xl transition duration-300">
+            Submit
+          </button>
         </form>
-        <p class="mt-8 text-sm text-gray-500 italic">We respect your privacy. Your information is safe with us.</p>
+
+        <p class="mt-8 text-sm text-gray-500 italic">
+          We respect your privacy. Your information is safe with us.
+        </p>
       </div>
 ---
