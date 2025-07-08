@@ -4,7 +4,7 @@
     "altText": "Logo dark",
     "styles": {
       "self": {
-        "margin": ["mr-5"]
+        "margin": ["mr-6"]
       }
     },
     "type": "ImageBlock"
@@ -20,8 +20,8 @@
       "styles": {
         "self": {
           "hover": "text-orange-500",
-          "padding": ["px-4", "py-2"],
-          "fontWeight": "font-medium"
+          "padding": ["px-4", "py-2.5"],
+          "fontWeight": "font-semibold"
         }
       }
     },
@@ -36,8 +36,8 @@
       "styles": {
         "self": {
           "hover": "text-orange-500",
-          "padding": ["px-4", "py-2"],
-          "fontWeight": "font-medium"
+          "padding": ["px-4", "py-2.5"],
+          "fontWeight": "font-semibold"
         }
       }
     },
@@ -55,7 +55,8 @@
           "styles": {
             "self": {
               "hover": "text-orange-500",
-              "padding": ["px-4", "py-2"]
+              "padding": ["px-4", "py-2.5"],
+              "fontWeight": "font-medium"
             }
           }
         },
@@ -69,7 +70,8 @@
           "styles": {
             "self": {
               "hover": "text-orange-500",
-              "padding": ["px-4", "py-2"]
+              "padding": ["px-4", "py-2.5"],
+              "fontWeight": "font-medium"
             }
           }
         },
@@ -83,7 +85,8 @@
           "styles": {
             "self": {
               "hover": "text-orange-500",
-              "padding": ["px-4", "py-2"]
+              "padding": ["px-4", "py-2.5"],
+              "fontWeight": "font-medium"
             }
           }
         }
@@ -93,8 +96,8 @@
       "styles": {
         "self": {
           "hover": "text-orange-500",
-          "padding": ["px-4", "py-2"],
-          "fontWeight": "font-medium"
+          "padding": ["px-4", "py-2.5"],
+          "fontWeight": "font-semibold"
         }
       }
     }
@@ -103,7 +106,7 @@
   "colors": "bg-white text-dark",
   "styles": {
     "self": {
-      "padding": ["pt-4", "pb-4"],
+      "padding": ["pt-5", "pb-5", "px-6"],
       "borderWidth": "border-b",
       "borderColor": "border-gray-200",
       "justifyContent": "center",
