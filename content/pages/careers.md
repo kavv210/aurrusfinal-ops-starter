@@ -1,14 +1,19 @@
 ---
 title: Careers
 slug: careers
+type: PageLayout
+__metadata:
+  modelName: PageLayout
+
 sections:
-  - title:
+  - type: GenericSection
+    elementId: hero
+    title:
       text: Partners in Progress, Powered by People
       color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
     subtitle: Built on trust, driven by collaboration, focused on what matters to you.
     text: >
       At **Aurrus**, collaboration fuels everything we do. Our culture is rooted in trust, creativity, and bold ambition — and we believe in empowering each individual to shape not only their role, but the future of the company.
@@ -19,20 +24,6 @@ sections:
         iconPosition: right
         style: primary
         type: Button
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding: [pt-40, pl-6, pb-40, pr-6]
-        alignItems: center
-        flexDirection: row-reverse
-        justifyContent: center
-        attrs:
-          'data-aos': fade-down
-      text:
-        textAlign: center
-      subtitle:
-        textAlign: center
-    type: GenericSection
     backgroundImage:
       type: BackgroundImage
       altText: abstract team image
@@ -41,6 +32,19 @@ sections:
       backgroundRepeat: no-repeat
       opacity: 100
       url: /images/abstract-background.svg
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding: [pt-32, pb-32, pl-6, pr-6]
+        alignItems: center
+        justifyContent: center
+        flexDirection: row-reverse
+        attrs:
+          'data-aos': fade-down
+      text:
+        textAlign: center
+      subtitle:
+        textAlign: center
 
   - type: GenericSection
     text: '<hr class="w-full border border-gray-300 mb-8" />'
@@ -49,13 +53,13 @@ sections:
         padding: [pt-0, pb-0, pl-0, pr-0]
     colors: bg-transparent-fg-dark
 
-  - title:
+  - type: FeaturedPeopleSection
+    title:
       text: Meet the team
       color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
     people:
       - content/data/person1.json
       - content/data/person2.json
@@ -64,13 +68,10 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-16, pl-16, pb-16, pr-16]
+        padding: [pt-20, pb-20, pl-6, pr-6]
         justifyContent: center
         attrs:
-          'data-aos': fade-down
-      subtitle:
-        textAlign: center
-    type: FeaturedPeopleSection
+          'data-aos': fade-up
 
   - type: GenericSection
     text: '<hr class="w-full border border-gray-300 mb-8" />'
@@ -79,27 +80,14 @@ sections:
         padding: [pt-0, pb-0, pl-0, pr-0]
     colors: bg-transparent-fg-dark
 
-  - title:
+  - type: GenericSection
+    elementId: office-location
+    title:
       text: Our Office Location
       color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
-    type: GenericSection
-    elementId: office-location
-    styles:
-      self:
-        padding: [pt-20, pb-20, pl-6, pr-6]
-        alignItems: center
-        justifyContent: center
-        borderRadius: x-large
-        boxShadow: xl
-        backgroundColor: '#fff8f0'
-        attrs:
-          'data-aos': fade-down
-      text:
-        textAlign: center
     text: |
       <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; padding: 24px;">
         <div style="flex: 1 1 300px; max-width: 400px; text-align: left;">
@@ -118,6 +106,14 @@ sections:
         </div>
       </div>
     colors: bg-neutral-fg-dark
+    styles:
+      self:
+        padding: [pt-32, pb-32, pl-6, pr-6]
+        borderRadius: x-large
+        boxShadow: xl
+        backgroundColor: '#fff8f0'
+        attrs:
+          'data-aos': fade-down
 
   - type: GenericSection
     text: '<hr class="w-full border border-gray-300 mb-8" />'
@@ -126,15 +122,15 @@ sections:
         padding: [pt-0, pb-0, pl-0, pr-0]
     colors: bg-transparent-fg-dark
 
-  - title:
+  - type: FeaturedItemsSection
+    elementId: open-roles
+    title:
       text: Open positions
       color: text-dark
       styles:
         self:
           textAlign: center
-      type: TitleBlock
     subtitle: Come build with us
-    elementId: open-roles
     items:
       - title: Account Executive
         subtitle: Sales
@@ -143,14 +139,12 @@ sections:
         colors: bg-neutral-fg-dark
         styles:
           self:
-            padding: [pt-8, pl-8, pb-8, pr-8]
-            textAlign: left
+            padding: [pt-8, pb-8, pl-8, pr-8]
             borderRadius: x-large
             flexDirection: row
             justifyContent: center
             attrs:
-              'data-aos': fade-down
-        type: FeaturedItem
+              'data-aos': fade-up
       - title: Open Source Engineer
         subtitle: Marketing
         text: >
@@ -158,14 +152,12 @@ sections:
         colors: bg-neutral-fg-dark
         styles:
           self:
-            padding: [pt-8, pl-8, pb-8, pr-8]
-            textAlign: left
+            padding: [pt-8, pb-8, pl-8, pr-8]
             borderRadius: x-large
             flexDirection: row
             justifyContent: center
             attrs:
-              'data-aos': fade-down
-        type: FeaturedItem
+              'data-aos': fade-up
       - title: Senior Software Engineer
         subtitle: Engineering
         text: >
@@ -173,12 +165,12 @@ sections:
         colors: bg-neutral-fg-dark
         styles:
           self:
-            padding: [pt-8, pl-8, pb-8, pr-8]
+            padding: [pt-8, pb-8, pl-8, pr-8]
             borderRadius: x-large
             flexDirection: row
+            justifyContent: center
             attrs:
-              'data-aos': fade-down
-        type: FeaturedItem
+              'data-aos': fade-up
     actions:
       - label: Visit headquarters
         url: "#office-location"
@@ -190,16 +182,14 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pb-40, pt-16, pl-3, pr-3]
+        padding: [pt-32, pb-40, pl-6, pr-6]
         justifyContent: center
       subtitle:
         textAlign: center
-    type: FeaturedItemsSection
 
 seo:
   metaTitle: Careers – Aurrus Consulting
   metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas, and growing together.
   socialImage: /images/main-hero.jpg
   type: Seo
-type: PageLayout
 ---
