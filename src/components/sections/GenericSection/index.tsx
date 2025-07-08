@@ -43,6 +43,9 @@ export default function GenericSection(props) {
             <div
                 className={classNames(
                     'w-full',
+                    'max-w-screen-xl',
+                    'px-4 sm:px-6 lg:px-8',
+                    'mx-auto',
                     'flex',
                     mapFlexDirectionStyles(flexDirection, hasTextContent, hasMedia),
                     mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' }),
