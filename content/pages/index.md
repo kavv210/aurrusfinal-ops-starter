@@ -180,9 +180,6 @@ sections:
       color: text-dark
       styles:
         self:
-          textAlign: center
-      styles:
-        self:
           padding: [pt-0, pb-20]
           textAlign: center
           justifyContent: center
