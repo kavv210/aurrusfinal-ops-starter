@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -36,11 +38,17 @@ export default function Header(props) {
 
 function HeaderContent(props) {
   const { title, logo, primaryLinks = [], secondaryLinks = [], enableAnnotations, colors = 'bg-light-fg-dark' } = props;
+
   return (
-    <div className="relative flex items-center justify-between">
-      <div className="flex items-center gap-x-10">
+    <div className="relative flex items-center justify-between h-16">
+      {/* Logo (Left) */}
+      <div className="flex items-center z-20">
         <SiteLogoLink title={title} logo={logo} enableAnnotations={enableAnnotations} />
-        {primaryLinks.length > 0 && (
+      </div>
+
+      {/* Centered Primary Nav */}
+      {primaryLinks.length > 0 && (
+        <div className="absolute left-1/2 -translate-x-1/2 z-10">
           <ul
             className="hidden lg:flex items-center gap-x-10 text-[1.075rem]"
             {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })}
@@ -49,19 +57,23 @@ function HeaderContent(props) {
               <NavLink link={link} key={index} enableAnnotations={enableAnnotations} colors={colors} />
             ))}
           </ul>
-        )}
-      </div>
-      {secondaryLinks.length > 0 && (
-        <ul
-          className="hidden lg:flex items-center gap-x-4 text-[1.075rem]"
-          {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}
-        >
-          {secondaryLinks.map((link, index) => (
-            <NavLink link={link} key={index} enableAnnotations={enableAnnotations} colors={colors} />
-          ))}
-        </ul>
+        </div>
       )}
-      {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+
+      {/* Right Side: Secondary Links or Mobile Menu */}
+      <div className="flex items-center ml-auto z-20">
+        {secondaryLinks.length > 0 && (
+          <ul
+            className="hidden lg:flex items-center gap-x-4 text-[1.075rem]"
+            {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })}
+          >
+            {secondaryLinks.map((link, index) => (
+              <NavLink link={link} key={index} enableAnnotations={enableAnnotations} colors={colors} />
+            ))}
+          </ul>
+        )}
+        {(primaryLinks.length > 0 || secondaryLinks.length > 0) && <MobileMenu {...props} />}
+      </div>
     </div>
   );
 }
@@ -93,8 +105,7 @@ function NavLink({ link, enableAnnotations, colors }) {
       <button
         className={classNames(
           'inline-flex items-center gap-x-1 transition-colors',
-          'hover:text-primary',
-          link.labelStyle === 'secondary' ? 'text-gray-600' : 'text-black'
+          'text-blue-600 hover:text-orange-500 font-medium'
         )}
       >
         {link.label}
@@ -103,7 +114,7 @@ function NavLink({ link, enableAnnotations, colors }) {
       {isSubNav && isOpen && (
         <ul
           className={classNames(
-            'absolute left-0 top-full mt-2 w-44 rounded-lg bg-white shadow-lg z-50 border border-gray-200 py-2 text-sm',
+            'absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 rounded-lg bg-white shadow-lg z-50 border border-gray-200 py-2 text-sm',
             colors
           )}
         >
@@ -134,10 +145,14 @@ function MobileMenu(props) {
 
   return (
     <div className="lg:hidden ml-auto">
-      <button onClick={() => {
-        setIsMenuOpen(true);
-        document.body.style.overflow = 'hidden';
-      }} aria-label="Open Menu" className="p-2">
+      <button
+        onClick={() => {
+          setIsMenuOpen(true);
+          document.body.style.overflow = 'hidden';
+        }}
+        aria-label="Open Menu"
+        className="p-2"
+      >
         <MenuIcon className="w-6 h-6 fill-current" />
       </button>
       <div
