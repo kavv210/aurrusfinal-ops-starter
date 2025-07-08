@@ -9,6 +9,7 @@ const brands = [
   '/images/brand4.png',
   '/images/brand5.png',
   '/images/brand6.png'
+  '/images/brand7.png'
 ];
 
 export default function BrandSlider() {
