@@ -8,7 +8,7 @@ const brands = [
   '/images/brand3.png',
   '/images/brand4.png',
   '/images/brand5.png',
-  '/images/brand6.png'
+  '/images/brand6.png',
   '/images/brand7.png'
 ];
 
