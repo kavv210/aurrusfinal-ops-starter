@@ -17,8 +17,7 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E88E5]
-        break-words transition-transform duration-300 hover:scale-105
+      className: text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution. Our
@@ -51,11 +50,8 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
+        padding: [pt-12, pb-12, pl-8, pr-8]
+        
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -247,8 +243,8 @@ sections:
         flexDirection: row
         alignItems: center
         padding:
-          - pt-2
-          - pb-2
+          - pt-4
+          - pb-4
           - pl-8
           - pr-8
   - type: GenericSection
@@ -275,8 +271,8 @@ sections:
         flexDirection: row
         alignItems: center
         padding:
-          - pt-2
-          - pb-2
+          - pt-4
+          - pb-4
           - pl-8
           - pr-8
       subtitle:
