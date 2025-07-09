@@ -17,7 +17,8 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution. Our
@@ -50,8 +51,11 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding: [pt-16, pl-16, pb-16, pr-16]
-
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -59,7 +63,8 @@ sections:
     title:
       text: Why Aurrus?
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     items:
       - title: Business Strategy Consulting
         subtitle: Transform with Clarity
@@ -78,13 +83,13 @@ sections:
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: row
             textAlign: left
           subtitle:
             className: text-xl font-bold text-[#1E88E5] break-words
-
       - title: Vision & Values Aligned
         subtitle: Refine Core Structure
         text: >
@@ -102,13 +107,13 @@ sections:
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-6]
+            padding:
+              - p-6
             borderRadius: x-large
             flexDirection: row
             textAlign: left
           subtitle:
             className: text-xl font-bold text-[#1E88E5] break-words
-
       - title: Program & Project Advisory
         subtitle: Deliver with Precision
         text: >
@@ -126,7 +131,8 @@ sections:
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
-            padding: [p-6]
+            padding:
+              - p-6
             borderRadius: x-large
             flexDirection: row
           subtitle:
@@ -146,7 +152,11 @@ sections:
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-16, pl-16, pr-16]
+        padding:
+          - pt-16
+          - pb-16
+          - pl-16
+          - pr-16
   - type: GenericSection
     colors: bg-light-fg-dark
     title:
@@ -155,21 +165,60 @@ sections:
       color: text-[#1E88E5]
       styles:
         self:
-          padding: [pt-0, pb-20]
+          padding:
+            - pt-0
+            - pb-20
           textAlign: center
           justifyContent: center
           attrs:
-            'data-aos': fade-up
-
-  - type: BrandSlider
-    colors: bg-white-fg-dark
+            data-aos: fade-up
+  - type: GenericSection
+    title:
+      text: The Brands That Trust Us
+      color: text-[#1E88E5]
+      type: TitleBlock
+      styles:
+        self:
+          textAlign: center
+          padding:
+            - pt-4
+            - pb-0
+  - type: ImageGallerySection
+    subtitle: Aurrus has worked with various Award-Winning enterprises.
+    images:
+      - url: /images/brand1.png
+        altText: Logo 1
+        type: ImageBlock
+      - url: /images/brand2.png
+        altText: Logo 2
+        type: ImageBlock
+      - url: /images/brand3.png
+        altText: Logo 3
+        type: ImageBlock
+      - url: /images/brand4.png
+        altText: Logo 4
+        type: ImageBlock
+      - url: /images/brand5.png
+        altText: Logo 5
+        type: ImageBlock
+      - url: /images/brand6.png
+        altText: Logo 6
+        type: ImageBlock
+      - url: /images/brand7.png
+        altText: Logo 7
+        type: ImageBlock
+    motion: fade-left
+    colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pb-20, pt-10, pl-4, pr-4]
         justifyContent: center
-        alignItems: center
-        borderRadius: none
-
+        padding:
+          - pt-8
+          - pb-8
+          - pl-4
+          - pr-4
+      subtitle:
+        textAlign: center
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -177,7 +226,8 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     text: >
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in
       strategy, efficiency in execution, and confidence in every decision. Our
@@ -196,8 +246,11 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        padding: [pt-2, pb-2, pl-8, pr-8]
-
+        padding:
+          - pt-2
+          - pb-2
+          - pl-8
+          - pr-8
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -205,7 +258,8 @@ sections:
     title:
       text: Collaborative with Design
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: >
       Progress happens when people work together. Aurrus aligns teams through
@@ -220,10 +274,14 @@ sections:
       self:
         flexDirection: row
         alignItems: center
-        padding: [pt-2, pb-2, pl-8, pr-8]
+        padding:
+          - pt-2
+          - pb-2
+          - pl-8
+          - pr-8
       subtitle:
-        className: text-xl font-bold text-[#1E88E5] break-words transition duration-300 ease-in-out hover:text-[#f97316]
-
+        className: text-xl font-bold text-[#1E88E5] break-words transition duration-300
+          ease-in-out hover:text-[#f97316]
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -231,7 +289,8 @@ sections:
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     subtitle: Build high‑performance teams.
     text: >
       From sourcing top‑tier talent to hands‑on onboarding and leadership
@@ -249,7 +308,11 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding: [pt-8, pb-8, pl-8, pr-8]
+        padding:
+          - pt-8
+          - pb-8
+          - pl-8
+          - pr-8
       subtitle:
         className: text-xl font-bold text-[#1E88E5] break-words
   - type: GenericSection
@@ -259,7 +322,8 @@ sections:
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     subtitle: Optimise and scale.
     text: >
       We guide end‑to‑end process transformation across BPO, KPO, and ITeS
@@ -277,18 +341,21 @@ sections:
       self:
         flexDirection: row-reverse
         alignItems: center
-        padding: [pt-8, pb-8, pl-8, pr-8]
+        padding:
+          - pt-8
+          - pb-8
+          - pl-8
+          - pr-8
       subtitle:
         className: text-xl font-bold text-[#1E88E5] break-words
-
   - type: DividerSection
     __metadata:
       modelName: DividerSection
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [p-7]
-
+        padding:
+          - p-7
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -296,77 +363,65 @@ sections:
     title:
       text: Our Expertise
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary
+        break-words transition-transform duration-300 hover:scale-105
     subtitle: Why should businesses choose Aurrus?
     items:
       - type: FeaturedItem
         title: Voice Capabilities
         subtitle: Aligned Execution. Lasting Partnerships.
         text: >
-          In-bound Customer Services · Outbound Sales & Support
-          Technical Support Services · Order Tracking
-          Escalation Helpdesk · Ticket Management System (TMS)
-        image:
-          url: /images/voice.png
-          altText: voice icon
-          type: ImageBlock
-        colors: bg-light-fg-dark
+          In-bound Customer Services · Outbound Sales & Support Technical Support
+          Services · Order Tracking Escalation Helpdesk · Ticket Management
+          System (TMS)
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
             className: text-xl font-bold text-[#1E88E5] break-words
-
       - type: FeaturedItem
         title: Non-Voice/Backing Capabilities
         subtitle: Data-driven support, delivered with precision.
         text: >
-          Chat Support · Email Support  
-          Data Mining / Scrubbing  
-          Market Research & Analysis
-        image:
-          url: /images/execution.png
-          altText: Execution icon
-          type: ImageBlock
-        colors: bg-light-fg-dark
+          Chat Support · Email Support   Data Mining / Scrubbing   Market Research &
+          Analysis
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
             className: text-xl font-bold text-[#1E88E5] break-words
-
       - type: FeaturedItem
         title: HR/Training & Development
         subtitle: Empowering people. Elevating performance.
         text: >
-          Recruitment and Staffing Solutions
-          Product/Process Training
-          Content Development
-          Training Delivery
-        image:
-          url: /images/experience.png
-          altText: Experience icon
-          type: ImageBlock
-        colors: bg-light-fg-dark
+          Recruitment and Staffing Solutions Product/Process Training Content
+          Development Training Delivery
         styles:
           self:
-            padding: [p-8]
+            padding:
+              - p-8
             borderRadius: x-large
             flexDirection: col md:row
           subtitle:
             className: text-xl font-bold text-[#1E88E5] break-words
-
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
       self:
-        padding: [pt-16, pb-16, pl-8, pr-8]
+        padding:
+          - pt-16
+          - pb-16
+          - pl-8
+          - pr-8
       subtitle:
-        className: text-xl font-bold text-[#1E88E5] break-words transition duration-300 ease-in-out hover:text-[#f97316]
+        className: text-xl font-bold text-[#1E88E5] break-words transition duration-300
+          ease-in-out hover:text-[#f97316]
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
@@ -374,7 +429,11 @@ sections:
     colors: bg-light-fg-dark
     styles:
       self:
-        padding: [pt-20, pb-20, pl-8, pr-8]
+        padding:
+          - pt-20
+          - pb-20
+          - pl-8
+          - pr-8
         textAlign: center
     html: >
       <div id="contact-form" class="max-w-2xl mx-auto text-center">
@@ -426,7 +485,7 @@ sections:
           </div>
 
           <div>
-            <label for="captcha" class="block mb-2 font-medium text-[#1E88E5]">What is 4 + 3? (Captcha)</label>
+            <label for="captcha" class="block mb-2 font-medium text-[#1E88E5]">What is 4 + 3? (Captcha!)</label>
             <input id="captcha" name="captcha" type="text" pattern="7" placeholder="Answer" required
               class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f97316] focus:outline-none">
           </div>
@@ -441,4 +500,5 @@ sections:
           We respect your privacy. Your information is safe with us.
         </p>
       </div>
+
 ---
