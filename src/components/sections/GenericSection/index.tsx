@@ -40,7 +40,7 @@ export default function GenericSection(props) {
             styles={styles?.self}
             {...getDataAttrs(props)}
         >
-            <div className="w-full max-w-screen-xl px-3 sm:px-4 lg:px-6 mx-auto">
+            <div className="w-full max-w-screen-xl px-2 sm:px-3 lg:px-4 mx-auto">
                 <div
                     className={classNames(
                         'w-full',
