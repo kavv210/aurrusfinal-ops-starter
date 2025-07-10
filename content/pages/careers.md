@@ -9,7 +9,7 @@ sections:
     elementId: hero
     title:
       text: Partners in Progress, Powered by People
-      color: text-dark
+      color: text-[#2D65B0]
       styles:
         self:
           textAlign: center
@@ -17,7 +17,7 @@ sections:
     text: >
       Started in 2011, we have a combined experince of over 40+ years. At
       **Aurrus**, collaboration fuels everything we do. Our culture is rooted in
-      trust, creativity, and  bold ambition — and we believe in empowering each
+      trust, creativity, and bold ambition — and we believe in empowering each
       individual to shape not only their role, but the future of the company.
     actions:
       - label: See open positions
@@ -51,6 +51,7 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
+
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -61,6 +62,7 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
+
   - type: FeaturedPeopleSection
     title:
       text: Meet the team
@@ -84,6 +86,7 @@ sections:
         justifyContent: center
         attrs:
           data-aos: fade-up
+
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -94,6 +97,7 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
+
   - type: GenericSection
     elementId: office-location
     title:
@@ -103,26 +107,22 @@ sections:
         self:
           textAlign: center
     text: >
-      <div class="mx-auto max-w-6xl px-4 md:px-6">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-10">
-          <div class="w-full md:w-1/2 text-center md:text-left space-y-2">
-            <strong class="block text-xl font-semibold text-gray-800">Aurrus HQ</strong>
-            <p class="text-gray-700">
-              J‑42, Lajpat Nagar‑II, Central Market<br/>
-              New Delhi, Delhi – 110024<br/><br/>
-              📞 +91‑9311066457<br/>
-              ✉️ contact.aurrus@gmail.com<br/><br/>
-              <em>Open Mon–Sat, 10 AM – 6 PM</em>
-            </p>
-          </div>
-          <div class="w-full md:w-1/2">
-            <div class="w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-xl">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0501091289057!2d77.24076807432647!3d28.568257975699936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b2808ffe1b%3A0xec1f022224013392!2sJ-42%2C%20near%20Home%20Saaz%2C%20Block%20J%2C%20Lajpat%20Nagar%20II%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1751796978098!5m2!1sen!2sin"
-               width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
+      <div class="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start px-6">
+        <div class="space-y-4 text-left">
+          <strong class="block text-lg font-semibold text-gray-800">Aurrus HQ</strong>
+          <p class="text-gray-700">
+            J‑42, Lajpat Nagar‑II, Central Market<br/>
+            New Delhi, Delhi – 110024<br/><br/>
+            📞 +91‑9311066457<br/>
+            ✉️ contact.aurrus@gmail.com<br/><br/>
+            <em>Open Mon–Sat, 10 AM – 6 PM</em>
+          </p>
+        </div>
+        <div class="w-full rounded-xl overflow-hidden shadow-xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0501091289057!2d77.24076807432647!3d28.568257975699936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b2808ffe1b%3A0xec1f022224013392!2sJ-42%2C%20near%20Home%20Saaz%2C%20Block%20J%2C%20Lajpat%20Nagar%20II%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1751796978098!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     colors: bg-neutral-fg-dark
@@ -137,7 +137,7 @@ sections:
         boxShadow: xl
         backgroundColor: "#fff8f0"
         attrs:
-          data-aos: fade-up
+          data-aos: fade-down
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -148,6 +148,7 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
+
   - type: FeaturedItemsSection
     elementId: open-roles
     title:
@@ -231,11 +232,11 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+
 seo:
   metaTitle: Careers – Aurrus Consulting
   metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas,
     and growing together.
   socialImage: /images/main-hero.jpg
   type: Seo
-
 ---
