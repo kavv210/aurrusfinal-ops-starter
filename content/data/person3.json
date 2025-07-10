@@ -13,9 +13,9 @@
     "type": "ImageBlock",
     "styles": {
       "self": {
-        "width": "w-32",
-        "height": "h-32",
-        "borderRadius": "full",
+        "width": "w-[748px]",
+        "height": "h-[843px]",
+        "borderRadius": "xl",
         "margin": ["mb-4"],
         "objectFit": "cover",
         "backgroundColor": "bg-white"
@@ -34,5 +34,5 @@
       "justifyContent": "center"
     }
   },
-  "bio": "Gunjan has over 21 years of experience as a consultant and trainer across India and international markets. At Aurrus, he leads Learning & Development, ensuring teams are equipped with cutting-edge skills and best practices."
+  "bio": "Gunjan has worked as a Consultant/Trainer for various national and multinational companies across India, Sri Lanka, Philippines, Russia and Poland. Spanning over a period of 21 years, at Aurrus, Gunjan is responsible for leading the learning services unit and ensuring that our workforce is equipped with knowledge and best-in-class management practices to deliver their best to our clients."
 }
