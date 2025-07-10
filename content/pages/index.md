@@ -78,7 +78,7 @@ sections:
           type: ImageBlock
           styles:
             self:
-              className: w-6 h-6 sm:w-8 sm:h-8
+              className: w-4 h-4 sm:w-6 sm:h-6
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
@@ -102,7 +102,7 @@ sections:
           type: ImageBlock
           styles:
             self:
-              className: w-6 h-6 sm:w-8 sm:h-8
+              className: w-4 h-4 sm:w-6 sm:h-6
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
@@ -126,7 +126,7 @@ sections:
           type: ImageBlock
           styles:
             self:
-              className: w-6 h-6 sm:w-8 sm:h-8
+              className: w-4 h-4 sm:w-6 sm:h-6
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
