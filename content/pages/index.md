@@ -38,7 +38,7 @@ sections:
       type: ImageBlock
       styles:
         self:
-          width: w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px]
+          width: w-[360px] sm:w-[420px] md:w-[520px] lg:w-[600px]
           height: h-auto
           objectFit: object-contain
     badge:
