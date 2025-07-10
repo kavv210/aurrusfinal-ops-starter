@@ -1,13 +1,17 @@
 {
   "name": "Deeksha Gera",
-  "role": "Head - Operations",
+  "role": "Head – Operations",
+  "roleStyles": {
+    "self": {
+      "className": "font-semibold text-lg text-gray-800"
+    }
+  },
   "image": {
     "url": "/images/avatar1.png",
     "altText": "Deeksha Gera",
     "styles": {
       "self": {
-        "borderRadius": "medium",
-        "margin": ["mb-8"]
+        "className": "w-40 h-40 object-cover rounded-full mx-auto mb-6"
       }
     },
     "type": "ImageBlock"
