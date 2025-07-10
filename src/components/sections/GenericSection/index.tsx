@@ -40,115 +40,133 @@ export default function GenericSection(props) {
             styles={styles?.self}
             {...getDataAttrs(props)}
         >
-            <div
-                className={classNames(
-                    'w-full',
-                    'max-w-screen-xl',
-                    'px-2 sm:px-3 lg:px-4',
-                    'mx-auto',
-                    'flex',
-                    mapFlexDirectionStyles(flexDirection, hasTextContent, hasMedia),
-                    mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' }),
-                    hasMedia && hasTextContent && hasXDirection ? mapAlignItemsStyles(alignItems) : undefined,
-                    'gap-x-12',
-                    'gap-y-16'
-                )}
-                {...(motion && { 'data-aos': motion })}
-            >
-                {/* LEFT/TOP: TEXT CONTENT */}
-                {hasTextContent && (
-                    <div
-                        className={classNames('w-full', 'max-w-sectionBody', {
-                            'lg:max-w-[27.5rem]': hasMedia && hasXDirection
-                        })}
-                    >
-                        {badge && (
-                            <Badge {...badge} {...(enableAnnotations && { 'data-sb-field-path': '.badge' })} />
-                        )}
+            <div className="w-full max-w-screen-xl px-3 sm:px-4 lg:px-6 mx-auto">
+                <div
+                    className={classNames(
+                        'w-full',
+                        'flex',
+                        mapFlexDirectionStyles(flexDirection, hasTextContent, hasMedia),
+                        mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' }),
+                        hasMedia && hasTextContent && hasXDirection ? mapAlignItemsStyles(alignItems) : undefined,
+                        'gap-x-12',
+                        'gap-y-16'
+                    )}
+                    {...(motion && { 'data-aos': motion })}
+                >
+                    {/* TEXT SIDE */}
+                    {hasTextContent && (
+                        <div
+                            className={classNames('w-full', 'max-w-sectionBody', {
+                                'lg:max-w-[27.5rem]': hasMedia && hasXDirection
+                            })}
+                        >
+                            {badge && (
+                                <Badge
+                                    {...badge}
+                                    {...(enableAnnotations && { 'data-sb-field-path': '.badge' })}
+                                />
+                            )}
 
-                        {title && (
-                            <TitleBlock
-                                {...title}
-                                className={classNames(
-                                    title.className,
-                                    { 'mt-4': badge?.label }
-                                )}
-                                {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
+                            {title && (
+                                <TitleBlock
+                                    {...title}
+                                    className={classNames(title.className, {
+                                        'mt-4': badge?.label
+                                    })}
+                                    {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
+                                />
+                            )}
+
+                            {subtitle && (
+                                <p
+                                    className={classNames(
+                                        'text-lg sm:text-2xl',
+                                        styles?.subtitle ? mapStyles(styles?.subtitle) : undefined,
+                                        { 'mt-4': badge?.label || title?.text }
+                                    )}
+                                    {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
+                                >
+                                    {subtitle}
+                                </p>
+                            )}
+
+                            {text && (
+                                <Markdown
+                                    options={{ forceBlock: true, forceWrapper: true }}
+                                    className={classNames(
+                                        'sb-markdown sm:text-lg',
+                                        styles?.text ? mapStyles(styles?.text) : undefined,
+                                        { 'mt-6': badge?.label || title?.text || subtitle }
+                                    )}
+                                    {...(enableAnnotations && { 'data-sb-field-path': '.text' })}
+                                >
+                                    {text}
+                                </Markdown>
+                            )}
+
+                            {actions.length > 0 && (
+                                <div
+                                    className={classNames(
+                                        'flex flex-wrap items-center gap-4',
+                                        mapStyles({
+                                            justifyContent: styles?.self?.justifyContent ?? 'flex-start'
+                                        }),
+                                        {
+                                            'mt-8':
+                                                badge?.label || title?.text || subtitle || text
+                                        }
+                                    )}
+                                    {...(enableAnnotations && { 'data-sb-field-path': '.actions' })}
+                                >
+                                    {actions.map((action, index) => (
+                                        <Action
+                                            key={index}
+                                            {...action}
+                                            className="lg:whitespace-nowrap"
+                                            {...(enableAnnotations && {
+                                                'data-sb-field-path': `.${index}`
+                                            })}
+                                        />
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    )}
+
+                    {/* MEDIA SIDE */}
+                    {hasMedia && (
+                        <div
+                            className={classNames(
+                                'w-full flex',
+                                mapStyles({
+                                    justifyContent: styles?.self?.justifyContent ?? 'flex-start'
+                                }),
+                                {
+                                    'max-w-sectionBody':
+                                        media.__metadata?.modelName === 'FormBlock',
+                                    'lg:w-[57.5%] lg:shrink-0':
+                                        hasTextContent && hasXDirection,
+                                    'lg:mt-10':
+                                        badge?.label &&
+                                        media.__metadata?.modelName === 'FormBlock' &&
+                                        hasXDirection
+                                }
+                            )}
+                        >
+                            <Media
+                                media={media}
+                                hasAnnotations={enableAnnotations}
                             />
-                        )}
-
-                        {subtitle && (
-                            <p
-                                className={classNames(
-                                    'text-lg sm:text-2xl',
-                                    styles?.subtitle ? mapStyles(styles?.subtitle) : undefined,
-                                    { 'mt-4': badge?.label || title?.text }
-                                )}
-                                {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
-                            >
-                                {subtitle}
-                            </p>
-                        )}
-
-                        {text && (
-                            <Markdown
-                                options={{ forceBlock: true, forceWrapper: true }}
-                                className={classNames(
-                                    'sb-markdown sm:text-lg',
-                                    styles?.text ? mapStyles(styles?.text) : undefined,
-                                    { 'mt-6': badge?.label || title?.text || subtitle }
-                                )}
-                                {...(enableAnnotations && { 'data-sb-field-path': '.text' })}
-                            >
-                                {text}
-                            </Markdown>
-                        )}
-
-                        {actions.length > 0 && (
-                            <div
-                                className={classNames(
-                                    'flex flex-wrap items-center gap-4',
-                                    mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }),
-                                    { 'mt-8': badge?.label || title?.text || subtitle || text }
-                                )}
-                                {...(enableAnnotations && { 'data-sb-field-path': '.actions' })}
-                            >
-                                {actions.map((action, index) => (
-                                    <Action
-                                        key={index}
-                                        {...action}
-                                        className="lg:whitespace-nowrap"
-                                        {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
-                                    />
-                                ))}
-                            </div>
-                        )}
-                    </div>
-                )}
-
-                {/* RIGHT/BOTTOM: MEDIA */}
-                {hasMedia && (
-                    <div
-                        className={classNames(
-                            'w-full flex',
-                            mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }),
-                            {
-                                'max-w-sectionBody': media.__metadata.modelName === 'FormBlock',
-                                'lg:w-[57.5%] lg:shrink-0': hasTextContent && hasXDirection,
-                                'lg:mt-10': badge?.label && media.__metadata.modelName === 'FormBlock' && hasXDirection
-                            }
-                        )}
-                    >
-                        <Media media={media} hasAnnotations={enableAnnotations} />
-                    </div>
-                )}
+                        </div>
+                    )}
+                </div>
             </div>
         </Section>
     );
 }
 
 function Media({ media, hasAnnotations }: { media: any; hasAnnotations: boolean }) {
-    const modelName = media.__metadata.modelName;
+    const modelName = media.__metadata?.modelName;
     if (!modelName) {
         throw new Error(`generic section media does not have the 'modelName' property`);
     }
@@ -156,15 +174,24 @@ function Media({ media, hasAnnotations }: { media: any; hasAnnotations: boolean 
     if (!MediaComponent) {
         throw new Error(`no component matching the generic section media model name: ${modelName}`);
     }
-    return <MediaComponent {...media} {...(hasAnnotations && { 'data-sb-field-path': '.media' })} />;
+    return (
+        <MediaComponent
+            {...media}
+            {...(hasAnnotations && { 'data-sb-field-path': '.media' })}
+        />
+    );
 }
 
 function mapFlexDirectionStyles(flexDirection: string, hasTextContent: boolean, hasMedia: boolean) {
     switch (flexDirection) {
         case 'row':
-            return hasTextContent && hasMedia ? 'flex-col lg:flex-row lg:justify-between' : 'flex-col';
+            return hasTextContent && hasMedia
+                ? 'flex-col lg:flex-row lg:justify-between'
+                : 'flex-col';
         case 'row-reverse':
-            return hasTextContent && hasMedia ? 'flex-col lg:flex-row-reverse lg:justify-between' : 'flex-col';
+            return hasTextContent && hasMedia
+                ? 'flex-col lg:flex-row-reverse lg:justify-between'
+                : 'flex-col';
         case 'col':
             return 'flex-col';
         case 'col-reverse':
