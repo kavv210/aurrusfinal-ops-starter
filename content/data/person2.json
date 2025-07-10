@@ -11,7 +11,9 @@
         "width": "w-32",
         "height": "h-32",
         "borderRadius": "full",
-        "margin": ["mb-4"]
+        "margin": ["mb-4"],
+        "objectFit": "cover",
+        "backgroundColor": "bg-white"
       }
     }
   },
