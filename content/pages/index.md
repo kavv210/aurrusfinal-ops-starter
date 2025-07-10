@@ -51,10 +51,10 @@ sections:
         alignItems: center
         flexDirection: row
         padding:
-          - pt-16
-          - pb-16
-          - pl-16
-          - pr-16
+          - pt-4
+          - pb-4
+          - pl-8
+          - pr-8
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -63,7 +63,7 @@ sections:
       text: Why Aurrus?
       type: TitleBlock
       className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
-        break-words transition-transform duration-300 hover:scale-105
+        transition-transform duration-300 hover:scale-105
     items:
       - title: Business Strategy Consulting
         subtitle: Transform with Clarity
@@ -152,11 +152,21 @@ sections:
     styles:
       self:
         padding:
-          - pt-16
-          - pb-16
-          - pl-16
-          - pr-16
+          - pt-4
+          - pb-4
+          - pl-8
+          - pr-8
           - null
+
+  - type: DividerSection
+    __metadata:
+      modelName: DividerSection
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - p-7
+    
   - type: BrandSlider
     __metadata:
       modelName: BrandSlider
@@ -178,6 +188,16 @@ sections:
           textAlign: center
         subtitle:
           className: text-center text-lg text-gray-700 max-w-3xl mx-auto
+
+  - type: DividerSection
+    __metadata:
+      modelName: DividerSection
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - p-7
+    
   - type: GenericSection
     __metadata:
       modelName: GenericSection
