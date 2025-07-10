@@ -51,7 +51,6 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
-
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -62,7 +61,6 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
-
   - type: FeaturedPeopleSection
     title:
       text: Meet the team
@@ -86,7 +84,6 @@ sections:
         justifyContent: center
         attrs:
           data-aos: fade-up
-
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -97,9 +94,11 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
-
   - type: GenericSection
+    __metadata:
+      modelName: GenericSection
     elementId: office-location
+    motion: fade-down
     title:
       text: Our Office Location
       color: text-dark
@@ -107,37 +106,46 @@ sections:
         self:
           textAlign: center
     text: >
-      <div class="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start px-6">
-        <div class="space-y-4 text-left">
+      <div class="mx-auto max-w-6xl flex flex-col md:flex-row gap-8
+      justify-center items-center px-4">
+        <div class="flex-1 max-w-md text-center md:text-left space-y-4">
           <strong class="block text-lg font-semibold text-gray-800">Aurrus HQ</strong>
           <p class="text-gray-700">
             J‑42, Lajpat Nagar‑II, Central Market<br/>
-            New Delhi, Delhi – 110024<br/><br/>
+            New Delhi, Delhi – 110024
+          </p>
+          <p class="text-gray-700">
             📞 +91‑9311066457<br/>
-            ✉️ contact.aurrus@gmail.com<br/><br/>
+            ✉️ contact.aurrus@gmail.com
+          </p>
+          <p class="text-gray-700">
             <em>Open Mon–Sat, 10 AM – 6 PM</em>
           </p>
         </div>
-        <div class="w-full rounded-xl overflow-hidden shadow-xl">
+        <div class="flex-1 max-w-xl w-full shadow-xl overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0501091289057!2d77.24076807432647!3d28.568257975699936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b2808ffe1b%3A0xec1f022224013392!2sJ-42%2C%20near%20Home%20Saaz%2C%20Block%20J%2C%20Lajpat%20Nagar%20II%2C%20Lajpat%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1751796978098!5m2!1sen!2sin"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14016.812907460232!2d77.2380377!3d28.5726441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c192e25b11%3A0x7c7e73ae727c2f75!2sLajpat%20Nagar%20II%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1690999999999"
+            width="100%"
+            height="320"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-full"
+          ></iframe>
         </div>
       </div>
-    colors: bg-neutral-fg-dark
     styles:
       self:
         padding:
-          - pt-24
-          - pb-24
+          - pt-20
+          - pb-20
           - pl-6
           - pr-6
-        borderRadius: x-large
-        boxShadow: xl
-        backgroundColor: "#fff8f0"
-        attrs:
-          data-aos: fade-down
+        justifyContent: center
+        alignItems: center
+        textAlign: center
+    colors: bg-light-fg-dark
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -148,7 +156,6 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
-
   - type: FeaturedItemsSection
     elementId: open-roles
     title:
@@ -232,11 +239,12 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-
 seo:
   metaTitle: Careers – Aurrus Consulting
   metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas,
     and growing together.
   socialImage: /images/main-hero.jpg
   type: Seo
+
 ---
+null
