@@ -19,48 +19,55 @@ export default function BrandSlider() {
     const container = containerRef.current;
     if (!container) return;
 
-    // Tripling the brand icons for infinite scroll illusion
-    container.innerHTML += container.innerHTML + container.innerHTML;
-
+    let scrollAmount = 0;
     const speed = 0.5;
-    let frame: number;
+    let frameId: number;
 
-    const autoScroll = () => {
-      if (container) {
-        container.scrollLeft += speed;
-        if (container.scrollLeft >= container.scrollWidth / 3) {
-          container.scrollLeft = 0;
-        }
+    const scroll = () => {
+      if (!container) return;
+
+      container.scrollLeft += speed;
+      scrollAmount += speed;
+
+      if (scrollAmount >= container.scrollWidth / 2) {
+        container.scrollLeft = 0;
+        scrollAmount = 0;
       }
-      frame = requestAnimationFrame(autoScroll);
+
+      frameId = requestAnimationFrame(scroll);
     };
 
-    frame = requestAnimationFrame(autoScroll);
-    return () => cancelAnimationFrame(frame);
+    frameId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(frameId);
   }, []);
 
   return (
-    <div
-      className="relative w-full rounded-xl bg-white p-8 overflow-hidden shadow-md"
-      data-aos="fade-down"
-    >
-      <h3 className="text-center text-3xl sm:text-4xl font-semibold text-gray-800 mb-6">
-        The Brands That Trust Us
-      </h3>
+    <div className="relative w-full py-16 px-4">
+      {/* Background block */}
+      <div className="relative rounded-xl bg-[rgba(255,255,255,0.85)] shadow-md px-6 py-12 overflow-hidden">
+        <h3 className="text-center text-3xl sm:text-4xl font-semibold text-gray-800 mb-10">
+          The Brands That Trust Us
+        </h3>
 
-      <div className="overflow-hidden">
-        <div
-          ref={containerRef}
-          className="flex whitespace-nowrap space-x-10"
-        >
-          {brands.map((src, idx) => (
-            <img
-              key={idx}
-              src={src}
-              alt={`Brand ${idx + 1}`}
-              className="h-12 w-auto object-contain inline-block"
-            />
-          ))}
+        {/* Gradient Fade Edges */}
+        <div className="absolute top-0 left-0 h-full w-16 bg-gradient-to-r from-white/90 via-white/60 to-transparent pointer-events-none z-10 rounded-l-xl" />
+        <div className="absolute top-0 right-0 h-full w-16 bg-gradient-to-l from-white/90 via-white/60 to-transparent pointer-events-none z-10 rounded-r-xl" />
+
+        {/* Scrolling container */}
+        <div className="overflow-hidden">
+          <div
+            ref={containerRef}
+            className="flex whitespace-nowrap space-x-10"
+          >
+            {[...brands, ...brands].map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`Brand ${idx + 1}`}
+                className="h-12 w-auto object-contain inline-block"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
