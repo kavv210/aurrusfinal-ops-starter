@@ -9,7 +9,20 @@ import { Action, Badge } from '../../atoms';
 import TitleBlock from '../../blocks/TitleBlock';
 
 export default function FeaturedItemsSection(props) {
-    const { elementId, colors, backgroundImage, badge, title, subtitle, items = [], actions = [], variant, styles = {}, enableAnnotations } = props;
+    const {
+        elementId,
+        colors,
+        backgroundImage,
+        badge,
+        title,
+        subtitle,
+        items = [],
+        actions = [],
+        variant,
+        styles = {},
+        enableAnnotations
+    } = props;
+
     return (
         <Section
             elementId={elementId}
@@ -19,56 +32,81 @@ export default function FeaturedItemsSection(props) {
             styles={styles?.self}
             {...getDataAttrs(props)}
         >
-            <div className={classNames('w-full', 'flex', 'flex-col', mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' }))}>
-                {badge && <Badge {...badge} className="w-full max-w-sectionBody" {...(enableAnnotations && { 'data-sb-field-path': '.badge' })} />}
-                {title && (
-                    <TitleBlock
-                        {...title}
-                        className={classNames('w-full', 'max-w-sectionBody', { 'mt-4': badge?.label })}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
+            <div className="w-full max-w-screen-xl px-3 sm:px-4 lg:px-6 mx-auto">
+                <div
+                    className={classNames(
+                        'w-full',
+                        'flex',
+                        'flex-col',
+                        mapStyles({ alignItems: styles?.self?.justifyContent ?? 'flex-start' })
+                    )}
+                >
+                    {badge && (
+                        <Badge
+                            {...badge}
+                            className="w-full max-w-sectionBody"
+                            {...(enableAnnotations && { 'data-sb-field-path': '.badge' })}
+                        />
+                    )}
+                    {title && (
+                        <TitleBlock
+                            {...title}
+                            className={classNames('w-full', 'max-w-sectionBody', {
+                                'mt-4': badge?.label
+                            })}
+                            {...(enableAnnotations && { 'data-sb-field-path': '.title' })}
+                        />
+                    )}
+                    {subtitle && (
+                        <p
+                            className={classNames(
+                                'w-full',
+                                'max-w-sectionBody',
+                                'text-lg',
+                                'sm:text-2xl',
+                                styles?.subtitle ? mapStyles(styles?.subtitle) : undefined,
+                                {
+                                    'mt-4': badge?.label || title?.text
+                                }
+                            )}
+                            {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
+                        >
+                            {subtitle}
+                        </p>
+                    )}
+
+                    <FeaturedItemVariants
+                        variant={variant}
+                        items={items}
+                        hasTopMargin={!!(badge?.label || title?.text || subtitle)}
+                        hasSectionTitle={!!title?.text}
+                        hasAnnotations={enableAnnotations}
                     />
-                )}
-                {subtitle && (
-                    <p
-                        className={classNames(
-                            'w-full',
-                            'max-w-sectionBody',
-                            'text-lg',
-                            'sm:text-2xl',
-                            styles?.subtitle ? mapStyles(styles?.subtitle) : undefined,
-                            {
-                                'mt-4': badge?.label || title?.text
-                            }
-                        )}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
-                    >
-                        {subtitle}
-                    </p>
-                )}
-                <FeaturedItemVariants
-                    variant={variant}
-                    items={items}
-                    hasTopMargin={!!(badge?.label || title?.text || subtitle)}
-                    hasSectionTitle={!!title?.text}
-                    hasAnnotations={enableAnnotations}
-                />
-                {actions.length > 0 && (
-                    <div
-                        className={classNames('flex', 'flex-wrap', 'items-center', 'gap-4', {
-                            'mt-12': badge?.label || title?.text || subtitle || items.length > 0
-                        })}
-                        {...(enableAnnotations && { 'data-sb-field-path': '.actions' })}
-                    >
-                        {actions.map((action, index) => (
-                            <Action
-                                key={index}
-                                {...action}
-                                className="lg:whitespace-nowrap"
-                                {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
-                            />
-                        ))}
-                    </div>
-                )}
+
+                    {actions.length > 0 && (
+                        <div
+                            className={classNames(
+                                'flex',
+                                'flex-wrap',
+                                'items-center',
+                                'gap-4',
+                                {
+                                    'mt-12': badge?.label || title?.text || subtitle || items.length > 0
+                                }
+                            )}
+                            {...(enableAnnotations && { 'data-sb-field-path': '.actions' })}
+                        >
+                            {actions.map((action, index) => (
+                                <Action
+                                    key={index}
+                                    {...action}
+                                    className="lg:whitespace-nowrap"
+                                    {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
         </Section>
     );
@@ -90,88 +128,116 @@ function FeaturedItemVariants(props) {
     }
 }
 
-function FeaturedItemsThreeColGrid(props) {
-    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
-    if (items.length === 0) {
-        return null;
-    }
+function FeaturedItemsThreeColGrid({ items = [], hasTopMargin, hasSectionTitle, hasAnnotations }) {
+    if (items.length === 0) return null;
     const FeaturedItem = getComponent('FeaturedItem');
     return (
         <div
-            className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', 'lg:grid-cols-3', { 'mt-12': hasTopMargin })}
+            className={classNames(
+                'w-full',
+                'grid',
+                'gap-10',
+                'sm:grid-cols-2',
+                'lg:grid-cols-3',
+                { 'mt-12': hasTopMargin }
+            )}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <FeaturedItem
+                    key={index}
+                    {...item}
+                    hasSectionTitle={hasSectionTitle}
+                    {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+                />
             ))}
         </div>
     );
 }
 
-function FeaturedItemsTwoColGrid(props) {
-    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
-    if (items.length === 0) {
-        return null;
-    }
+function FeaturedItemsTwoColGrid({ items = [], hasTopMargin, hasSectionTitle, hasAnnotations }) {
+    if (items.length === 0) return null;
     const FeaturedItem = getComponent('FeaturedItem');
     return (
         <div
-            className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', { 'mt-12': hasTopMargin })}
+            className={classNames('w-full', 'grid', 'gap-10', 'sm:grid-cols-2', {
+                'mt-12': hasTopMargin
+            })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <FeaturedItem
+                    key={index}
+                    {...item}
+                    hasSectionTitle={hasSectionTitle}
+                    {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+                />
             ))}
         </div>
     );
 }
 
-function FeaturedItemsSmallList(props) {
-    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
-    if (items.length === 0) {
-        return null;
-    }
+function FeaturedItemsSmallList({ items = [], hasTopMargin, hasSectionTitle, hasAnnotations }) {
+    if (items.length === 0) return null;
     const FeaturedItem = getComponent('FeaturedItem');
     return (
         <div
-            className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-10', { 'mt-12': hasTopMargin })}
+            className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-10', {
+                'mt-12': hasTopMargin
+            })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <FeaturedItem
+                    key={index}
+                    {...item}
+                    hasSectionTitle={hasSectionTitle}
+                    {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+                />
             ))}
         </div>
     );
 }
 
-function FeaturedItemsBigList(props) {
-    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
-    if (items.length === 0) {
-        return null;
-    }
+function FeaturedItemsBigList({ items = [], hasTopMargin, hasSectionTitle, hasAnnotations }) {
+    if (items.length === 0) return null;
     const FeaturedItem = getComponent('FeaturedItem');
     return (
-        <div className={classNames('w-full', 'grid', 'gap-10', { 'mt-12': hasTopMargin })} {...(hasAnnotations && { 'data-sb-field-path': '.items' })}>
+        <div
+            className={classNames('w-full', 'grid', 'gap-10', {
+                'mt-12': hasTopMargin
+            })}
+            {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
+        >
             {items.map((item, index) => (
-                <FeaturedItem key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <FeaturedItem
+                    key={index}
+                    {...item}
+                    hasSectionTitle={hasSectionTitle}
+                    {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+                />
             ))}
         </div>
     );
 }
 
-function FeaturedItemsToggleList(props) {
-    const { items = [], hasTopMargin, hasSectionTitle, hasAnnotations } = props;
-    if (items.length === 0) {
-        return null;
-    }
+function FeaturedItemsToggleList({ items = [], hasTopMargin, hasSectionTitle, hasAnnotations }) {
+    if (items.length === 0) return null;
     const FeaturedItemToggle = getComponent('FeaturedItemToggle');
     return (
         <div
-            className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-6', { 'mt-12': hasTopMargin })}
+            className={classNames('w-full', 'max-w-3xl', 'grid', 'gap-6', {
+                'mt-12': hasTopMargin
+            })}
             {...(hasAnnotations && { 'data-sb-field-path': '.items' })}
         >
             {items.map((item, index) => (
-                <FeaturedItemToggle key={index} {...item} hasSectionTitle={hasSectionTitle} {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })} />
+                <FeaturedItemToggle
+                    key={index}
+                    {...item}
+                    hasSectionTitle={hasSectionTitle}
+                    {...(hasAnnotations && { 'data-sb-field-path': `.${index}` })}
+                />
             ))}
         </div>
     );
