@@ -17,8 +17,7 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: text-6xl sm:text-7xl font-bold tracking-tight text-[#1E88E5]
-        break-words transition-transform duration-300 hover:scale-105
+      className: text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#1E88E5] transition-transform duration-300 hover:scale-105 max-w-4xl mx-auto px-2
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution. Our
