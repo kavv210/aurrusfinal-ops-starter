@@ -20,7 +20,7 @@ sections:
       trust, creativity, and bold ambition — and we believe in empowering each
       individual to shape not only their role, but the future of the company.
     actions:
-      - label: See open positions
+      - label: Explore Infra
         url: "#open-roles"
         icon: arrowRight
         iconPosition: right
@@ -126,7 +126,7 @@ sections:
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14016.812907460232!2d77.2380377!3d28.5726441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c192e25b11%3A0x7c7e73ae727c2f75!2sLajpat%20Nagar%20II%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1690999999999"
             width="100%"
-            height="320"
+            height="100%"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
@@ -159,18 +159,19 @@ sections:
   - type: FeaturedItemsSection
     elementId: open-roles
     title:
-      text: Open positions
+      text: Our IT Infrastructure
       color: text-dark
       styles:
         self:
           textAlign: center
-    subtitle: Come build with us
+    subtitle: Our tech backbone keeps everything moving.
     items:
-      - title: Account Executive
-        subtitle: Sales
+      - title: Massive Capacity
+        subtitle: 100+ systems, ready to scale.
         text: >
-          Work directly with clients and help us drive value and impact through
-          tailored solutions and communication.
+         We’ve designed our infrastructure to effortlessly handle high-volume workloads with more than 100 fully-equipped workstations.
+         Whether scaling support teams or handling large projects, our setup ensures uninterrupted productivity without bottlenecks.
+         Each station is optimized for speed, reliability, and seamless integration into voice and non-voice workflows.
         colors: bg-neutral-fg-dark
         styles:
           self:
@@ -184,11 +185,12 @@ sections:
             justifyContent: center
             attrs:
               data-aos: fade-up
-      - title: Open Source Engineer
-        subtitle: Marketing
+      - title: Enterprise-Ready Tech Stack
+        subtitle: Built with CISCO, Siemens, ININ & HP.
         text: >
-          Help us shape our open-source ecosystem with creative contributions and
-          build our developer community.
+          We heavily rely on industry-grade hardware and software — including CISCO routers, Siemens switches, ININ predictive dialers, and HP servers;
+          to create a robust and scalable environment. This ensures consistent performance and enterprise-level reliability across all operations,
+          even under demanding workloads. Our infrastructure is built to adapt, expand, and deliver without compromise.
         colors: bg-neutral-fg-dark
         styles:
           self:
@@ -202,11 +204,12 @@ sections:
             justifyContent: center
             attrs:
               data-aos: fade-up
-      - title: Senior Software Engineer
-        subtitle: Engineering
+      - title: Secured Connectivity & Communication
+        subtitle: Private, stable, and built for performance.
         text: >
-          Join our engineering core to design scalable backend systems and next-gen
-          frontend tools at global scale.
+          At Aurrus, every call and every connection runs on a dedicated SIP trunk network, ensuring seamless voice quality and reliable internet access.
+          Paired with enterprise-grade VPN protocols like IPSEC, PPTP, and L2TP, our infrastructure is designed for total data privacy
+          and uninterrupted communication — keeping your operations secure, efficient, and compliant at all times.
         colors: bg-neutral-fg-dark
         styles:
           self:
