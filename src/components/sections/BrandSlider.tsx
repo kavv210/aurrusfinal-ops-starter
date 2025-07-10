@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const brands = [
@@ -15,6 +15,7 @@ const brands = [
 
 export default function BrandSlider() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const scroll = (dir: 'left' | 'right') => {
     const container = containerRef.current;
@@ -31,26 +32,33 @@ export default function BrandSlider() {
     let frame: number;
 
     const autoScroll = () => {
-      if (!container) return;
-      container.scrollLeft += speed;
-      // loop scroll
-      if (container.scrollLeft >= container.scrollWidth / 2) {
-        container.scrollLeft = 0;
+      if (!isHovered && container) {
+        container.scrollLeft += speed;
+        if (container.scrollLeft >= container.scrollWidth / 2) {
+          container.scrollLeft = 0;
+        }
       }
       frame = requestAnimationFrame(autoScroll);
     };
 
     frame = requestAnimationFrame(autoScroll);
     return () => cancelAnimationFrame(frame);
-  }, []);
+  }, [isHovered]);
 
   return (
-    <div className="relative w-full rounded-xl bg-white p-8 overflow-hidden shadow-md" data-aos="fade-down">
+    <div
+      className="relative w-full rounded-xl bg-white p-8 overflow-hidden shadow-md"
+      data-aos="fade-down"
+    >
       <h3 className="text-center text-2xl font-semibold text-gray-800 mb-6">
         The Brands That Trust Us
       </h3>
 
-      <div className="relative">
+      <div
+        className="relative"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div
           ref={containerRef}
           className="flex space-x-8 overflow-x-auto scrollbar-none snap-x snap-mandatory scroll-smooth"
