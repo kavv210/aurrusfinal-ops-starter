@@ -13,7 +13,12 @@
     "type": "ImageBlock",
     "styles": {
       "self": {
-        "className": "w-[748px] h-[843px] object-cover mb-4 bg-white"
+        "width": "w-[748px]",
+        "height": "h-[843px]",
+        "objectFit": "cover",
+        "borderRadius": "xl",
+        "margin": ["mb-4"],
+        "backgroundColor": "bg-white"
       }
     }
   },
