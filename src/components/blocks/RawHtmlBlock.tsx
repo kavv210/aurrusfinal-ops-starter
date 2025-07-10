@@ -16,11 +16,14 @@ const RawHtmlBlock: React.FC<RawHtmlBlockProps> = ({ html, styles, colors = '', 
   if (!html) return null;
 
   return (
-    <div
-      className={`${colors} ${styles?.self?.className ?? ''}`}
-      data-aos={motion}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <div className={colors} data-aos={motion}>
+      <div className="w-full max-w-screen-xl px-3 sm:px-4 lg:px-6 mx-auto">
+        <div
+          className={styles?.self?.className ?? ''}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </div>
+    </div>
   );
 };
 
