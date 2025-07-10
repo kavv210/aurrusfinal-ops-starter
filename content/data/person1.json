@@ -1,4 +1,5 @@
 {
+  "type": "Person",
   "name": "Deeksha Gera",
   "role": "Head – Operations",
   "roleStyles": {
@@ -9,12 +10,15 @@
   "image": {
     "url": "/images/avatar1.png",
     "altText": "Deeksha Gera",
+    "type": "ImageBlock",
     "styles": {
       "self": {
-        "className": "w-40 h-40 object-cover rounded-full mx-auto mb-6"
+        "width": "w-32",
+        "height": "h-32",
+        "borderRadius": "full",
+        "margin": ["mb-4"]
       }
-    },
-    "type": "ImageBlock"
+    }
   },
   "colors": "bg-light-fg-dark",
   "styles": {
@@ -28,6 +32,5 @@
       "justifyContent": "center"
     }
   },
-  "type": "Person",
   "bio": "Deeksha has worked with many prominent companies in the outsourcing world and been part of International Airlines (British Airways, Delta, UA and American Airlines). She started her entrepreneur journey in the year 2011 and started Aurrus as an outsourcing, staffing and recruitment firm. She has an overall experience of more than 15 years, and also owns a D2C baby clothing brand in India."
 }
