@@ -16,7 +16,7 @@
         "width": "w-[748px]",
         "height": "h-[843px]",
         "objectFit": "cover",
-        "borderRadius": "xl",
+        "borderRadius": "rounded-xl",
         "margin": ["mb-4"],
         "backgroundColor": "bg-white"
       }
