@@ -17,7 +17,7 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+      className: text-6xl sm:text-7xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
