@@ -15,7 +15,7 @@
       "self": {
         "width": "w-[748px]",
         "height": "h-[843px]",
-        "borderRadius": "xl",
+        "borderRadius": "rounded-xl",
         "margin": ["mb-4"],
         "objectFit": "cover",
         "backgroundColor": "bg-white"
