@@ -10,15 +10,17 @@
   "image": {
     "url": "/images/avatar3.png",
     "altText": "Gunjan Jha",
+    "type": "ImageBlock",
     "styles": {
       "self": {
-        "className": "w-40 h-40 object-cover rounded-full mx-auto mb-6"
+        "width": "w-32",
+        "height": "h-32",
+        "borderRadius": "full",
+        "margin": ["mb-4"]
       }
-    },
-    "type": "ImageBlock"
+    }
   },
   "colors": "bg-light-fg-dark",
-  "elementId": null,
   "styles": {
     "self": {
       "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
