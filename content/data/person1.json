@@ -13,16 +13,17 @@
     "type": "ImageBlock",
     "styles": {
       "self": {
-        "width": "w-32",
-        "height": "h-32",
-        "borderRadius": "full",
-        "margin": ["mb-4"],
+        "width": "w-[748px]",
+        "height": "h-[843px]",
         "objectFit": "cover",
+        "borderRadius": "xl",
+        "margin": ["mb-4"],
         "backgroundColor": "bg-white"
       }
     }
   },
   "colors": "bg-light-fg-dark",
+  "elementId": null,
   "styles": {
     "self": {
       "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
