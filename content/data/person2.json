@@ -32,7 +32,11 @@
       "borderStyle": "solid",
       "borderWidth": 0,
       "borderRadius": "none",
-      "justifyContent": "center"
+      "justifyContent": "center",
+      "attrs": {
+        "data-aos": "fade-down",
+        "data-aos-delay": "150"
+      }
     }
   },
   "bio": "Deepakk has been part of the outsourcing world for the last 21 years. He has headed and managed various verticals starting from Technology, Telecom, Enterprise, Back-office, and Logistics. He has worked at leadership level with companies like Amazon, Convergys, Sitel, and ICICI.\n\nAt Aurrus, Deepakk is heading Business Engagement and Client Relations."
