@@ -17,7 +17,8 @@ sections:
     title:
       text: Accelerate Growth With Aurrus.
       type: TitleBlock
-      className: text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1E88E5] break-words transition-transform duration-300 hover:scale-105
+      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        break-words transition-transform duration-300 hover:scale-105
     subtitle: Where strategy meets speed.
     text: >
       At Aurrus Consulting, we connect bold ambition with precise execution. Our
@@ -50,8 +51,11 @@ sections:
       self:
         alignItems: center
         flexDirection: row
-        padding: [pt-12, pb-12, pl-8, pr-8]
-        
+        padding:
+          - pt-16
+          - pb-16
+          - pl-16
+          - pr-16
   - type: FeaturedItemsSection
     __metadata:
       modelName: FeaturedItemsSection
@@ -153,68 +157,28 @@ sections:
           - pb-16
           - pl-16
           - pr-16
-  - type: GenericSection
-    colors: bg-light-fg-dark
-    title:
-      text: The Brands that Trust Us
-      type: TitleBlock
-      color: text-[#1E88E5]
+          - null
+  - type: BrandSlider
+    __metadata:
+      modelName: BrandSlider
+      motion: fade-down
+      title:
+        text: The Brands That Trust Us
+        type: TitleBlock
+        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+          text-center mb-6
+      subtitle: Aurrus has worked with various award-winning enterprises.
+      colors: bg-light-fg-dark
       styles:
         self:
           padding:
-            - pt-0
+            - pt-20
             - pb-20
+            - pl-6
+            - pr-6
           textAlign: center
-          justifyContent: center
-          attrs:
-            data-aos: fade-up
-  - type: GenericSection
-    title:
-      text: The Brands That Trust Us
-      color: text-[#1E88E5]
-      type: TitleBlock
-      styles:
-        self:
-          textAlign: center
-          padding:
-            - pt-4
-            - pb-0
-  - type: ImageGallerySection
-    subtitle: Aurrus has worked with various Award-Winning enterprises.
-    images:
-      - url: /images/brand1.png
-        altText: Logo 1
-        type: ImageBlock
-      - url: /images/brand2.png
-        altText: Logo 2
-        type: ImageBlock
-      - url: /images/brand3.png
-        altText: Logo 3
-        type: ImageBlock
-      - url: /images/brand4.png
-        altText: Logo 4
-        type: ImageBlock
-      - url: /images/brand5.png
-        altText: Logo 5
-        type: ImageBlock
-      - url: /images/brand6.png
-        altText: Logo 6
-        type: ImageBlock
-      - url: /images/brand7.png
-        altText: Logo 7
-        type: ImageBlock
-    motion: fade-left
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-        padding:
-          - pt-8
-          - pb-8
-          - pl-4
-          - pr-4
-      subtitle:
-        textAlign: center
+        subtitle:
+          className: text-center text-lg text-gray-700 max-w-3xl mx-auto
   - type: GenericSection
     __metadata:
       modelName: GenericSection
