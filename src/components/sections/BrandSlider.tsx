@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
 
 const brands = [
   '/images/brand1.png',
@@ -15,26 +14,21 @@ const brands = [
 
 export default function BrandSlider() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const scroll = (dir: 'left' | 'right') => {
-    const container = containerRef.current;
-    if (!container) return;
-    const amount = container.offsetWidth / 1.5;
-    container.scrollBy({ left: dir === 'left' ? -amount : amount, behavior: 'smooth' });
-  };
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
+    // Tripling the brand icons for infinite scroll illusion
+    container.innerHTML += container.innerHTML + container.innerHTML;
+
     const speed = 0.5;
     let frame: number;
 
     const autoScroll = () => {
-      if (!isHovered && container) {
+      if (container) {
         container.scrollLeft += speed;
-        if (container.scrollLeft >= container.scrollWidth / 2) {
+        if (container.scrollLeft >= container.scrollWidth / 3) {
           container.scrollLeft = 0;
         }
       }
@@ -43,48 +37,31 @@ export default function BrandSlider() {
 
     frame = requestAnimationFrame(autoScroll);
     return () => cancelAnimationFrame(frame);
-  }, [isHovered]);
+  }, []);
 
   return (
     <div
       className="relative w-full rounded-xl bg-white p-8 overflow-hidden shadow-md"
       data-aos="fade-down"
     >
-      <h3 className="text-center text-2xl font-semibold text-gray-800 mb-6">
+      <h3 className="text-center text-3xl sm:text-4xl font-semibold text-gray-800 mb-6">
         The Brands That Trust Us
       </h3>
 
-      <div
-        className="relative"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
+      <div className="overflow-hidden">
         <div
           ref={containerRef}
-          className="flex space-x-8 overflow-x-auto scrollbar-none snap-x snap-mandatory scroll-smooth"
+          className="flex whitespace-nowrap space-x-10"
         >
-          {[...brands, ...brands].map((src, idx) => (
-            <div key={idx} className="flex-shrink-0 snap-center">
-              <img src={src} alt={`Brand ${idx + 1}`} className="h-16 w-auto object-contain" />
-            </div>
+          {brands.map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              alt={`Brand ${idx + 1}`}
+              className="h-12 w-auto object-contain inline-block"
+            />
           ))}
         </div>
-
-        {/* Left arrow */}
-        <button
-          onClick={() => scroll('left')}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white backdrop-blur-sm p-2 rounded-full shadow z-10 transition"
-        >
-          <ChevronLeft className="w-5 h-5 text-gray-700" />
-        </button>
-
-        {/* Right arrow */}
-        <button
-          onClick={() => scroll('right')}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/60 hover:bg-white backdrop-blur-sm p-2 rounded-full shadow z-10 transition"
-        >
-          <ChevronRight className="w-5 h-5 text-gray-700" />
-        </button>
       </div>
     </div>
   );
