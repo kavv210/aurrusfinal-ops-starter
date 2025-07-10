@@ -1,14 +1,18 @@
 {
   "type": "Person",
   "name": "Deepakk S Geraa",
-  "role": "Head - Business Engagement",
+  "role": "Head – Business Engagement",
+  "roleStyles": {
+    "self": {
+      "className": "font-semibold text-lg text-gray-800"
+    }
+  },
   "image": {
     "url": "/images/avatar2.png",
     "altText": "Deepakk S Geraa",
     "styles": {
       "self": {
-        "borderRadius": "medium",
-        "margin": ["mb-8"]
+        "className": "w-40 h-40 object-cover rounded-full mx-auto mb-6"
       }
     },
     "type": "ImageBlock"
