@@ -62,7 +62,7 @@ sections:
     title:
       text: Why Aurrus?
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     items:
       - title: Business Strategy Consulting
@@ -164,7 +164,7 @@ sections:
       title:
         text: The Brands That Trust Us
         type: TitleBlock
-        className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+        className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
           text-center mb-6
       subtitle: Aurrus has worked with various award-winning enterprises.
       colors: bg-light-fg-dark
@@ -185,7 +185,7 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     text: >
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in
@@ -217,7 +217,7 @@ sections:
     title:
       text: Collaborative with Design
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: >
@@ -248,7 +248,7 @@ sections:
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Build high‑performance teams.
     text: >
@@ -281,7 +281,7 @@ sections:
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E88E5]
+      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Optimise and scale.
     text: >
@@ -322,15 +322,15 @@ sections:
     title:
       text: Our Expertise
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-extrabold tracking-tight text-primary
+      className: text-3xl sm:text-4xl font-bold tracking-tight text-primary
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Why should businesses choose Aurrus?
     items:
       - type: FeaturedItem
-        title: Voice Capabilities
+        title: Advanced Voice Capabilities
         subtitle: Aligned Execution. Lasting Partnerships.
         text: >
-          In-bound Customer Services · Outbound Sales & Support Technical Support
+          In-bound Customer Services · Outbound Sales Support · Technical Support
           Services · Order Tracking Escalation Helpdesk · Ticket Management
           System (TMS)
         styles:
@@ -345,8 +345,8 @@ sections:
         title: Non-Voice/Backing Capabilities
         subtitle: Data-driven support, delivered with precision.
         text: >
-          Chat Support · Email Support   Data Mining / Scrubbing   Market Research &
-          Analysis
+          Chat Support · Email Support · Data Mining / Scrubbing · Market Research &
+          Analysis · Document Management · Knowledge Base Curation 
         styles:
           self:
             padding:
@@ -359,8 +359,9 @@ sections:
         title: HR/Training & Development
         subtitle: Empowering people. Elevating performance.
         text: >
-          Recruitment and Staffing Solutions Product/Process Training Content
-          Development Training Delivery
+          · Recruitment and Staffing Solutions · Product/Process Training
+          · Content Development · Performance Evaluation Support
+          
         styles:
           self:
             padding:
@@ -389,10 +390,10 @@ sections:
     styles:
       self:
         padding:
-          - pt-20
-          - pb-20
-          - pl-8
-          - pr-8
+          - pt-24
+          - pb-24
+          - pl-10
+          - pr-10
         textAlign: center
     html: >
       <div id="contact-form" class="max-w-2xl mx-auto text-center">
