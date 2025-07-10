@@ -44,7 +44,7 @@ export default function GenericSection(props) {
                 className={classNames(
                     'w-full',
                     'max-w-screen-xl',
-                    'px-4 sm:px-6 lg:px-8',
+                    'px-3 sm:px-4 lg:px-6',
                     'mx-auto',
                     'flex',
                     mapFlexDirectionStyles(flexDirection, hasTextContent, hasMedia),
