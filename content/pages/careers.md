@@ -83,7 +83,7 @@ sections:
           - pr-6
         justifyContent: center
         attrs:
-          data-aos: fade-up
+          data-aos: fade-down
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -94,7 +94,7 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
-    
+
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -122,15 +122,12 @@ sections:
             <em>Open Mon–Sat, 10 AM – 6 PM</em>
           </p>
         </div>
-
-        <!-- Responsive Square Map -->
         <div class="flex-1 w-full max-w-xl">
-          <div class="relative pb-[100%] h-0 overflow-hidden rounded-xl shadow-xl">
+          <div class="relative aspect-[1/1] h-auto overflow-hidden rounded-xl shadow-xl">
             <iframe
               title="Google Map showing Aurrus HQ location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14016.812907460232!2d77.2380377!3d28.5726441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c192e25b11%3A0x7c7e73ae727c2f75!2sLajpat%20Nagar%20II%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1690999999999"
-              class="absolute top-0 left-0 w-full h-full rounded-xl"
-              frameborder="0"
+              class="w-full h-full rounded-xl border-0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -149,7 +146,6 @@ sections:
         alignItems: center
         textAlign: center
     colors: bg-light-fg-dark
-    
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -160,6 +156,7 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
+
   - type: FeaturedItemsSection
     elementId: open-roles
     title:
@@ -173,9 +170,9 @@ sections:
       - title: Massive Capacity
         subtitle: 100+ systems, ready to scale.
         text: >
-         We’ve designed our infrastructure to effortlessly handle high-volume workloads with more than 100 fully-equipped workstations.
-         Whether scaling support teams or handling large projects, our setup ensures uninterrupted productivity without bottlenecks.
-         Each station is optimized for speed, reliability, and seamless integration into voice and non-voice workflows.
+          We’ve designed our infrastructure to effortlessly handle high-volume workloads with more than 100 fully-equipped workstations.
+          Whether scaling support teams or handling large projects, our setup ensures uninterrupted productivity without bottlenecks.
+          Each station is optimized for speed, reliability, and seamless integration into voice and non-voice workflows.
         colors: bg-neutral-fg-dark
         styles:
           self:
@@ -246,12 +243,10 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+
 seo:
   metaTitle: Careers – Aurrus Consulting
-  metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas,
-    and growing together.
+  metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas, and growing together.
   socialImage: /images/main-hero.jpg
   type: Seo
-
 ---
-null
