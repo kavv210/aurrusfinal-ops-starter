@@ -1,8 +1,8 @@
 {
   "type": "Person",
   "name": "Gunjan Jha",
-  "role": "Head – Learning & Development",
-  "roleStyles": {
+  "role": "**Head – Learning & Development**",
+  "styles": {
     "self": {
       "className": "font-semibold text-lg text-gray-800"
     }
@@ -31,7 +31,11 @@
       "borderStyle": "solid",
       "borderWidth": 0,
       "borderRadius": "none",
-      "justifyContent": "center"
+      "justifyContent": "center",
+      "attrs": {
+        "data-aos": "fade-down",
+        "data-aos-delay": "300"
+      }
     }
   },
   "bio": "Gunjan has worked as a Consultant/Trainer for various national and multinational companies across India, Sri Lanka, Philippines, Russia and Poland. Spanning over a period of 21 years, at Aurrus, Gunjan is responsible for leading the learning services unit and ensuring that our workforce is equipped with knowledge and best-in-class management practices to deliver their best to our clients."
