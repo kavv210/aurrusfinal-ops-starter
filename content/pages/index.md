@@ -205,7 +205,7 @@ sections:
     title:
       text: Built for Impact.
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
+      className: text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     text: >
       At Aurrus Consulting, we focus on what truly moves the needle: clarity in
@@ -237,7 +237,7 @@ sections:
     title:
       text: Collaborative with Design
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
+      className: text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Collaboration that delivers.
     text: >
@@ -268,7 +268,7 @@ sections:
     title:
       text: Talent Acquisition & Training
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
+      className: text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Build high‑performance teams.
     text: >
@@ -301,7 +301,7 @@ sections:
     title:
       text: Outsourcing & Transformation
       type: TitleBlock
-      className: text-3xl sm:text-4xl font-bold tracking-tight text-[#1E88E5]
+      className: text-4xl sm:text-5xl font-bold tracking-tight text-[#1E88E5]
         break-words transition-transform duration-300 hover:scale-105
     subtitle: Optimise and scale.
     text: >
@@ -402,6 +402,16 @@ sections:
       subtitle:
         className: text-xl font-bold text-[#1E88E5] break-words transition duration-300
           ease-in-out hover:text-[#f97316]
+
+  - type: DividerSection
+    __metadata:
+      modelName: DividerSection
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - p-7
+    
   - type: RawHtmlBlock
     __metadata:
       modelName: RawHtmlBlock
