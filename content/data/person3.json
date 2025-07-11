@@ -1,7 +1,7 @@
 {
   "type": "Person",
   "name": "Gunjan Jha",
-  "role": "<span class='text-lg font-bold text-gray-800'>Head – Learning & Development</span>",
+  "role": "Head – Learning & Development",
   "styles": {
     "self": {
       "textAlign": "center"
