@@ -188,9 +188,9 @@ sections:
       - title: Enterprise-Ready Tech Stack
         subtitle: Built with CISCO, Siemens, ININ & HP.
         text: >
-        We heavily rely on industry-grade hardware and software — including CISCO routers, Siemens switches, ININ predictive dialers, and HP servers;
-        to create a robust and scalable environment. This ensures consistent performance and enterprise-level reliability across all operations,
-        even under demanding workloads. Our infrastructure is built to adapt, expand, and deliver without compromise.
+          We heavily rely on industry-grade hardware and software — including CISCO routers, Siemens switches, ININ predictive dialers, and HP servers;
+          to create a robust and scalable environment. This ensures consistent performance and enterprise-level reliability across all operations,
+          even under demanding workloads. Our infrastructure is built to adapt, expand, and deliver without compromise.
         colors: bg-neutral-fg-dark
         styles:
           self:
