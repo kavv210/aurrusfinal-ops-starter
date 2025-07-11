@@ -20,7 +20,7 @@ sections:
       trust, creativity, and bold ambition — and we believe in empowering each
       individual to shape not only their role, but the future of the company.
     actions:
-      - label: Explore Infra
+      - label: Explore IT Infra
         url: "#open-roles"
         icon: arrowRight
         iconPosition: right
@@ -83,7 +83,7 @@ sections:
           - pr-6
         justifyContent: center
         attrs:
-          data-aos: fade-down
+          data-aos: fade-up
   - type: GenericSection
     text: <hr class="w-full border border-gray-300 mb-8" />
     styles:
@@ -94,7 +94,6 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
-
   - type: GenericSection
     __metadata:
       modelName: GenericSection
@@ -107,7 +106,8 @@ sections:
         self:
           textAlign: center
     text: >
-      <div class="mx-auto max-w-6xl flex flex-col md:flex-row gap-8 justify-center items-center px-4">
+      <div class="mx-auto max-w-6xl flex flex-col md:flex-row gap-8
+      justify-center items-center px-4">
         <div class="flex-1 max-w-md text-center md:text-left space-y-4">
           <strong class="block text-lg font-semibold text-gray-800">Aurrus HQ</strong>
           <p class="text-gray-700">
@@ -122,17 +122,17 @@ sections:
             <em>Open Mon–Sat, 10 AM – 6 PM</em>
           </p>
         </div>
-        <div class="flex-1 w-full max-w-xl">
-          <div class="relative aspect-[1/1] h-auto overflow-hidden rounded-xl shadow-xl">
-            <iframe
-              title="Google Map showing Aurrus HQ location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14016.812907460232!2d77.2380377!3d28.5726441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c192e25b11%3A0x7c7e73ae727c2f75!2sLajpat%20Nagar%20II%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1690999999999"
-              class="w-full h-full rounded-xl border-0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <div class="w-full rounded-xl overflow-hidden shadow-xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14016.812907460232!2d77.2380377!3d28.5726441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c192e25b11%3A0x7c7e73ae727c2f75!2sLajpat%20Nagar%20II%2C%20New%20Delhi%2C%20Delhi%20110024!5e0!3m2!1sen!2sin!4v1690999999999"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-full"
+          ></iframe>
         </div>
       </div>
     styles:
@@ -156,23 +156,22 @@ sections:
           - pl-0
           - pr-0
     colors: bg-transparent-fg-dark
-
   - type: FeaturedItemsSection
     elementId: open-roles
     title:
-      text: Our IT Infrastructure
+      text: Our IT Infrastucture
       color: text-dark
       styles:
         self:
           textAlign: center
-    subtitle: Our tech backbone keeps everything moving.
+    subtitle: Infrastructure that delivers, every time.
     items:
       - title: Massive Capacity
         subtitle: 100+ systems, ready to scale.
         text: >
-          We’ve designed our infrastructure to effortlessly handle high-volume workloads with more than 100 fully-equipped workstations.
-          Whether scaling support teams or handling large projects, our setup ensures uninterrupted productivity without bottlenecks.
-          Each station is optimized for speed, reliability, and seamless integration into voice and non-voice workflows.
+         We’ve designed our infrastructure to effortlessly handle high-volume workloads with more than 100 fully-equipped workstations.
+         Whether scaling support teams or handling large projects, our setup ensures uninterrupted productivity without bottlenecks.
+         Each station is optimized for speed, reliability, and seamless integration into voice and non-voice workflows.
         colors: bg-neutral-fg-dark
         styles:
           self:
@@ -189,9 +188,9 @@ sections:
       - title: Enterprise-Ready Tech Stack
         subtitle: Built with CISCO, Siemens, ININ & HP.
         text: >
-          We heavily rely on industry-grade hardware and software — including CISCO routers, Siemens switches, ININ predictive dialers, and HP servers;
-          to create a robust and scalable environment. This ensures consistent performance and enterprise-level reliability across all operations,
-          even under demanding workloads. Our infrastructure is built to adapt, expand, and deliver without compromise.
+        We heavily rely on industry-grade hardware and software — including CISCO routers, Siemens switches, ININ predictive dialers, and HP servers;
+        to create a robust and scalable environment. This ensures consistent performance and enterprise-level reliability across all operations,
+        even under demanding workloads. Our infrastructure is built to adapt, expand, and deliver without compromise.
         colors: bg-neutral-fg-dark
         styles:
           self:
@@ -208,9 +207,9 @@ sections:
       - title: Secured Connectivity & Communication
         subtitle: Private, stable, and built for performance.
         text: >
-          At Aurrus, every call and every connection runs on a dedicated SIP trunk network, ensuring seamless voice quality and reliable internet access.
-          Paired with enterprise-grade VPN protocols like IPSEC, PPTP, and L2TP, our infrastructure is designed for total data privacy
-          and uninterrupted communication — keeping your operations secure, efficient, and compliant at all times.
+         At Aurrus, every call and every connection runs on a dedicated SIP trunk network, ensuring seamless voice quality and reliable internet access.
+         Paired with enterprise-grade VPN protocols like IPSEC, PPTP, and L2TP, our infrastructure is designed for total data privacy
+         and uninterrupted communication — keeping your operations secure, efficient, and compliant at all times.
         colors: bg-neutral-fg-dark
         styles:
           self:
@@ -243,10 +242,11 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-
 seo:
   metaTitle: Careers – Aurrus Consulting
-  metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas, and growing together.
+  metaDescription: Explore careers at Aurrus. We believe in teamwork, bold ideas,
+    and growing together.
   socialImage: /images/main-hero.jpg
   type: Seo
+
 ---
