@@ -1,9 +1,4 @@
 {
-  "logo": {
-    "url": "/images/logo-white.png",
-    "altText": "Logo light",
-    "type": "ImageBlock"
-  },
   "text": "Where Strategy Meets Execution",
   "primaryLinks": {
     "title": "Features",
@@ -75,4 +70,3 @@
   "colors": "bg-dark-fg-light",
   "type": "Footer"
 }
-
