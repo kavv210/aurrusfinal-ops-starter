@@ -1,10 +1,10 @@
 {
   "type": "Person",
   "name": "Deeksha Gera",
-  "role": "Head – Operations",
-  "roleStyles": {
+  "role": "<span class='text-lg font-bold text-gray-800'>Head – Operations</span>",
+  "styles": {
     "self": {
-      "className": "font-semibold text-lg text-gray-800"
+      "textAlign": "center"
     }
   },
   "image": {
