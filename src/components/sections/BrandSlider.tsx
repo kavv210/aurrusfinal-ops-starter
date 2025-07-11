@@ -10,7 +10,13 @@ const logos = [
   { src: '/images/brand4.png', alt: 'Brand 4' },
   { src: '/images/brand5.png', alt: 'Brand 5' },
   { src: '/images/brand6.png', alt: 'Brand 6' },
-  { src: '/images/brand7.png', alt: 'Brand 7' }
+  { src: '/images/brand7.png', alt: 'Brand 7' },
+  { src: '/images/brand8.png', alt: 'Brand 8' },
+  { src: '/images/brand9.png', alt: 'Brand 9' },
+  { src: '/images/brand10.png', alt: 'Brand 10' },
+  { src: '/images/brand11.png', alt: 'Brand 11' },
+  { src: '/images/brand12.png', alt: 'Brand 12' },
+  { src: '/images/brand13.png', alt: 'Brand 13' }
 ];
 
 export default function BrandSlider() {
