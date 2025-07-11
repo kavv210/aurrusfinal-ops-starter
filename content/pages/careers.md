@@ -21,7 +21,7 @@ sections:
       individual to shape not only their role, but the future of the company.
     actions:
       - label: Explore IT Infra
-        url: "#open-roles"
+        url: "#it-infra"
         icon: arrowRight
         iconPosition: right
         style: primary
@@ -157,7 +157,7 @@ sections:
           - pr-0
     colors: bg-transparent-fg-dark
   - type: FeaturedItemsSection
-    elementId: open-roles
+    elementId: it-infra
     title:
       text: Our IT Infrastucture
       color: text-dark
